@@ -24,9 +24,9 @@ from app.utils.system import SystemUtils
 
 class CloudflareSpeedTestForClash(_PluginBase):
     # 插件名称
-    plugin_name = "Cloudflare IP优选 (Clash)"
+    plugin_name = "Best Cloudflare IP"
     # 插件描述
-    plugin_desc = "🌩 测试 Cloudflare CDN 延迟和速度，自动优选IP。将优选 IP 同步到 Clash Rule Provider。"
+    plugin_desc = "将优选 Cloudflare IP 同步到 Clash Rule Provider。"
     # 插件图标
     plugin_icon = "cloudflare.jpg"
     # 插件版本
@@ -210,15 +210,15 @@ class CloudflareSpeedTestForClash(_PluginBase):
                 return
             best_ipv6 = self.extract_ip_addresses(result_v6_path, self._ips_number) or []
         best_ips = best_ipv4 + best_ipv6 + self._cf_ip
-        logger.info(f"\n获取到最优ip==>{best_ips}")
+        logger.info(f"获取到最优ip==>{best_ips}")
 
         crp_config = self.get_config("ClashRuleProvider")
         if self._add_to_crp and crp_config.get("enabled"):
-            logger.info("Clash Rule Provider 更新 IP ...")
+            logger.info("通知 Clash Rule Provider 更新 IP ...")
             self.eventmanager.send_event(
                 EventType.PluginAction,
                 {
-                    "action": "update_cloudflare_ip",
+                    "action": "update_cloudflare_ips",
                     "ips": best_ips
                 })
 

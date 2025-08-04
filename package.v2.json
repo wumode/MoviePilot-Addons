@@ -1,7 +1,7 @@
 {
   "CloudflareSpeedTestForClash": {
-    "name": "Cloudflare IP优选 (Clash)",
-    "description": "🌩 测试 Cloudflare CDN 延迟和速度，自动优选IP。将优选 IP 同步到 Clash Rule Provider",
+    "name": "Best Cloudflare IP",
+    "description": "将优选 Cloudflare IP 同步到 Clash Rule Provider。",
     "version": "1.0",
     "icon": "cloudflare.jpg",
     "author": "thsrite,wumode",
