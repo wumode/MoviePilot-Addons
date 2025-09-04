@@ -9,5 +9,16 @@
     "history": {
       "v1.0": "初始化版本插件"
       }
+  },
+  "WebdavStorage": {
+    "name": "WebDAV储存",
+    "description": "使存储支持WebDAV。"
+    "version": "1.0",
+    "icon": "disk.png",
+    "author": "wumode",
+    "level": 1,
+    "history": {
+      "v1.0": "add WebDAV 插件"
+    }
   }
 }
