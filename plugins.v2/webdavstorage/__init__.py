@@ -14,7 +14,7 @@ from .webdavapi import WebdavAPI
 
 class WebdavStorage(_PluginBase):
     # 插件名称
-    plugin_name = "WebDAV储存"
+    plugin_name = "WebDAV存储"
     # 插件描述
     plugin_desc = "使存储支持WebDAV。"
     # 插件图标

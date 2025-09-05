@@ -11,7 +11,7 @@
       }
   },
   "WebdavStorage": {
-    "name": "WebDAV储存",
+    "name": "WebDAV存储",
     "description": "使存储支持WebDAV",
     "version": "1.0.0",
     "icon": "disk.png",
