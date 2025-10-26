@@ -13,7 +13,7 @@
   "WebdavStorage": {
     "name": "WebDAV存储",
     "description": "使存储支持WebDAV",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icon": "disk.png",
     "author": "wumode",
     "level": 1,
