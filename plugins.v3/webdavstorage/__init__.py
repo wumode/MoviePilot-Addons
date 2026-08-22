@@ -1,26 +1,26 @@
 from pathlib import Path
 from typing import Any, List, Dict, Tuple, Optional
-from datetime import datetime
 
 from app import schemas
-from app.core.event import eventmanager, Event
-from app.log import logger
+from app.sdk.events import eventmanager, Event
+from app.sdk.logging import logger
 from app.plugins import _PluginBase
 from app.schemas.types import ChainEventType
-from app.helper.storage import StorageHelper
+from app.sdk.services import StorageHelper
 from app.schemas import StorageOperSelectionEventData, FileItem
 
 from .webdavapi import WebdavAPI
+
 
 class WebdavStorage(_PluginBase):
     # 插件名称
     plugin_name = "WebDAV存储"
     # 插件描述
-    plugin_desc = "使存储支持WebDAV。"
+    plugin_desc = "使存储支持 WebDAV。"
     # 插件图标
     plugin_icon = "https://raw.githubusercontent.com/wumode/MoviePilot-Addons/refs/heads/main/icons/disk.png"
     # 插件版本
-    plugin_version = "0.0.3"
+    plugin_version = "1.0.0"
     # 插件作者
     plugin_author = "wumode"
     # 作者主页
@@ -59,18 +59,18 @@ class WebdavStorage(_PluginBase):
                     "password": self._password,
                     "disable_check": True,
                     "root": self._root,
-                    "name": self._disk_name # Pass the storage name to WebdavAPI
+                    "name": self._disk_name
                 }
             )
             storage_helper = StorageHelper()
             storages = storage_helper.get_storagies()
             if not any(
-                    s.type == self._disk_name and s.name == self._disk_name
+                    s.type == self._disk_name.lower() and s.name == self._disk_name
                     for s in storages
             ):
                 # 添加云盘存储配置
                 storage_helper.add_storage(
-                    storage=self._disk_name, name=self._disk_name, conf={}
+                    storage=self._disk_name.lower(), name=self._disk_name, conf={}
                 )
 
     def get_state(self) -> bool:
@@ -107,6 +107,11 @@ class WebdavStorage(_PluginBase):
                                     }
                                 ],
                             },
+                        ],
+                    },
+                    {
+                        "component": "VRow",
+                        "content": [
                             {
                                 "component": "VCol",
                                 "props": {"cols": 12, "md": 3},
@@ -209,14 +214,14 @@ class WebdavStorage(_PluginBase):
         if not self._enabled:
             return
         event_data: StorageOperSelectionEventData = event.event_data
-        if event_data.storage == self._disk_name:
+        if event_data.storage == self._disk_name.lower():
             event_data.storage_oper = self._client
 
     def list_files(self, fileitem: schemas.FileItem, recursion: bool = False) -> Optional[List[schemas.FileItem]]:
         """
         查询当前目录下所有目录和文件
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
 
         def __get_files(_item: FileItem, _r: Optional[bool] = False):
@@ -244,7 +249,7 @@ class WebdavStorage(_PluginBase):
         """
         查询当前目录下是否存在指定扩展名任意文件
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         
         def __any_file(_item: FileItem):
@@ -272,7 +277,7 @@ class WebdavStorage(_PluginBase):
         """
         创建目录
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.create_folder(fileitem, name)
 
@@ -282,7 +287,7 @@ class WebdavStorage(_PluginBase):
         :param fileitem: 文件项
         :param path: 本地保存路径
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.download(fileitem, path)
 
@@ -295,7 +300,7 @@ class WebdavStorage(_PluginBase):
         :param path: 本地文件路径
         :param new_name: 新文件名
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.upload(fileitem, path, new_name)
 
@@ -303,7 +308,7 @@ class WebdavStorage(_PluginBase):
         """
         删除文件或目录
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.delete(fileitem)
 
@@ -311,7 +316,7 @@ class WebdavStorage(_PluginBase):
         """
         重命名文件或目录
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.rename(fileitem, name)
 
@@ -319,7 +324,7 @@ class WebdavStorage(_PluginBase):
         """
         判断文件或目录是否存在
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.get_item(Path(fileitem.path)) is not None
 
@@ -327,7 +332,7 @@ class WebdavStorage(_PluginBase):
         """
         查询目录或文件
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.get_item(Path(fileitem.path))
 
@@ -335,7 +340,7 @@ class WebdavStorage(_PluginBase):
         """
         根据路径获取文件项
         """
-        if storage != self._disk_name:
+        if storage != self._disk_name.lower():
             return None
         return self._client.get_item(path)
 
@@ -343,7 +348,7 @@ class WebdavStorage(_PluginBase):
         """
         获取上级目录项
         """
-        if fileitem.storage != self._disk_name:
+        if fileitem.storage != self._disk_name.lower():
             return None
         return self._client.get_parent(fileitem)
 
@@ -352,6 +357,7 @@ class WebdavStorage(_PluginBase):
         storage: str,
         path: Path,
         last_snapshot_time: float = None,
+        previous_snapshot: dict[str, dict] | None = None,
         max_depth: int = 5,
     ) -> Optional[Dict[str, Dict]]:
         """
@@ -359,9 +365,10 @@ class WebdavStorage(_PluginBase):
         :param storage: 存储类型
         :param path: 路径
         :param last_snapshot_time: 上次快照时间，用于增量快照
+        :param previous_snapshot: 上次完整快照，用于增量对账
         :param max_depth: 最大递归深度，避免过深遍历
         """
-        if storage != self._disk_name:
+        if storage != self._disk_name.lower():
             return None
         
         files_info = {}
@@ -395,7 +402,7 @@ class WebdavStorage(_PluginBase):
         """
         存储使用情况
         """
-        if storage != self._disk_name:
+        if storage != self._disk_name.lower():
             return None
         return self._client.usage()
 
@@ -403,7 +410,7 @@ class WebdavStorage(_PluginBase):
         """
         获取支持的整理方式
         """
-        if storage != self._disk_name:
+        if storage != self._disk_name.lower():
             return None
 
         return {"move": "移动", "copy": "复制"}

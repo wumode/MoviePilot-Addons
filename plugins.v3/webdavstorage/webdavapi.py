@@ -4,10 +4,11 @@ from datetime import datetime
 
 from webdav3.client import Client
 
-from app import schemas
-from app.core.config import settings, global_vars
-from app.log import logger
+from app.schemas.file import StorageUsage, FileItem
+from app.sdk.config import settings
+from app.sdk.logging import logger
 from app.modules.filemanager.storages import transfer_process
+
 
 class WebdavAPI:
     """
@@ -43,7 +44,7 @@ class WebdavAPI:
             return '/' + full_path[len(self._root):]
         return full_path
 
-    def list(self, fileitem: schemas.FileItem) -> List[schemas.FileItem]:
+    def list(self, fileitem: FileItem) -> List[FileItem]:
         """
         浏览文件
         """
@@ -72,12 +73,12 @@ class WebdavAPI:
                         pass # Handle other possible date formats if necessary
 
                 result.append(
-                    schemas.FileItem(
+                    FileItem(
                         path=self._relative_path(full_item_path),
                         name=name,
                         type="dir" if is_dir else "file",
                         size=item.get('size', 0),
-                        modified=modified,
+                        modify_time=modified.timestamp(),
                         extension=extension,
                         storage=fileitem.storage
                     )
@@ -87,7 +88,7 @@ class WebdavAPI:
             logger.error(f"Error listing WebDAV directory {fileitem.path!r}: {e}")
             return []
 
-    def create_folder(self, fileitem: schemas.FileItem, name: str) -> Optional[schemas.FileItem]:
+    def create_folder(self, fileitem: FileItem, name: str) -> Optional[FileItem]:
         """
         创建目录
         :param fileitem: 父目录
@@ -96,7 +97,7 @@ class WebdavAPI:
         try:
             new_folder_relative_path = Path(fileitem.path) / name
             self.client.mkdir(remote_path=str(new_folder_relative_path))
-            return schemas.FileItem(
+            return FileItem(
                 path=str(new_folder_relative_path),
                 name=name,
                 type="dir",
@@ -107,7 +108,7 @@ class WebdavAPI:
             logger.error(f"Error creating folder {name} in {fileitem.path}: {e}")
             return None
 
-    def get_folder(self, path: Path) -> Optional[schemas.FileItem]:
+    def get_folder(self, path: Path) -> Optional[FileItem]:
         """
         获取目录，如目录不存在则创建
         """
@@ -126,12 +127,12 @@ class WebdavAPI:
                         modified = datetime.strptime(modified_str, '%a, %d %b %Y %H:%M:%S %Z')
                     except ValueError:
                         pass
-                return schemas.FileItem(
+                return FileItem(
                     path=f"{path}",
                     name=name,
                     type="dir",
                     size=item_info.get('size', 0),
-                    modified=modified,
+                    modify_time=modified.timestamp(),
                     storage=self.conf.get('name', 'webdav') # Assuming storage name is in conf
                 )
             return None
@@ -139,7 +140,7 @@ class WebdavAPI:
             logger.error(f"Error getting or creating folder {path}: {e}")
             return None
 
-    def get_item(self, path: Path) -> Optional[schemas.FileItem]:
+    def get_item(self, path: Path) -> Optional[FileItem]:
         """
         获取文件或目录，不存在返回None
         """
@@ -160,12 +161,12 @@ class WebdavAPI:
                     except ValueError:
                         pass
 
-                return schemas.FileItem(
+                return FileItem(
                     path=str(path),
                     name=name,
                     type="dir" if is_dir else "file",
                     size=item_info.get('size', 0),
-                    modified=modified,
+                    modify_time=modified.timestamp(),
                     extension=extension,
                     storage=self.conf.get('name', 'webdav')
                 )
@@ -174,7 +175,7 @@ class WebdavAPI:
             logger.error(f"Error getting item {path}: {e}")
             return None
 
-    def get_parent(self, fileitem: schemas.FileItem) -> Optional[schemas.FileItem]:
+    def get_parent(self, fileitem: FileItem) -> Optional[FileItem]:
         """
         获取父目录
         """
@@ -182,7 +183,7 @@ class WebdavAPI:
         parent_path = Path(fileitem.path).parent
         return self.get_item(parent_path)
 
-    def delete(self, fileitem: schemas.FileItem) -> bool:
+    def delete(self, fileitem: FileItem) -> bool:
         """
         删除文件
         """
@@ -193,7 +194,7 @@ class WebdavAPI:
             logger.error(f"Error deleting {fileitem.path}: {e}")
             return False
 
-    def rename(self, fileitem: schemas.FileItem, name: str) -> bool:
+    def rename(self, fileitem: FileItem, name: str) -> bool:
         """
         重命名文件
         """
@@ -207,7 +208,7 @@ class WebdavAPI:
             logger.error(f"Error renaming {fileitem.path} to {name}: {e}")
             return False
 
-    def download(self, fileitem: schemas.FileItem, path: Path = None) -> Optional[Path]:
+    def download(self, fileitem: FileItem, path: Path = None) -> Optional[Path]:
         """
         下载文件，保存到本地，返回本地临时文件地址
         :param fileitem: 文件项
@@ -221,8 +222,8 @@ class WebdavAPI:
             logger.error(f"Error downloading {fileitem.path}: {e}")
             return None
 
-    def upload(self, fileitem: schemas.FileItem,
-               path: Path, new_name: Optional[str] = None) -> Optional[schemas.FileItem]:
+    def upload(self, fileitem: FileItem,
+               path: Path, new_name: Optional[str] = None) -> Optional[FileItem]:
         """
         上传文件
         :param fileitem: 上传目录项
@@ -242,13 +243,13 @@ class WebdavAPI:
             logger.error(f"Error uploading {path} to {fileitem.path}: {e}")
             return None
 
-    def detail(self, fileitem: schemas.FileItem) -> Optional[schemas.FileItem]:
+    def detail(self, fileitem: FileItem) -> Optional[FileItem]:
         """
         获取文件详情
         """
         return self.get_item(Path(fileitem.path))
 
-    def copy(self, fileitem: schemas.FileItem, path: Path, new_name: str) -> bool:
+    def copy(self, fileitem: FileItem, path: Path, new_name: str) -> bool:
         """
         复制文件
         :param fileitem: 文件项
@@ -263,7 +264,7 @@ class WebdavAPI:
             logger.error(f"Error copying {fileitem.path} to {destination_relative_path}: {e}")
             return False
 
-    def move(self, fileitem: schemas.FileItem, path: Path, new_name: str) -> bool:
+    def move(self, fileitem: FileItem, path: Path, new_name: str) -> bool:
         """
         移动文件
         :param fileitem: 文件项
@@ -278,20 +279,23 @@ class WebdavAPI:
             logger.error(f"Error moving {fileitem.path} to {destination_relative_path}: {e}")
             return False
 
-    def link(self, fileitem: schemas.FileItem, target_file: Path) -> bool:
+    def link(self, fileitem: FileItem, target_file: Path) -> bool:
         """
         硬链接文件
         """
         pass
 
-    def softlink(self, fileitem: schemas.FileItem, target_file: Path) -> bool:
+    def softlink(self, fileitem: FileItem, target_file: Path) -> bool:
         """
         软链接文件
         """
         pass
 
-    def usage(self) -> Optional[schemas.StorageUsage]:
+    def usage(self) -> Optional[StorageUsage]:
         """
         存储使用情况
         """
-        pass
+        return StorageUsage(
+            total=100,
+            available=100
+        )
