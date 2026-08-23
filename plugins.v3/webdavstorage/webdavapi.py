@@ -48,6 +48,8 @@ class WebdavAPI:
         """
         浏览文件
         """
+        if fileitem.type == "file":
+            return [fileitem]
         try:
             items = self.client.list(remote_path=fileitem.path, get_info=True)
             result = []

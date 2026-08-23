@@ -1,0 +1,13 @@
+[project]
+name = "moviepilot-plugin-clashruleprovider"
+dynamic = ["version"]
+requires-python = ">=3.12"
+dependencies = [
+    "websockets",
+    "sse_starlette>=3.0.0,<3.0.4",
+    "PyYAML~=6.0.2",
+    "jsonpatch~=1.33",
+    "simpleeval~=1.0.3",
+]
+[tool.pyright]
+extraPaths = ["../../.."]
