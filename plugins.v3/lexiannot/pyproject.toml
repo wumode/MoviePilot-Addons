@@ -1,0 +1,10 @@
+[project]
+name = "moviepilot-plugin-lexiannot"
+dynamic = ["version"]
+requires-python = ">=3.14"
+dependencies = [
+    "pysubs2~=1.8.0",
+    "langdetect~=1.0.9",
+    "pymediainfo~=7.0.1",
+    "spacy~=3.8.11"
+]
