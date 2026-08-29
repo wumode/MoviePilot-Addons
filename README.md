@@ -8,8 +8,9 @@ MoviePilot 自定义插件扩展仓库，提供适用于 MoviePilot 的各类增
 
 | 插件名称 | 插件标识 | 当前版本 | 适用系统版本 | 简介 |
 | :--- | :--- | :--- | :--- | :--- |
-| **Clash Rule Provider** | `ClashRuleProvider` | `v3.0.0` | `>=3.0.0` | 为 Meta (Mihomo) 内核生成定制配置与规则集，支持大洲国家分组、可见性过滤等 |
+| **Clash Rule Provider** | `ClashRuleProvider` | `v3.0.1` | `>=3.0.0` | 为 Meta (Mihomo) 内核生成定制配置与规则集，支持大洲国家分组、可见性过滤等 |
 | **WebDAV存储** | `WebdavStorage` | `v1.0.0` | `>=3.0.0` | 为 MoviePilot 提供 WebDAV 协议存储支持，实现云盘与远端文件管理 |
+| **美剧生词标注** | `LexiAnnot` | `v2.0.0` | `>=3.0.0` | 根据 CEFR 等级为英语影视剧标注高级词汇，生成带生词注解的 ASS 字幕 |
 
 ### MoviePilot V2 历史插件 (`plugins.v2`)
 
@@ -41,7 +42,18 @@ MoviePilot 自定义插件扩展仓库，提供适用于 MoviePilot 的各类增
 - **完整操作支持**：支持目录浏览、文件上传/下载、移动、重命名、删除与目录创建。
 - **快照与对账**：支持目录快照与增量对账，适配多层级文件结构。
 
-### 3. Best Cloudflare IP (V2)
+### 3. 美剧生词标注 (V3)
+
+根据 CEFR 国际语言等级标准，为英语影视剧自动提取并标注高阶词汇：
+
+- **智能语言与字幕识别**：自动识别媒体文件的原始语言与字幕轨道，支持文本字幕（如 SRT/ASS 等）。
+- **CEFR 等级标注与释义**：依据 CEFR 分级标准（A1-C2）筛选高级词汇，结合 LLM 上下文对俚语、自造词、熟词生义进行精准解释。
+- **自适应字幕样式**：自动继承并适配原视频字幕样式，生成包含生词注解的高质量 `.en.ass` 字幕。
+- **NLP 语言分析引擎**：基于 spaCy 进行词形还原、词性标注 (POS) 及命名实体识别 (NER)，避免过度标注专有名词。
+- **智能助手 Agent 联动**：内置 Agent 工具，支持在 MoviePilot 对话中通过 `/ai` 交互式触发和管理生词标注任务。
+- 更多详细配置请查阅：[美剧生词标注说明文档](plugins.v3/lexiannot/README.md)。
+
+### 4. Best Cloudflare IP (V2)
 
 修改自 [thsrite](https://github.com/thsrite) 的 Cloudflare IP 优选插件：
 
