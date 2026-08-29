@@ -1,3 +1,17 @@
+import { importShared } from './__federation_fn_import-JrT3xvdd.js';
+
+const {inject} = await importShared('vue');
+
+function useToast() {
+  const toast = inject("moviepilot:toast", null);
+  return {
+    success: (message) => toast?.success(message),
+    error: (message) => toast?.error(message),
+    info: (message) => toast?.info(message),
+    warning: (message) => toast?.warning(message)
+  };
+}
+
 const isValidUrl = (urlString) => {
   if (!urlString) return false;
   try {
@@ -205,4 +219,4 @@ const _export_sfc = (sfc, props) => {
   return target;
 };
 
-export { _export_sfc as _, getActionColor as a, isManual as b, isRegion as c, getSourceColor as d, getProxyGroupTypeColor as e, isValidUrl as f, getRuleTypeColor as g, isInvalid as h, isSystemRule as i, getProxyColor as j, extractDomain as k, formatTimestamp as l, getExpireColor as m, formatBytes as n, getUsageColor as o, pageTitle as p, getUsedPercentageFloor as q, getFormatColor as r, getBehaviorColor as s, timestampToDate as t, getBoolColor as u, validateIPs as v };
+export { _export_sfc as _, getActionColor as a, isManual as b, isRegion as c, getSourceColor as d, getProxyGroupTypeColor as e, isValidUrl as f, getRuleTypeColor as g, isInvalid as h, isSystemRule as i, getProxyColor as j, extractDomain as k, formatTimestamp as l, getExpireColor as m, formatBytes as n, getUsageColor as o, pageTitle as p, getUsedPercentageFloor as q, getFormatColor as r, getBehaviorColor as s, timestampToDate as t, useToast as u, getBoolColor as v, validateIPs as w };

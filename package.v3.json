@@ -17,12 +17,13 @@
     "name": "Clash Rule Provider",
     "description": "随时为Clash添加一些额外的规则。",
     "labels": "工具",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "icon": "Mihomo_Meta_A.png",
     "author": "wumode",
     "level": 1,
     "release": true,
     "history": {
+      "v3.0.1": "优化前端页面",
       "v3.0.0": "V3 独立大版本"
     },
     "system_version": ">=3.0.0"

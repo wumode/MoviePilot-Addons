@@ -1,6 +1,6 @@
 import { importShared } from './__federation_fn_import-JrT3xvdd.js';
 import { V as VAceEditor, c as commonjsGlobal, g as getDefaultExportFromCjs } from './theme-monokai-CF_yROe-.js';
-import { i as isSystemRule, t as timestampToDate, g as getRuleTypeColor, a as getActionColor, _ as _export_sfc, p as pageTitle, b as isManual, c as isRegion, d as getSourceColor, e as getProxyGroupTypeColor, f as isValidUrl, h as isInvalid, j as getProxyColor, k as extractDomain, l as formatTimestamp, m as getExpireColor, n as formatBytes, o as getUsageColor, q as getUsedPercentageFloor, r as getFormatColor, s as getBehaviorColor, u as getBoolColor, v as validateIPs } from './_plugin-vue_export-helper-D32QZFxh.js';
+import { u as useToast, i as isSystemRule, t as timestampToDate, g as getRuleTypeColor, a as getActionColor, p as pageTitle, _ as _export_sfc, b as isManual, c as isRegion, d as getSourceColor, e as getProxyGroupTypeColor, f as isValidUrl, h as isInvalid, j as getProxyColor, k as extractDomain, l as formatTimestamp, m as getExpireColor, n as formatBytes, o as getUsageColor, q as getUsedPercentageFloor, r as getFormatColor, s as getBehaviorColor, v as getBoolColor, w as validateIPs } from './_plugin-vue_export-helper-CyU6ZHU6.js';
 import { M as MetaLogo } from './Meta-1zu2nKV2.js';
 
 /*! js-yaml 4.1.1 https://github.com/nodeca/js-yaml @license MIT */
@@ -3857,10 +3857,10 @@ var jsYaml = {
 	safeDump: safeDump
 };
 
-const {defineComponent:_defineComponent$w} = await importShared('vue');
+const {defineComponent:_defineComponent$I} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$w,resolveComponent:_resolveComponent$w,withCtx:_withCtx$w,createVNode:_createVNode$w,unref:_unref$r,openBlock:_openBlock$w,createBlock:_createBlock$w} = await importShared('vue');
-const _sfc_main$w = /* @__PURE__ */ _defineComponent$w({
+const {createTextVNode:_createTextVNode$x,resolveComponent:_resolveComponent$I,withCtx:_withCtx$I,createVNode:_createVNode$I,unref:_unref$x,openBlock:_openBlock$I,createBlock:_createBlock$I} = await importShared('vue');
+const _sfc_main$I = /* @__PURE__ */ _defineComponent$I({
   __name: "ShowYamlDialog",
   props: {
     content: {
@@ -3882,30 +3882,30 @@ const _sfc_main$w = /* @__PURE__ */ _defineComponent$w({
     };
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$w("v-card-title");
-      const _component_v_card_text = _resolveComponent$w("v-card-text");
-      const _component_v_spacer = _resolveComponent$w("v-spacer");
-      const _component_v_btn = _resolveComponent$w("v-btn");
-      const _component_v_card_actions = _resolveComponent$w("v-card-actions");
-      const _component_v_card = _resolveComponent$w("v-card");
-      const _component_v_dialog = _resolveComponent$w("v-dialog");
-      return _openBlock$w(), _createBlock$w(_component_v_dialog, {
+      const _component_v_card_title = _resolveComponent$I("v-card-title");
+      const _component_v_card_text = _resolveComponent$I("v-card-text");
+      const _component_v_spacer = _resolveComponent$I("v-spacer");
+      const _component_v_btn = _resolveComponent$I("v-btn");
+      const _component_v_card_actions = _resolveComponent$I("v-card-actions");
+      const _component_v_card = _resolveComponent$I("v-card");
+      const _component_v_dialog = _resolveComponent$I("v-dialog");
+      return _openBlock$I(), _createBlock$I(_component_v_dialog, {
         "model-value": true,
         "max-width": "40rem",
         "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => emit("close"))
       }, {
-        default: _withCtx$w(() => [
-          _createVNode$w(_component_v_card, null, {
-            default: _withCtx$w(() => [
-              _createVNode$w(_component_v_card_title, { class: "headline" }, {
-                default: _withCtx$w(() => _cache[3] || (_cache[3] = [
-                  _createTextVNode$w("YAML 配置")
+        default: _withCtx$I(() => [
+          _createVNode$I(_component_v_card, null, {
+            default: _withCtx$I(() => [
+              _createVNode$I(_component_v_card_title, { class: "headline" }, {
+                default: _withCtx$I(() => _cache[3] || (_cache[3] = [
+                  _createTextVNode$x("YAML 配置")
                 ])),
                 _: 1
               }),
-              _createVNode$w(_component_v_card_text, { style: { "max-height": "600px", "overflow-y": "auto" } }, {
-                default: _withCtx$w(() => [
-                  _createVNode$w(_unref$r(VAceEditor), {
+              _createVNode$I(_component_v_card_text, { style: { "max-height": "600px", "overflow-y": "auto" } }, {
+                default: _withCtx$I(() => [
+                  _createVNode$I(_unref$x(VAceEditor), {
                     value: props.content,
                     lang: "yaml",
                     theme: "monokai",
@@ -3916,24 +3916,24 @@ const _sfc_main$w = /* @__PURE__ */ _defineComponent$w({
                 ]),
                 _: 1
               }),
-              _createVNode$w(_component_v_card_actions, null, {
-                default: _withCtx$w(() => [
-                  _createVNode$w(_component_v_spacer),
-                  _createVNode$w(_component_v_btn, {
+              _createVNode$I(_component_v_card_actions, null, {
+                default: _withCtx$I(() => [
+                  _createVNode$I(_component_v_spacer),
+                  _createVNode$I(_component_v_btn, {
                     color: "primary",
                     onClick: _cache[0] || (_cache[0] = ($event) => emit("copyToClipboard", __props.content))
                   }, {
-                    default: _withCtx$w(() => _cache[4] || (_cache[4] = [
-                      _createTextVNode$w("复制")
+                    default: _withCtx$I(() => _cache[4] || (_cache[4] = [
+                      _createTextVNode$x("复制")
                     ])),
                     _: 1
                   }),
-                  _createVNode$w(_component_v_btn, {
+                  _createVNode$I(_component_v_btn, {
                     color: "primary",
                     onClick: _cache[1] || (_cache[1] = ($event) => emit("close"))
                   }, {
-                    default: _withCtx$w(() => _cache[5] || (_cache[5] = [
-                      _createTextVNode$w("关闭")
+                    default: _withCtx$I(() => _cache[5] || (_cache[5] = [
+                      _createTextVNode$x("关闭")
                     ])),
                     _: 1
                   })
@@ -3950,18 +3950,17 @@ const _sfc_main$w = /* @__PURE__ */ _defineComponent$w({
   }
 });
 
-const {defineComponent:_defineComponent$v} = await importShared('vue');
+const {defineComponent:_defineComponent$H} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$v,resolveComponent:_resolveComponent$v,withCtx:_withCtx$v,createVNode:_createVNode$v,createElementVNode:_createElementVNode$o,renderList:_renderList$a,Fragment:_Fragment$b,openBlock:_openBlock$v,createElementBlock:_createElementBlock$d,toDisplayString:_toDisplayString$s,createBlock:_createBlock$v,createCommentVNode:_createCommentVNode$r} = await importShared('vue');
+const {createTextVNode:_createTextVNode$w,resolveComponent:_resolveComponent$H,withCtx:_withCtx$H,createVNode:_createVNode$H,createElementVNode:_createElementVNode$y,renderList:_renderList$g,Fragment:_Fragment$i,openBlock:_openBlock$H,createElementBlock:_createElementBlock$p,toDisplayString:_toDisplayString$s,createBlock:_createBlock$H,createCommentVNode:_createCommentVNode$r} = await importShared('vue');
 
-const _hoisted_1$l = { class: "d-flex align-center justify-space-between mb-2" };
-const _hoisted_2$g = {
+const _hoisted_1$x = { class: "d-flex align-center justify-space-between mb-2" };
+const _hoisted_2$m = {
   key: 0,
   class: "text-caption text-grey text-center py-2"
 };
 const {ref: ref$l,toRaw: toRaw$9,onMounted: onMounted$1} = await importShared('vue');
-
-const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
+const _sfc_main$H = /* @__PURE__ */ _defineComponent$H({
   __name: "DataVisibilityDialog",
   props: {
     meta: {
@@ -3982,10 +3981,11 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
       required: true
     }
   },
-  emits: ["refresh", "show-snackbar", "show-error", "close"],
+  emits: ["refresh", "show-error", "close"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const loading = ref$l(false);
     const invisibleTo = ref$l(structuredClone(toRaw$9(props.meta?.invisible_to) || []));
     const selectedPresets = ref$l([]);
@@ -4030,66 +4030,59 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
         const result = await props.api.patch(props.endpoint, meta);
         if (props.region) emit("refresh", [props.region]);
         if (result?.success) {
-          emit("show-snackbar", {
-            show: true,
-            message: "可见性配置更新成功",
-            color: "success"
-          });
+          toast.success("可见性配置更新成功");
           emit("close");
         } else {
           emit("show-error", "更新可见性配置失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "更新可见性配置失败",
-            color: "error"
-          });
+          toast.error("更新可见性配置失败");
         }
       } catch (err) {
         if (err instanceof Error) {
           emit("show-error", err.message || "更新可见性配置失败");
+          toast.error("更新可见性配置失败");
         }
       } finally {
         loading.value = false;
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$v("v-card-title");
-      const _component_v_alert = _resolveComponent$v("v-alert");
-      const _component_v_chip = _resolveComponent$v("v-chip");
-      const _component_v_chip_group = _resolveComponent$v("v-chip-group");
-      const _component_v_divider = _resolveComponent$v("v-divider");
-      const _component_v_btn = _resolveComponent$v("v-btn");
-      const _component_v_text_field = _resolveComponent$v("v-text-field");
-      const _component_v_card_text = _resolveComponent$v("v-card-text");
-      const _component_v_spacer = _resolveComponent$v("v-spacer");
-      const _component_v_card_actions = _resolveComponent$v("v-card-actions");
-      const _component_v_card = _resolveComponent$v("v-card");
-      const _component_v_dialog = _resolveComponent$v("v-dialog");
-      return _openBlock$v(), _createBlock$v(_component_v_dialog, { "max-width": "40rem" }, {
-        default: _withCtx$v(() => [
-          _createVNode$v(_component_v_card, null, {
-            default: _withCtx$v(() => [
-              _createVNode$v(_component_v_card_title, null, {
-                default: _withCtx$v(() => _cache[2] || (_cache[2] = [
-                  _createTextVNode$v(" 限制可见性 ")
+      const _component_v_card_title = _resolveComponent$H("v-card-title");
+      const _component_v_alert = _resolveComponent$H("v-alert");
+      const _component_v_chip = _resolveComponent$H("v-chip");
+      const _component_v_chip_group = _resolveComponent$H("v-chip-group");
+      const _component_v_divider = _resolveComponent$H("v-divider");
+      const _component_v_btn = _resolveComponent$H("v-btn");
+      const _component_v_text_field = _resolveComponent$H("v-text-field");
+      const _component_v_card_text = _resolveComponent$H("v-card-text");
+      const _component_v_spacer = _resolveComponent$H("v-spacer");
+      const _component_v_card_actions = _resolveComponent$H("v-card-actions");
+      const _component_v_card = _resolveComponent$H("v-card");
+      const _component_v_dialog = _resolveComponent$H("v-dialog");
+      return _openBlock$H(), _createBlock$H(_component_v_dialog, { "max-width": "40rem" }, {
+        default: _withCtx$H(() => [
+          _createVNode$H(_component_v_card, null, {
+            default: _withCtx$H(() => [
+              _createVNode$H(_component_v_card_title, null, {
+                default: _withCtx$H(() => _cache[2] || (_cache[2] = [
+                  _createTextVNode$w(" 限制可见性 ")
                 ])),
                 _: 1
               }),
-              _createVNode$v(_component_v_card_text, null, {
-                default: _withCtx$v(() => [
-                  _createVNode$v(_component_v_alert, {
+              _createVNode$H(_component_v_card_text, null, {
+                default: _withCtx$H(() => [
+                  _createVNode$H(_component_v_alert, {
                     type: "info",
                     variant: "tonal",
                     class: "mb-4",
                     density: "compact"
                   }, {
-                    default: _withCtx$v(() => _cache[3] || (_cache[3] = [
-                      _createTextVNode$v(" 配置数据项对哪些设备不可见。勾选预设设备或输入自定义表达式 (simpleeval)。 ")
+                    default: _withCtx$H(() => _cache[3] || (_cache[3] = [
+                      _createTextVNode$w(" 配置数据项对哪些设备不可见。勾选预设设备或输入自定义表达式 (simpleeval)。 ")
                     ])),
                     _: 1
                   }),
-                  _cache[6] || (_cache[6] = _createElementVNode$o("div", { class: "text-subtitle-1 mb-2" }, "预设设备", -1)),
-                  _createVNode$v(_component_v_chip_group, {
+                  _cache[6] || (_cache[6] = _createElementVNode$y("div", { class: "text-subtitle-1 mb-2" }, "预设设备", -1)),
+                  _createVNode$H(_component_v_chip_group, {
                     modelValue: selectedPresets.value,
                     "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => selectedPresets.value = $event),
                     column: "",
@@ -4097,16 +4090,16 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
                     filter: "",
                     "selected-class": "text-primary"
                   }, {
-                    default: _withCtx$v(() => [
-                      (_openBlock$v(true), _createElementBlock$d(_Fragment$b, null, _renderList$a(__props.presetIdentifiers, (id) => {
-                        return _openBlock$v(), _createBlock$v(_component_v_chip, {
+                    default: _withCtx$H(() => [
+                      (_openBlock$H(true), _createElementBlock$p(_Fragment$i, null, _renderList$g(__props.presetIdentifiers, (id) => {
+                        return _openBlock$H(), _createBlock$H(_component_v_chip, {
                           key: id,
                           value: id,
                           variant: "outlined",
                           filter: ""
                         }, {
-                          default: _withCtx$v(() => [
-                            _createTextVNode$v(_toDisplayString$s(id), 1)
+                          default: _withCtx$H(() => [
+                            _createTextVNode$w(_toDisplayString$s(id), 1)
                           ]),
                           _: 2
                         }, 1032, ["value"]);
@@ -4114,28 +4107,28 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
                     ]),
                     _: 1
                   }, 8, ["modelValue"]),
-                  _createVNode$v(_component_v_divider, { class: "my-4" }),
-                  _createElementVNode$o("div", _hoisted_1$l, [
-                    _cache[5] || (_cache[5] = _createElementVNode$o("div", { class: "text-subtitle-1" }, "自定义表达式", -1)),
-                    _createVNode$v(_component_v_btn, {
+                  _createVNode$H(_component_v_divider, { class: "my-4" }),
+                  _createElementVNode$y("div", _hoisted_1$x, [
+                    _cache[5] || (_cache[5] = _createElementVNode$y("div", { class: "text-subtitle-1" }, "自定义表达式", -1)),
+                    _createVNode$H(_component_v_btn, {
                       size: "small",
                       variant: "text",
                       color: "primary",
                       "prepend-icon": "mdi-plus",
                       onClick: addCustomExpression
                     }, {
-                      default: _withCtx$v(() => _cache[4] || (_cache[4] = [
-                        _createTextVNode$v(" 添加 ")
+                      default: _withCtx$H(() => _cache[4] || (_cache[4] = [
+                        _createTextVNode$w(" 添加 ")
                       ])),
                       _: 1
                     })
                   ]),
-                  (_openBlock$v(true), _createElementBlock$d(_Fragment$b, null, _renderList$a(customExpressions.value.keys(), (index) => {
-                    return _openBlock$v(), _createElementBlock$d("div", {
+                  (_openBlock$H(true), _createElementBlock$p(_Fragment$i, null, _renderList$g(customExpressions.value.keys(), (index) => {
+                    return _openBlock$H(), _createElementBlock$p("div", {
                       key: index,
                       class: "d-flex align-center mb-2"
                     }, [
-                      _createVNode$v(_component_v_text_field, {
+                      _createVNode$H(_component_v_text_field, {
                         modelValue: customExpressions.value[index],
                         "onUpdate:modelValue": ($event) => customExpressions.value[index] = $event,
                         label: "表达式",
@@ -4144,7 +4137,7 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
                         "hide-details": "",
                         class: "flex-grow-1"
                       }, null, 8, ["modelValue", "onUpdate:modelValue"]),
-                      _createVNode$v(_component_v_btn, {
+                      _createVNode$H(_component_v_btn, {
                         icon: "mdi-delete",
                         variant: "text",
                         color: "error",
@@ -4154,29 +4147,29 @@ const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
                       }, null, 8, ["onClick"])
                     ]);
                   }), 128)),
-                  customExpressions.value.length === 0 ? (_openBlock$v(), _createElementBlock$d("div", _hoisted_2$g, " 无自定义表达式 ")) : _createCommentVNode$r("", true)
+                  customExpressions.value.length === 0 ? (_openBlock$H(), _createElementBlock$p("div", _hoisted_2$m, " 无自定义表达式 ")) : _createCommentVNode$r("", true)
                 ]),
                 _: 1
               }),
-              _createVNode$v(_component_v_card_actions, null, {
-                default: _withCtx$v(() => [
-                  _createVNode$v(_component_v_spacer),
-                  _createVNode$v(_component_v_btn, {
+              _createVNode$H(_component_v_card_actions, null, {
+                default: _withCtx$H(() => [
+                  _createVNode$H(_component_v_spacer),
+                  _createVNode$H(_component_v_btn, {
                     color: "secondary",
                     onClick: _cache[1] || (_cache[1] = ($event) => _ctx.$emit("close"))
                   }, {
-                    default: _withCtx$v(() => _cache[7] || (_cache[7] = [
-                      _createTextVNode$v("取消")
+                    default: _withCtx$H(() => _cache[7] || (_cache[7] = [
+                      _createTextVNode$w("取消")
                     ])),
                     _: 1
                   }),
-                  _createVNode$v(_component_v_btn, {
+                  _createVNode$H(_component_v_btn, {
                     color: "primary",
                     loading: loading.value,
                     onClick: updateDataVisibility
                   }, {
-                    default: _withCtx$v(() => _cache[8] || (_cache[8] = [
-                      _createTextVNode$v("保存")
+                    default: _withCtx$H(() => _cache[8] || (_cache[8] = [
+                      _createTextVNode$w("保存")
                     ])),
                     _: 1
                   }, 8, ["loading"])
@@ -4290,10 +4283,10 @@ const defaultRuleProvider = {
   payload: []
 };
 
-const {defineComponent:_defineComponent$u} = await importShared('vue');
+const {defineComponent:_defineComponent$G} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$u,resolveComponent:_resolveComponent$u,withCtx:_withCtx$u,createVNode:_createVNode$u,mergeProps:_mergeProps$m,unref:_unref$q,openBlock:_openBlock$u,createBlock:_createBlock$u,createCommentVNode:_createCommentVNode$q,toDisplayString:_toDisplayString$r} = await importShared('vue');
-const _sfc_main$u = /* @__PURE__ */ _defineComponent$u({
+const {createTextVNode:_createTextVNode$v,resolveComponent:_resolveComponent$G,withCtx:_withCtx$G,createVNode:_createVNode$G,mergeProps:_mergeProps$m,unref:_unref$w,openBlock:_openBlock$G,createBlock:_createBlock$G,createCommentVNode:_createCommentVNode$q,toDisplayString:_toDisplayString$r} = await importShared('vue');
+const _sfc_main$G = /* @__PURE__ */ _defineComponent$G({
   __name: "RuleActionMenu",
   props: {
     rule: {
@@ -4309,138 +4302,138 @@ const _sfc_main$u = /* @__PURE__ */ _defineComponent$u({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$u("v-icon");
-      const _component_v_btn = _resolveComponent$u("v-btn");
-      const _component_v_tooltip = _resolveComponent$u("v-tooltip");
-      const _component_v_list_item_title = _resolveComponent$u("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$u("v-list-item");
-      const _component_v_list = _resolveComponent$u("v-list");
-      const _component_v_menu = _resolveComponent$u("v-menu");
-      return _openBlock$u(), _createBlock$u(_component_v_menu, { "min-width": "120" }, {
-        activator: _withCtx$u(({ props }) => [
-          _createVNode$u(_component_v_btn, _mergeProps$m({
+      const _component_v_icon = _resolveComponent$G("v-icon");
+      const _component_v_btn = _resolveComponent$G("v-btn");
+      const _component_v_tooltip = _resolveComponent$G("v-tooltip");
+      const _component_v_list_item_title = _resolveComponent$G("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$G("v-list-item");
+      const _component_v_list = _resolveComponent$G("v-list");
+      const _component_v_menu = _resolveComponent$G("v-menu");
+      return _openBlock$G(), _createBlock$G(_component_v_menu, { "min-width": "120" }, {
+        activator: _withCtx$G(({ props }) => [
+          _createVNode$G(_component_v_btn, _mergeProps$m({
             color: "secondary",
             icon: "",
             size: "small",
             variant: "text"
           }, props), {
-            default: _withCtx$u(() => [
-              _createVNode$u(_component_v_icon, null, {
-                default: _withCtx$u(() => _cache[4] || (_cache[4] = [
-                  _createTextVNode$u("mdi-dots-vertical")
+            default: _withCtx$G(() => [
+              _createVNode$G(_component_v_icon, null, {
+                default: _withCtx$G(() => _cache[4] || (_cache[4] = [
+                  _createTextVNode$v("mdi-dots-vertical")
                 ])),
                 _: 1
               })
             ]),
             _: 2
           }, 1040),
-          _unref$q(isSystemRule)(__props.rule) ? (_openBlock$u(), _createBlock$u(_component_v_tooltip, {
+          _unref$w(isSystemRule)(__props.rule) ? (_openBlock$G(), _createBlock$G(_component_v_tooltip, {
             key: 0,
             activator: "parent",
             location: "top"
           }, {
-            default: _withCtx$u(() => _cache[5] || (_cache[5] = [
-              _createTextVNode$u(" 根据规则集自动添加 ")
+            default: _withCtx$G(() => _cache[5] || (_cache[5] = [
+              _createTextVNode$v(" 根据规则集自动添加 ")
             ])),
             _: 1
           })) : _createCommentVNode$q("", true)
         ]),
-        default: _withCtx$u(() => [
-          _createVNode$u(_component_v_list, { density: "compact" }, {
-            default: _withCtx$u(() => [
-              _createVNode$u(_component_v_list_item, {
+        default: _withCtx$G(() => [
+          _createVNode$G(_component_v_list, { density: "compact" }, {
+            default: _withCtx$G(() => [
+              _createVNode$G(_component_v_list_item, {
                 onClick: _cache[0] || (_cache[0] = ($event) => emit("changeStatus", !__props.rule.meta?.disabled))
               }, {
-                prepend: _withCtx$u(() => [
-                  _createVNode$u(_component_v_icon, {
+                prepend: _withCtx$G(() => [
+                  _createVNode$G(_component_v_icon, {
                     size: "small",
                     color: __props.rule.meta?.disabled ? "success" : "grey"
                   }, {
-                    default: _withCtx$u(() => [
-                      _createTextVNode$u(_toDisplayString$r(__props.rule.meta?.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
+                    default: _withCtx$G(() => [
+                      _createTextVNode$v(_toDisplayString$r(__props.rule.meta?.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
                     ]),
                     _: 1
                   }, 8, ["color"])
                 ]),
-                default: _withCtx$u(() => [
-                  _createVNode$u(_component_v_list_item_title, null, {
-                    default: _withCtx$u(() => [
-                      _createTextVNode$u(_toDisplayString$r(__props.rule.meta?.disabled ? "启用" : "禁用"), 1)
+                default: _withCtx$G(() => [
+                  _createVNode$G(_component_v_list_item_title, null, {
+                    default: _withCtx$G(() => [
+                      _createTextVNode$v(_toDisplayString$r(__props.rule.meta?.disabled ? "启用" : "禁用"), 1)
                     ]),
                     _: 1
                   })
                 ]),
                 _: 1
               }),
-              !_unref$q(isSystemRule)(__props.rule) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
+              !_unref$w(isSystemRule)(__props.rule) ? (_openBlock$G(), _createBlock$G(_component_v_list_item, {
                 key: 0,
                 onClick: _cache[1] || (_cache[1] = ($event) => emit("edit"))
               }, {
-                prepend: _withCtx$u(() => [
-                  _createVNode$u(_component_v_icon, {
+                prepend: _withCtx$G(() => [
+                  _createVNode$G(_component_v_icon, {
                     size: "small",
                     color: "primary"
                   }, {
-                    default: _withCtx$u(() => _cache[6] || (_cache[6] = [
-                      _createTextVNode$u("mdi-file-edit-outline")
+                    default: _withCtx$G(() => _cache[6] || (_cache[6] = [
+                      _createTextVNode$v("mdi-file-edit-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$u(() => [
-                  _createVNode$u(_component_v_list_item_title, null, {
-                    default: _withCtx$u(() => _cache[7] || (_cache[7] = [
-                      _createTextVNode$u("编辑")
+                default: _withCtx$G(() => [
+                  _createVNode$G(_component_v_list_item_title, null, {
+                    default: _withCtx$G(() => _cache[7] || (_cache[7] = [
+                      _createTextVNode$v("编辑")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$q("", true),
-              !__props.hideVisibility ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
+              !__props.hideVisibility ? (_openBlock$G(), _createBlock$G(_component_v_list_item, {
                 key: 1,
                 onClick: _cache[2] || (_cache[2] = ($event) => emit("editVisibility"))
               }, {
-                prepend: _withCtx$u(() => [
-                  _createVNode$u(_component_v_icon, {
+                prepend: _withCtx$G(() => [
+                  _createVNode$G(_component_v_icon, {
                     size: "small",
                     color: "warning"
                   }, {
-                    default: _withCtx$u(() => _cache[8] || (_cache[8] = [
-                      _createTextVNode$u("mdi-eye-off-outline")
+                    default: _withCtx$G(() => _cache[8] || (_cache[8] = [
+                      _createTextVNode$v("mdi-eye-off-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$u(() => [
-                  _createVNode$u(_component_v_list_item_title, null, {
-                    default: _withCtx$u(() => _cache[9] || (_cache[9] = [
-                      _createTextVNode$u("隐藏")
+                default: _withCtx$G(() => [
+                  _createVNode$G(_component_v_list_item_title, null, {
+                    default: _withCtx$G(() => _cache[9] || (_cache[9] = [
+                      _createTextVNode$v("隐藏")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$q("", true),
-              !_unref$q(isSystemRule)(__props.rule) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
+              !_unref$w(isSystemRule)(__props.rule) ? (_openBlock$G(), _createBlock$G(_component_v_list_item, {
                 key: 2,
                 onClick: _cache[3] || (_cache[3] = ($event) => emit("delete"))
               }, {
-                prepend: _withCtx$u(() => [
-                  _createVNode$u(_component_v_icon, {
+                prepend: _withCtx$G(() => [
+                  _createVNode$G(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$u(() => _cache[10] || (_cache[10] = [
-                      _createTextVNode$u("mdi-trash-can-outline")
+                    default: _withCtx$G(() => _cache[10] || (_cache[10] = [
+                      _createTextVNode$v("mdi-trash-can-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$u(() => [
-                  _createVNode$u(_component_v_list_item_title, null, {
-                    default: _withCtx$u(() => _cache[11] || (_cache[11] = [
-                      _createTextVNode$u("删除")
+                default: _withCtx$G(() => [
+                  _createVNode$G(_component_v_list_item_title, null, {
+                    default: _withCtx$G(() => _cache[11] || (_cache[11] = [
+                      _createTextVNode$v("删除")
                     ])),
                     _: 1
                   })
@@ -4457,14 +4450,14 @@ const _sfc_main$u = /* @__PURE__ */ _defineComponent$u({
   }
 });
 
-const {defineComponent:_defineComponent$t} = await importShared('vue');
+const {defineComponent:_defineComponent$F} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$t,createVNode:_createVNode$t,withCtx:_withCtx$t,Teleport:_Teleport$1,openBlock:_openBlock$t,createBlock:_createBlock$t,createCommentVNode:_createCommentVNode$p,unref:_unref$p,toDisplayString:_toDisplayString$q,createTextVNode:_createTextVNode$t,createElementVNode:_createElementVNode$n,Fragment:_Fragment$a,createElementBlock:_createElementBlock$c} = await importShared('vue');
+const {resolveComponent:_resolveComponent$F,createVNode:_createVNode$F,withCtx:_withCtx$F,Teleport:_Teleport$1,openBlock:_openBlock$F,createBlock:_createBlock$F,createCommentVNode:_createCommentVNode$p,unref:_unref$v,toDisplayString:_toDisplayString$q,createTextVNode:_createTextVNode$u,createElementVNode:_createElementVNode$x,Fragment:_Fragment$h,createElementBlock:_createElementBlock$o} = await importShared('vue');
 
-const _hoisted_1$k = ["colspan"];
+const _hoisted_1$w = ["colspan"];
 const {ref: ref$k} = await importShared('vue');
 const ruleset$1 = "ruleset";
-const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
+const _sfc_main$F = /* @__PURE__ */ _defineComponent$F({
   __name: "RulesetRulesTable",
   props: {
     sortedRules: {
@@ -4520,6 +4513,7 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
     const dragEnabled = ref$k(false);
     const dragItem = ref$k(null);
     const hoveredPriority = ref$k(-1);
+    const dropPosition = ref$k(null);
     const selected = ref$k([]);
     function dragStart(event, priority) {
       const item = props.sortedRules.find((r) => r.priority === priority);
@@ -4538,6 +4532,12 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
         event.dataTransfer.dropEffect = "move";
       }
       hoveredPriority.value = priority;
+      const target = event.currentTarget;
+      if (target) {
+        const rect = target.getBoundingClientRect();
+        const offset = event.clientY - rect.top;
+        dropPosition.value = offset < rect.height / 2 ? "top" : "bottom";
+      }
     }
     function drop(event, targetPriority) {
       if (dragItem.value && dragItem.value.priority !== targetPriority) {
@@ -4545,10 +4545,12 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
       }
       dragItem.value = null;
       hoveredPriority.value = -1;
+      dropPosition.value = null;
     }
     function dragEnd() {
       dragItem.value = null;
       hoveredPriority.value = -1;
+      dropPosition.value = null;
     }
     function editRule(priority) {
       emit("edit", priority, ruleset$1);
@@ -4573,9 +4575,11 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
     }
     const rowProps = (data) => {
       const item = data.item;
+      const isHovered = item.priority === hoveredPriority.value;
       return {
         class: {
-          "drop-over": item.priority === hoveredPriority.value,
+          "drop-over-top": isHovered && dropPosition.value === "top",
+          "drop-over-bottom": isHovered && dropPosition.value === "bottom",
           "dragging-item": dragItem.value?.priority === item.priority,
           "list-row": true,
           "text-grey": item.meta?.disabled
@@ -4588,34 +4592,34 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
       };
     };
     return (_ctx, _cache) => {
-      const _component_v_btn = _resolveComponent$t("v-btn");
-      const _component_v_btn_group = _resolveComponent$t("v-btn-group");
-      const _component_v_chip = _resolveComponent$t("v-chip");
-      const _component_v_icon = _resolveComponent$t("v-icon");
-      const _component_v_data_table = _resolveComponent$t("v-data-table");
-      return _openBlock$t(), _createElementBlock$c(_Fragment$a, null, [
-        selected.value.length > 0 ? (_openBlock$t(), _createBlock$t(_Teleport$1, {
+      const _component_v_btn = _resolveComponent$F("v-btn");
+      const _component_v_btn_group = _resolveComponent$F("v-btn-group");
+      const _component_v_chip = _resolveComponent$F("v-chip");
+      const _component_v_icon = _resolveComponent$F("v-icon");
+      const _component_v_data_table = _resolveComponent$F("v-data-table");
+      return _openBlock$F(), _createElementBlock$o(_Fragment$h, null, [
+        selected.value.length > 0 ? (_openBlock$F(), _createBlock$F(_Teleport$1, {
           key: 0,
           to: "#ruleset-rules-table-batch-actions"
         }, [
-          _createVNode$t(_component_v_btn_group, {
+          _createVNode$F(_component_v_btn_group, {
             rounded: "",
             variant: "tonal"
           }, {
-            default: _withCtx$t(() => [
-              _createVNode$t(_component_v_btn, {
+            default: _withCtx$F(() => [
+              _createVNode$F(_component_v_btn, {
                 color: "success",
                 "prepend-icon": "mdi-check",
                 size: "small",
                 onClick: _cache[0] || (_cache[0] = ($event) => changeBatchStatus(false))
               }),
-              _createVNode$t(_component_v_btn, {
+              _createVNode$F(_component_v_btn, {
                 color: "warning",
                 "prepend-icon": "mdi-close",
                 size: "small",
                 onClick: _cache[1] || (_cache[1] = ($event) => changeBatchStatus(true))
               }),
-              _createVNode$t(_component_v_btn, {
+              _createVNode$F(_component_v_btn, {
                 color: "error",
                 "prepend-icon": "mdi-trash-can-outline",
                 size: "small",
@@ -4625,7 +4629,7 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
             _: 1
           })
         ])) : _createCommentVNode$p("", true),
-        __props.group ? (_openBlock$t(), _createBlock$t(_component_v_data_table, {
+        __props.group ? (_openBlock$F(), _createBlock$F(_component_v_data_table, {
           key: 1,
           modelValue: selected.value,
           "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => selected.value = $event),
@@ -4637,81 +4641,81 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
           search: __props.searchRule,
           page: __props.page,
           "items-per-page": __props.itemsPerPage,
-          "items-per-page-options": _unref$p(itemsPerPageOptions),
+          "items-per-page-options": _unref$v(itemsPerPageOptions),
           "item-key": "priority",
           "item-value": "priority",
           "show-select": "",
           density: "compact",
           "hide-default-footer": ""
         }, {
-          "group-header": _withCtx$t(({ item, columns, toggleGroup, isGroupOpen }) => [
-            _createElementVNode$n("tr", null, [
-              _createElementVNode$n("td", {
+          "group-header": _withCtx$F(({ item, columns, toggleGroup, isGroupOpen }) => [
+            _createElementVNode$x("tr", null, [
+              _createElementVNode$x("td", {
                 colspan: columns.length
               }, [
-                _createVNode$t(_component_v_btn, {
+                _createVNode$F(_component_v_btn, {
                   icon: isGroupOpen(item) ? "mdi-chevron-down" : "mdi-chevron-right",
                   size: "small",
                   variant: "text",
                   onClick: ($event) => toggleGroup(item)
                 }, null, 8, ["icon", "onClick"]),
-                _createVNode$t(_component_v_chip, {
-                  color: _unref$p(getActionColor)(item.value),
+                _createVNode$F(_component_v_chip, {
+                  color: _unref$v(getActionColor)(item.value),
                   size: "small",
                   label: ""
                 }, {
-                  default: _withCtx$t(() => [
-                    _createTextVNode$t(_toDisplayString$q(item.value), 1)
+                  default: _withCtx$F(() => [
+                    _createTextVNode$u(_toDisplayString$q(item.value), 1)
                   ]),
                   _: 2
                 }, 1032, ["color"])
-              ], 8, _hoisted_1$k)
+              ], 8, _hoisted_1$w)
             ])
           ]),
-          "item.priority": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_chip, {
+          "item.priority": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_chip, {
               size: "x-small",
               variant: "tonal",
               color: "secondary",
               class: "font-weight-bold"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.priority), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.priority), 1)
               ]),
               _: 2
             }, 1024)
           ]),
-          "item.type": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_chip, {
-              color: _unref$p(getRuleTypeColor)(item.type),
+          "item.type": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_chip, {
+              color: _unref$v(getRuleTypeColor)(item.type),
               size: "small",
               label: "",
               variant: "tonal"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.type), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.type), 1)
               ]),
               _: 2
             }, 1032, ["color"])
           ]),
-          "item.payload": _withCtx$t(({ value }) => [
-            _createElementVNode$n("small", null, _toDisplayString$q(value), 1)
+          "item.payload": _withCtx$F(({ value }) => [
+            _createElementVNode$x("small", null, _toDisplayString$q(value), 1)
           ]),
-          "item.time_modified": _withCtx$t(({ item }) => [
-            _createElementVNode$n("small", null, _toDisplayString$q(item.meta?.time_modified ? _unref$p(timestampToDate)(item.meta.time_modified) : ""), 1)
+          "item.time_modified": _withCtx$F(({ item }) => [
+            _createElementVNode$x("small", null, _toDisplayString$q(item.meta?.time_modified ? _unref$v(timestampToDate)(item.meta.time_modified) : ""), 1)
           ]),
-          "item.status": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_icon, {
+          "item.status": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"])
           ]),
-          "item.actions": _withCtx$t(({ item }) => [
-            _createVNode$t(_sfc_main$u, {
+          "item.actions": _withCtx$F(({ item }) => [
+            _createVNode$F(_sfc_main$G, {
               rule: item,
               "hide-visibility": "",
               onEdit: ($event) => editRule(item.priority),
@@ -4720,7 +4724,7 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
             }, null, 8, ["rule", "onEdit", "onDelete", "onChangeStatus"])
           ]),
           _: 1
-        }, 8, ["modelValue", "items", "group-by", "search", "page", "items-per-page", "items-per-page-options"])) : (_openBlock$t(), _createBlock$t(_component_v_data_table, {
+        }, 8, ["modelValue", "items", "group-by", "search", "page", "items-per-page", "items-per-page-options"])) : (_openBlock$F(), _createBlock$F(_component_v_data_table, {
           key: 2,
           modelValue: selected.value,
           "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => selected.value = $event),
@@ -4731,7 +4735,7 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
           search: __props.searchRule,
           page: __props.page,
           "items-per-page": __props.itemsPerPage,
-          "items-per-page-options": _unref$p(itemsPerPageOptions),
+          "items-per-page-options": _unref$v(itemsPerPageOptions),
           "item-key": "priority",
           "item-value": "priority",
           "show-select": "",
@@ -4739,78 +4743,78 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
           "hide-default-footer": "",
           "row-props": rowProps
         }, {
-          "item.handler": _withCtx$t(({}) => [
-            _createVNode$t(_component_v_icon, {
+          "item.handler": _withCtx$F(({}) => [
+            _createVNode$F(_component_v_icon, {
               class: "drag-handle mr-1",
               onMouseenter: _cache[3] || (_cache[3] = ($event) => dragEnabled.value = true),
               onMouseleave: _cache[4] || (_cache[4] = ($event) => dragEnabled.value = false)
             }, {
-              default: _withCtx$t(() => _cache[6] || (_cache[6] = [
-                _createTextVNode$t("mdi-drag-horizontal-variant ")
+              default: _withCtx$F(() => _cache[6] || (_cache[6] = [
+                _createTextVNode$u("mdi-drag-horizontal-variant ")
               ])),
               _: 1
             })
           ]),
-          "item.priority": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_chip, {
+          "item.priority": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_chip, {
               size: "x-small",
               variant: "tonal",
               color: "secondary",
               class: "font-weight-bold"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.priority), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.priority), 1)
               ]),
               _: 2
             }, 1024)
           ]),
-          "item.type": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_chip, {
-              color: _unref$p(getRuleTypeColor)(item.type),
+          "item.type": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_chip, {
+              color: _unref$v(getRuleTypeColor)(item.type),
               size: "small",
               label: "",
               variant: "tonal"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.type), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.type), 1)
               ]),
               _: 2
             }, 1032, ["color"])
           ]),
-          "item.payload": _withCtx$t(({ value }) => [
-            _createElementVNode$n("small", null, _toDisplayString$q(value), 1)
+          "item.payload": _withCtx$F(({ value }) => [
+            _createElementVNode$x("small", null, _toDisplayString$q(value), 1)
           ]),
-          "item.action": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_chip, {
-              color: _unref$p(getActionColor)(item.action),
+          "item.action": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_chip, {
+              color: _unref$v(getActionColor)(item.action),
               size: "small",
               variant: "outlined",
               pill: ""
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.action), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.action), 1)
               ]),
               _: 2
             }, 1032, ["color"])
           ]),
-          "item.name": _withCtx$t(({ item }) => [
-            _createElementVNode$n("small", null, _toDisplayString$q(__props.rulesetPrefix) + _toDisplayString$q(item.action), 1)
+          "item.name": _withCtx$F(({ item }) => [
+            _createElementVNode$x("small", null, _toDisplayString$q(__props.rulesetPrefix) + _toDisplayString$q(item.action), 1)
           ]),
-          "item.time_modified": _withCtx$t(({ item }) => [
-            _createElementVNode$n("small", null, _toDisplayString$q(item.meta?.time_modified ? _unref$p(timestampToDate)(item.meta.time_modified) : ""), 1)
+          "item.time_modified": _withCtx$F(({ item }) => [
+            _createElementVNode$x("small", null, _toDisplayString$q(item.meta?.time_modified ? _unref$v(timestampToDate)(item.meta.time_modified) : ""), 1)
           ]),
-          "item.status": _withCtx$t(({ item }) => [
-            _createVNode$t(_component_v_icon, {
+          "item.status": _withCtx$F(({ item }) => [
+            _createVNode$F(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success"
             }, {
-              default: _withCtx$t(() => [
-                _createTextVNode$t(_toDisplayString$q(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+              default: _withCtx$F(() => [
+                _createTextVNode$u(_toDisplayString$q(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"])
           ]),
-          "item.actions": _withCtx$t(({ item }) => [
-            _createVNode$t(_sfc_main$u, {
+          "item.actions": _withCtx$F(({ item }) => [
+            _createVNode$F(_sfc_main$G, {
               rule: item,
               "hide-visibility": "",
               onEdit: ($event) => editRule(item.priority),
@@ -4825,13 +4829,213 @@ const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
   }
 });
 
-const {defineComponent:_defineComponent$s} = await importShared('vue');
+const {defineComponent:_defineComponent$E} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$p,createTextVNode:_createTextVNode$s,resolveComponent:_resolveComponent$s,withCtx:_withCtx$s,createVNode:_createVNode$s,mergeProps:_mergeProps$l,openBlock:_openBlock$s,createBlock:_createBlock$s,createCommentVNode:_createCommentVNode$o,createElementVNode:_createElementVNode$m,unref:_unref$o} = await importShared('vue');
+const {resolveComponent:_resolveComponent$E,createVNode:_createVNode$E,withCtx:_withCtx$E,createElementVNode:_createElementVNode$w,unref:_unref$u,toDisplayString:_toDisplayString$p,createTextVNode:_createTextVNode$t,mergeProps:_mergeProps$l,renderList:_renderList$f,Fragment:_Fragment$g,openBlock:_openBlock$E,createElementBlock:_createElementBlock$n,createBlock:_createBlock$E} = await importShared('vue');
 
-const _hoisted_1$j = { class: "d-flex justify-space-between align-center px-4 pt-3" };
-const _hoisted_2$f = ["title"];
-const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
+const _hoisted_1$v = { class: "ruleset-desktop-view" };
+const _hoisted_2$l = { class: "pa-4" };
+const _hoisted_3$k = { class: "clash-data-table table-page-container" };
+const _hoisted_4$i = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$E = /* @__PURE__ */ _defineComponent$E({
+  __name: "RulesetRulesDesktop",
+  props: {
+    rules: {},
+    rulesetPrefix: {},
+    search: {},
+    group: { type: Boolean },
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:group", "update:page", "update:itemsPerPage", "open-add-dialog", "edit", "delete", "delete-batch", "reorder", "change-status", "change-status-batch"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$E("v-text-field");
+      const _component_v_col = _resolveComponent$E("v-col");
+      const _component_v_btn = _resolveComponent$E("v-btn");
+      const _component_v_btn_group = _resolveComponent$E("v-btn-group");
+      const _component_v_row = _resolveComponent$E("v-row");
+      const _component_v_pagination = _resolveComponent$E("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$E("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$E("v-list-item");
+      const _component_v_list = _resolveComponent$E("v-list");
+      const _component_v_menu = _resolveComponent$E("v-menu");
+      return _openBlock$E(), _createElementBlock$n("div", _hoisted_1$v, [
+        _createElementVNode$w("div", _hoisted_2$l, [
+          _createVNode$E(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$E(() => [
+              _createVNode$E(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$E(() => [
+                  _createVNode$E(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$E(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$E(() => [
+                  _createVNode$E(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: "",
+                    divided: ""
+                  }, {
+                    default: _withCtx$E(() => [
+                      _createVNode$E(_component_v_btn, {
+                        icon: _ctx.group ? "mdi-format-list-bulleted" : "mdi-format-list-group",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("update:group", !_ctx.group))
+                      }, null, 8, ["icon", "disabled"]),
+                      _createVNode$E(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[2] || (_cache[2] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$w("div", _hoisted_3$k, [
+          _createVNode$E(_sfc_main$F, {
+            group: _ctx.group,
+            "sorted-rules": _ctx.rules,
+            page: _ctx.page,
+            "items-per-page": _ctx.itemsPerPage,
+            "ruleset-prefix": _ctx.rulesetPrefix,
+            "search-rule": _ctx.search,
+            onEdit: _cache[3] || (_cache[3] = (p) => emit("edit", p)),
+            onDelete: _cache[4] || (_cache[4] = (p) => emit("delete", p)),
+            onDeleteBatch: _cache[5] || (_cache[5] = (ps) => emit("delete-batch", ps)),
+            onReorder: _cache[6] || (_cache[6] = (target, moved) => emit("reorder", target, moved)),
+            onChangeStatus: _cache[7] || (_cache[7] = (p, d) => emit("change-status", p, d)),
+            onChangeStatusBatch: _cache[8] || (_cache[8] = (ps, d) => emit("change-status-batch", ps, d))
+          }, null, 8, ["group", "sorted-rules", "page", "items-per-page", "ruleset-prefix", "search-rule"])
+        ]),
+        _createElementVNode$w("div", _hoisted_4$i, [
+          _createVNode$E(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$E(() => [
+              _createVNode$E(_component_v_col, { cols: "2" }, {
+                default: _withCtx$E(() => _cache[10] || (_cache[10] = [
+                  _createElementVNode$w("div", { id: "ruleset-rules-table-batch-actions" }, null, -1)
+                ])),
+                _: 1
+              }),
+              _createVNode$E(_component_v_col, {
+                cols: "8",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$E(() => [
+                  _createVNode$E(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[9] || (_cache[9] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$E(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$E(() => [
+                  _createVNode$E(_component_v_menu, null, {
+                    activator: _withCtx$E(({ props: menuProps }) => [
+                      _createVNode$E(_component_v_btn, _mergeProps$l(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$E(() => [
+                          _createTextVNode$t(_toDisplayString$p(_unref$u(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$E(() => [
+                      _createVNode$E(_component_v_list, null, {
+                        default: _withCtx$E(() => [
+                          (_openBlock$E(true), _createElementBlock$n(_Fragment$g, null, _renderList$f(_unref$u(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$E(), _createBlock$E(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$E(() => [
+                                _createVNode$E(_component_v_list_item_title, null, {
+                                  default: _withCtx$E(() => [
+                                    _createTextVNode$t(_toDisplayString$p(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+
+const {defineComponent:_defineComponent$D} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$o,createTextVNode:_createTextVNode$s,resolveComponent:_resolveComponent$D,withCtx:_withCtx$D,createVNode:_createVNode$D,mergeProps:_mergeProps$k,openBlock:_openBlock$D,createBlock:_createBlock$D,createCommentVNode:_createCommentVNode$o,createElementVNode:_createElementVNode$v,unref:_unref$t} = await importShared('vue');
+
+const _hoisted_1$u = { class: "d-flex justify-space-between align-center px-4 pt-3" };
+const _hoisted_2$k = ["title"];
+const _sfc_main$D = /* @__PURE__ */ _defineComponent$D({
   __name: "RuleCard",
   props: {
     rule: {
@@ -4860,46 +5064,46 @@ const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
       emit("edit-visibility", props.rule.priority, props.ruleset);
     }
     return (_ctx, _cache) => {
-      const _component_v_chip = _resolveComponent$s("v-chip");
-      const _component_v_icon = _resolveComponent$s("v-icon");
-      const _component_v_tooltip = _resolveComponent$s("v-tooltip");
-      const _component_v_col = _resolveComponent$s("v-col");
-      const _component_v_row = _resolveComponent$s("v-row");
-      const _component_v_card_text = _resolveComponent$s("v-card-text");
-      const _component_v_divider = _resolveComponent$s("v-divider");
-      const _component_v_spacer = _resolveComponent$s("v-spacer");
-      const _component_v_card_actions = _resolveComponent$s("v-card-actions");
-      const _component_v_card = _resolveComponent$s("v-card");
-      return _openBlock$s(), _createBlock$s(_component_v_card, {
+      const _component_v_chip = _resolveComponent$D("v-chip");
+      const _component_v_icon = _resolveComponent$D("v-icon");
+      const _component_v_tooltip = _resolveComponent$D("v-tooltip");
+      const _component_v_col = _resolveComponent$D("v-col");
+      const _component_v_row = _resolveComponent$D("v-row");
+      const _component_v_card_text = _resolveComponent$D("v-card-text");
+      const _component_v_divider = _resolveComponent$D("v-divider");
+      const _component_v_spacer = _resolveComponent$D("v-spacer");
+      const _component_v_card_actions = _resolveComponent$D("v-card-actions");
+      const _component_v_card = _resolveComponent$D("v-card");
+      return _openBlock$D(), _createBlock$D(_component_v_card, {
         rounded: "lg",
         elevation: "2",
         class: "rule-card h-100 transition-swing",
         variant: "tonal"
       }, {
-        default: _withCtx$s(() => [
-          _createElementVNode$m("div", _hoisted_1$j, [
-            _createVNode$s(_component_v_chip, {
+        default: _withCtx$D(() => [
+          _createElementVNode$v("div", _hoisted_1$u, [
+            _createVNode$D(_component_v_chip, {
               variant: "flat",
               color: "secondary",
               class: "font-weight-bold mr-2",
               size: "small"
             }, {
-              default: _withCtx$s(() => [
-                _createTextVNode$s(_toDisplayString$p(__props.rule.priority), 1)
+              default: _withCtx$D(() => [
+                _createTextVNode$s(_toDisplayString$o(__props.rule.priority), 1)
               ]),
               _: 1
             }),
-            __props.rule.meta.invisible_to && __props.rule.meta.invisible_to.length > 0 ? (_openBlock$s(), _createBlock$s(_component_v_tooltip, {
+            __props.rule.meta.invisible_to && __props.rule.meta.invisible_to.length > 0 ? (_openBlock$D(), _createBlock$D(_component_v_tooltip, {
               key: 0,
               text: "已配置可见性限制",
               location: "top"
             }, {
-              activator: _withCtx$s(({ props: props2 }) => [
-                _createVNode$s(_component_v_icon, _mergeProps$l(props2, {
+              activator: _withCtx$D(({ props: props2 }) => [
+                _createVNode$D(_component_v_icon, _mergeProps$k(props2, {
                   size: "small",
                   color: "warning"
                 }), {
-                  default: _withCtx$s(() => _cache[2] || (_cache[2] = [
+                  default: _withCtx$D(() => _cache[2] || (_cache[2] = [
                     _createTextVNode$s(" mdi-eye-off-outline ")
                   ])),
                   _: 2
@@ -4908,33 +5112,33 @@ const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
               _: 1
             })) : _createCommentVNode$o("", true)
           ]),
-          _createVNode$s(_component_v_card_text, { class: "pt-2 pb-4" }, {
-            default: _withCtx$s(() => [
-              _createVNode$s(_component_v_row, {
+          _createVNode$D(_component_v_card_text, { class: "pt-2 pb-4" }, {
+            default: _withCtx$D(() => [
+              _createVNode$D(_component_v_row, {
                 "no-gutters": "",
                 class: "mb-2 align-center"
               }, {
-                default: _withCtx$s(() => [
-                  _createVNode$s(_component_v_col, {
+                default: _withCtx$D(() => [
+                  _createVNode$D(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$s(() => _cache[3] || (_cache[3] = [
+                    default: _withCtx$D(() => _cache[3] || (_cache[3] = [
                       _createTextVNode$s("类型")
                     ])),
                     _: 1
                   }),
-                  _createVNode$s(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$s(() => [
-                      _createVNode$s(_component_v_chip, {
-                        color: _unref$o(getRuleTypeColor)(__props.rule.type),
+                  _createVNode$D(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$D(() => [
+                      _createVNode$D(_component_v_chip, {
+                        color: _unref$t(getRuleTypeColor)(__props.rule.type),
                         size: "x-small",
                         label: "",
                         variant: "tonal",
                         class: "font-weight-medium"
                       }, {
-                        default: _withCtx$s(() => [
-                          _createTextVNode$s(_toDisplayString$p(__props.rule.type), 1)
+                        default: _withCtx$D(() => [
+                          _createTextVNode$s(_toDisplayString$o(__props.rule.type), 1)
                         ]),
                         _: 1
                       }, 8, ["color"])
@@ -4944,58 +5148,58 @@ const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
                 ]),
                 _: 1
               }),
-              _createVNode$s(_component_v_row, {
+              _createVNode$D(_component_v_row, {
                 "no-gutters": "",
                 class: "mb-2 align-center"
               }, {
-                default: _withCtx$s(() => [
-                  _createVNode$s(_component_v_col, {
+                default: _withCtx$D(() => [
+                  _createVNode$D(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$s(() => _cache[4] || (_cache[4] = [
+                    default: _withCtx$D(() => _cache[4] || (_cache[4] = [
                       _createTextVNode$s("内容")
                     ])),
                     _: 1
                   }),
-                  _createVNode$s(_component_v_col, {
+                  _createVNode$D(_component_v_col, {
                     cols: "9",
                     class: "text-body-2 text-truncate font-weight-bold"
                   }, {
-                    default: _withCtx$s(() => [
-                      _createElementVNode$m("span", {
+                    default: _withCtx$D(() => [
+                      _createElementVNode$v("span", {
                         title: __props.rule.payload
-                      }, _toDisplayString$p(__props.rule.payload), 9, _hoisted_2$f)
+                      }, _toDisplayString$o(__props.rule.payload), 9, _hoisted_2$k)
                     ]),
                     _: 1
                   })
                 ]),
                 _: 1
               }),
-              _createVNode$s(_component_v_row, {
+              _createVNode$D(_component_v_row, {
                 "no-gutters": "",
                 class: "align-center"
               }, {
-                default: _withCtx$s(() => [
-                  _createVNode$s(_component_v_col, {
+                default: _withCtx$D(() => [
+                  _createVNode$D(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$s(() => _cache[5] || (_cache[5] = [
+                    default: _withCtx$D(() => _cache[5] || (_cache[5] = [
                       _createTextVNode$s("出站")
                     ])),
                     _: 1
                   }),
-                  _createVNode$s(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$s(() => [
-                      _createVNode$s(_component_v_chip, {
-                        color: _unref$o(getActionColor)(__props.rule.action),
+                  _createVNode$D(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$D(() => [
+                      _createVNode$D(_component_v_chip, {
+                        color: _unref$t(getActionColor)(__props.rule.action),
                         size: "x-small",
                         variant: "outlined",
                         class: "font-weight-medium"
                       }, {
-                        default: _withCtx$s(() => [
-                          _createTextVNode$s(_toDisplayString$p(__props.rule.action), 1)
+                        default: _withCtx$D(() => [
+                          _createTextVNode$s(_toDisplayString$o(__props.rule.action), 1)
                         ]),
                         _: 1
                       }, 8, ["color"])
@@ -5008,19 +5212,19 @@ const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
             ]),
             _: 1
           }),
-          _createVNode$s(_component_v_divider),
-          _createVNode$s(_component_v_card_actions, null, {
-            default: _withCtx$s(() => [
-              _createVNode$s(_component_v_icon, {
+          _createVNode$D(_component_v_divider),
+          _createVNode$D(_component_v_card_actions, null, {
+            default: _withCtx$D(() => [
+              _createVNode$D(_component_v_icon, {
                 color: __props.rule.meta.disabled ? "grey" : "success"
               }, {
-                default: _withCtx$s(() => [
-                  _createTextVNode$s(_toDisplayString$p(__props.rule.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+                default: _withCtx$D(() => [
+                  _createTextVNode$s(_toDisplayString$o(__props.rule.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
                 ]),
                 _: 1
               }, 8, ["color"]),
-              _createVNode$s(_component_v_spacer),
-              _createVNode$s(_sfc_main$u, {
+              _createVNode$D(_component_v_spacer),
+              _createVNode$D(_sfc_main$G, {
                 rule: __props.rule,
                 "hide-visibility": __props.ruleset == "ruleset",
                 onEdit: _cache[0] || (_cache[0] = ($event) => editRule(__props.rule.priority)),
@@ -5038,7 +5242,134 @@ const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
   }
 });
 
-const RuleCard = /* @__PURE__ */ _export_sfc(_sfc_main$s, [["__scopeId", "data-v-5bf9d562"]]);
+const RuleCard = /* @__PURE__ */ _export_sfc(_sfc_main$D, [["__scopeId", "data-v-5bf9d562"]]);
+
+const {defineComponent:_defineComponent$C} = await importShared('vue');
+
+const {resolveComponent:_resolveComponent$C,createVNode:_createVNode$C,withCtx:_withCtx$C,createElementVNode:_createElementVNode$u,renderList:_renderList$e,Fragment:_Fragment$f,openBlock:_openBlock$C,createElementBlock:_createElementBlock$m,createBlock:_createBlock$C} = await importShared('vue');
+
+const _hoisted_1$t = { class: "ruleset-mobile-view" };
+const _hoisted_2$j = { class: "pa-2 pb-4" };
+const _hoisted_3$j = { class: "mobile-card-container" };
+const _hoisted_4$h = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$C = /* @__PURE__ */ _defineComponent$C({
+  __name: "RulesetRulesMobile",
+  props: {
+    paginatedRules: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-add-dialog", "edit", "delete", "change-status"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$C("v-text-field");
+      const _component_v_col = _resolveComponent$C("v-col");
+      const _component_v_btn = _resolveComponent$C("v-btn");
+      const _component_v_btn_group = _resolveComponent$C("v-btn-group");
+      const _component_v_row = _resolveComponent$C("v-row");
+      const _component_v_pagination = _resolveComponent$C("v-pagination");
+      return _openBlock$C(), _createElementBlock$m("div", _hoisted_1$t, [
+        _createElementVNode$u("div", _hoisted_2$j, [
+          _createVNode$C(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$C(() => [
+              _createVNode$C(_component_v_col, {
+                cols: "10",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$C(() => [
+                  _createVNode$C(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$C(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$C(() => [
+                  _createVNode$C(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$C(() => [
+                      _createVNode$C(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$u("div", _hoisted_3$j, [
+          _createVNode$C(_component_v_row, null, {
+            default: _withCtx$C(() => [
+              (_openBlock$C(true), _createElementBlock$m(_Fragment$f, null, _renderList$e(_ctx.paginatedRules, (item) => {
+                return _openBlock$C(), _createBlock$C(_component_v_col, {
+                  key: item.priority,
+                  cols: "12"
+                }, {
+                  default: _withCtx$C(() => [
+                    _createVNode$C(RuleCard, {
+                      ruleset: "ruleset",
+                      rule: item,
+                      onDelete: _cache[2] || (_cache[2] = (p) => emit("delete", p)),
+                      onEdit: _cache[3] || (_cache[3] = (p) => emit("edit", p)),
+                      onChangeStatus: _cache[4] || (_cache[4] = (p, d) => emit("change-status", p, d))
+                    }, null, 8, ["rule"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$u("div", _hoisted_4$h, [
+          _createVNode$C(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[5] || (_cache[5] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const RulesetRulesMobile = /* @__PURE__ */ _export_sfc(_sfc_main$C, [["__scopeId", "data-v-36c2ab03"]]);
 
 /**
  * lodash (Custom Build) <https://lodash.com/>
@@ -5420,12 +5751,12 @@ var lodash_debounce = debounce;
 
 const debounce$1 = /*@__PURE__*/getDefaultExportFromCjs(lodash_debounce);
 
-const {defineComponent:_defineComponent$r} = await importShared('vue');
+const {defineComponent:_defineComponent$B} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$o,createTextVNode:_createTextVNode$r,resolveComponent:_resolveComponent$r,withCtx:_withCtx$r,createVNode:_createVNode$r,openBlock:_openBlock$r,createBlock:_createBlock$r,createCommentVNode:_createCommentVNode$n,withModifiers:_withModifiers$4} = await importShared('vue');
+const {toDisplayString:_toDisplayString$n,createTextVNode:_createTextVNode$r,resolveComponent:_resolveComponent$B,withCtx:_withCtx$B,createVNode:_createVNode$B,openBlock:_openBlock$B,createBlock:_createBlock$B,createCommentVNode:_createCommentVNode$n,withModifiers:_withModifiers$4} = await importShared('vue');
 
 const {ref: ref$j,computed: computed$8,toRaw: toRaw$8} = await importShared('vue');
-const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
+const _sfc_main$B = /* @__PURE__ */ _defineComponent$B({
   __name: "RuleDialog",
   props: {
     // 父组件传递的规则数据
@@ -5458,10 +5789,11 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
       required: true
     }
   },
-  emits: ["close", "refresh", "show-snackbar", "show-error"],
+  emits: ["close", "refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const rule = ref$j(structuredClone(toRaw$8(props.initialRule)));
     const loading = ref$j(false);
     const ruleForm = ref$j(null);
@@ -5599,63 +5931,51 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
         );
         if (!result.success) {
           emit("show-error", "保存规则失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "保存规则合失败",
-            color: "error"
-          });
+          toast.error("保存规则失败");
           return;
         }
+        toast.success(props.isAdding ? "规则添加成功" : "规则更新成功");
         emit("close");
         emit("refresh", ["top", "ruleset"]);
-        emit("show-snackbar", {
-          show: true,
-          message: props.isAdding ? "规则添加成功" : "规则更新成功",
-          color: "success"
-        });
       } catch (err) {
         if (err instanceof Error) emit("show-error", "保存规则失败: " + (err.message || "未知错误"));
-        emit("show-snackbar", {
-          show: true,
-          message: "保存规则失败",
-          color: "error"
-        });
+        toast.error("保存规则失败");
       } finally {
         loading.value = false;
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$r("v-card-title");
-      const _component_v_select = _resolveComponent$r("v-select");
-      const _component_v_autocomplete = _resolveComponent$r("v-autocomplete");
-      const _component_v_combobox = _resolveComponent$r("v-combobox");
-      const _component_v_text_field = _resolveComponent$r("v-text-field");
-      const _component_v_card_text = _resolveComponent$r("v-card-text");
-      const _component_v_spacer = _resolveComponent$r("v-spacer");
-      const _component_v_btn = _resolveComponent$r("v-btn");
-      const _component_v_card_actions = _resolveComponent$r("v-card-actions");
-      const _component_v_card = _resolveComponent$r("v-card");
-      const _component_v_form = _resolveComponent$r("v-form");
-      const _component_v_dialog = _resolveComponent$r("v-dialog");
-      return _openBlock$r(), _createBlock$r(_component_v_dialog, { "max-width": "40rem" }, {
-        default: _withCtx$r(() => [
-          _createVNode$r(_component_v_form, {
+      const _component_v_card_title = _resolveComponent$B("v-card-title");
+      const _component_v_select = _resolveComponent$B("v-select");
+      const _component_v_autocomplete = _resolveComponent$B("v-autocomplete");
+      const _component_v_combobox = _resolveComponent$B("v-combobox");
+      const _component_v_text_field = _resolveComponent$B("v-text-field");
+      const _component_v_card_text = _resolveComponent$B("v-card-text");
+      const _component_v_spacer = _resolveComponent$B("v-spacer");
+      const _component_v_btn = _resolveComponent$B("v-btn");
+      const _component_v_card_actions = _resolveComponent$B("v-card-actions");
+      const _component_v_card = _resolveComponent$B("v-card");
+      const _component_v_form = _resolveComponent$B("v-form");
+      const _component_v_dialog = _resolveComponent$B("v-dialog");
+      return _openBlock$B(), _createBlock$B(_component_v_dialog, { "max-width": "40rem" }, {
+        default: _withCtx$B(() => [
+          _createVNode$B(_component_v_form, {
             ref_key: "ruleForm",
             ref: ruleForm,
             onSubmit: _withModifiers$4(saveRule, ["prevent"])
           }, {
-            default: _withCtx$r(() => [
-              _createVNode$r(_component_v_card, null, {
-                default: _withCtx$r(() => [
-                  _createVNode$r(_component_v_card_title, null, {
-                    default: _withCtx$r(() => [
-                      _createTextVNode$r(_toDisplayString$o(__props.isAdding ? "添加规则" : "编辑规则"), 1)
+            default: _withCtx$B(() => [
+              _createVNode$B(_component_v_card, null, {
+                default: _withCtx$B(() => [
+                  _createVNode$B(_component_v_card_title, null, {
+                    default: _withCtx$B(() => [
+                      _createTextVNode$r(_toDisplayString$n(__props.isAdding ? "添加规则" : "编辑规则"), 1)
                     ]),
                     _: 1
                   }),
-                  _createVNode$r(_component_v_card_text, null, {
-                    default: _withCtx$r(() => [
-                      _createVNode$r(_component_v_select, {
+                  _createVNode$B(_component_v_card_text, null, {
+                    default: _withCtx$B(() => [
+                      _createVNode$B(_component_v_select, {
                         modelValue: rule.value.type,
                         "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => rule.value.type = $event),
                         items: ruleTypes.value,
@@ -5663,7 +5983,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         required: "",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"]),
-                      rule.value.type === "RULE-SET" ? (_openBlock$r(), _createBlock$r(_component_v_select, {
+                      rule.value.type === "RULE-SET" ? (_openBlock$B(), _createBlock$B(_component_v_select, {
                         key: 0,
                         modelValue: rule.value.payload,
                         "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => rule.value.payload = $event),
@@ -5672,7 +5992,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         required: "",
                         rules: [(v) => !!v || "请选择一个有效的规则集"],
                         class: "mb-4"
-                      }, null, 8, ["modelValue", "items", "rules"])) : rule.value.type === "GEOSITE" ? (_openBlock$r(), _createBlock$r(_component_v_autocomplete, {
+                      }, null, 8, ["modelValue", "items", "rules"])) : rule.value.type === "GEOSITE" ? (_openBlock$B(), _createBlock$B(_component_v_autocomplete, {
                         key: 1,
                         modelValue: rule.value.payload,
                         "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => rule.value.payload = $event),
@@ -5690,7 +6010,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         rules: payloadRules.value,
                         "onUpdate:search": onGeoSearch,
                         onBlur: onGeoSiteBlur
-                      }, null, 8, ["modelValue", "search", "items", "loading", "rules"])) : rule.value.type === "GEOIP" ? (_openBlock$r(), _createBlock$r(_component_v_autocomplete, {
+                      }, null, 8, ["modelValue", "search", "items", "loading", "rules"])) : rule.value.type === "GEOIP" ? (_openBlock$B(), _createBlock$B(_component_v_autocomplete, {
                         key: 2,
                         modelValue: rule.value.payload,
                         "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => rule.value.payload = $event),
@@ -5708,7 +6028,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         rules: payloadRules.value,
                         "onUpdate:search": onGeoIPSearch,
                         onBlur: onGeoIPBlur
-                      }, null, 8, ["modelValue", "search", "items", "loading", "rules"])) : rule.value.type === "AND" || rule.value.type === "OR" || rule.value.type === "NOT" ? (_openBlock$r(), _createBlock$r(_component_v_combobox, {
+                      }, null, 8, ["modelValue", "search", "items", "loading", "rules"])) : rule.value.type === "AND" || rule.value.type === "OR" || rule.value.type === "NOT" ? (_openBlock$B(), _createBlock$B(_component_v_combobox, {
                         key: 3,
                         modelValue: rule.value.conditions,
                         "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => rule.value.conditions = $event),
@@ -5719,7 +6039,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         clearable: "",
                         required: "",
                         class: "mb-4"
-                      }, null, 8, ["modelValue"])) : rule.value.type === "SUB-RULE" ? (_openBlock$r(), _createBlock$r(_component_v_text_field, {
+                      }, null, 8, ["modelValue"])) : rule.value.type === "SUB-RULE" ? (_openBlock$B(), _createBlock$B(_component_v_text_field, {
                         key: 4,
                         modelValue: rule.value.condition,
                         "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => rule.value.condition = $event),
@@ -5728,7 +6048,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         placeholder: "(AND,(DOMAIN,baidu.com),(NETWORK,TCP))",
                         rules: payloadRules.value,
                         class: "mb-4"
-                      }, null, 8, ["modelValue", "rules"])) : (_openBlock$r(), _createBlock$r(_component_v_text_field, {
+                      }, null, 8, ["modelValue", "rules"])) : (_openBlock$B(), _createBlock$B(_component_v_text_field, {
                         key: 5,
                         modelValue: rule.value.payload,
                         "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => rule.value.payload = $event),
@@ -5737,14 +6057,14 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         rules: payloadRules.value,
                         class: "mb-4"
                       }, null, 8, ["modelValue", "rules"])),
-                      rule.value.type === "SUB-RULE" ? (_openBlock$r(), _createBlock$r(_component_v_text_field, {
+                      rule.value.type === "SUB-RULE" ? (_openBlock$B(), _createBlock$B(_component_v_text_field, {
                         key: 6,
                         modelValue: rule.value.action,
                         "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => rule.value.action = $event),
                         label: "子规则",
                         required: "",
                         class: "mb-4"
-                      }, null, 8, ["modelValue"])) : (_openBlock$r(), _createBlock$r(_component_v_select, {
+                      }, null, 8, ["modelValue"])) : (_openBlock$B(), _createBlock$B(_component_v_select, {
                         key: 7,
                         modelValue: rule.value.action,
                         "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => rule.value.action = $event),
@@ -5753,7 +6073,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         required: "",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"])),
-                      showAdditionalParams.value ? (_openBlock$r(), _createBlock$r(_component_v_select, {
+                      showAdditionalParams.value ? (_openBlock$B(), _createBlock$B(_component_v_select, {
                         key: 8,
                         modelValue: rule.value.additional_params,
                         "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => rule.value.additional_params = $event),
@@ -5764,7 +6084,7 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                         "persistent-hint": "",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"])) : _createCommentVNode$n("", true),
-                      _createVNode$r(_component_v_text_field, {
+                      _createVNode$B(_component_v_text_field, {
                         modelValue: rule.value.priority,
                         "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => rule.value.priority = $event),
                         modelModifiers: { number: true },
@@ -5776,24 +6096,24 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
                     ]),
                     _: 1
                   }),
-                  _createVNode$r(_component_v_card_actions, null, {
-                    default: _withCtx$r(() => [
-                      _createVNode$r(_component_v_spacer),
-                      _createVNode$r(_component_v_btn, {
+                  _createVNode$B(_component_v_card_actions, null, {
+                    default: _withCtx$B(() => [
+                      _createVNode$B(_component_v_spacer),
+                      _createVNode$B(_component_v_btn, {
                         color: "secondary",
                         onClick: _cache[11] || (_cache[11] = ($event) => emit("close"))
                       }, {
-                        default: _withCtx$r(() => _cache[12] || (_cache[12] = [
+                        default: _withCtx$B(() => _cache[12] || (_cache[12] = [
                           _createTextVNode$r("取消")
                         ])),
                         _: 1
                       }),
-                      _createVNode$r(_component_v_btn, {
+                      _createVNode$B(_component_v_btn, {
                         color: "primary",
                         type: "submit",
                         loading: loading.value
                       }, {
-                        default: _withCtx$r(() => _cache[13] || (_cache[13] = [
+                        default: _withCtx$B(() => _cache[13] || (_cache[13] = [
                           _createTextVNode$r("保存 ")
                         ])),
                         _: 1
@@ -5814,20 +6134,15 @@ const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
   }
 });
 
-const {defineComponent:_defineComponent$q} = await importShared('vue');
+const {defineComponent:_defineComponent$A} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$q,createVNode:_createVNode$q,withCtx:_withCtx$q,createElementVNode:_createElementVNode$l,renderList:_renderList$9,Fragment:_Fragment$9,openBlock:_openBlock$q,createElementBlock:_createElementBlock$b,createBlock:_createBlock$q,unref:_unref$n,toDisplayString:_toDisplayString$n,createTextVNode:_createTextVNode$q,mergeProps:_mergeProps$k,createCommentVNode:_createCommentVNode$m} = await importShared('vue');
+const {resolveComponent:_resolveComponent$A,createVNode:_createVNode$A,withCtx:_withCtx$A,unref:_unref$s,openBlock:_openBlock$A,createBlock:_createBlock$A,createCommentVNode:_createCommentVNode$m,createElementVNode:_createElementVNode$t,createElementBlock:_createElementBlock$l} = await importShared('vue');
 
-const _hoisted_1$i = { class: "mb-2 position-relative" };
-const _hoisted_2$e = { class: "pa-4" };
-const _hoisted_3$e = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$c = { class: "d-sm-none" };
-const _hoisted_5$8 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
+const _hoisted_1$s = { class: "mb-2 position-relative" };
 const {computed: computed$7,ref: ref$i,toRaw: toRaw$7} = await importShared('vue');
-const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
+
+const {useDisplay: useDisplay$5} = await importShared('vuetify');
+const _sfc_main$A = /* @__PURE__ */ _defineComponent$A({
   __name: "RulesetRulesTab",
   props: {
     rules: {},
@@ -5837,10 +6152,11 @@ const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
     geoRules: {},
     customOutbounds: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error"],
+  emits: ["refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay$5();
     const searchRulesetRule = ref$i("");
     const pageRuleset = ref$i(1);
     const itemsPerPageRuleset = ref$i(10);
@@ -5959,253 +6275,65 @@ const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
       ruleDialogVisible.value = false;
     }
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$q("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$q("v-overlay");
-      const _component_v_text_field = _resolveComponent$q("v-text-field");
-      const _component_v_col = _resolveComponent$q("v-col");
-      const _component_v_btn = _resolveComponent$q("v-btn");
-      const _component_v_btn_group = _resolveComponent$q("v-btn-group");
-      const _component_v_row = _resolveComponent$q("v-row");
-      const _component_v_pagination = _resolveComponent$q("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$q("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$q("v-list-item");
-      const _component_v_list = _resolveComponent$q("v-list");
-      const _component_v_menu = _resolveComponent$q("v-menu");
-      const _component_v_divider = _resolveComponent$q("v-divider");
-      return _openBlock$q(), _createElementBlock$b("div", _hoisted_1$i, [
-        _createVNode$q(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$A("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$A("v-overlay");
+      const _component_v_divider = _resolveComponent$A("v-divider");
+      return _openBlock$A(), _createElementBlock$l("div", _hoisted_1$s, [
+        _createVNode$A(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$q(() => [
-            _createVNode$q(_component_v_progress_circular, {
+          default: _withCtx$A(() => [
+            _createVNode$A(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        _createElementVNode$l("div", _hoisted_2$e, [
-          _createVNode$q(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$q(() => [
-              _createVNode$q(_component_v_col, {
-                cols: "10",
-                sm: "6",
-                class: "d-flex justify-start"
-              }, {
-                default: _withCtx$q(() => [
-                  _createVNode$q(_component_v_text_field, {
-                    modelValue: searchRulesetRule.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchRulesetRule.value = $event),
-                    label: "搜索规则",
-                    clearable: "",
-                    density: "compact",
-                    variant: "solo-filled",
-                    "hide-details": "",
-                    class: "search-field",
-                    "prepend-inner-icon": "mdi-magnify",
-                    flat: "",
-                    rounded: "pill",
-                    "single-line": "",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$q(_component_v_col, {
-                cols: "2",
-                sm: "6",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$q(() => [
-                  _createVNode$q(_component_v_btn_group, {
-                    class: "d-sm-none",
-                    variant: "outlined",
-                    rounded: "",
-                    divided: ""
-                  }, {
-                    default: _withCtx$q(() => [
-                      _createVNode$q(_component_v_btn, {
-                        icon: "mdi-plus",
-                        disabled: loading.value,
-                        onClick: openAddRuleDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  }),
-                  _createVNode$q(_component_v_btn_group, {
-                    class: "d-none d-sm-flex",
-                    variant: "outlined",
-                    rounded: "",
-                    divided: ""
-                  }, {
-                    default: _withCtx$q(() => [
-                      _createVNode$q(_component_v_btn, {
-                        icon: group.value ? "mdi-format-list-bulleted" : "mdi-format-list-group",
-                        disabled: loading.value,
-                        onClick: _cache[2] || (_cache[2] = ($event) => group.value = !group.value)
-                      }, null, 8, ["icon", "disabled"]),
-                      _createVNode$q(_component_v_btn, {
-                        icon: "mdi-plus",
-                        disabled: loading.value,
-                        onClick: openAddRuleDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$l("div", _hoisted_3$e, [
-          _createVNode$q(_sfc_main$t, {
-            group: group.value,
-            "sorted-rules": _ctx.rules,
-            page: pageRuleset.value,
-            "items-per-page": itemsPerPageRuleset.value,
-            "ruleset-prefix": _ctx.rulesetPrefix,
-            "search-rule": searchRulesetRule.value,
-            onEdit: editRule,
-            onDelete: deleteRule,
-            onDeleteBatch: deleteRules,
-            onReorder: handleReorderRule,
-            onChangeStatus: handleStatusChange,
-            onChangeStatusBatch: handleBatchStatusChange
-          }, null, 8, ["group", "sorted-rules", "page", "items-per-page", "ruleset-prefix", "search-rule"])
-        ]),
-        _createElementVNode$l("div", _hoisted_4$c, [
-          _createVNode$q(_component_v_row, null, {
-            default: _withCtx$q(() => [
-              (_openBlock$q(true), _createElementBlock$b(_Fragment$9, null, _renderList$9(paginatedRulesetRules.value, (item) => {
-                return _openBlock$q(), _createBlock$q(_component_v_col, {
-                  key: item.priority,
-                  cols: "12"
-                }, {
-                  default: _withCtx$q(() => [
-                    _createVNode$q(RuleCard, {
-                      ruleset: "ruleset",
-                      rule: item,
-                      onDelete: deleteRule,
-                      onEdit: editRule,
-                      onChangeStatus: handleStatusChange
-                    }, null, 8, ["rule"])
-                  ]),
-                  _: 2
-                }, 1024);
-              }), 128))
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$l("div", _hoisted_5$8, [
-          _createVNode$q(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$q(() => [
-              _createVNode$q(_component_v_col, {
-                cols: "2",
-                md: "2"
-              }, {
-                default: _withCtx$q(() => _cache[9] || (_cache[9] = [
-                  _createElementVNode$l("div", { id: "ruleset-rules-table-batch-actions" }, null, -1)
-                ])),
-                _: 1
-              }),
-              _createVNode$q(_component_v_col, {
-                cols: "8",
-                md: "8",
-                class: "d-flex justify-center"
-              }, {
-                default: _withCtx$q(() => [
-                  _createVNode$q(_component_v_pagination, {
-                    modelValue: pageRuleset.value,
-                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => pageRuleset.value = $event),
-                    length: pageCountRuleset.value,
-                    "total-visible": "5",
-                    rounded: "circle",
-                    class: "d-none d-sm-flex my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"]),
-                  _createVNode$q(_component_v_pagination, {
-                    modelValue: pageRuleset.value,
-                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => pageRuleset.value = $event),
-                    length: pageCountRuleset.value,
-                    "total-visible": "0",
-                    rounded: "circle",
-                    class: "d-sm-none my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$q(_component_v_col, {
-                cols: "2",
-                md: "2",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$q(() => [
-                  _createVNode$q(_component_v_menu, null, {
-                    activator: _withCtx$q(({ props: props2 }) => [
-                      _createVNode$q(_component_v_btn, _mergeProps$k(props2, {
-                        icon: "",
-                        rounded: "circle",
-                        variant: "tonal",
-                        disabled: loading.value
-                      }), {
-                        default: _withCtx$q(() => [
-                          _createTextVNode$q(_toDisplayString$n(_unref$n(pageTitle)(itemsPerPageRuleset.value)), 1)
-                        ]),
-                        _: 2
-                      }, 1040, ["disabled"])
-                    ]),
-                    default: _withCtx$q(() => [
-                      _createVNode$q(_component_v_list, null, {
-                        default: _withCtx$q(() => [
-                          (_openBlock$q(true), _createElementBlock$b(_Fragment$9, null, _renderList$9(_unref$n(itemsPerPageOptions), (item, index) => {
-                            return _openBlock$q(), _createBlock$q(_component_v_list_item, {
-                              key: index,
-                              value: item.value,
-                              onClick: ($event) => itemsPerPageRuleset.value = item.value
-                            }, {
-                              default: _withCtx$q(() => [
-                                _createVNode$q(_component_v_list_item_title, null, {
-                                  default: _withCtx$q(() => [
-                                    _createTextVNode$q(_toDisplayString$n(item.title), 1)
-                                  ]),
-                                  _: 2
-                                }, 1024)
-                              ]),
-                              _: 2
-                            }, 1032, ["value", "onClick"]);
-                          }), 128))
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createVNode$q(_component_v_divider),
-        _cache[10] || (_cache[10] = _createElementVNode$l("div", { class: "text-caption text-grey mt-2" }, "* 对规则集的修改会在 Clash 中立即生效。", -1)),
-        ruleDialogVisible.value ? (_openBlock$q(), _createBlock$q(_sfc_main$r, {
+        _unref$s(smAndDown) ? (_openBlock$A(), _createBlock$A(RulesetRulesMobile, {
           key: 0,
+          "paginated-rules": paginatedRulesetRules.value,
+          search: searchRulesetRule.value,
+          page: pageRuleset.value,
+          "page-count": pageCountRuleset.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchRulesetRule.value = v),
+          "onUpdate:page": _cache[2] || (_cache[2] = (v) => pageRuleset.value = v),
+          onOpenAddDialog: openAddRuleDialog,
+          onEdit: editRule,
+          onDelete: deleteRule,
+          onChangeStatus: handleStatusChange
+        }, null, 8, ["paginated-rules", "search", "page", "page-count", "loading"])) : (_openBlock$A(), _createBlock$A(_sfc_main$E, {
+          key: 1,
+          rules: _ctx.rules,
+          "ruleset-prefix": _ctx.rulesetPrefix,
+          search: searchRulesetRule.value,
+          group: group.value,
+          page: pageRuleset.value,
+          "items-per-page": itemsPerPageRuleset.value,
+          "page-count": pageCountRuleset.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[3] || (_cache[3] = (v) => searchRulesetRule.value = v),
+          "onUpdate:group": _cache[4] || (_cache[4] = (v) => group.value = v),
+          "onUpdate:page": _cache[5] || (_cache[5] = (v) => pageRuleset.value = v),
+          "onUpdate:itemsPerPage": _cache[6] || (_cache[6] = (v) => itemsPerPageRuleset.value = v),
+          onOpenAddDialog: openAddRuleDialog,
+          onEdit: editRule,
+          onDelete: deleteRule,
+          onDeleteBatch: deleteRules,
+          onReorder: handleReorderRule,
+          onChangeStatus: handleStatusChange,
+          onChangeStatusBatch: handleBatchStatusChange
+        }, null, 8, ["rules", "ruleset-prefix", "search", "group", "page", "items-per-page", "page-count", "loading"])),
+        _createVNode$A(_component_v_divider),
+        _cache[10] || (_cache[10] = _createElementVNode$t("div", { class: "text-caption text-grey mt-2" }, "* 对规则集的修改会在 Clash 中立即生效。", -1)),
+        ruleDialogVisible.value ? (_openBlock$A(), _createBlock$A(_sfc_main$B, {
+          key: 2,
           modelValue: ruleDialogVisible.value,
-          "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => ruleDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => ruleDialogVisible.value = $event),
           "initial-rule": currentRule.value,
           "is-adding": editingPriority.value === null,
           "editing-type": editingType.value,
@@ -6213,9 +6341,8 @@ const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
           "geo-rules": _ctx.geoRules,
           "custom-outbounds": _ctx.customOutbounds,
           api: _ctx.api,
-          onRefresh: _cache[6] || (_cache[6] = (v) => emit("refresh", v)),
-          onShowSnackbar: _cache[7] || (_cache[7] = (val) => emit("show-snackbar", val)),
-          onShowError: _cache[8] || (_cache[8] = (msg) => emit("show-error", msg)),
+          onRefresh: _cache[8] || (_cache[8] = (v) => emit("refresh", v)),
+          onShowError: _cache[9] || (_cache[9] = (msg) => emit("show-error", msg)),
           onClose: closeRuleDialog
         }, null, 8, ["modelValue", "initial-rule", "is-adding", "editing-type", "rule-provider-names", "geo-rules", "custom-outbounds", "api"])) : _createCommentVNode$m("", true)
       ]);
@@ -6223,14 +6350,14 @@ const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
   }
 });
 
-const {defineComponent:_defineComponent$p} = await importShared('vue');
+const {defineComponent:_defineComponent$z} = await importShared('vue');
 
-const {unref:_unref$m,resolveComponent:_resolveComponent$p,createVNode:_createVNode$p,withCtx:_withCtx$p,Teleport:_Teleport,openBlock:_openBlock$p,createBlock:_createBlock$p,createCommentVNode:_createCommentVNode$l,createTextVNode:_createTextVNode$p,toDisplayString:_toDisplayString$m,createElementVNode:_createElementVNode$k,mergeProps:_mergeProps$j} = await importShared('vue');
+const {unref:_unref$r,resolveComponent:_resolveComponent$z,createVNode:_createVNode$z,withCtx:_withCtx$z,Teleport:_Teleport,openBlock:_openBlock$z,createBlock:_createBlock$z,createCommentVNode:_createCommentVNode$l,createTextVNode:_createTextVNode$q,toDisplayString:_toDisplayString$m,createElementVNode:_createElementVNode$s,mergeProps:_mergeProps$j} = await importShared('vue');
 
-const _hoisted_1$h = { class: "d-flex align-center" };
+const _hoisted_1$r = { class: "d-flex align-center" };
 const {ref: ref$h} = await importShared('vue');
 const ruleset = "top";
-const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
+const _sfc_main$z = /* @__PURE__ */ _defineComponent$z({
   __name: "TopRulesTable",
   props: {
     sortedRules: {
@@ -6263,6 +6390,7 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
     ]);
     const dragEnabled = ref$h(false);
     const hoveredPriority = ref$h(-1);
+    const dropPosition = ref$h(null);
     const dragItem = ref$h(null);
     const selected = ref$h([]);
     function dragStart(event, priority) {
@@ -6278,7 +6406,16 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
     }
     function dragOver(event, priority) {
       event.preventDefault();
+      if (event.dataTransfer) {
+        event.dataTransfer.dropEffect = "move";
+      }
       hoveredPriority.value = priority;
+      const target = event.currentTarget;
+      if (target) {
+        const rect = target.getBoundingClientRect();
+        const offset = event.clientY - rect.top;
+        dropPosition.value = offset < rect.height / 2 ? "top" : "bottom";
+      }
     }
     function drop(event, targetPriority) {
       if (dragItem.value && dragItem.value.priority !== targetPriority) {
@@ -6286,10 +6423,12 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
       }
       dragItem.value = null;
       hoveredPriority.value = -1;
+      dropPosition.value = null;
     }
     function dragEnd() {
       dragItem.value = null;
       hoveredPriority.value = -1;
+      dropPosition.value = null;
     }
     function editRule(priority) {
       emit("edit", priority, ruleset);
@@ -6314,9 +6453,11 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
     }
     const rowProps = (data) => {
       const item = data.item;
+      const isHovered = item.priority === hoveredPriority.value;
       return {
         class: {
-          "drop-over": item.priority === hoveredPriority.value,
+          "drop-over-top": isHovered && dropPosition.value === "top",
+          "drop-over-bottom": isHovered && dropPosition.value === "bottom",
           "dragging-item": dragItem.value?.priority === item.priority,
           "list-row": true,
           "text-grey": item.meta?.disabled
@@ -6329,13 +6470,13 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
       };
     };
     return (_ctx, _cache) => {
-      const _component_v_btn = _resolveComponent$p("v-btn");
-      const _component_v_btn_group = _resolveComponent$p("v-btn-group");
-      const _component_v_icon = _resolveComponent$p("v-icon");
-      const _component_v_chip = _resolveComponent$p("v-chip");
-      const _component_v_tooltip = _resolveComponent$p("v-tooltip");
-      const _component_v_data_table = _resolveComponent$p("v-data-table");
-      return _openBlock$p(), _createBlock$p(_component_v_data_table, {
+      const _component_v_btn = _resolveComponent$z("v-btn");
+      const _component_v_btn_group = _resolveComponent$z("v-btn-group");
+      const _component_v_icon = _resolveComponent$z("v-icon");
+      const _component_v_chip = _resolveComponent$z("v-chip");
+      const _component_v_tooltip = _resolveComponent$z("v-tooltip");
+      const _component_v_data_table = _resolveComponent$z("v-data-table");
+      return _openBlock$z(), _createBlock$z(_component_v_data_table, {
         modelValue: selected.value,
         "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => selected.value = $event),
         class: "px-4",
@@ -6344,7 +6485,7 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
         items: __props.sortedRules,
         page: __props.page,
         "items-per-page": __props.itemsPerPage,
-        "items-per-page-options": _unref$m(itemsPerPageOptions),
+        "items-per-page-options": _unref$r(itemsPerPageOptions),
         "item-key": "priority",
         "item-value": "priority",
         "show-select": "",
@@ -6353,29 +6494,29 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
         "fixed-header": "",
         "row-props": rowProps
       }, {
-        top: _withCtx$p(() => [
-          selected.value.length > 0 ? (_openBlock$p(), _createBlock$p(_Teleport, {
+        top: _withCtx$z(() => [
+          selected.value.length > 0 ? (_openBlock$z(), _createBlock$z(_Teleport, {
             key: 0,
             to: "#top-rules-table-batch-actions"
           }, [
-            _createVNode$p(_component_v_btn_group, {
+            _createVNode$z(_component_v_btn_group, {
               rounded: "",
               variant: "tonal"
             }, {
-              default: _withCtx$p(() => [
-                _createVNode$p(_component_v_btn, {
+              default: _withCtx$z(() => [
+                _createVNode$z(_component_v_btn, {
                   color: "success",
                   "prepend-icon": "mdi-check",
                   size: "small",
                   onClick: _cache[0] || (_cache[0] = ($event) => changeBatchStatus(false))
                 }),
-                _createVNode$p(_component_v_btn, {
+                _createVNode$z(_component_v_btn, {
                   color: "warning",
                   "prepend-icon": "mdi-close",
                   size: "small",
                   onClick: _cache[1] || (_cache[1] = ($event) => changeBatchStatus(true))
                 }),
-                _createVNode$p(_component_v_btn, {
+                _createVNode$z(_component_v_btn, {
                   color: "error",
                   "prepend-icon": "mdi-trash-can-outline",
                   size: "small",
@@ -6386,86 +6527,86 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
             })
           ])) : _createCommentVNode$l("", true)
         ]),
-        "item.handler": _withCtx$p(({}) => [
-          _createVNode$p(_component_v_icon, {
+        "item.handler": _withCtx$z(({}) => [
+          _createVNode$z(_component_v_icon, {
             class: "drag-handle",
             onMouseenter: _cache[2] || (_cache[2] = ($event) => dragEnabled.value = true),
             onMouseleave: _cache[3] || (_cache[3] = ($event) => dragEnabled.value = false)
           }, {
-            default: _withCtx$p(() => _cache[5] || (_cache[5] = [
-              _createTextVNode$p("mdi-drag-horizontal-variant ")
+            default: _withCtx$z(() => _cache[5] || (_cache[5] = [
+              _createTextVNode$q("mdi-drag-horizontal-variant ")
             ])),
             _: 1
           })
         ]),
-        "item.priority": _withCtx$p(({ item }) => [
-          _createVNode$p(_component_v_chip, {
+        "item.priority": _withCtx$z(({ item }) => [
+          _createVNode$z(_component_v_chip, {
             size: "x-small",
             variant: "tonal",
             color: "secondary",
             class: "font-weight-bold"
           }, {
-            default: _withCtx$p(() => [
-              _createTextVNode$p(_toDisplayString$m(item.priority), 1)
+            default: _withCtx$z(() => [
+              _createTextVNode$q(_toDisplayString$m(item.priority), 1)
             ]),
             _: 2
           }, 1024)
         ]),
-        "item.type": _withCtx$p(({ item }) => [
-          _createVNode$p(_component_v_chip, {
-            color: _unref$m(getRuleTypeColor)(item.type),
+        "item.type": _withCtx$z(({ item }) => [
+          _createVNode$z(_component_v_chip, {
+            color: _unref$r(getRuleTypeColor)(item.type),
             size: "small",
             label: "",
             variant: "tonal"
           }, {
-            default: _withCtx$p(() => [
-              _createTextVNode$p(_toDisplayString$m(item.type), 1)
+            default: _withCtx$z(() => [
+              _createTextVNode$q(_toDisplayString$m(item.type), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.payload": _withCtx$p(({ value }) => [
-          _createElementVNode$k("small", null, _toDisplayString$m(value), 1)
+        "item.payload": _withCtx$z(({ value }) => [
+          _createElementVNode$s("small", null, _toDisplayString$m(value), 1)
         ]),
-        "item.action": _withCtx$p(({ item }) => [
-          _createVNode$p(_component_v_chip, {
-            color: _unref$m(getActionColor)(item.action),
+        "item.action": _withCtx$z(({ item }) => [
+          _createVNode$z(_component_v_chip, {
+            color: _unref$r(getActionColor)(item.action),
             size: "small",
             variant: "outlined",
             pill: ""
           }, {
-            default: _withCtx$p(() => [
-              _createTextVNode$p(_toDisplayString$m(item.action), 1)
+            default: _withCtx$z(() => [
+              _createTextVNode$q(_toDisplayString$m(item.action), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.time_modified": _withCtx$p(({ item }) => [
-          _createElementVNode$k("small", null, _toDisplayString$m(item.meta?.time_modified ? _unref$m(timestampToDate)(item.meta.time_modified) : ""), 1)
+        "item.time_modified": _withCtx$z(({ item }) => [
+          _createElementVNode$s("small", null, _toDisplayString$m(item.meta?.time_modified ? _unref$r(timestampToDate)(item.meta.time_modified) : ""), 1)
         ]),
-        "item.status": _withCtx$p(({ item }) => [
-          _createElementVNode$k("div", _hoisted_1$h, [
-            _createVNode$p(_component_v_icon, {
+        "item.status": _withCtx$z(({ item }) => [
+          _createElementVNode$s("div", _hoisted_1$r, [
+            _createVNode$z(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success",
               class: "mr-1"
             }, {
-              default: _withCtx$p(() => [
-                _createTextVNode$p(_toDisplayString$m(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+              default: _withCtx$z(() => [
+                _createTextVNode$q(_toDisplayString$m(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"]),
-            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$p(), _createBlock$p(_component_v_tooltip, {
+            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$z(), _createBlock$z(_component_v_tooltip, {
               key: 0,
               text: "已配置可见性限制",
               location: "top"
             }, {
-              activator: _withCtx$p(({ props: props2 }) => [
-                _createVNode$p(_component_v_icon, _mergeProps$j(props2, {
+              activator: _withCtx$z(({ props: props2 }) => [
+                _createVNode$z(_component_v_icon, _mergeProps$j(props2, {
                   size: "small",
                   color: "warning"
                 }), {
-                  default: _withCtx$p(() => _cache[6] || (_cache[6] = [
-                    _createTextVNode$p(" mdi-eye-off-outline ")
+                  default: _withCtx$z(() => _cache[6] || (_cache[6] = [
+                    _createTextVNode$q(" mdi-eye-off-outline ")
                   ])),
                   _: 2
                 }, 1040)
@@ -6474,8 +6615,8 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
             })) : _createCommentVNode$l("", true)
           ])
         ]),
-        "item.actions": _withCtx$p(({ item }) => [
-          _createVNode$p(_sfc_main$u, {
+        "item.actions": _withCtx$z(({ item }) => [
+          _createVNode$z(_sfc_main$G, {
             rule: item,
             onEdit: ($event) => editRule(item.priority),
             onDelete: ($event) => deleteRule(item.priority),
@@ -6489,21 +6630,353 @@ const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
   }
 });
 
-const {defineComponent:_defineComponent$o} = await importShared('vue');
+const {defineComponent:_defineComponent$y} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$o,resolveComponent:_resolveComponent$o,withCtx:_withCtx$o,createVNode:_createVNode$o,unref:_unref$l,createElementVNode:_createElementVNode$j,openBlock:_openBlock$o,createBlock:_createBlock$o} = await importShared('vue');
+const {resolveComponent:_resolveComponent$y,createVNode:_createVNode$y,withCtx:_withCtx$y,createElementVNode:_createElementVNode$r,unref:_unref$q,toDisplayString:_toDisplayString$l,createTextVNode:_createTextVNode$p,mergeProps:_mergeProps$i,renderList:_renderList$d,Fragment:_Fragment$e,openBlock:_openBlock$y,createElementBlock:_createElementBlock$k,createBlock:_createBlock$y} = await importShared('vue');
+
+const _hoisted_1$q = { class: "top-rules-desktop-view" };
+const _hoisted_2$i = { class: "pa-4" };
+const _hoisted_3$i = { class: "clash-data-table table-page-container" };
+const _hoisted_4$g = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$y = /* @__PURE__ */ _defineComponent$y({
+  __name: "TopRulesDesktop",
+  props: {
+    rules: {},
+    search: {},
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "update:itemsPerPage", "open-import-dialog", "open-add-dialog", "edit", "delete", "delete-batch", "reorder", "change-status", "change-status-batch", "edit-visibility"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$y("v-text-field");
+      const _component_v_col = _resolveComponent$y("v-col");
+      const _component_v_btn = _resolveComponent$y("v-btn");
+      const _component_v_btn_group = _resolveComponent$y("v-btn-group");
+      const _component_v_row = _resolveComponent$y("v-row");
+      const _component_v_pagination = _resolveComponent$y("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$y("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$y("v-list-item");
+      const _component_v_list = _resolveComponent$y("v-list");
+      const _component_v_menu = _resolveComponent$y("v-menu");
+      return _openBlock$y(), _createElementBlock$k("div", _hoisted_1$q, [
+        _createElementVNode$r("div", _hoisted_2$i, [
+          _createVNode$y(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$y(() => [
+              _createVNode$y(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$y(() => [
+                  _createVNode$y(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$y(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$y(() => [
+                  _createVNode$y(_component_v_btn_group, {
+                    divided: "",
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$y(() => [
+                      _createVNode$y(_component_v_btn, {
+                        icon: "mdi-import",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-import-dialog"))
+                      }, null, 8, ["disabled"]),
+                      _createVNode$y(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[2] || (_cache[2] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$r("div", _hoisted_3$i, [
+          _createVNode$y(_sfc_main$z, {
+            "sorted-rules": _ctx.rules,
+            page: _ctx.page,
+            "items-per-page": _ctx.itemsPerPage,
+            "search-rule": _ctx.search,
+            onEdit: _cache[3] || (_cache[3] = (p) => emit("edit", p)),
+            onDelete: _cache[4] || (_cache[4] = (p) => emit("delete", p)),
+            onDeleteBatch: _cache[5] || (_cache[5] = (ps) => emit("delete-batch", ps)),
+            onReorder: _cache[6] || (_cache[6] = (target, moved) => emit("reorder", target, moved)),
+            onChangeStatus: _cache[7] || (_cache[7] = (p, d) => emit("change-status", p, d)),
+            onChangeStatusBatch: _cache[8] || (_cache[8] = (ps, d) => emit("change-status-batch", ps, d)),
+            onEditVisibility: _cache[9] || (_cache[9] = (p, t) => emit("edit-visibility", p, t))
+          }, null, 8, ["sorted-rules", "page", "items-per-page", "search-rule"])
+        ]),
+        _createElementVNode$r("div", _hoisted_4$g, [
+          _createVNode$y(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$y(() => [
+              _createVNode$y(_component_v_col, { cols: "2" }, {
+                default: _withCtx$y(() => _cache[11] || (_cache[11] = [
+                  _createElementVNode$r("div", { id: "top-rules-table-batch-actions" }, null, -1)
+                ])),
+                _: 1
+              }),
+              _createVNode$y(_component_v_col, {
+                cols: "8",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$y(() => [
+                  _createVNode$y(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[10] || (_cache[10] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$y(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$y(() => [
+                  _createVNode$y(_component_v_menu, null, {
+                    activator: _withCtx$y(({ props: menuProps }) => [
+                      _createVNode$y(_component_v_btn, _mergeProps$i(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$y(() => [
+                          _createTextVNode$p(_toDisplayString$l(_unref$q(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$y(() => [
+                      _createVNode$y(_component_v_list, null, {
+                        default: _withCtx$y(() => [
+                          (_openBlock$y(true), _createElementBlock$k(_Fragment$e, null, _renderList$d(_unref$q(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$y(), _createBlock$y(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$y(() => [
+                                _createVNode$y(_component_v_list_item_title, null, {
+                                  default: _withCtx$y(() => [
+                                    _createTextVNode$p(_toDisplayString$l(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+
+const {defineComponent:_defineComponent$x} = await importShared('vue');
+
+const {resolveComponent:_resolveComponent$x,createVNode:_createVNode$x,withCtx:_withCtx$x,createElementVNode:_createElementVNode$q,renderList:_renderList$c,Fragment:_Fragment$d,openBlock:_openBlock$x,createElementBlock:_createElementBlock$j,createBlock:_createBlock$x} = await importShared('vue');
+
+const _hoisted_1$p = { class: "top-rules-mobile-view" };
+const _hoisted_2$h = { class: "pa-2 pb-4" };
+const _hoisted_3$h = { class: "mobile-card-container" };
+const _hoisted_4$f = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$x = /* @__PURE__ */ _defineComponent$x({
+  __name: "TopRulesMobile",
+  props: {
+    paginatedRules: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-import-dialog", "open-add-dialog", "edit", "delete", "change-status", "edit-visibility"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$x("v-text-field");
+      const _component_v_col = _resolveComponent$x("v-col");
+      const _component_v_btn = _resolveComponent$x("v-btn");
+      const _component_v_btn_group = _resolveComponent$x("v-btn-group");
+      const _component_v_row = _resolveComponent$x("v-row");
+      const _component_v_pagination = _resolveComponent$x("v-pagination");
+      return _openBlock$x(), _createElementBlock$j("div", _hoisted_1$p, [
+        _createElementVNode$q("div", _hoisted_2$h, [
+          _createVNode$x(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$x(() => [
+              _createVNode$x(_component_v_col, {
+                cols: "8",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$x(() => [
+                  _createVNode$x(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$x(_component_v_col, {
+                cols: "4",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$x(() => [
+                  _createVNode$x(_component_v_btn_group, {
+                    divided: "",
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$x(() => [
+                      _createVNode$x(_component_v_btn, {
+                        icon: "mdi-import",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-import-dialog"))
+                      }, null, 8, ["disabled"]),
+                      _createVNode$x(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[2] || (_cache[2] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$q("div", _hoisted_3$h, [
+          _createVNode$x(_component_v_row, null, {
+            default: _withCtx$x(() => [
+              (_openBlock$x(true), _createElementBlock$j(_Fragment$d, null, _renderList$c(_ctx.paginatedRules, (item) => {
+                return _openBlock$x(), _createBlock$x(_component_v_col, {
+                  key: item.priority,
+                  cols: "12"
+                }, {
+                  default: _withCtx$x(() => [
+                    _createVNode$x(RuleCard, {
+                      ruleset: "top",
+                      rule: item,
+                      onDelete: _cache[3] || (_cache[3] = (p) => emit("delete", p)),
+                      onEdit: _cache[4] || (_cache[4] = (p) => emit("edit", p)),
+                      onChangeStatus: _cache[5] || (_cache[5] = (p, d) => emit("change-status", p, d)),
+                      onEditVisibility: _cache[6] || (_cache[6] = (p, t) => emit("edit-visibility", p, t))
+                    }, null, 8, ["rule"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$q("div", _hoisted_4$f, [
+          _createVNode$x(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[7] || (_cache[7] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const TopRulesMobile = /* @__PURE__ */ _export_sfc(_sfc_main$x, [["__scopeId", "data-v-4146c862"]]);
+
+const {defineComponent:_defineComponent$w} = await importShared('vue');
+
+const {createTextVNode:_createTextVNode$o,resolveComponent:_resolveComponent$w,withCtx:_withCtx$w,createVNode:_createVNode$w,unref:_unref$p,createElementVNode:_createElementVNode$p,openBlock:_openBlock$w,createBlock:_createBlock$w} = await importShared('vue');
 
 const {ref: ref$g} = await importShared('vue');
-const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
+const _sfc_main$w = /* @__PURE__ */ _defineComponent$w({
   __name: "ImportRuleDialog",
   props: {
     modelValue: { type: Boolean },
     api: {}
   },
-  emits: ["update:modelValue", "refresh", "show-snackbar", "show-error"],
+  emits: ["update:modelValue", "refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const editorOptions = {
       enableBasicAutocompletion: true,
       enableSnippets: true,
@@ -6534,60 +7007,48 @@ const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
         const result = await props.api.post("/plugin/ClashRuleProvider/import", requestData);
         if (!result.success) {
           emit("show-error", "规则导入失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "规则导入失败",
-            color: "error"
-          });
+          toast.error("规则导入失败");
           return;
         }
         close();
         emit("refresh");
-        emit("show-snackbar", {
-          show: true,
-          message: "规则导入成功",
-          color: "success"
-        });
+        toast.success("规则导入成功");
       } catch (err) {
         if (err instanceof Error) {
           emit("show-error", "导入规则失败: " + (err.message || "未知错误"));
         }
-        emit("show-snackbar", {
-          show: true,
-          message: "导入规则失败",
-          color: "error"
-        });
+        toast.error("导入规则失败");
       } finally {
         importRuleLoading.value = false;
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$o("v-card-title");
-      const _component_v_select = _resolveComponent$o("v-select");
-      const _component_v_alert = _resolveComponent$o("v-alert");
-      const _component_v_card_text = _resolveComponent$o("v-card-text");
-      const _component_v_spacer = _resolveComponent$o("v-spacer");
-      const _component_v_btn = _resolveComponent$o("v-btn");
-      const _component_v_card_actions = _resolveComponent$o("v-card-actions");
-      const _component_v_card = _resolveComponent$o("v-card");
-      const _component_v_dialog = _resolveComponent$o("v-dialog");
-      return _openBlock$o(), _createBlock$o(_component_v_dialog, {
+      const _component_v_card_title = _resolveComponent$w("v-card-title");
+      const _component_v_select = _resolveComponent$w("v-select");
+      const _component_v_alert = _resolveComponent$w("v-alert");
+      const _component_v_card_text = _resolveComponent$w("v-card-text");
+      const _component_v_spacer = _resolveComponent$w("v-spacer");
+      const _component_v_btn = _resolveComponent$w("v-btn");
+      const _component_v_card_actions = _resolveComponent$w("v-card-actions");
+      const _component_v_card = _resolveComponent$w("v-card");
+      const _component_v_dialog = _resolveComponent$w("v-dialog");
+      return _openBlock$w(), _createBlock$w(_component_v_dialog, {
         "model-value": _ctx.modelValue,
         "max-width": "40rem",
         "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => emit("update:modelValue", $event))
       }, {
-        default: _withCtx$o(() => [
-          _createVNode$o(_component_v_card, null, {
-            default: _withCtx$o(() => [
-              _createVNode$o(_component_v_card_title, null, {
-                default: _withCtx$o(() => _cache[3] || (_cache[3] = [
+        default: _withCtx$w(() => [
+          _createVNode$w(_component_v_card, null, {
+            default: _withCtx$w(() => [
+              _createVNode$w(_component_v_card_title, null, {
+                default: _withCtx$w(() => _cache[3] || (_cache[3] = [
                   _createTextVNode$o("导入规则")
                 ])),
                 _: 1
               }),
-              _createVNode$o(_component_v_card_text, { style: { "max-height": "900px", "overflow-y": "auto" } }, {
-                default: _withCtx$o(() => [
-                  _createVNode$o(_component_v_select, {
+              _createVNode$w(_component_v_card_text, { style: { "max-height": "900px", "overflow-y": "auto" } }, {
+                default: _withCtx$w(() => [
+                  _createVNode$w(_component_v_select, {
                     modelValue: importRules.value.type,
                     "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => importRules.value.type = $event),
                     items: importRuleTypes,
@@ -6595,7 +7056,7 @@ const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
                     required: "",
                     class: "mb-4"
                   }, null, 8, ["modelValue"]),
-                  _createVNode$o(_unref$l(VAceEditor), {
+                  _createVNode$w(_unref$p(VAceEditor), {
                     value: importRules.value.payload,
                     "onUpdate:value": _cache[1] || (_cache[1] = ($event) => importRules.value.payload = $event),
                     lang: "yaml",
@@ -6604,20 +7065,20 @@ const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
                     placeholder: rulesPlaceholder.value,
                     style: { "height": "30rem", "width": "100%", "margin-bottom": "16px" }
                   }, null, 8, ["value", "placeholder"]),
-                  _createVNode$o(_component_v_alert, {
+                  _createVNode$w(_component_v_alert, {
                     type: "info",
                     dense: "",
                     class: "mb-4",
                     variant: "tonal"
                   }, {
-                    default: _withCtx$o(() => _cache[4] || (_cache[4] = [
+                    default: _withCtx$w(() => _cache[4] || (_cache[4] = [
                       _createTextVNode$o(" 请输入 Clash 规则中的 "),
-                      _createElementVNode$j("strong", null, "rules", -1),
+                      _createElementVNode$p("strong", null, "rules", -1),
                       _createTextVNode$o(" 字段，例如："),
-                      _createElementVNode$j("br", null, null, -1),
-                      _createElementVNode$j("code", null, [
+                      _createElementVNode$p("br", null, null, -1),
+                      _createElementVNode$p("code", null, [
                         _createTextVNode$o("rules:"),
-                        _createElementVNode$j("br"),
+                        _createElementVNode$p("br"),
                         _createTextVNode$o("- DOMAIN,gemini.google.com,Openai")
                       ], -1)
                     ])),
@@ -6626,24 +7087,24 @@ const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
                 ]),
                 _: 1
               }),
-              _createVNode$o(_component_v_card_actions, null, {
-                default: _withCtx$o(() => [
-                  _createVNode$o(_component_v_spacer),
-                  _createVNode$o(_component_v_btn, {
+              _createVNode$w(_component_v_card_actions, null, {
+                default: _withCtx$w(() => [
+                  _createVNode$w(_component_v_spacer),
+                  _createVNode$w(_component_v_btn, {
                     color: "secondary",
                     onClick: close
                   }, {
-                    default: _withCtx$o(() => _cache[5] || (_cache[5] = [
+                    default: _withCtx$w(() => _cache[5] || (_cache[5] = [
                       _createTextVNode$o("取消")
                     ])),
                     _: 1
                   }),
-                  _createVNode$o(_component_v_btn, {
+                  _createVNode$w(_component_v_btn, {
                     color: "primary",
                     loading: importRuleLoading.value,
                     onClick: importRule
                   }, {
-                    default: _withCtx$o(() => _cache[6] || (_cache[6] = [
+                    default: _withCtx$w(() => _cache[6] || (_cache[6] = [
                       _createTextVNode$o("导入 ")
                     ])),
                     _: 1
@@ -6661,20 +7122,15 @@ const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
   }
 });
 
-const {defineComponent:_defineComponent$n} = await importShared('vue');
+const {defineComponent:_defineComponent$v} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$n,createVNode:_createVNode$n,withCtx:_withCtx$n,createElementVNode:_createElementVNode$i,renderList:_renderList$8,Fragment:_Fragment$8,openBlock:_openBlock$n,createElementBlock:_createElementBlock$a,createBlock:_createBlock$n,unref:_unref$k,toDisplayString:_toDisplayString$l,createTextVNode:_createTextVNode$n,mergeProps:_mergeProps$i,createCommentVNode:_createCommentVNode$k} = await importShared('vue');
+const {resolveComponent:_resolveComponent$v,createVNode:_createVNode$v,withCtx:_withCtx$v,unref:_unref$o,openBlock:_openBlock$v,createBlock:_createBlock$v,createCommentVNode:_createCommentVNode$k,createElementVNode:_createElementVNode$o,createElementBlock:_createElementBlock$i} = await importShared('vue');
 
-const _hoisted_1$g = { class: "mb-2 position-relative" };
-const _hoisted_2$d = { class: "pa-4" };
-const _hoisted_3$d = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$b = { class: "d-sm-none" };
-const _hoisted_5$7 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
+const _hoisted_1$o = { class: "mb-2 position-relative" };
 const {computed: computed$6,ref: ref$f,toRaw: toRaw$6} = await importShared('vue');
-const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
+
+const {useDisplay: useDisplay$4} = await importShared('vuetify');
+const _sfc_main$v = /* @__PURE__ */ _defineComponent$v({
   __name: "TopRulesTab",
   props: {
     rules: {},
@@ -6683,10 +7139,11 @@ const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
     geoRules: {},
     customOutbounds: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error", "edit-visibility"],
+  emits: ["refresh", "show-error", "edit-visibility"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay$4();
     const searchTopRule = ref$f("");
     const page = ref$f(1);
     const itemsPerPage = ref$f(10);
@@ -6821,238 +7278,67 @@ const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
       );
     }
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$n("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$n("v-overlay");
-      const _component_v_text_field = _resolveComponent$n("v-text-field");
-      const _component_v_col = _resolveComponent$n("v-col");
-      const _component_v_btn = _resolveComponent$n("v-btn");
-      const _component_v_btn_group = _resolveComponent$n("v-btn-group");
-      const _component_v_row = _resolveComponent$n("v-row");
-      const _component_v_pagination = _resolveComponent$n("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$n("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$n("v-list-item");
-      const _component_v_list = _resolveComponent$n("v-list");
-      const _component_v_menu = _resolveComponent$n("v-menu");
-      const _component_v_divider = _resolveComponent$n("v-divider");
-      return _openBlock$n(), _createElementBlock$a("div", _hoisted_1$g, [
-        _createVNode$n(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$v("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$v("v-overlay");
+      const _component_v_divider = _resolveComponent$v("v-divider");
+      return _openBlock$v(), _createElementBlock$i("div", _hoisted_1$o, [
+        _createVNode$v(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$n(() => [
-            _createVNode$n(_component_v_progress_circular, {
+          default: _withCtx$v(() => [
+            _createVNode$v(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        _createElementVNode$i("div", _hoisted_2$d, [
-          _createVNode$n(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$n(() => [
-              _createVNode$n(_component_v_col, {
-                cols: "8",
-                sm: "6",
-                class: "d-flex justify-start"
-              }, {
-                default: _withCtx$n(() => [
-                  _createVNode$n(_component_v_text_field, {
-                    modelValue: searchTopRule.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchTopRule.value = $event),
-                    label: "搜索规则",
-                    clearable: "",
-                    density: "compact",
-                    variant: "solo-filled",
-                    "hide-details": "",
-                    class: "search-field",
-                    "prepend-inner-icon": "mdi-magnify",
-                    flat: "",
-                    rounded: "pill",
-                    "single-line": "",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$n(_component_v_col, {
-                cols: "4",
-                sm: "6",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$n(() => [
-                  _createVNode$n(_component_v_btn_group, {
-                    divided: "",
-                    variant: "outlined",
-                    rounded: ""
-                  }, {
-                    default: _withCtx$n(() => [
-                      _createVNode$n(_component_v_btn, {
-                        icon: "mdi-import",
-                        disabled: loading.value,
-                        onClick: openImportRuleDialog
-                      }, null, 8, ["disabled"]),
-                      _createVNode$n(_component_v_btn, {
-                        icon: "mdi-plus",
-                        disabled: loading.value,
-                        onClick: openAddRuleDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$i("div", _hoisted_3$d, [
-          _createVNode$n(_sfc_main$p, {
-            "sorted-rules": _ctx.rules,
-            page: page.value,
-            "items-per-page": itemsPerPage.value,
-            "search-rule": searchTopRule.value,
-            onEdit: editRule,
-            onDelete: deleteRule,
-            onDeleteBatch: deleteRules,
-            onReorder: handleReorderRule,
-            onChangeStatus: handleStatusChange,
-            onChangeStatusBatch: handleBatchStatusChange,
-            onEditVisibility: editVisibility
-          }, null, 8, ["sorted-rules", "page", "items-per-page", "search-rule"])
-        ]),
-        _createElementVNode$i("div", _hoisted_4$b, [
-          _createVNode$n(_component_v_row, null, {
-            default: _withCtx$n(() => [
-              (_openBlock$n(true), _createElementBlock$a(_Fragment$8, null, _renderList$8(paginatedTopRules.value, (item) => {
-                return _openBlock$n(), _createBlock$n(_component_v_col, {
-                  key: item.priority,
-                  cols: "12"
-                }, {
-                  default: _withCtx$n(() => [
-                    _createVNode$n(RuleCard, {
-                      ruleset: "top",
-                      rule: item,
-                      onDelete: deleteRule,
-                      onEdit: editRule,
-                      onChangeStatus: handleStatusChange,
-                      onEditVisibility: editVisibility
-                    }, null, 8, ["rule"])
-                  ]),
-                  _: 2
-                }, 1024);
-              }), 128))
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$i("div", _hoisted_5$7, [
-          _createVNode$n(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$n(() => [
-              _createVNode$n(_component_v_col, {
-                cols: "2",
-                md: "2"
-              }, {
-                default: _withCtx$n(() => _cache[12] || (_cache[12] = [
-                  _createElementVNode$i("div", { id: "top-rules-table-batch-actions" }, null, -1)
-                ])),
-                _: 1
-              }),
-              _createVNode$n(_component_v_col, {
-                cols: "8",
-                md: "8",
-                class: "d-flex justify-center"
-              }, {
-                default: _withCtx$n(() => [
-                  _createVNode$n(_component_v_pagination, {
-                    modelValue: page.value,
-                    "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => page.value = $event),
-                    length: pageCount.value,
-                    "total-visible": "5",
-                    rounded: "circle",
-                    class: "d-none d-sm-flex my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"]),
-                  _createVNode$n(_component_v_pagination, {
-                    modelValue: page.value,
-                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => page.value = $event),
-                    length: pageCount.value,
-                    "total-visible": "0",
-                    rounded: "circle",
-                    class: "d-sm-none my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$n(_component_v_col, {
-                cols: "2",
-                md: "2",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$n(() => [
-                  _createVNode$n(_component_v_menu, null, {
-                    activator: _withCtx$n(({ props: props2 }) => [
-                      _createVNode$n(_component_v_btn, _mergeProps$i(props2, {
-                        icon: "",
-                        rounded: "circle",
-                        variant: "tonal",
-                        disabled: loading.value
-                      }), {
-                        default: _withCtx$n(() => [
-                          _createTextVNode$n(_toDisplayString$l(_unref$k(pageTitle)(itemsPerPage.value)), 1)
-                        ]),
-                        _: 2
-                      }, 1040, ["disabled"])
-                    ]),
-                    default: _withCtx$n(() => [
-                      _createVNode$n(_component_v_list, null, {
-                        default: _withCtx$n(() => [
-                          (_openBlock$n(true), _createElementBlock$a(_Fragment$8, null, _renderList$8(_unref$k(itemsPerPageOptions), (item, index) => {
-                            return _openBlock$n(), _createBlock$n(_component_v_list_item, {
-                              key: index,
-                              value: item.value,
-                              onClick: ($event) => itemsPerPage.value = item.value
-                            }, {
-                              default: _withCtx$n(() => [
-                                _createVNode$n(_component_v_list_item_title, null, {
-                                  default: _withCtx$n(() => [
-                                    _createTextVNode$n(_toDisplayString$l(item.title), 1)
-                                  ]),
-                                  _: 2
-                                }, 1024)
-                              ]),
-                              _: 2
-                            }, 1032, ["value", "onClick"]);
-                          }), 128))
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createVNode$n(_component_v_divider),
-        _cache[13] || (_cache[13] = _createElementVNode$i("div", { class: "text-caption text-grey mt-2" }, " *置顶规则用于管理来自规则集的匹配规则，这些规则会动态更新。 ", -1)),
-        _cache[14] || (_cache[14] = _createElementVNode$i("div", { class: "text-caption text-grey mt-2" }, "*对置顶规则的修改只有Clash更新配置后才会生效。", -1)),
-        ruleDialogVisible.value ? (_openBlock$n(), _createBlock$n(_sfc_main$r, {
+        _unref$o(smAndDown) ? (_openBlock$v(), _createBlock$v(TopRulesMobile, {
           key: 0,
+          "paginated-rules": paginatedTopRules.value,
+          search: searchTopRule.value,
+          page: page.value,
+          "page-count": pageCount.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchTopRule.value = v),
+          "onUpdate:page": _cache[2] || (_cache[2] = (v) => page.value = v),
+          onOpenImportDialog: openImportRuleDialog,
+          onOpenAddDialog: openAddRuleDialog,
+          onEdit: editRule,
+          onDelete: deleteRule,
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility
+        }, null, 8, ["paginated-rules", "search", "page", "page-count", "loading"])) : (_openBlock$v(), _createBlock$v(_sfc_main$y, {
+          key: 1,
+          rules: _ctx.rules,
+          search: searchTopRule.value,
+          page: page.value,
+          "items-per-page": itemsPerPage.value,
+          "page-count": pageCount.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[3] || (_cache[3] = (v) => searchTopRule.value = v),
+          "onUpdate:page": _cache[4] || (_cache[4] = (v) => page.value = v),
+          "onUpdate:itemsPerPage": _cache[5] || (_cache[5] = (v) => itemsPerPage.value = v),
+          onOpenImportDialog: openImportRuleDialog,
+          onOpenAddDialog: openAddRuleDialog,
+          onEdit: editRule,
+          onDelete: deleteRule,
+          onDeleteBatch: deleteRules,
+          onReorder: handleReorderRule,
+          onChangeStatus: handleStatusChange,
+          onChangeStatusBatch: handleBatchStatusChange,
+          onEditVisibility: editVisibility
+        }, null, 8, ["rules", "search", "page", "items-per-page", "page-count", "loading"])),
+        _createVNode$v(_component_v_divider),
+        _cache[12] || (_cache[12] = _createElementVNode$o("div", { class: "text-caption text-grey mt-2" }, " *置顶规则用于管理来自规则集的匹配规则，这些规则会动态更新。 ", -1)),
+        _cache[13] || (_cache[13] = _createElementVNode$o("div", { class: "text-caption text-grey mt-2" }, "*对置顶规则的修改只有Clash更新配置后才会生效。", -1)),
+        ruleDialogVisible.value ? (_openBlock$v(), _createBlock$v(_sfc_main$B, {
+          key: 2,
           modelValue: ruleDialogVisible.value,
-          "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => ruleDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => ruleDialogVisible.value = $event),
           "initial-rule": currentRule.value,
           "is-adding": editingPriority.value === null,
           "editing-type": editingType.value,
@@ -7060,18 +7346,16 @@ const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
           "geo-rules": _ctx.geoRules,
           "custom-outbounds": _ctx.customOutbounds,
           api: _ctx.api,
-          onRefresh: _cache[5] || (_cache[5] = (v) => emit("refresh", v)),
-          onShowSnackbar: _cache[6] || (_cache[6] = (val) => emit("show-snackbar", val)),
-          onShowError: _cache[7] || (_cache[7] = (msg) => emit("show-error", msg)),
+          onRefresh: _cache[7] || (_cache[7] = (v) => emit("refresh", v)),
+          onShowError: _cache[8] || (_cache[8] = (msg) => emit("show-error", msg)),
           onClose: closeRuleDialog
         }, null, 8, ["modelValue", "initial-rule", "is-adding", "editing-type", "rule-provider-names", "geo-rules", "custom-outbounds", "api"])) : _createCommentVNode$k("", true),
-        importRuleDialog.value ? (_openBlock$n(), _createBlock$n(_sfc_main$o, {
-          key: 1,
+        importRuleDialog.value ? (_openBlock$v(), _createBlock$v(_sfc_main$w, {
+          key: 3,
           modelValue: importRuleDialog.value,
-          "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => importRuleDialog.value = $event),
+          "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => importRuleDialog.value = $event),
           api: _ctx.api,
-          onRefresh: _cache[9] || (_cache[9] = ($event) => emit("refresh", ["top"])),
-          onShowSnackbar: _cache[10] || (_cache[10] = (val) => emit("show-snackbar", val)),
+          onRefresh: _cache[10] || (_cache[10] = ($event) => emit("refresh", ["top"])),
           onShowError: _cache[11] || (_cache[11] = (msg) => emit("show-error", msg))
         }, null, 8, ["modelValue", "api"])) : _createCommentVNode$k("", true)
       ]);
@@ -7079,10 +7363,10 @@ const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
   }
 });
 
-const {defineComponent:_defineComponent$m} = await importShared('vue');
+const {defineComponent:_defineComponent$u} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$m,resolveComponent:_resolveComponent$m,withCtx:_withCtx$m,createVNode:_createVNode$m,mergeProps:_mergeProps$h,unref:_unref$j,toDisplayString:_toDisplayString$k,openBlock:_openBlock$m,createBlock:_createBlock$m,createCommentVNode:_createCommentVNode$j} = await importShared('vue');
-const _sfc_main$m = /* @__PURE__ */ _defineComponent$m({
+const {createTextVNode:_createTextVNode$n,resolveComponent:_resolveComponent$u,withCtx:_withCtx$u,createVNode:_createVNode$u,mergeProps:_mergeProps$h,unref:_unref$n,toDisplayString:_toDisplayString$k,openBlock:_openBlock$u,createBlock:_createBlock$u,createCommentVNode:_createCommentVNode$j} = await importShared('vue');
+const _sfc_main$u = /* @__PURE__ */ _defineComponent$u({
   __name: "ProxyGroupActionMenu",
   props: {
     proxyGroup: {
@@ -7094,24 +7378,24 @@ const _sfc_main$m = /* @__PURE__ */ _defineComponent$m({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$m("v-icon");
-      const _component_v_btn = _resolveComponent$m("v-btn");
-      const _component_v_list_item_title = _resolveComponent$m("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$m("v-list-item");
-      const _component_v_list = _resolveComponent$m("v-list");
-      const _component_v_menu = _resolveComponent$m("v-menu");
-      return _openBlock$m(), _createBlock$m(_component_v_menu, { "min-width": "120" }, {
-        activator: _withCtx$m(({ props }) => [
-          _createVNode$m(_component_v_btn, _mergeProps$h({
+      const _component_v_icon = _resolveComponent$u("v-icon");
+      const _component_v_btn = _resolveComponent$u("v-btn");
+      const _component_v_list_item_title = _resolveComponent$u("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$u("v-list-item");
+      const _component_v_list = _resolveComponent$u("v-list");
+      const _component_v_menu = _resolveComponent$u("v-menu");
+      return _openBlock$u(), _createBlock$u(_component_v_menu, { "min-width": "120" }, {
+        activator: _withCtx$u(({ props }) => [
+          _createVNode$u(_component_v_btn, _mergeProps$h({
             color: "secondary",
             icon: "",
             size: "small",
             variant: "text"
           }, props), {
-            default: _withCtx$m(() => [
-              _createVNode$m(_component_v_icon, null, {
-                default: _withCtx$m(() => _cache[6] || (_cache[6] = [
-                  _createTextVNode$m("mdi-dots-vertical")
+            default: _withCtx$u(() => [
+              _createVNode$u(_component_v_icon, null, {
+                default: _withCtx$u(() => _cache[6] || (_cache[6] = [
+                  _createTextVNode$n("mdi-dots-vertical")
                 ])),
                 _: 1
               })
@@ -7119,152 +7403,152 @@ const _sfc_main$m = /* @__PURE__ */ _defineComponent$m({
             _: 2
           }, 1040)
         ]),
-        default: _withCtx$m(() => [
-          _createVNode$m(_component_v_list, { density: "compact" }, {
-            default: _withCtx$m(() => [
-              _unref$j(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$m(), _createBlock$m(_component_v_list_item, {
+        default: _withCtx$u(() => [
+          _createVNode$u(_component_v_list, { density: "compact" }, {
+            default: _withCtx$u(() => [
+              _unref$n(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
                 key: 0,
                 onClick: _cache[0] || (_cache[0] = ($event) => emit("changeStatus", !__props.proxyGroup.meta.disabled))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: __props.proxyGroup.meta.disabled ? "success" : "grey"
                   }, {
-                    default: _withCtx$m(() => [
-                      _createTextVNode$m(_toDisplayString$k(__props.proxyGroup.meta.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
+                    default: _withCtx$u(() => [
+                      _createTextVNode$n(_toDisplayString$k(__props.proxyGroup.meta.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
                     ]),
                     _: 1
                   }, 8, ["color"])
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => [
-                      _createTextVNode$m(_toDisplayString$k(__props.proxyGroup.meta.disabled ? "启用" : "禁用"), 1)
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => [
+                      _createTextVNode$n(_toDisplayString$k(__props.proxyGroup.meta.disabled ? "启用" : "禁用"), 1)
                     ]),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$j("", true),
-              _createVNode$m(_component_v_list_item, {
+              _createVNode$u(_component_v_list_item, {
                 onClick: _cache[1] || (_cache[1] = ($event) => emit("showYaml"))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: "info"
                   }, {
-                    default: _withCtx$m(() => _cache[7] || (_cache[7] = [
-                      _createTextVNode$m("mdi-code-json")
+                    default: _withCtx$u(() => _cache[7] || (_cache[7] = [
+                      _createTextVNode$n("mdi-code-json")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => _cache[8] || (_cache[8] = [
-                      _createTextVNode$m("查看")
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => _cache[8] || (_cache[8] = [
+                      _createTextVNode$n("查看")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               }),
-              _unref$j(isManual)(__props.proxyGroup.meta.source) || _unref$j(isRegion)(__props.proxyGroup.meta.source) ? (_openBlock$m(), _createBlock$m(_component_v_list_item, {
+              _unref$n(isManual)(__props.proxyGroup.meta.source) || _unref$n(isRegion)(__props.proxyGroup.meta.source) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
                 key: 1,
                 onClick: _cache[2] || (_cache[2] = ($event) => emit("edit"))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: "primary"
                   }, {
-                    default: _withCtx$m(() => _cache[9] || (_cache[9] = [
-                      _createTextVNode$m("mdi-file-edit-outline")
+                    default: _withCtx$u(() => _cache[9] || (_cache[9] = [
+                      _createTextVNode$n("mdi-file-edit-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => _cache[10] || (_cache[10] = [
-                      _createTextVNode$m("编辑")
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => _cache[10] || (_cache[10] = [
+                      _createTextVNode$n("编辑")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$j("", true),
-              _unref$j(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$m(), _createBlock$m(_component_v_list_item, {
+              _unref$n(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
                 key: 2,
                 onClick: _cache[3] || (_cache[3] = ($event) => emit("editVisibility"))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: "warning"
                   }, {
-                    default: _withCtx$m(() => _cache[11] || (_cache[11] = [
-                      _createTextVNode$m("mdi-eye-off-outline")
+                    default: _withCtx$u(() => _cache[11] || (_cache[11] = [
+                      _createTextVNode$n("mdi-eye-off-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => _cache[12] || (_cache[12] = [
-                      _createTextVNode$m("隐藏")
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => _cache[12] || (_cache[12] = [
+                      _createTextVNode$n("隐藏")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$j("", true),
-              __props.proxyGroup.meta.patched ? (_openBlock$m(), _createBlock$m(_component_v_list_item, {
+              __props.proxyGroup.meta.patched ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
                 key: 3,
                 onClick: _cache[4] || (_cache[4] = ($event) => emit("deletePatch"))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$m(() => _cache[13] || (_cache[13] = [
-                      _createTextVNode$m("mdi-close-box-outline")
+                    default: _withCtx$u(() => _cache[13] || (_cache[13] = [
+                      _createTextVNode$n("mdi-close-box-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => _cache[14] || (_cache[14] = [
-                      _createTextVNode$m("删除补丁")
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => _cache[14] || (_cache[14] = [
+                      _createTextVNode$n("删除补丁")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$j("", true),
-              _unref$j(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$m(), _createBlock$m(_component_v_list_item, {
+              _unref$n(isManual)(__props.proxyGroup.meta.source) ? (_openBlock$u(), _createBlock$u(_component_v_list_item, {
                 key: 4,
                 onClick: _cache[5] || (_cache[5] = ($event) => emit("delete"))
               }, {
-                prepend: _withCtx$m(() => [
-                  _createVNode$m(_component_v_icon, {
+                prepend: _withCtx$u(() => [
+                  _createVNode$u(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$m(() => _cache[15] || (_cache[15] = [
-                      _createTextVNode$m("mdi-trash-can-outline")
+                    default: _withCtx$u(() => _cache[15] || (_cache[15] = [
+                      _createTextVNode$n("mdi-trash-can-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$m(() => [
-                  _createVNode$m(_component_v_list_item_title, null, {
-                    default: _withCtx$m(() => _cache[16] || (_cache[16] = [
-                      _createTextVNode$m("删除")
+                default: _withCtx$u(() => [
+                  _createVNode$u(_component_v_list_item_title, null, {
+                    default: _withCtx$u(() => _cache[16] || (_cache[16] = [
+                      _createTextVNode$n("删除")
                     ])),
                     _: 1
                   })
@@ -7281,13 +7565,13 @@ const _sfc_main$m = /* @__PURE__ */ _defineComponent$m({
   }
 });
 
-const {defineComponent:_defineComponent$l} = await importShared('vue');
+const {defineComponent:_defineComponent$t} = await importShared('vue');
 
-const {unref:_unref$i,toDisplayString:_toDisplayString$j,createTextVNode:_createTextVNode$l,resolveComponent:_resolveComponent$l,withCtx:_withCtx$l,createVNode:_createVNode$l,mergeProps:_mergeProps$g,openBlock:_openBlock$l,createBlock:_createBlock$l,createCommentVNode:_createCommentVNode$i,createElementVNode:_createElementVNode$h} = await importShared('vue');
+const {unref:_unref$m,toDisplayString:_toDisplayString$j,createTextVNode:_createTextVNode$m,resolveComponent:_resolveComponent$t,withCtx:_withCtx$t,createVNode:_createVNode$t,mergeProps:_mergeProps$g,openBlock:_openBlock$t,createBlock:_createBlock$t,createCommentVNode:_createCommentVNode$i,createElementVNode:_createElementVNode$n} = await importShared('vue');
 
-const _hoisted_1$f = { class: "d-flex align-center" };
+const _hoisted_1$n = { class: "d-flex align-center" };
 const {ref: ref$e} = await importShared('vue');
-const _sfc_main$l = /* @__PURE__ */ _defineComponent$l({
+const _sfc_main$t = /* @__PURE__ */ _defineComponent$t({
   __name: "ProxyGroupsTable",
   props: {
     proxyGroups: {
@@ -7315,101 +7599,101 @@ const _sfc_main$l = /* @__PURE__ */ _defineComponent$l({
       { title: "", key: "actions", sortable: false, width: "1rem" }
     ]);
     return (_ctx, _cache) => {
-      const _component_v_chip = _resolveComponent$l("v-chip");
-      const _component_v_icon = _resolveComponent$l("v-icon");
-      const _component_v_tooltip = _resolveComponent$l("v-tooltip");
-      const _component_v_data_table = _resolveComponent$l("v-data-table");
-      return _openBlock$l(), _createBlock$l(_component_v_data_table, {
+      const _component_v_chip = _resolveComponent$t("v-chip");
+      const _component_v_icon = _resolveComponent$t("v-icon");
+      const _component_v_tooltip = _resolveComponent$t("v-tooltip");
+      const _component_v_data_table = _resolveComponent$t("v-data-table");
+      return _openBlock$t(), _createBlock$t(_component_v_data_table, {
         class: "px-4",
         headers: proxyGroupHeaders.value,
         search: __props.search,
         items: __props.proxyGroups,
         page: __props.page,
         "items-per-page": __props.itemsPerPage,
-        "items-per-page-options": _unref$i(itemsPerPageOptions),
+        "items-per-page-options": _unref$m(itemsPerPageOptions),
         density: "compact",
         "hide-default-footer": "",
         "fixed-header": "",
         "item-key": "name"
       }, {
-        "item.name": _withCtx$l(({ item }) => [
-          _createVNode$l(_component_v_chip, {
+        "item.name": _withCtx$t(({ item }) => [
+          _createVNode$t(_component_v_chip, {
             size: "small",
             pill: "",
             color: "secondary"
           }, {
-            default: _withCtx$l(() => [
-              _createTextVNode$l(_toDisplayString$j(item.data.name), 1)
+            default: _withCtx$t(() => [
+              _createTextVNode$m(_toDisplayString$j(item.data.name), 1)
             ]),
             _: 2
           }, 1024)
         ]),
-        "item.type": _withCtx$l(({ item }) => [
-          _createVNode$l(_component_v_chip, {
-            color: _unref$i(getProxyGroupTypeColor)(item.data.type),
+        "item.type": _withCtx$t(({ item }) => [
+          _createVNode$t(_component_v_chip, {
+            color: _unref$m(getProxyGroupTypeColor)(item.data.type),
             size: "small",
             label: "",
             variant: "tonal"
           }, {
-            default: _withCtx$l(() => [
-              _createTextVNode$l(_toDisplayString$j(item.data.type), 1)
+            default: _withCtx$t(() => [
+              _createTextVNode$m(_toDisplayString$j(item.data.type), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.source": _withCtx$l(({ item }) => [
-          _createVNode$l(_component_v_chip, {
+        "item.source": _withCtx$t(({ item }) => [
+          _createVNode$t(_component_v_chip, {
             size: "small",
-            color: _unref$i(getSourceColor)(item.meta.source),
+            color: _unref$m(getSourceColor)(item.meta.source),
             variant: "outlined"
           }, {
-            default: _withCtx$l(() => [
-              _createTextVNode$l(_toDisplayString$j(item.meta.source), 1)
+            default: _withCtx$t(() => [
+              _createTextVNode$m(_toDisplayString$j(item.meta.source), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.status": _withCtx$l(({ item }) => [
-          _createElementVNode$h("div", _hoisted_1$f, [
-            _createVNode$l(_component_v_icon, {
+        "item.status": _withCtx$t(({ item }) => [
+          _createElementVNode$n("div", _hoisted_1$n, [
+            _createVNode$t(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success",
               class: "mr-1"
             }, {
-              default: _withCtx$l(() => [
-                _createTextVNode$l(_toDisplayString$j(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+              default: _withCtx$t(() => [
+                _createTextVNode$m(_toDisplayString$j(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"]),
-            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$l(), _createBlock$l(_component_v_tooltip, {
+            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$t(), _createBlock$t(_component_v_tooltip, {
               key: 0,
               text: "已配置可见性限制",
               location: "top"
             }, {
-              activator: _withCtx$l(({ props }) => [
-                _createVNode$l(_component_v_icon, _mergeProps$g(props, {
+              activator: _withCtx$t(({ props }) => [
+                _createVNode$t(_component_v_icon, _mergeProps$g(props, {
                   size: "small",
                   color: "warning"
                 }), {
-                  default: _withCtx$l(() => _cache[0] || (_cache[0] = [
-                    _createTextVNode$l(" mdi-eye-off-outline ")
+                  default: _withCtx$t(() => _cache[0] || (_cache[0] = [
+                    _createTextVNode$m(" mdi-eye-off-outline ")
                   ])),
                   _: 2
                 }, 1040)
               ]),
               _: 1
             })) : _createCommentVNode$i("", true),
-            item.meta.patched ? (_openBlock$l(), _createBlock$l(_component_v_tooltip, {
+            item.meta.patched ? (_openBlock$t(), _createBlock$t(_component_v_tooltip, {
               key: 1,
               text: "已应用补丁",
               location: "top"
             }, {
-              activator: _withCtx$l(({ props }) => [
-                _createVNode$l(_component_v_icon, _mergeProps$g(props, {
+              activator: _withCtx$t(({ props }) => [
+                _createVNode$t(_component_v_icon, _mergeProps$g(props, {
                   size: "small",
                   color: "info"
                 }), {
-                  default: _withCtx$l(() => _cache[1] || (_cache[1] = [
-                    _createTextVNode$l(" mdi-auto-fix ")
+                  default: _withCtx$t(() => _cache[1] || (_cache[1] = [
+                    _createTextVNode$m(" mdi-auto-fix ")
                   ])),
                   _: 2
                 }, 1040)
@@ -7418,8 +7702,8 @@ const _sfc_main$l = /* @__PURE__ */ _defineComponent$l({
             })) : _createCommentVNode$i("", true)
           ])
         ]),
-        "item.actions": _withCtx$l(({ item }) => [
-          _createVNode$l(_sfc_main$m, {
+        "item.actions": _withCtx$t(({ item }) => [
+          _createVNode$t(_sfc_main$u, {
             "proxy-group": item,
             onChangeStatus: (disabled) => emit("changeStatus", item.data.name, disabled),
             onShowYaml: ($event) => emit("showYaml", item.data),
@@ -7435,14 +7719,205 @@ const _sfc_main$l = /* @__PURE__ */ _defineComponent$l({
   }
 });
 
-const {defineComponent:_defineComponent$k} = await importShared('vue');
+const {defineComponent:_defineComponent$s} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$i,createElementVNode:_createElementVNode$g,createTextVNode:_createTextVNode$k,resolveComponent:_resolveComponent$k,mergeProps:_mergeProps$f,withCtx:_withCtx$k,createVNode:_createVNode$k,openBlock:_openBlock$k,createBlock:_createBlock$k,createCommentVNode:_createCommentVNode$h,unref:_unref$h} = await importShared('vue');
+const {resolveComponent:_resolveComponent$s,createVNode:_createVNode$s,withCtx:_withCtx$s,createElementVNode:_createElementVNode$m,unref:_unref$l,toDisplayString:_toDisplayString$i,createTextVNode:_createTextVNode$l,mergeProps:_mergeProps$f,renderList:_renderList$b,Fragment:_Fragment$c,openBlock:_openBlock$s,createElementBlock:_createElementBlock$h,createBlock:_createBlock$s} = await importShared('vue');
 
-const _hoisted_1$e = { class: "d-flex justify-space-between align-center px-4 pt-3" };
-const _hoisted_2$c = ["title"];
-const _hoisted_3$c = { class: "d-flex align-center" };
-const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
+const _hoisted_1$m = { class: "proxy-groups-desktop-view" };
+const _hoisted_2$g = { class: "pa-4" };
+const _hoisted_3$g = { class: "clash-data-table table-page-container" };
+const _hoisted_4$e = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$s = /* @__PURE__ */ _defineComponent$s({
+  __name: "ProxyGroupsDesktop",
+  props: {
+    proxyGroups: {},
+    search: {},
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "update:itemsPerPage", "open-add-dialog", "edit-proxy-group", "delete-proxy-group", "delete-patch", "change-status", "edit-visibility", "copy-to-clipboard", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$s("v-text-field");
+      const _component_v_col = _resolveComponent$s("v-col");
+      const _component_v_btn = _resolveComponent$s("v-btn");
+      const _component_v_btn_group = _resolveComponent$s("v-btn-group");
+      const _component_v_row = _resolveComponent$s("v-row");
+      const _component_v_pagination = _resolveComponent$s("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$s("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$s("v-list-item");
+      const _component_v_list = _resolveComponent$s("v-list");
+      const _component_v_menu = _resolveComponent$s("v-menu");
+      return _openBlock$s(), _createElementBlock$h("div", _hoisted_1$m, [
+        _createElementVNode$m("div", _hoisted_2$g, [
+          _createVNode$s(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$s(() => [
+              _createVNode$s(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$s(() => [
+                  _createVNode$s(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索代理组",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$s(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$s(() => [
+                  _createVNode$s(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$s(() => [
+                      _createVNode$s(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$m("div", _hoisted_3$g, [
+          _createVNode$s(_sfc_main$t, {
+            "items-per-page": _ctx.itemsPerPage,
+            page: _ctx.page,
+            "proxy-groups": _ctx.proxyGroups,
+            search: _ctx.search,
+            onCopyToClipboard: _cache[2] || (_cache[2] = (t) => emit("copy-to-clipboard", t)),
+            onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
+            onEditProxyGroup: _cache[4] || (_cache[4] = (n) => emit("edit-proxy-group", n)),
+            onDeleteProxyGroup: _cache[5] || (_cache[5] = (n) => emit("delete-proxy-group", n)),
+            onDeletePatch: _cache[6] || (_cache[6] = (n) => emit("delete-patch", n)),
+            onChangeStatus: _cache[7] || (_cache[7] = (n, d) => emit("change-status", n, d)),
+            onEditVisibility: _cache[8] || (_cache[8] = (n) => emit("edit-visibility", n))
+          }, null, 8, ["items-per-page", "page", "proxy-groups", "search"])
+        ]),
+        _createElementVNode$m("div", _hoisted_4$e, [
+          _createVNode$s(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$s(() => [
+              _createVNode$s(_component_v_col, {
+                cols: "2",
+                md: "1"
+              }),
+              _createVNode$s(_component_v_col, {
+                cols: "8",
+                md: "10",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$s(() => [
+                  _createVNode$s(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[9] || (_cache[9] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$s(_component_v_col, {
+                cols: "2",
+                md: "1",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$s(() => [
+                  _createVNode$s(_component_v_menu, null, {
+                    activator: _withCtx$s(({ props: menuProps }) => [
+                      _createVNode$s(_component_v_btn, _mergeProps$f(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$s(() => [
+                          _createTextVNode$l(_toDisplayString$i(_unref$l(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$s(() => [
+                      _createVNode$s(_component_v_list, null, {
+                        default: _withCtx$s(() => [
+                          (_openBlock$s(true), _createElementBlock$h(_Fragment$c, null, _renderList$b(_unref$l(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$s(), _createBlock$s(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$s(() => [
+                                _createVNode$s(_component_v_list_item_title, null, {
+                                  default: _withCtx$s(() => [
+                                    _createTextVNode$l(_toDisplayString$i(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+
+const {defineComponent:_defineComponent$r} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$h,createElementVNode:_createElementVNode$l,createTextVNode:_createTextVNode$k,resolveComponent:_resolveComponent$r,mergeProps:_mergeProps$e,withCtx:_withCtx$r,createVNode:_createVNode$r,openBlock:_openBlock$r,createBlock:_createBlock$r,createCommentVNode:_createCommentVNode$h,unref:_unref$k} = await importShared('vue');
+
+const _hoisted_1$l = { class: "d-flex justify-space-between align-center px-4 pt-3" };
+const _hoisted_2$f = ["title"];
+const _hoisted_3$f = { class: "d-flex align-center" };
+const _sfc_main$r = /* @__PURE__ */ _defineComponent$r({
   __name: "ProxyGroupCard",
   props: {
     proxyGroupData: {
@@ -7454,41 +7929,41 @@ const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$k("v-icon");
-      const _component_v_tooltip = _resolveComponent$k("v-tooltip");
-      const _component_v_chip = _resolveComponent$k("v-chip");
-      const _component_v_col = _resolveComponent$k("v-col");
-      const _component_v_row = _resolveComponent$k("v-row");
-      const _component_v_card_text = _resolveComponent$k("v-card-text");
-      const _component_v_divider = _resolveComponent$k("v-divider");
-      const _component_v_spacer = _resolveComponent$k("v-spacer");
-      const _component_v_card_actions = _resolveComponent$k("v-card-actions");
-      const _component_v_card = _resolveComponent$k("v-card");
-      return _openBlock$k(), _createBlock$k(_component_v_card, {
+      const _component_v_icon = _resolveComponent$r("v-icon");
+      const _component_v_tooltip = _resolveComponent$r("v-tooltip");
+      const _component_v_chip = _resolveComponent$r("v-chip");
+      const _component_v_col = _resolveComponent$r("v-col");
+      const _component_v_row = _resolveComponent$r("v-row");
+      const _component_v_card_text = _resolveComponent$r("v-card-text");
+      const _component_v_divider = _resolveComponent$r("v-divider");
+      const _component_v_spacer = _resolveComponent$r("v-spacer");
+      const _component_v_card_actions = _resolveComponent$r("v-card-actions");
+      const _component_v_card = _resolveComponent$r("v-card");
+      return _openBlock$r(), _createBlock$r(_component_v_card, {
         rounded: "lg",
         elevation: "2",
         class: "proxy-group-card h-100 transition-swing",
         variant: "tonal"
       }, {
-        default: _withCtx$k(() => [
-          _createElementVNode$g("div", _hoisted_1$e, [
-            _createElementVNode$g("span", {
+        default: _withCtx$r(() => [
+          _createElementVNode$l("div", _hoisted_1$l, [
+            _createElementVNode$l("span", {
               class: "font-weight-bold text-truncate",
               title: __props.proxyGroupData.data.name
-            }, _toDisplayString$i(__props.proxyGroupData.data.name), 9, _hoisted_2$c),
-            _createElementVNode$g("div", _hoisted_3$c, [
-              __props.proxyGroupData.meta.invisible_to && __props.proxyGroupData.meta.invisible_to.length > 0 ? (_openBlock$k(), _createBlock$k(_component_v_tooltip, {
+            }, _toDisplayString$h(__props.proxyGroupData.data.name), 9, _hoisted_2$f),
+            _createElementVNode$l("div", _hoisted_3$f, [
+              __props.proxyGroupData.meta.invisible_to && __props.proxyGroupData.meta.invisible_to.length > 0 ? (_openBlock$r(), _createBlock$r(_component_v_tooltip, {
                 key: 0,
                 text: "已配置可见性限制",
                 location: "top"
               }, {
-                activator: _withCtx$k(({ props }) => [
-                  _createVNode$k(_component_v_icon, _mergeProps$f(props, {
+                activator: _withCtx$r(({ props }) => [
+                  _createVNode$r(_component_v_icon, _mergeProps$e(props, {
                     size: "small",
                     color: "warning",
                     class: "mr-2"
                   }), {
-                    default: _withCtx$k(() => _cache[6] || (_cache[6] = [
+                    default: _withCtx$r(() => _cache[6] || (_cache[6] = [
                       _createTextVNode$k(" mdi-eye-off-outline ")
                     ])),
                     _: 2
@@ -7496,45 +7971,45 @@ const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
                 ]),
                 _: 1
               })) : _createCommentVNode$h("", true),
-              _createVNode$k(_component_v_chip, {
+              _createVNode$r(_component_v_chip, {
                 size: "small",
-                color: _unref$h(getSourceColor)(__props.proxyGroupData.meta.source),
+                color: _unref$k(getSourceColor)(__props.proxyGroupData.meta.source),
                 variant: "outlined"
               }, {
-                default: _withCtx$k(() => [
-                  _createTextVNode$k(_toDisplayString$i(__props.proxyGroupData.meta.source), 1)
+                default: _withCtx$r(() => [
+                  _createTextVNode$k(_toDisplayString$h(__props.proxyGroupData.meta.source), 1)
                 ]),
                 _: 1
               }, 8, ["color"])
             ])
           ]),
-          _createVNode$k(_component_v_card_text, { class: "pt-2 pb-4" }, {
-            default: _withCtx$k(() => [
-              _createVNode$k(_component_v_row, {
+          _createVNode$r(_component_v_card_text, { class: "pt-2 pb-4" }, {
+            default: _withCtx$r(() => [
+              _createVNode$r(_component_v_row, {
                 "no-gutters": "",
                 class: "align-center"
               }, {
-                default: _withCtx$k(() => [
-                  _createVNode$k(_component_v_col, {
+                default: _withCtx$r(() => [
+                  _createVNode$r(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$k(() => _cache[7] || (_cache[7] = [
+                    default: _withCtx$r(() => _cache[7] || (_cache[7] = [
                       _createTextVNode$k("类型")
                     ])),
                     _: 1
                   }),
-                  _createVNode$k(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$k(() => [
-                      _createVNode$k(_component_v_chip, {
-                        color: _unref$h(getProxyGroupTypeColor)(__props.proxyGroupData.data.type),
+                  _createVNode$r(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$r(() => [
+                      _createVNode$r(_component_v_chip, {
+                        color: _unref$k(getProxyGroupTypeColor)(__props.proxyGroupData.data.type),
                         size: "x-small",
                         label: "",
                         variant: "tonal",
                         class: "font-weight-medium"
                       }, {
-                        default: _withCtx$k(() => [
-                          _createTextVNode$k(_toDisplayString$i(__props.proxyGroupData.data.type), 1)
+                        default: _withCtx$r(() => [
+                          _createTextVNode$k(_toDisplayString$h(__props.proxyGroupData.data.type), 1)
                         ]),
                         _: 1
                       }, 8, ["color"])
@@ -7547,19 +8022,19 @@ const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
             ]),
             _: 1
           }),
-          _createVNode$k(_component_v_divider),
-          _createVNode$k(_component_v_card_actions, null, {
-            default: _withCtx$k(() => [
-              _createVNode$k(_component_v_icon, {
+          _createVNode$r(_component_v_divider),
+          _createVNode$r(_component_v_card_actions, null, {
+            default: _withCtx$r(() => [
+              _createVNode$r(_component_v_icon, {
                 color: __props.proxyGroupData.meta.disabled ? "grey" : "success"
               }, {
-                default: _withCtx$k(() => [
-                  _createTextVNode$k(_toDisplayString$i(__props.proxyGroupData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+                default: _withCtx$r(() => [
+                  _createTextVNode$k(_toDisplayString$h(__props.proxyGroupData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
                 ]),
                 _: 1
               }, 8, ["color"]),
-              _createVNode$k(_component_v_spacer),
-              _createVNode$k(_sfc_main$m, {
+              _createVNode$r(_component_v_spacer),
+              _createVNode$r(_sfc_main$u, {
                 "proxy-group": __props.proxyGroupData,
                 onChangeStatus: _cache[0] || (_cache[0] = (disabled) => emit("changeStatus", __props.proxyGroupData.data.name, disabled)),
                 onShowYaml: _cache[1] || (_cache[1] = ($event) => emit("showYaml", __props.proxyGroupData.data)),
@@ -7578,14 +8053,143 @@ const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
   }
 });
 
-const ProxyGroupCard = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-88bfc397"]]);
+const ProxyGroupCard = /* @__PURE__ */ _export_sfc(_sfc_main$r, [["__scopeId", "data-v-88bfc397"]]);
 
-const {defineComponent:_defineComponent$j} = await importShared('vue');
+const {defineComponent:_defineComponent$q} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$h,createTextVNode:_createTextVNode$j,resolveComponent:_resolveComponent$j,withCtx:_withCtx$j,createVNode:_createVNode$j,unref:_unref$g,openBlock:_openBlock$j,createBlock:_createBlock$j,createCommentVNode:_createCommentVNode$g,createElementVNode:_createElementVNode$f,withModifiers:_withModifiers$3} = await importShared('vue');
+const {resolveComponent:_resolveComponent$q,createVNode:_createVNode$q,withCtx:_withCtx$q,createElementVNode:_createElementVNode$k,renderList:_renderList$a,Fragment:_Fragment$b,openBlock:_openBlock$q,createElementBlock:_createElementBlock$g,createBlock:_createBlock$q} = await importShared('vue');
+
+const _hoisted_1$k = { class: "proxy-groups-mobile-view" };
+const _hoisted_2$e = { class: "pa-2 pb-4" };
+const _hoisted_3$e = { class: "mobile-card-container" };
+const _hoisted_4$d = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$q = /* @__PURE__ */ _defineComponent$q({
+  __name: "ProxyGroupsMobile",
+  props: {
+    paginatedProxyGroups: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-add-dialog", "edit-proxy-group", "delete-proxy-group", "delete-patch", "change-status", "edit-visibility", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$q("v-text-field");
+      const _component_v_col = _resolveComponent$q("v-col");
+      const _component_v_btn = _resolveComponent$q("v-btn");
+      const _component_v_btn_group = _resolveComponent$q("v-btn-group");
+      const _component_v_row = _resolveComponent$q("v-row");
+      const _component_v_pagination = _resolveComponent$q("v-pagination");
+      return _openBlock$q(), _createElementBlock$g("div", _hoisted_1$k, [
+        _createElementVNode$k("div", _hoisted_2$e, [
+          _createVNode$q(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$q(() => [
+              _createVNode$q(_component_v_col, {
+                cols: "10",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$q(() => [
+                  _createVNode$q(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索代理组",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$q(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$q(() => [
+                  _createVNode$q(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$q(() => [
+                      _createVNode$q(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$k("div", _hoisted_3$e, [
+          _createVNode$q(_component_v_row, null, {
+            default: _withCtx$q(() => [
+              (_openBlock$q(true), _createElementBlock$g(_Fragment$b, null, _renderList$a(_ctx.paginatedProxyGroups, (item) => {
+                return _openBlock$q(), _createBlock$q(_component_v_col, {
+                  key: item.data.name,
+                  cols: "12"
+                }, {
+                  default: _withCtx$q(() => [
+                    _createVNode$q(ProxyGroupCard, {
+                      "proxy-group-data": item,
+                      onEditProxyGroup: _cache[2] || (_cache[2] = (n) => emit("edit-proxy-group", n)),
+                      onDeleteProxyGroup: _cache[3] || (_cache[3] = (n) => emit("delete-proxy-group", n)),
+                      onDeletePatch: _cache[4] || (_cache[4] = (n) => emit("delete-patch", n)),
+                      onShowYaml: _cache[5] || (_cache[5] = (o) => emit("show-yaml", o)),
+                      onChangeStatus: _cache[6] || (_cache[6] = (n, d) => emit("change-status", n, d)),
+                      onEditVisibility: _cache[7] || (_cache[7] = (n) => emit("edit-visibility", n))
+                    }, null, 8, ["proxy-group-data"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$k("div", _hoisted_4$d, [
+          _createVNode$q(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[8] || (_cache[8] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const ProxyGroupsMobile = /* @__PURE__ */ _export_sfc(_sfc_main$q, [["__scopeId", "data-v-6f74125b"]]);
+
+const {defineComponent:_defineComponent$p} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$g,createTextVNode:_createTextVNode$j,resolveComponent:_resolveComponent$p,withCtx:_withCtx$p,createVNode:_createVNode$p,unref:_unref$j,openBlock:_openBlock$p,createBlock:_createBlock$p,createCommentVNode:_createCommentVNode$g,createElementVNode:_createElementVNode$j,withModifiers:_withModifiers$3} = await importShared('vue');
 
 const {ref: ref$d,computed: computed$5,toRaw: toRaw$5} = await importShared('vue');
-const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
+const _sfc_main$p = /* @__PURE__ */ _defineComponent$p({
   __name: "ProxyGroupsDialog",
   props: {
     initialValue: {
@@ -7609,10 +8213,11 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
       required: true
     }
   },
-  emits: ["close", "refresh", "show-snackbar", "show-error"],
+  emits: ["close", "refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const proxyGroup = ref$d(
       props.initialValue ? structuredClone(toRaw$5(props.initialValue.data)) : { ...defaultProxyGroup }
     );
@@ -7663,79 +8268,67 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
         );
         if (!result.success) {
           emit("show-error", action + "失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: action + "失败",
-            color: "error"
-          });
+          toast.error(action + "失败");
           return;
         }
-        emit("show-snackbar", {
-          show: true,
-          message: action + "成功",
-          color: "success"
-        });
+        toast.success(action + "成功");
         emit("refresh");
         emit("close");
       } catch (err) {
         if (err instanceof Error) {
           emit("show-error", action + "失败: " + (err.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: action + "失败",
-            color: "error"
-          });
+          toast.error(action + "失败");
         }
       } finally {
         loading.value = false;
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$j("v-card-title");
-      const _component_v_text_field = _resolveComponent$j("v-text-field");
-      const _component_v_col = _resolveComponent$j("v-col");
-      const _component_v_select = _resolveComponent$j("v-select");
-      const _component_v_row = _resolveComponent$j("v-row");
-      const _component_v_combobox = _resolveComponent$j("v-combobox");
-      const _component_v_icon = _resolveComponent$j("v-icon");
-      const _component_v_switch = _resolveComponent$j("v-switch");
-      const _component_v_card_text = _resolveComponent$j("v-card-text");
-      const _component_v_alert = _resolveComponent$j("v-alert");
-      const _component_v_spacer = _resolveComponent$j("v-spacer");
-      const _component_v_btn = _resolveComponent$j("v-btn");
-      const _component_v_card_actions = _resolveComponent$j("v-card-actions");
-      const _component_v_card = _resolveComponent$j("v-card");
-      const _component_v_form = _resolveComponent$j("v-form");
-      const _component_v_dialog = _resolveComponent$j("v-dialog");
-      return _openBlock$j(), _createBlock$j(_component_v_dialog, { "max-width": "40rem" }, {
-        default: _withCtx$j(() => [
-          _createVNode$j(_component_v_form, {
+      const _component_v_card_title = _resolveComponent$p("v-card-title");
+      const _component_v_text_field = _resolveComponent$p("v-text-field");
+      const _component_v_col = _resolveComponent$p("v-col");
+      const _component_v_select = _resolveComponent$p("v-select");
+      const _component_v_row = _resolveComponent$p("v-row");
+      const _component_v_combobox = _resolveComponent$p("v-combobox");
+      const _component_v_icon = _resolveComponent$p("v-icon");
+      const _component_v_switch = _resolveComponent$p("v-switch");
+      const _component_v_card_text = _resolveComponent$p("v-card-text");
+      const _component_v_alert = _resolveComponent$p("v-alert");
+      const _component_v_spacer = _resolveComponent$p("v-spacer");
+      const _component_v_btn = _resolveComponent$p("v-btn");
+      const _component_v_card_actions = _resolveComponent$p("v-card-actions");
+      const _component_v_card = _resolveComponent$p("v-card");
+      const _component_v_form = _resolveComponent$p("v-form");
+      const _component_v_dialog = _resolveComponent$p("v-dialog");
+      return _openBlock$p(), _createBlock$p(_component_v_dialog, { "max-width": "40rem" }, {
+        default: _withCtx$p(() => [
+          _createVNode$p(_component_v_form, {
             ref_key: "form",
             ref: form,
             onSubmit: _withModifiers$3(saveProxyGroup, ["prevent"])
           }, {
-            default: _withCtx$j(() => [
-              _createVNode$j(_component_v_card, null, {
-                default: _withCtx$j(() => [
-                  _createVNode$j(_component_v_card_title, null, {
-                    default: _withCtx$j(() => [
-                      _createTextVNode$j(_toDisplayString$h(props.isAdding ? "添加代理组" : "编辑代理组"), 1)
+            default: _withCtx$p(() => [
+              _createVNode$p(_component_v_card, null, {
+                default: _withCtx$p(() => [
+                  _createVNode$p(_component_v_card_title, null, {
+                    default: _withCtx$p(() => [
+                      _createTextVNode$j(_toDisplayString$g(props.isAdding ? "添加代理组" : "编辑代理组"), 1)
                     ]),
                     _: 1
                   }),
-                  _createVNode$j(_component_v_card_text, {
+                  _createVNode$p(_component_v_card_text, {
                     style: { "overflow-y": "auto" },
                     "max-height": "60rem"
                   }, {
-                    default: _withCtx$j(() => [
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                    default: _withCtx$p(() => [
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value.name,
                                 "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => proxyGroup.value.name = $event),
                                 label: "name",
@@ -7747,12 +8340,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_select, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_select, {
                                 modelValue: proxyGroup.value.type,
                                 "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => proxyGroup.value.type = $event),
                                 label: "type",
@@ -7767,7 +8360,7 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_select, {
+                      _createVNode$p(_component_v_select, {
                         modelValue: proxyGroup.value.proxies,
                         "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => proxyGroup.value.proxies = $event),
                         label: "proxies",
@@ -7778,7 +8371,7 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         hint: "引入出站代理或其他策略组",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"]),
-                      _createVNode$j(_component_v_select, {
+                      _createVNode$p(_component_v_select, {
                         modelValue: proxyGroup.value.use,
                         "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => proxyGroup.value.use = $event),
                         label: "use",
@@ -7789,17 +8382,17 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         hint: "引入代理集合",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"]),
-                      _createVNode$j(_component_v_combobox, {
+                      _createVNode$p(_component_v_combobox, {
                         modelValue: proxyGroup.value.url,
                         "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => proxyGroup.value.url = $event),
                         label: "url",
-                        items: _unref$g(healthCheckUrls),
+                        items: _unref$j(healthCheckUrls),
                         hint: "健康检查测试地址",
                         rules: urlRules,
                         clearable: "",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"]),
-                      proxyGroup.value.type === "url-test" ? (_openBlock$j(), _createBlock$j(_component_v_text_field, {
+                      proxyGroup.value.type === "url-test" ? (_openBlock$p(), _createBlock$p(_component_v_text_field, {
                         key: 0,
                         modelValue: proxyGroup.value.tolerance,
                         "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => proxyGroup.value.tolerance = $event),
@@ -7812,7 +8405,7 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         rules: [(v) => v >= 0 || "容差需不小于0"],
                         class: "mb-4"
                       }, null, 8, ["modelValue", "rules"])) : _createCommentVNode$g("", true),
-                      proxyGroup.value.type === "load-balance" ? (_openBlock$j(), _createBlock$j(_component_v_select, {
+                      proxyGroup.value.type === "load-balance" ? (_openBlock$p(), _createBlock$p(_component_v_select, {
                         key: 1,
                         modelValue: proxyGroup.value.strategy,
                         "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => proxyGroup.value.strategy = $event),
@@ -7821,7 +8414,7 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         hint: "负载均衡策略",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"])) : _createCommentVNode$g("", true),
-                      proxyGroup.value.type === "smart" ? (_openBlock$j(), _createBlock$j(_component_v_select, {
+                      proxyGroup.value.type === "smart" ? (_openBlock$p(), _createBlock$p(_component_v_select, {
                         key: 2,
                         modelValue: proxyGroup.value.strategy,
                         "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => proxyGroup.value.strategy = $event),
@@ -7830,14 +8423,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         hint: "负载均衡策略",
                         class: "mb-4"
                       }, null, 8, ["modelValue", "items"])) : _createCommentVNode$g("", true),
-                      proxyGroup.value.type === "smart" ? (_openBlock$j(), _createBlock$j(_component_v_row, { key: 3 }, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      proxyGroup.value.type === "smart" ? (_openBlock$p(), _createBlock$p(_component_v_row, { key: 3 }, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["policy-priority"],
                                 "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => proxyGroup.value["policy-priority"] = $event),
                                 label: "policy-priority",
@@ -7847,12 +8440,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["sample-rate"],
                                 "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => proxyGroup.value["sample-rate"] = $event),
                                 modelModifiers: { number: true },
@@ -7867,14 +8460,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       })) : _createCommentVNode$g("", true),
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value.filter,
                                 "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => proxyGroup.value.filter = $event),
                                 label: "filter",
@@ -7884,12 +8477,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["exclude-filter"],
                                 "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => proxyGroup.value["exclude-filter"] = $event),
                                 label: "exclude-filter",
@@ -7899,12 +8492,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["exclude-type"],
                                 "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => proxyGroup.value["exclude-type"] = $event),
                                 label: "exclude-type",
@@ -7914,12 +8507,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["expected-status"],
                                 "onUpdate:modelValue": _cache[13] || (_cache[13] = ($event) => proxyGroup.value["expected-status"] = $event),
                                 label: "expected-status",
@@ -7932,14 +8525,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "12"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value.icon,
                                 "onUpdate:modelValue": _cache[14] || (_cache[14] = ($event) => proxyGroup.value.icon = $event),
                                 label: "icon",
@@ -7952,14 +8545,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value.interval,
                                 "onUpdate:modelValue": _cache[15] || (_cache[15] = ($event) => proxyGroup.value.interval = $event),
                                 modelModifiers: { number: true },
@@ -7972,9 +8565,9 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                                 hint: "健康检查间隔，如不为 0 则启用定时测试",
                                 rules: [(v) => v === null || v === void 0 || v > -1 || "检查间隔需不小于0"]
                               }, {
-                                "prepend-inner": _withCtx$j(() => [
-                                  _createVNode$j(_component_v_icon, { color: "warning" }, {
-                                    default: _withCtx$j(() => _cache[26] || (_cache[26] = [
+                                "prepend-inner": _withCtx$p(() => [
+                                  _createVNode$p(_component_v_icon, { color: "warning" }, {
+                                    default: _withCtx$p(() => _cache[26] || (_cache[26] = [
                                       _createTextVNode$j("mdi-timer")
                                     ])),
                                     _: 1
@@ -7985,12 +8578,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value.timeout,
                                 "onUpdate:modelValue": _cache[16] || (_cache[16] = ($event) => proxyGroup.value.timeout = $event),
                                 modelModifiers: { number: true },
@@ -8003,9 +8596,9 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                                 clearable: "",
                                 rules: [(v) => v === null || v === void 0 || v > 0 || "超时时间必须大于0"]
                               }, {
-                                "prepend-inner": _withCtx$j(() => [
-                                  _createVNode$j(_component_v_icon, { color: "warning" }, {
-                                    default: _withCtx$j(() => _cache[27] || (_cache[27] = [
+                                "prepend-inner": _withCtx$p(() => [
+                                  _createVNode$p(_component_v_icon, { color: "warning" }, {
+                                    default: _withCtx$p(() => _cache[27] || (_cache[27] = [
                                       _createTextVNode$j("mdi-timer")
                                     ])),
                                     _: 1
@@ -8019,14 +8612,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_text_field, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_text_field, {
                                 modelValue: proxyGroup.value["max-failed-times"],
                                 "onUpdate:modelValue": _cache[17] || (_cache[17] = ($event) => proxyGroup.value["max-failed-times"] = $event),
                                 modelModifiers: { number: true },
@@ -8041,12 +8634,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["lazy"],
                                 "onUpdate:modelValue": _cache[18] || (_cache[18] = ($event) => proxyGroup.value["lazy"] = $event),
                                 label: "lazy",
@@ -8057,12 +8650,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["disable-udp"],
                                 "onUpdate:modelValue": _cache[19] || (_cache[19] = ($event) => proxyGroup.value["disable-udp"] = $event),
                                 label: "disable-udp",
@@ -8073,12 +8666,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value.hidden,
                                 "onUpdate:modelValue": _cache[20] || (_cache[20] = ($event) => proxyGroup.value.hidden = $event),
                                 label: "hidden",
@@ -8092,14 +8685,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_row, null, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      _createVNode$p(_component_v_row, null, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["include-all"],
                                 "onUpdate:modelValue": _cache[21] || (_cache[21] = ($event) => proxyGroup.value["include-all"] = $event),
                                 label: "include-all",
@@ -8110,12 +8703,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["include-all-proxies"],
                                 "onUpdate:modelValue": _cache[22] || (_cache[22] = ($event) => proxyGroup.value["include-all-proxies"] = $event),
                                 label: "include-all-proxies",
@@ -8129,14 +8722,14 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                         ]),
                         _: 1
                       }),
-                      proxyGroup.value.type === "smart" ? (_openBlock$j(), _createBlock$j(_component_v_row, { key: 4 }, {
-                        default: _withCtx$j(() => [
-                          _createVNode$j(_component_v_col, {
+                      proxyGroup.value.type === "smart" ? (_openBlock$p(), _createBlock$p(_component_v_row, { key: 4 }, {
+                        default: _withCtx$p(() => [
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["uselightgbm"],
                                 "onUpdate:modelValue": _cache[23] || (_cache[23] = ($event) => proxyGroup.value["uselightgbm"] = $event),
                                 label: "uselightgbm",
@@ -8147,12 +8740,12 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                             ]),
                             _: 1
                           }),
-                          _createVNode$j(_component_v_col, {
+                          _createVNode$p(_component_v_col, {
                             cols: "12",
                             md: "6"
                           }, {
-                            default: _withCtx$j(() => [
-                              _createVNode$j(_component_v_switch, {
+                            default: _withCtx$p(() => [
+                              _createVNode$p(_component_v_switch, {
                                 modelValue: proxyGroup.value["collectdata"],
                                 "onUpdate:modelValue": _cache[24] || (_cache[24] = ($event) => proxyGroup.value["collectdata"] = $event),
                                 label: "collectdata",
@@ -8169,13 +8762,13 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                     ]),
                     _: 1
                   }),
-                  _createVNode$j(_component_v_alert, {
+                  _createVNode$p(_component_v_alert, {
                     type: "info",
                     variant: "tonal"
                   }, {
-                    default: _withCtx$j(() => _cache[28] || (_cache[28] = [
+                    default: _withCtx$p(() => _cache[28] || (_cache[28] = [
                       _createTextVNode$j(" 参考"),
-                      _createElementVNode$f("a", {
+                      _createElementVNode$j("a", {
                         href: "https://wiki.metacubex.one/config/proxy-groups/",
                         target: "_blank",
                         style: { "text-decoration": "underline" }
@@ -8183,24 +8776,24 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
                     ])),
                     _: 1
                   }),
-                  _createVNode$j(_component_v_card_actions, null, {
-                    default: _withCtx$j(() => [
-                      _createVNode$j(_component_v_spacer),
-                      _createVNode$j(_component_v_btn, {
+                  _createVNode$p(_component_v_card_actions, null, {
+                    default: _withCtx$p(() => [
+                      _createVNode$p(_component_v_spacer),
+                      _createVNode$p(_component_v_btn, {
                         color: "secondary",
                         onClick: _cache[25] || (_cache[25] = ($event) => emit("close"))
                       }, {
-                        default: _withCtx$j(() => _cache[29] || (_cache[29] = [
+                        default: _withCtx$p(() => _cache[29] || (_cache[29] = [
                           _createTextVNode$j("取消")
                         ])),
                         _: 1
                       }),
-                      _createVNode$j(_component_v_btn, {
+                      _createVNode$p(_component_v_btn, {
                         color: "primary",
                         type: "submit",
                         loading: loading.value
                       }, {
-                        default: _withCtx$j(() => _cache[30] || (_cache[30] = [
+                        default: _withCtx$p(() => _cache[30] || (_cache[30] = [
                           _createTextVNode$j("保存 ")
                         ])),
                         _: 1
@@ -8221,20 +8814,15 @@ const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
   }
 });
 
-const {defineComponent:_defineComponent$i} = await importShared('vue');
+const {defineComponent:_defineComponent$o} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$i,createVNode:_createVNode$i,withCtx:_withCtx$i,createElementVNode:_createElementVNode$e,renderList:_renderList$7,Fragment:_Fragment$7,openBlock:_openBlock$i,createElementBlock:_createElementBlock$9,createBlock:_createBlock$i,unref:_unref$f,toDisplayString:_toDisplayString$g,createTextVNode:_createTextVNode$i,mergeProps:_mergeProps$e,createCommentVNode:_createCommentVNode$f} = await importShared('vue');
+const {resolveComponent:_resolveComponent$o,createVNode:_createVNode$o,withCtx:_withCtx$o,unref:_unref$i,openBlock:_openBlock$o,createBlock:_createBlock$o,createCommentVNode:_createCommentVNode$f,createElementBlock:_createElementBlock$f} = await importShared('vue');
 
-const _hoisted_1$d = { class: "mb-2 position-relative" };
-const _hoisted_2$b = { class: "pa-4" };
-const _hoisted_3$b = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$a = { class: "d-sm-none" };
-const _hoisted_5$6 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
+const _hoisted_1$j = { class: "mb-2 position-relative" };
 const {computed: computed$4,ref: ref$c} = await importShared('vue');
-const _sfc_main$i = /* @__PURE__ */ _defineComponent$i({
+
+const {useDisplay: useDisplay$3} = await importShared('vuetify');
+const _sfc_main$o = /* @__PURE__ */ _defineComponent$o({
   __name: "ProxyGroupsTab",
   props: {
     proxyGroups: {},
@@ -8242,10 +8830,11 @@ const _sfc_main$i = /* @__PURE__ */ _defineComponent$i({
     customOutbounds: {},
     api: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error", "show-yaml", "copy-to-clipboard", "edit-visibility"],
+  emits: ["refresh", "show-error", "show-yaml", "copy-to-clipboard", "edit-visibility"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay$3();
     const searchProxyGroups = ref$c("");
     const pageProxyGroup = ref$c(1);
     const itemsPerPageProxyGroup = ref$c(10);
@@ -8351,245 +8940,83 @@ const _sfc_main$i = /* @__PURE__ */ _defineComponent$i({
       proxyGroupDialogVisible.value = false;
     }
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$i("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$i("v-overlay");
-      const _component_v_text_field = _resolveComponent$i("v-text-field");
-      const _component_v_col = _resolveComponent$i("v-col");
-      const _component_v_btn = _resolveComponent$i("v-btn");
-      const _component_v_btn_group = _resolveComponent$i("v-btn-group");
-      const _component_v_row = _resolveComponent$i("v-row");
-      const _component_v_pagination = _resolveComponent$i("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$i("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$i("v-list-item");
-      const _component_v_list = _resolveComponent$i("v-list");
-      const _component_v_menu = _resolveComponent$i("v-menu");
-      const _component_v_divider = _resolveComponent$i("v-divider");
-      return _openBlock$i(), _createElementBlock$9("div", _hoisted_1$d, [
-        _createVNode$i(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$o("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$o("v-overlay");
+      const _component_v_divider = _resolveComponent$o("v-divider");
+      return _openBlock$o(), _createElementBlock$f("div", _hoisted_1$j, [
+        _createVNode$o(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$i(() => [
-            _createVNode$i(_component_v_progress_circular, {
+          default: _withCtx$o(() => [
+            _createVNode$o(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        _createElementVNode$e("div", _hoisted_2$b, [
-          _createVNode$i(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$i(() => [
-              _createVNode$i(_component_v_col, {
-                cols: "10",
-                sm: "6",
-                class: "d-flex justify-start"
-              }, {
-                default: _withCtx$i(() => [
-                  _createVNode$i(_component_v_text_field, {
-                    modelValue: searchProxyGroups.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchProxyGroups.value = $event),
-                    label: "搜索代理组",
-                    clearable: "",
-                    density: "compact",
-                    variant: "solo-filled",
-                    "hide-details": "",
-                    class: "search-field",
-                    "prepend-inner-icon": "mdi-magnify",
-                    flat: "",
-                    rounded: "pill",
-                    "single-line": "",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$i(_component_v_col, {
-                cols: "2",
-                sm: "6",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$i(() => [
-                  _createVNode$i(_component_v_btn_group, {
-                    variant: "outlined",
-                    rounded: ""
-                  }, {
-                    default: _withCtx$i(() => [
-                      _createVNode$i(_component_v_btn, {
-                        icon: "mdi-plus",
-                        disabled: loading.value,
-                        onClick: openAddProxyGroupDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$e("div", _hoisted_3$b, [
-          _createVNode$i(_sfc_main$l, {
-            "items-per-page": itemsPerPageProxyGroup.value,
-            page: pageProxyGroup.value,
-            "proxy-groups": _ctx.proxyGroups,
-            search: searchProxyGroups.value,
-            onCopyToClipboard: _cache[2] || (_cache[2] = (t) => emit("copy-to-clipboard", t)),
-            onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
-            onEditProxyGroup: editProxyGroup,
-            onDeleteProxyGroup: deleteProxyGroup,
-            onDeletePatch: deletePatch,
-            onChangeStatus: handleStatusChange,
-            onEditVisibility: editVisibility
-          }, null, 8, ["items-per-page", "page", "proxy-groups", "search"])
-        ]),
-        _createElementVNode$e("div", _hoisted_4$a, [
-          _createVNode$i(_component_v_row, null, {
-            default: _withCtx$i(() => [
-              (_openBlock$i(true), _createElementBlock$9(_Fragment$7, null, _renderList$7(paginatedProxyGroups.value, (item) => {
-                return _openBlock$i(), _createBlock$i(_component_v_col, {
-                  key: item.data.name,
-                  cols: "12"
-                }, {
-                  default: _withCtx$i(() => [
-                    _createVNode$i(ProxyGroupCard, {
-                      "proxy-group-data": item,
-                      onEditProxyGroup: editProxyGroup,
-                      onDeleteProxyGroup: deleteProxyGroup,
-                      onDeletePatch: deletePatch,
-                      onShowYaml: _cache[4] || (_cache[4] = (o) => emit("show-yaml", o)),
-                      onChangeStatus: handleStatusChange,
-                      onEditVisibility: editVisibility
-                    }, null, 8, ["proxy-group-data"])
-                  ]),
-                  _: 2
-                }, 1024);
-              }), 128))
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$e("div", _hoisted_5$6, [
-          _createVNode$i(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$i(() => [
-              _createVNode$i(_component_v_col, {
-                cols: "2",
-                md: "1"
-              }),
-              _createVNode$i(_component_v_col, {
-                cols: "8",
-                md: "10",
-                class: "d-flex justify-center"
-              }, {
-                default: _withCtx$i(() => [
-                  _createVNode$i(_component_v_pagination, {
-                    modelValue: pageProxyGroup.value,
-                    "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => pageProxyGroup.value = $event),
-                    length: pageCountProxyGroups.value,
-                    "total-visible": "5",
-                    class: "d-none d-sm-flex my-0",
-                    rounded: "circle",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"]),
-                  _createVNode$i(_component_v_pagination, {
-                    modelValue: pageProxyGroup.value,
-                    "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => pageProxyGroup.value = $event),
-                    length: pageCountProxyGroups.value,
-                    "total-visible": "0",
-                    class: "d-sm-none my-0",
-                    rounded: "circle",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$i(_component_v_col, {
-                cols: "2",
-                md: "1",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$i(() => [
-                  _createVNode$i(_component_v_menu, null, {
-                    activator: _withCtx$i(({ props: props2 }) => [
-                      _createVNode$i(_component_v_btn, _mergeProps$e(props2, {
-                        icon: "",
-                        rounded: "circle",
-                        variant: "tonal",
-                        disabled: loading.value
-                      }), {
-                        default: _withCtx$i(() => [
-                          _createTextVNode$i(_toDisplayString$g(_unref$f(pageTitle)(itemsPerPageProxyGroup.value)), 1)
-                        ]),
-                        _: 2
-                      }, 1040, ["disabled"])
-                    ]),
-                    default: _withCtx$i(() => [
-                      _createVNode$i(_component_v_list, null, {
-                        default: _withCtx$i(() => [
-                          (_openBlock$i(true), _createElementBlock$9(_Fragment$7, null, _renderList$7(_unref$f(itemsPerPageOptions), (item, index) => {
-                            return _openBlock$i(), _createBlock$i(_component_v_list_item, {
-                              key: index,
-                              value: item.value,
-                              onClick: ($event) => itemsPerPageProxyGroup.value = item.value
-                            }, {
-                              default: _withCtx$i(() => [
-                                _createVNode$i(_component_v_list_item_title, null, {
-                                  default: _withCtx$i(() => [
-                                    _createTextVNode$i(_toDisplayString$g(item.title), 1)
-                                  ]),
-                                  _: 2
-                                }, 1024)
-                              ]),
-                              _: 2
-                            }, 1032, ["value", "onClick"]);
-                          }), 128))
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createVNode$i(_component_v_divider),
-        proxyGroupDialogVisible.value ? (_openBlock$i(), _createBlock$i(_sfc_main$j, {
+        _unref$i(smAndDown) ? (_openBlock$o(), _createBlock$o(ProxyGroupsMobile, {
           key: 0,
+          "paginated-proxy-groups": paginatedProxyGroups.value,
+          search: searchProxyGroups.value,
+          page: pageProxyGroup.value,
+          "page-count": pageCountProxyGroups.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchProxyGroups.value = v),
+          "onUpdate:page": _cache[2] || (_cache[2] = (v) => pageProxyGroup.value = v),
+          onOpenAddDialog: openAddProxyGroupDialog,
+          onEditProxyGroup: editProxyGroup,
+          onDeleteProxyGroup: deleteProxyGroup,
+          onDeletePatch: deletePatch,
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility,
+          onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o))
+        }, null, 8, ["paginated-proxy-groups", "search", "page", "page-count", "loading"])) : (_openBlock$o(), _createBlock$o(_sfc_main$s, {
+          key: 1,
+          "proxy-groups": _ctx.proxyGroups,
+          search: searchProxyGroups.value,
+          page: pageProxyGroup.value,
+          "items-per-page": itemsPerPageProxyGroup.value,
+          "page-count": pageCountProxyGroups.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[4] || (_cache[4] = (v) => searchProxyGroups.value = v),
+          "onUpdate:page": _cache[5] || (_cache[5] = (v) => pageProxyGroup.value = v),
+          "onUpdate:itemsPerPage": _cache[6] || (_cache[6] = (v) => itemsPerPageProxyGroup.value = v),
+          onOpenAddDialog: openAddProxyGroupDialog,
+          onEditProxyGroup: editProxyGroup,
+          onDeleteProxyGroup: deleteProxyGroup,
+          onDeletePatch: deletePatch,
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility,
+          onCopyToClipboard: _cache[7] || (_cache[7] = (t) => emit("copy-to-clipboard", t)),
+          onShowYaml: _cache[8] || (_cache[8] = (o) => emit("show-yaml", o))
+        }, null, 8, ["proxy-groups", "search", "page", "items-per-page", "page-count", "loading"])),
+        _createVNode$o(_component_v_divider),
+        proxyGroupDialogVisible.value ? (_openBlock$o(), _createBlock$o(_sfc_main$p, {
+          key: 2,
           modelValue: proxyGroupDialogVisible.value,
-          "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => proxyGroupDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => proxyGroupDialogVisible.value = $event),
           "initial-value": currentProxyGroup.value,
           "is-adding": editingProxyGroupName.value === null,
           "proxy-providers": _ctx.proxyProviders,
           "custom-outbounds": _ctx.customOutbounds,
           api: _ctx.api,
           onClose: closeProxyGroupsDialog,
-          onRefresh: _cache[8] || (_cache[8] = ($event) => emit("refresh", ["clash-outbounds", "proxy-groups"])),
-          onShowSnackbar: _cache[9] || (_cache[9] = (val) => emit("show-snackbar", val)),
-          onShowError: _cache[10] || (_cache[10] = (msg) => emit("show-error", msg))
+          onRefresh: _cache[10] || (_cache[10] = ($event) => emit("refresh", ["clash-outbounds", "proxy-groups"])),
+          onShowError: _cache[11] || (_cache[11] = (msg) => emit("show-error", msg))
         }, null, 8, ["modelValue", "initial-value", "is-adding", "proxy-providers", "custom-outbounds", "api"])) : _createCommentVNode$f("", true)
       ]);
     };
   }
 });
 
-const {defineComponent:_defineComponent$h} = await importShared('vue');
+const {defineComponent:_defineComponent$n} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$h,resolveComponent:_resolveComponent$h,withCtx:_withCtx$h,createVNode:_createVNode$h,mergeProps:_mergeProps$d,unref:_unref$e,toDisplayString:_toDisplayString$f,openBlock:_openBlock$h,createBlock:_createBlock$h,createCommentVNode:_createCommentVNode$e} = await importShared('vue');
-const _sfc_main$h = /* @__PURE__ */ _defineComponent$h({
+const {createTextVNode:_createTextVNode$i,resolveComponent:_resolveComponent$n,withCtx:_withCtx$n,createVNode:_createVNode$n,mergeProps:_mergeProps$d,unref:_unref$h,toDisplayString:_toDisplayString$f,openBlock:_openBlock$n,createBlock:_createBlock$n,createCommentVNode:_createCommentVNode$e} = await importShared('vue');
+const _sfc_main$n = /* @__PURE__ */ _defineComponent$n({
   __name: "ProxyActionMenu",
   props: {
     proxy: {
@@ -8601,24 +9028,24 @@ const _sfc_main$h = /* @__PURE__ */ _defineComponent$h({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$h("v-icon");
-      const _component_v_btn = _resolveComponent$h("v-btn");
-      const _component_v_list_item_title = _resolveComponent$h("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$h("v-list-item");
-      const _component_v_list = _resolveComponent$h("v-list");
-      const _component_v_menu = _resolveComponent$h("v-menu");
-      return _openBlock$h(), _createBlock$h(_component_v_menu, { "min-width": "120" }, {
-        activator: _withCtx$h(({ props }) => [
-          _createVNode$h(_component_v_btn, _mergeProps$d({
+      const _component_v_icon = _resolveComponent$n("v-icon");
+      const _component_v_btn = _resolveComponent$n("v-btn");
+      const _component_v_list_item_title = _resolveComponent$n("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$n("v-list-item");
+      const _component_v_list = _resolveComponent$n("v-list");
+      const _component_v_menu = _resolveComponent$n("v-menu");
+      return _openBlock$n(), _createBlock$n(_component_v_menu, { "min-width": "120" }, {
+        activator: _withCtx$n(({ props }) => [
+          _createVNode$n(_component_v_btn, _mergeProps$d({
             color: "secondary",
             icon: "",
             size: "small",
             variant: "text"
           }, props), {
-            default: _withCtx$h(() => [
-              _createVNode$h(_component_v_icon, null, {
-                default: _withCtx$h(() => _cache[7] || (_cache[7] = [
-                  _createTextVNode$h("mdi-dots-vertical")
+            default: _withCtx$n(() => [
+              _createVNode$n(_component_v_icon, null, {
+                default: _withCtx$n(() => _cache[7] || (_cache[7] = [
+                  _createTextVNode$i("mdi-dots-vertical")
                 ])),
                 _: 1
               })
@@ -8626,176 +9053,176 @@ const _sfc_main$h = /* @__PURE__ */ _defineComponent$h({
             _: 2
           }, 1040)
         ]),
-        default: _withCtx$h(() => [
-          _createVNode$h(_component_v_list, { density: "compact" }, {
-            default: _withCtx$h(() => [
-              _unref$e(isManual)(__props.proxy.meta.source) ? (_openBlock$h(), _createBlock$h(_component_v_list_item, {
+        default: _withCtx$n(() => [
+          _createVNode$n(_component_v_list, { density: "compact" }, {
+            default: _withCtx$n(() => [
+              _unref$h(isManual)(__props.proxy.meta.source) ? (_openBlock$n(), _createBlock$n(_component_v_list_item, {
                 key: 0,
                 onClick: _cache[0] || (_cache[0] = ($event) => emit("changeStatus", !__props.proxy.meta.disabled))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: __props.proxy.meta.disabled ? "success" : "grey"
                   }, {
-                    default: _withCtx$h(() => [
-                      _createTextVNode$h(_toDisplayString$f(__props.proxy.meta.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
+                    default: _withCtx$n(() => [
+                      _createTextVNode$i(_toDisplayString$f(__props.proxy.meta.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
                     ]),
                     _: 1
                   }, 8, ["color"])
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => [
-                      _createTextVNode$h(_toDisplayString$f(__props.proxy.meta.disabled ? "启用" : "禁用"), 1)
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => [
+                      _createTextVNode$i(_toDisplayString$f(__props.proxy.meta.disabled ? "启用" : "禁用"), 1)
                     ]),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$e("", true),
-              _createVNode$h(_component_v_list_item, {
+              _createVNode$n(_component_v_list_item, {
                 onClick: _cache[1] || (_cache[1] = ($event) => emit("showYaml"))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "info"
                   }, {
-                    default: _withCtx$h(() => _cache[8] || (_cache[8] = [
-                      _createTextVNode$h("mdi-code-json")
+                    default: _withCtx$n(() => _cache[8] || (_cache[8] = [
+                      _createTextVNode$i("mdi-code-json")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[9] || (_cache[9] = [
-                      _createTextVNode$h("查看")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[9] || (_cache[9] = [
+                      _createTextVNode$i("查看")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               }),
-              _createVNode$h(_component_v_list_item, {
+              _createVNode$n(_component_v_list_item, {
                 onClick: _cache[2] || (_cache[2] = ($event) => emit("edit"))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "primary"
                   }, {
-                    default: _withCtx$h(() => _cache[10] || (_cache[10] = [
-                      _createTextVNode$h("mdi-file-edit-outline")
+                    default: _withCtx$n(() => _cache[10] || (_cache[10] = [
+                      _createTextVNode$i("mdi-file-edit-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[11] || (_cache[11] = [
-                      _createTextVNode$h("编辑")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[11] || (_cache[11] = [
+                      _createTextVNode$i("编辑")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               }),
-              _unref$e(isManual)(__props.proxy.meta.source) ? (_openBlock$h(), _createBlock$h(_component_v_list_item, {
+              _unref$h(isManual)(__props.proxy.meta.source) ? (_openBlock$n(), _createBlock$n(_component_v_list_item, {
                 key: 1,
                 onClick: _cache[3] || (_cache[3] = ($event) => emit("editVisibility"))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "warning"
                   }, {
-                    default: _withCtx$h(() => _cache[12] || (_cache[12] = [
-                      _createTextVNode$h("mdi-eye-off-outline")
+                    default: _withCtx$n(() => _cache[12] || (_cache[12] = [
+                      _createTextVNode$i("mdi-eye-off-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[13] || (_cache[13] = [
-                      _createTextVNode$h("隐藏")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[13] || (_cache[13] = [
+                      _createTextVNode$i("隐藏")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$e("", true),
-              __props.proxy.v2ray_link ? (_openBlock$h(), _createBlock$h(_component_v_list_item, {
+              __props.proxy.v2ray_link ? (_openBlock$n(), _createBlock$n(_component_v_list_item, {
                 key: 2,
                 onClick: _cache[4] || (_cache[4] = ($event) => emit("copyToClipboard", __props.proxy.v2ray_link))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "secondary"
                   }, {
-                    default: _withCtx$h(() => _cache[14] || (_cache[14] = [
-                      _createTextVNode$h("mdi-link")
+                    default: _withCtx$n(() => _cache[14] || (_cache[14] = [
+                      _createTextVNode$i("mdi-link")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[15] || (_cache[15] = [
-                      _createTextVNode$h("复制链接")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[15] || (_cache[15] = [
+                      _createTextVNode$i("复制链接")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$e("", true),
-              __props.proxy.meta.patched ? (_openBlock$h(), _createBlock$h(_component_v_list_item, {
+              __props.proxy.meta.patched ? (_openBlock$n(), _createBlock$n(_component_v_list_item, {
                 key: 3,
                 onClick: _cache[5] || (_cache[5] = ($event) => emit("deletePatch"))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$h(() => _cache[16] || (_cache[16] = [
-                      _createTextVNode$h("mdi-close-box-outline")
+                    default: _withCtx$n(() => _cache[16] || (_cache[16] = [
+                      _createTextVNode$i("mdi-close-box-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[17] || (_cache[17] = [
-                      _createTextVNode$h("删除补丁")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[17] || (_cache[17] = [
+                      _createTextVNode$i("删除补丁")
                     ])),
                     _: 1
                   })
                 ]),
                 _: 1
               })) : _createCommentVNode$e("", true),
-              _createVNode$h(_component_v_list_item, {
-                disabled: !(_unref$e(isManual)(__props.proxy.meta.source) || _unref$e(isInvalid)(__props.proxy.meta.source)),
+              _createVNode$n(_component_v_list_item, {
+                disabled: !(_unref$h(isManual)(__props.proxy.meta.source) || _unref$h(isInvalid)(__props.proxy.meta.source)),
                 onClick: _cache[6] || (_cache[6] = ($event) => emit("delete"))
               }, {
-                prepend: _withCtx$h(() => [
-                  _createVNode$h(_component_v_icon, {
+                prepend: _withCtx$n(() => [
+                  _createVNode$n(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$h(() => _cache[18] || (_cache[18] = [
-                      _createTextVNode$h("mdi-trash-can-outline")
+                    default: _withCtx$n(() => _cache[18] || (_cache[18] = [
+                      _createTextVNode$i("mdi-trash-can-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$h(() => [
-                  _createVNode$h(_component_v_list_item_title, null, {
-                    default: _withCtx$h(() => _cache[19] || (_cache[19] = [
-                      _createTextVNode$h("删除")
+                default: _withCtx$n(() => [
+                  _createVNode$n(_component_v_list_item_title, null, {
+                    default: _withCtx$n(() => _cache[19] || (_cache[19] = [
+                      _createTextVNode$i("删除")
                     ])),
                     _: 1
                   })
@@ -8812,22 +9239,22 @@ const _sfc_main$h = /* @__PURE__ */ _defineComponent$h({
   }
 });
 
-const {defineComponent:_defineComponent$g} = await importShared('vue');
+const {defineComponent:_defineComponent$m} = await importShared('vue');
 
-const {unref:_unref$d,toDisplayString:_toDisplayString$e,createTextVNode:_createTextVNode$g,resolveComponent:_resolveComponent$g,withCtx:_withCtx$g,createVNode:_createVNode$g,openBlock:_openBlock$g,createBlock:_createBlock$g,createCommentVNode:_createCommentVNode$d,createElementBlock:_createElementBlock$8,mergeProps:_mergeProps$c,createElementVNode:_createElementVNode$d} = await importShared('vue');
+const {unref:_unref$g,toDisplayString:_toDisplayString$e,createTextVNode:_createTextVNode$h,resolveComponent:_resolveComponent$m,withCtx:_withCtx$m,createVNode:_createVNode$m,openBlock:_openBlock$m,createBlock:_createBlock$m,createCommentVNode:_createCommentVNode$d,createElementBlock:_createElementBlock$e,mergeProps:_mergeProps$c,createElementVNode:_createElementVNode$i} = await importShared('vue');
 
-const _hoisted_1$c = { key: 0 };
-const _hoisted_2$a = {
+const _hoisted_1$i = { key: 0 };
+const _hoisted_2$d = {
   key: 1,
   class: "text-disabled"
 };
-const _hoisted_3$a = {
+const _hoisted_3$d = {
   key: 1,
   class: "text-disabled"
 };
-const _hoisted_4$9 = { class: "d-flex align-center" };
+const _hoisted_4$c = { class: "d-flex align-center" };
 const {ref: ref$b} = await importShared('vue');
-const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
+const _sfc_main$m = /* @__PURE__ */ _defineComponent$m({
   __name: "ProxiesTable",
   props: {
     proxies: {
@@ -8857,36 +9284,36 @@ const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
       { title: "", key: "actions", sortable: false, width: "1rem" }
     ]);
     return (_ctx, _cache) => {
-      const _component_v_chip = _resolveComponent$g("v-chip");
-      const _component_v_icon = _resolveComponent$g("v-icon");
-      const _component_v_btn = _resolveComponent$g("v-btn");
-      const _component_v_tooltip = _resolveComponent$g("v-tooltip");
-      const _component_v_data_table = _resolveComponent$g("v-data-table");
-      return _openBlock$g(), _createBlock$g(_component_v_data_table, {
+      const _component_v_chip = _resolveComponent$m("v-chip");
+      const _component_v_icon = _resolveComponent$m("v-icon");
+      const _component_v_btn = _resolveComponent$m("v-btn");
+      const _component_v_tooltip = _resolveComponent$m("v-tooltip");
+      const _component_v_data_table = _resolveComponent$m("v-data-table");
+      return _openBlock$m(), _createBlock$m(_component_v_data_table, {
         class: "px-4",
         headers: headers.value,
         search: __props.search,
         items: __props.proxies,
         page: __props.page,
         "items-per-page": __props.itemsPerPage,
-        "items-per-page-options": _unref$d(itemsPerPageOptions),
+        "items-per-page-options": _unref$g(itemsPerPageOptions),
         "item-key": "name",
         density: "compact",
         "hide-default-footer": "",
         "fixed-header": ""
       }, {
-        "item.name": _withCtx$g(({ item }) => [
-          _createVNode$g(_component_v_chip, {
+        "item.name": _withCtx$m(({ item }) => [
+          _createVNode$m(_component_v_chip, {
             size: "small",
             pill: "",
             color: "secondary"
           }, {
-            default: _withCtx$g(() => [
-              _createTextVNode$g(_toDisplayString$e(item.data.name), 1)
+            default: _withCtx$m(() => [
+              _createTextVNode$h(_toDisplayString$e(item.data.name), 1)
             ]),
             _: 2
           }, 1024),
-          item.v2ray_link ? (_openBlock$g(), _createBlock$g(_component_v_btn, {
+          item.v2ray_link ? (_openBlock$m(), _createBlock$m(_component_v_btn, {
             key: 0,
             icon: "",
             size: "small",
@@ -8894,10 +9321,10 @@ const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
             variant: "text",
             onClick: ($event) => emit("copyToClipboard", item.v2ray_link)
           }, {
-            default: _withCtx$g(() => [
-              _createVNode$g(_component_v_icon, null, {
-                default: _withCtx$g(() => _cache[1] || (_cache[1] = [
-                  _createTextVNode$g("mdi-link")
+            default: _withCtx$m(() => [
+              _createVNode$m(_component_v_icon, null, {
+                default: _withCtx$m(() => _cache[1] || (_cache[1] = [
+                  _createTextVNode$h("mdi-link")
                 ])),
                 _: 1
               })
@@ -8905,89 +9332,89 @@ const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
             _: 2
           }, 1032, ["onClick"])) : _createCommentVNode$d("", true)
         ]),
-        "item.type": _withCtx$g(({ item }) => [
-          _createVNode$g(_component_v_chip, {
-            color: _unref$d(getProxyColor)(item.data.type),
+        "item.type": _withCtx$m(({ item }) => [
+          _createVNode$m(_component_v_chip, {
+            color: _unref$g(getProxyColor)(item.data.type),
             size: "small",
             label: "",
             variant: "tonal"
           }, {
-            default: _withCtx$g(() => [
-              _createTextVNode$g(_toDisplayString$e(item.data.type), 1)
+            default: _withCtx$m(() => [
+              _createTextVNode$h(_toDisplayString$e(item.data.type), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.server": _withCtx$g(({ item }) => [
-          item.data.server ? (_openBlock$g(), _createElementBlock$8("small", _hoisted_1$c, _toDisplayString$e(item.data.server), 1)) : (_openBlock$g(), _createElementBlock$8("span", _hoisted_2$a, "—"))
+        "item.server": _withCtx$m(({ item }) => [
+          item.data.server ? (_openBlock$m(), _createElementBlock$e("small", _hoisted_1$i, _toDisplayString$e(item.data.server), 1)) : (_openBlock$m(), _createElementBlock$e("span", _hoisted_2$d, "—"))
         ]),
-        "item.port": _withCtx$g(({ item }) => [
-          item.data.port != null ? (_openBlock$g(), _createBlock$g(_component_v_chip, {
+        "item.port": _withCtx$m(({ item }) => [
+          item.data.port != null ? (_openBlock$m(), _createBlock$m(_component_v_chip, {
             key: 0,
             size: "x-small",
             label: "",
             variant: "tonal",
             color: "primary"
           }, {
-            default: _withCtx$g(() => [
-              _createTextVNode$g(_toDisplayString$e(item.data.port), 1)
+            default: _withCtx$m(() => [
+              _createTextVNode$h(_toDisplayString$e(item.data.port), 1)
             ]),
             _: 2
-          }, 1024)) : (_openBlock$g(), _createElementBlock$8("span", _hoisted_3$a, "—"))
+          }, 1024)) : (_openBlock$m(), _createElementBlock$e("span", _hoisted_3$d, "—"))
         ]),
-        "item.source": _withCtx$g(({ item }) => [
-          _createVNode$g(_component_v_chip, {
-            color: _unref$d(getSourceColor)(item.meta.source),
+        "item.source": _withCtx$m(({ item }) => [
+          _createVNode$m(_component_v_chip, {
+            color: _unref$g(getSourceColor)(item.meta.source),
             size: "small",
             variant: "outlined"
           }, {
-            default: _withCtx$g(() => [
-              _createTextVNode$g(_toDisplayString$e(item.meta.source), 1)
+            default: _withCtx$m(() => [
+              _createTextVNode$h(_toDisplayString$e(item.meta.source), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.status": _withCtx$g(({ item }) => [
-          _createElementVNode$d("div", _hoisted_4$9, [
-            _createVNode$g(_component_v_icon, {
+        "item.status": _withCtx$m(({ item }) => [
+          _createElementVNode$i("div", _hoisted_4$c, [
+            _createVNode$m(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success",
               class: "mr-1"
             }, {
-              default: _withCtx$g(() => [
-                _createTextVNode$g(_toDisplayString$e(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+              default: _withCtx$m(() => [
+                _createTextVNode$h(_toDisplayString$e(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"]),
-            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$g(), _createBlock$g(_component_v_tooltip, {
+            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$m(), _createBlock$m(_component_v_tooltip, {
               key: 0,
               text: "已配置可见性限制",
               location: "top"
             }, {
-              activator: _withCtx$g(({ props }) => [
-                _createVNode$g(_component_v_icon, _mergeProps$c(props, {
+              activator: _withCtx$m(({ props }) => [
+                _createVNode$m(_component_v_icon, _mergeProps$c(props, {
                   size: "small",
                   color: "warning"
                 }), {
-                  default: _withCtx$g(() => _cache[2] || (_cache[2] = [
-                    _createTextVNode$g(" mdi-eye-off-outline ")
+                  default: _withCtx$m(() => _cache[2] || (_cache[2] = [
+                    _createTextVNode$h(" mdi-eye-off-outline ")
                   ])),
                   _: 2
                 }, 1040)
               ]),
               _: 1
             })) : _createCommentVNode$d("", true),
-            item.meta.patched ? (_openBlock$g(), _createBlock$g(_component_v_tooltip, {
+            item.meta.patched ? (_openBlock$m(), _createBlock$m(_component_v_tooltip, {
               key: 1,
               text: "已应用补丁",
               location: "top"
             }, {
-              activator: _withCtx$g(({ props }) => [
-                _createVNode$g(_component_v_icon, _mergeProps$c(props, {
+              activator: _withCtx$m(({ props }) => [
+                _createVNode$m(_component_v_icon, _mergeProps$c(props, {
                   size: "small",
                   color: "info"
                 }), {
-                  default: _withCtx$g(() => _cache[3] || (_cache[3] = [
-                    _createTextVNode$g(" mdi-auto-fix ")
+                  default: _withCtx$m(() => _cache[3] || (_cache[3] = [
+                    _createTextVNode$h(" mdi-auto-fix ")
                   ])),
                   _: 2
                 }, 1040)
@@ -8996,8 +9423,8 @@ const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
             })) : _createCommentVNode$d("", true)
           ])
         ]),
-        "item.actions": _withCtx$g(({ item }) => [
-          _createVNode$g(_sfc_main$h, {
+        "item.actions": _withCtx$m(({ item }) => [
+          _createVNode$m(_sfc_main$n, {
             proxy: item,
             onChangeStatus: (disabled) => emit("changeStatus", item.data.name, disabled),
             onShowYaml: ($event) => emit("showYaml", item.data),
@@ -9014,14 +9441,205 @@ const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
   }
 });
 
-const {defineComponent:_defineComponent$f} = await importShared('vue');
+const {defineComponent:_defineComponent$l} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$d,createElementVNode:_createElementVNode$c,createTextVNode:_createTextVNode$f,resolveComponent:_resolveComponent$f,mergeProps:_mergeProps$b,withCtx:_withCtx$f,createVNode:_createVNode$f,openBlock:_openBlock$f,createBlock:_createBlock$f,createCommentVNode:_createCommentVNode$c,unref:_unref$c} = await importShared('vue');
+const {resolveComponent:_resolveComponent$l,createVNode:_createVNode$l,withCtx:_withCtx$l,createElementVNode:_createElementVNode$h,unref:_unref$f,toDisplayString:_toDisplayString$d,createTextVNode:_createTextVNode$g,mergeProps:_mergeProps$b,renderList:_renderList$9,Fragment:_Fragment$a,openBlock:_openBlock$l,createElementBlock:_createElementBlock$d,createBlock:_createBlock$l} = await importShared('vue');
 
-const _hoisted_1$b = { class: "d-flex justify-space-between align-center px-4 pt-3" };
-const _hoisted_2$9 = ["title"];
-const _hoisted_3$9 = { class: "d-flex align-center" };
-const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
+const _hoisted_1$h = { class: "proxies-desktop-view" };
+const _hoisted_2$c = { class: "pa-4" };
+const _hoisted_3$c = { class: "clash-data-table table-page-container" };
+const _hoisted_4$b = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$l = /* @__PURE__ */ _defineComponent$l({
+  __name: "ProxiesDesktop",
+  props: {
+    proxies: {},
+    search: {},
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "update:itemsPerPage", "open-import-dialog", "edit-proxy", "delete-proxy", "delete-patch", "change-status", "edit-visibility", "copy-to-clipboard", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$l("v-text-field");
+      const _component_v_col = _resolveComponent$l("v-col");
+      const _component_v_btn = _resolveComponent$l("v-btn");
+      const _component_v_btn_group = _resolveComponent$l("v-btn-group");
+      const _component_v_row = _resolveComponent$l("v-row");
+      const _component_v_pagination = _resolveComponent$l("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$l("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$l("v-list-item");
+      const _component_v_list = _resolveComponent$l("v-list");
+      const _component_v_menu = _resolveComponent$l("v-menu");
+      return _openBlock$l(), _createElementBlock$d("div", _hoisted_1$h, [
+        _createElementVNode$h("div", _hoisted_2$c, [
+          _createVNode$l(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$l(() => [
+              _createVNode$l(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$l(() => [
+                  _createVNode$l(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索出站代理",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$l(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$l(() => [
+                  _createVNode$l(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$l(() => [
+                      _createVNode$l(_component_v_btn, {
+                        icon: "mdi-import",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-import-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$h("div", _hoisted_3$c, [
+          _createVNode$l(_sfc_main$m, {
+            "items-per-page": _ctx.itemsPerPage,
+            page: _ctx.page,
+            proxies: _ctx.proxies,
+            search: _ctx.search,
+            onCopyToClipboard: _cache[2] || (_cache[2] = (t) => emit("copy-to-clipboard", t)),
+            onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
+            onEditProxy: _cache[4] || (_cache[4] = (p) => emit("edit-proxy", p)),
+            onDeleteProxy: _cache[5] || (_cache[5] = (n) => emit("delete-proxy", n)),
+            onDeletePatch: _cache[6] || (_cache[6] = (n) => emit("delete-patch", n)),
+            onChangeStatus: _cache[7] || (_cache[7] = (n, d) => emit("change-status", n, d)),
+            onEditVisibility: _cache[8] || (_cache[8] = (n) => emit("edit-visibility", n))
+          }, null, 8, ["items-per-page", "page", "proxies", "search"])
+        ]),
+        _createElementVNode$h("div", _hoisted_4$b, [
+          _createVNode$l(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$l(() => [
+              _createVNode$l(_component_v_col, {
+                cols: "2",
+                md: "1"
+              }),
+              _createVNode$l(_component_v_col, {
+                cols: "8",
+                md: "10",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$l(() => [
+                  _createVNode$l(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[9] || (_cache[9] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$l(_component_v_col, {
+                cols: "2",
+                md: "1",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$l(() => [
+                  _createVNode$l(_component_v_menu, null, {
+                    activator: _withCtx$l(({ props: menuProps }) => [
+                      _createVNode$l(_component_v_btn, _mergeProps$b(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$l(() => [
+                          _createTextVNode$g(_toDisplayString$d(_unref$f(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$l(() => [
+                      _createVNode$l(_component_v_list, null, {
+                        default: _withCtx$l(() => [
+                          (_openBlock$l(true), _createElementBlock$d(_Fragment$a, null, _renderList$9(_unref$f(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$l(), _createBlock$l(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$l(() => [
+                                _createVNode$l(_component_v_list_item_title, null, {
+                                  default: _withCtx$l(() => [
+                                    _createTextVNode$g(_toDisplayString$d(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+
+const {defineComponent:_defineComponent$k} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$c,createElementVNode:_createElementVNode$g,createTextVNode:_createTextVNode$f,resolveComponent:_resolveComponent$k,mergeProps:_mergeProps$a,withCtx:_withCtx$k,createVNode:_createVNode$k,openBlock:_openBlock$k,createBlock:_createBlock$k,createCommentVNode:_createCommentVNode$c,unref:_unref$e} = await importShared('vue');
+
+const _hoisted_1$g = { class: "d-flex justify-space-between align-center px-4 pt-3" };
+const _hoisted_2$b = ["title"];
+const _hoisted_3$b = { class: "d-flex align-center" };
+const _sfc_main$k = /* @__PURE__ */ _defineComponent$k({
   __name: "ProxyCard",
   props: {
     proxyData: {
@@ -9033,41 +9651,41 @@ const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$f("v-icon");
-      const _component_v_tooltip = _resolveComponent$f("v-tooltip");
-      const _component_v_chip = _resolveComponent$f("v-chip");
-      const _component_v_col = _resolveComponent$f("v-col");
-      const _component_v_row = _resolveComponent$f("v-row");
-      const _component_v_card_text = _resolveComponent$f("v-card-text");
-      const _component_v_divider = _resolveComponent$f("v-divider");
-      const _component_v_spacer = _resolveComponent$f("v-spacer");
-      const _component_v_card_actions = _resolveComponent$f("v-card-actions");
-      const _component_v_card = _resolveComponent$f("v-card");
-      return _openBlock$f(), _createBlock$f(_component_v_card, {
+      const _component_v_icon = _resolveComponent$k("v-icon");
+      const _component_v_tooltip = _resolveComponent$k("v-tooltip");
+      const _component_v_chip = _resolveComponent$k("v-chip");
+      const _component_v_col = _resolveComponent$k("v-col");
+      const _component_v_row = _resolveComponent$k("v-row");
+      const _component_v_card_text = _resolveComponent$k("v-card-text");
+      const _component_v_divider = _resolveComponent$k("v-divider");
+      const _component_v_spacer = _resolveComponent$k("v-spacer");
+      const _component_v_card_actions = _resolveComponent$k("v-card-actions");
+      const _component_v_card = _resolveComponent$k("v-card");
+      return _openBlock$k(), _createBlock$k(_component_v_card, {
         rounded: "lg",
         elevation: "2",
         class: "proxy-card h-100 transition-swing",
         variant: "tonal"
       }, {
-        default: _withCtx$f(() => [
-          _createElementVNode$c("div", _hoisted_1$b, [
-            _createElementVNode$c("span", {
+        default: _withCtx$k(() => [
+          _createElementVNode$g("div", _hoisted_1$g, [
+            _createElementVNode$g("span", {
               class: "font-weight-bold text-truncate",
               title: __props.proxyData.data.name
-            }, _toDisplayString$d(__props.proxyData.data.name), 9, _hoisted_2$9),
-            _createElementVNode$c("div", _hoisted_3$9, [
-              __props.proxyData.meta.invisible_to && __props.proxyData.meta.invisible_to.length > 0 ? (_openBlock$f(), _createBlock$f(_component_v_tooltip, {
+            }, _toDisplayString$c(__props.proxyData.data.name), 9, _hoisted_2$b),
+            _createElementVNode$g("div", _hoisted_3$b, [
+              __props.proxyData.meta.invisible_to && __props.proxyData.meta.invisible_to.length > 0 ? (_openBlock$k(), _createBlock$k(_component_v_tooltip, {
                 key: 0,
                 text: "已配置可见性限制",
                 location: "top"
               }, {
-                activator: _withCtx$f(({ props }) => [
-                  _createVNode$f(_component_v_icon, _mergeProps$b(props, {
+                activator: _withCtx$k(({ props }) => [
+                  _createVNode$k(_component_v_icon, _mergeProps$a(props, {
                     size: "small",
                     color: "warning",
                     class: "mr-2"
                   }), {
-                    default: _withCtx$f(() => _cache[7] || (_cache[7] = [
+                    default: _withCtx$k(() => _cache[7] || (_cache[7] = [
                       _createTextVNode$f(" mdi-eye-off-outline ")
                     ])),
                     _: 2
@@ -9075,45 +9693,45 @@ const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
                 ]),
                 _: 1
               })) : _createCommentVNode$c("", true),
-              _createVNode$f(_component_v_chip, {
+              _createVNode$k(_component_v_chip, {
                 size: "small",
-                color: _unref$c(getSourceColor)(__props.proxyData.meta.source),
+                color: _unref$e(getSourceColor)(__props.proxyData.meta.source),
                 variant: "outlined"
               }, {
-                default: _withCtx$f(() => [
-                  _createTextVNode$f(_toDisplayString$d(__props.proxyData.meta.source), 1)
+                default: _withCtx$k(() => [
+                  _createTextVNode$f(_toDisplayString$c(__props.proxyData.meta.source), 1)
                 ]),
                 _: 1
               }, 8, ["color"])
             ])
           ]),
-          _createVNode$f(_component_v_card_text, { class: "pt-2 pb-4" }, {
-            default: _withCtx$f(() => [
-              _createVNode$f(_component_v_row, {
+          _createVNode$k(_component_v_card_text, { class: "pt-2 pb-4" }, {
+            default: _withCtx$k(() => [
+              _createVNode$k(_component_v_row, {
                 "no-gutters": "",
                 class: "mb-2 align-center"
               }, {
-                default: _withCtx$f(() => [
-                  _createVNode$f(_component_v_col, {
+                default: _withCtx$k(() => [
+                  _createVNode$k(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$f(() => _cache[8] || (_cache[8] = [
+                    default: _withCtx$k(() => _cache[8] || (_cache[8] = [
                       _createTextVNode$f("类型")
                     ])),
                     _: 1
                   }),
-                  _createVNode$f(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$f(() => [
-                      _createVNode$f(_component_v_chip, {
-                        color: _unref$c(getProxyColor)(__props.proxyData.data.type),
+                  _createVNode$k(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$k(() => [
+                      _createVNode$k(_component_v_chip, {
+                        color: _unref$e(getProxyColor)(__props.proxyData.data.type),
                         size: "x-small",
                         label: "",
                         variant: "tonal",
                         class: "font-weight-medium"
                       }, {
-                        default: _withCtx$f(() => [
-                          _createTextVNode$f(_toDisplayString$d(__props.proxyData.data.type), 1)
+                        default: _withCtx$k(() => [
+                          _createTextVNode$f(_toDisplayString$c(__props.proxyData.data.type), 1)
                         ]),
                         _: 1
                       }, 8, ["color"])
@@ -9126,19 +9744,19 @@ const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
             ]),
             _: 1
           }),
-          _createVNode$f(_component_v_divider),
-          _createVNode$f(_component_v_card_actions, null, {
-            default: _withCtx$f(() => [
-              _createVNode$f(_component_v_icon, {
+          _createVNode$k(_component_v_divider),
+          _createVNode$k(_component_v_card_actions, null, {
+            default: _withCtx$k(() => [
+              _createVNode$k(_component_v_icon, {
                 color: __props.proxyData.meta.disabled ? "grey" : "success"
               }, {
-                default: _withCtx$f(() => [
-                  _createTextVNode$f(_toDisplayString$d(__props.proxyData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+                default: _withCtx$k(() => [
+                  _createTextVNode$f(_toDisplayString$c(__props.proxyData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
                 ]),
                 _: 1
               }, 8, ["color"]),
-              _createVNode$f(_component_v_spacer),
-              _createVNode$f(_sfc_main$h, {
+              _createVNode$k(_component_v_spacer),
+              _createVNode$k(_sfc_main$n, {
                 proxy: __props.proxyData,
                 onChangeStatus: _cache[0] || (_cache[0] = (disabled) => emit("changeStatus", __props.proxyData.data.name, disabled)),
                 onShowYaml: _cache[1] || (_cache[1] = ($event) => emit("showYaml", __props.proxyData.data)),
@@ -9158,26 +9776,156 @@ const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
   }
 });
 
-const ProxyCard = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-0a0a7d99"]]);
+const ProxyCard = /* @__PURE__ */ _export_sfc(_sfc_main$k, [["__scopeId", "data-v-0a0a7d99"]]);
 
-const {defineComponent:_defineComponent$e} = await importShared('vue');
+const {defineComponent:_defineComponent$j} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$e,resolveComponent:_resolveComponent$e,withCtx:_withCtx$e,createVNode:_createVNode$e,openBlock:_openBlock$e,createBlock:_createBlock$e,createCommentVNode:_createCommentVNode$b,createElementBlock:_createElementBlock$7,withModifiers:_withModifiers$2,createElementVNode:_createElementVNode$b} = await importShared('vue');
+const {resolveComponent:_resolveComponent$j,createVNode:_createVNode$j,withCtx:_withCtx$j,createElementVNode:_createElementVNode$f,renderList:_renderList$8,Fragment:_Fragment$9,openBlock:_openBlock$j,createElementBlock:_createElementBlock$c,createBlock:_createBlock$j} = await importShared('vue');
 
-const _hoisted_1$a = { key: 0 };
-const _hoisted_2$8 = {
+const _hoisted_1$f = { class: "proxies-mobile-view" };
+const _hoisted_2$a = { class: "pa-2 pb-4" };
+const _hoisted_3$a = { class: "mobile-card-container" };
+const _hoisted_4$a = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$j = /* @__PURE__ */ _defineComponent$j({
+  __name: "ProxiesMobile",
+  props: {
+    paginatedProxies: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-import-dialog", "edit-proxy", "delete-proxy", "delete-patch", "change-status", "edit-visibility", "copy-to-clipboard", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$j("v-text-field");
+      const _component_v_col = _resolveComponent$j("v-col");
+      const _component_v_btn = _resolveComponent$j("v-btn");
+      const _component_v_btn_group = _resolveComponent$j("v-btn-group");
+      const _component_v_row = _resolveComponent$j("v-row");
+      const _component_v_pagination = _resolveComponent$j("v-pagination");
+      return _openBlock$j(), _createElementBlock$c("div", _hoisted_1$f, [
+        _createElementVNode$f("div", _hoisted_2$a, [
+          _createVNode$j(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$j(() => [
+              _createVNode$j(_component_v_col, {
+                cols: "10",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$j(() => [
+                  _createVNode$j(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索出站代理",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$j(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$j(() => [
+                  _createVNode$j(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$j(() => [
+                      _createVNode$j(_component_v_btn, {
+                        icon: "mdi-import",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-import-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$f("div", _hoisted_3$a, [
+          _createVNode$j(_component_v_row, null, {
+            default: _withCtx$j(() => [
+              (_openBlock$j(true), _createElementBlock$c(_Fragment$9, null, _renderList$8(_ctx.paginatedProxies, (item) => {
+                return _openBlock$j(), _createBlock$j(_component_v_col, {
+                  key: item.data.name,
+                  cols: "12"
+                }, {
+                  default: _withCtx$j(() => [
+                    _createVNode$j(ProxyCard, {
+                      "proxy-data": item,
+                      onCopyToClipboard: _cache[2] || (_cache[2] = (t) => emit("copy-to-clipboard", t)),
+                      onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
+                      onEditProxy: _cache[4] || (_cache[4] = (p) => emit("edit-proxy", p)),
+                      onDeleteProxy: _cache[5] || (_cache[5] = (n) => emit("delete-proxy", n)),
+                      onDeletePatch: _cache[6] || (_cache[6] = (n) => emit("delete-patch", n)),
+                      onChangeStatus: _cache[7] || (_cache[7] = (n, d) => emit("change-status", n, d)),
+                      onEditVisibility: _cache[8] || (_cache[8] = (n) => emit("edit-visibility", n))
+                    }, null, 8, ["proxy-data"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$f("div", _hoisted_4$a, [
+          _createVNode$j(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[9] || (_cache[9] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const ProxiesMobile = /* @__PURE__ */ _export_sfc(_sfc_main$j, [["__scopeId", "data-v-de794364"]]);
+
+const {defineComponent:_defineComponent$i} = await importShared('vue');
+
+const {createTextVNode:_createTextVNode$e,resolveComponent:_resolveComponent$i,withCtx:_withCtx$i,createVNode:_createVNode$i,openBlock:_openBlock$i,createBlock:_createBlock$i,createCommentVNode:_createCommentVNode$b,createElementBlock:_createElementBlock$b,withModifiers:_withModifiers$2,createElementVNode:_createElementVNode$e} = await importShared('vue');
+
+const _hoisted_1$e = { key: 0 };
+const _hoisted_2$9 = {
   key: 0,
   class: "mt-2"
 };
-const _hoisted_3$8 = {
+const _hoisted_3$9 = {
   key: 0,
   class: "mt-2"
 };
-const _hoisted_4$8 = {
+const _hoisted_4$9 = {
   key: 0,
   class: "mt-2"
 };
-const _hoisted_5$5 = {
+const _hoisted_5$2 = {
   key: 0,
   class: "mt-2"
 };
@@ -9187,8 +9935,7 @@ const _hoisted_6$2 = {
 };
 const _hoisted_7$2 = { key: 0 };
 const {ref: ref$a,toRaw: toRaw$4} = await importShared('vue');
-
-const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
+const _sfc_main$i = /* @__PURE__ */ _defineComponent$i({
   __name: "ProxiesDialog",
   props: {
     proxyData: {
@@ -9200,10 +9947,11 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
       required: true
     }
   },
-  emits: ["close", "refresh", "show-snackbar", "show-error"],
+  emits: ["close", "refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const proxyForm = ref$a(null);
     const loading = ref$a(false);
     const tab = ref$a("general");
@@ -9336,97 +10084,85 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
         const result = await props.api.patch(`/plugin/ClashRuleProvider/proxies/${name}`, requestData);
         if (!result.success) {
           emit("show-error", "保存出站代理失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "保存出站代理失败",
-            color: "error"
-          });
+          toast.error("保存出站代理失败");
           return;
         }
+        toast.success("出站代理更新成功");
         emit("refresh");
-        emit("show-snackbar", {
-          show: true,
-          message: "出站代理更新成功",
-          color: "success"
-        });
         emit("close");
       } catch (err) {
         if (err instanceof Error) emit("show-error", "保存 Proxy 失败: " + (err.message || "未知错误"));
-        emit("show-snackbar", {
-          show: true,
-          message: "保存代理失败",
-          color: "error"
-        });
+        toast.error("保存代理失败");
       } finally {
         loading.value = false;
       }
     };
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$e("v-card-title");
-      const _component_v_tab = _resolveComponent$e("v-tab");
-      const _component_v_tabs = _resolveComponent$e("v-tabs");
-      const _component_v_text_field = _resolveComponent$e("v-text-field");
-      const _component_v_col = _resolveComponent$e("v-col");
-      const _component_v_select = _resolveComponent$e("v-select");
-      const _component_v_switch = _resolveComponent$e("v-switch");
-      const _component_v_row = _resolveComponent$e("v-row");
-      const _component_v_container = _resolveComponent$e("v-container");
-      const _component_v_window_item = _resolveComponent$e("v-window-item");
-      const _component_v_combobox = _resolveComponent$e("v-combobox");
-      const _component_v_expand_transition = _resolveComponent$e("v-expand-transition");
-      const _component_v_textarea = _resolveComponent$e("v-textarea");
-      const _component_v_card_text = _resolveComponent$e("v-card-text");
-      const _component_v_card = _resolveComponent$e("v-card");
-      const _component_v_window = _resolveComponent$e("v-window");
-      const _component_v_form = _resolveComponent$e("v-form");
-      const _component_v_alert = _resolveComponent$e("v-alert");
-      const _component_v_spacer = _resolveComponent$e("v-spacer");
-      const _component_v_btn = _resolveComponent$e("v-btn");
-      const _component_v_card_actions = _resolveComponent$e("v-card-actions");
-      const _component_v_dialog = _resolveComponent$e("v-dialog");
-      return _openBlock$e(), _createBlock$e(_component_v_dialog, {
+      const _component_v_card_title = _resolveComponent$i("v-card-title");
+      const _component_v_tab = _resolveComponent$i("v-tab");
+      const _component_v_tabs = _resolveComponent$i("v-tabs");
+      const _component_v_text_field = _resolveComponent$i("v-text-field");
+      const _component_v_col = _resolveComponent$i("v-col");
+      const _component_v_select = _resolveComponent$i("v-select");
+      const _component_v_switch = _resolveComponent$i("v-switch");
+      const _component_v_row = _resolveComponent$i("v-row");
+      const _component_v_container = _resolveComponent$i("v-container");
+      const _component_v_window_item = _resolveComponent$i("v-window-item");
+      const _component_v_combobox = _resolveComponent$i("v-combobox");
+      const _component_v_expand_transition = _resolveComponent$i("v-expand-transition");
+      const _component_v_textarea = _resolveComponent$i("v-textarea");
+      const _component_v_card_text = _resolveComponent$i("v-card-text");
+      const _component_v_card = _resolveComponent$i("v-card");
+      const _component_v_window = _resolveComponent$i("v-window");
+      const _component_v_form = _resolveComponent$i("v-form");
+      const _component_v_alert = _resolveComponent$i("v-alert");
+      const _component_v_spacer = _resolveComponent$i("v-spacer");
+      const _component_v_btn = _resolveComponent$i("v-btn");
+      const _component_v_card_actions = _resolveComponent$i("v-card-actions");
+      const _component_v_dialog = _resolveComponent$i("v-dialog");
+      return _openBlock$i(), _createBlock$i(_component_v_dialog, {
         "max-width": "50rem",
         persistent: ""
       }, {
-        default: _withCtx$e(() => [
-          _createVNode$e(_component_v_card, null, {
-            default: _withCtx$e(() => [
-              _createVNode$e(_component_v_card_title, null, {
-                default: _withCtx$e(() => _cache[45] || (_cache[45] = [
+        default: _withCtx$i(() => [
+          _createVNode$i(_component_v_card, null, {
+            default: _withCtx$i(() => [
+              _createVNode$i(_component_v_card_title, null, {
+                default: _withCtx$i(() => _cache[45] || (_cache[45] = [
                   _createTextVNode$e("编辑代理")
                 ])),
                 _: 1
               }),
-              _createVNode$e(_component_v_card_text, { class: "pa-2" }, {
-                default: _withCtx$e(() => [
-                  _createVNode$e(_component_v_form, {
+              _createVNode$i(_component_v_card_text, { class: "pa-2" }, {
+                default: _withCtx$i(() => [
+                  _createVNode$i(_component_v_form, {
                     ref_key: "proxyForm",
                     ref: proxyForm,
                     onSubmit: _withModifiers$2(handleSave, ["prevent"])
                   }, {
-                    default: _withCtx$e(() => [
-                      _createVNode$e(_component_v_tabs, {
+                    default: _withCtx$i(() => [
+                      _createVNode$i(_component_v_tabs, {
                         modelValue: tab.value,
                         "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => tab.value = $event),
                         "background-color": "primary",
                         dark: "",
                         grow: ""
                       }, {
-                        default: _withCtx$e(() => [
-                          _createVNode$e(_component_v_tab, { value: "general" }, {
-                            default: _withCtx$e(() => _cache[46] || (_cache[46] = [
+                        default: _withCtx$i(() => [
+                          _createVNode$i(_component_v_tab, { value: "general" }, {
+                            default: _withCtx$i(() => _cache[46] || (_cache[46] = [
                               _createTextVNode$e("通用")
                             ])),
                             _: 1
                           }),
-                          _createVNode$e(_component_v_tab, { value: "tls" }, {
-                            default: _withCtx$e(() => _cache[47] || (_cache[47] = [
+                          _createVNode$i(_component_v_tab, { value: "tls" }, {
+                            default: _withCtx$i(() => _cache[47] || (_cache[47] = [
                               _createTextVNode$e("TLS")
                             ])),
                             _: 1
                           }),
-                          _createVNode$e(_component_v_tab, { value: "transport" }, {
-                            default: _withCtx$e(() => _cache[48] || (_cache[48] = [
+                          _createVNode$i(_component_v_tab, { value: "transport" }, {
+                            default: _withCtx$i(() => _cache[48] || (_cache[48] = [
                               _createTextVNode$e("传输层")
                             ])),
                             _: 1
@@ -9434,24 +10170,24 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                         ]),
                         _: 1
                       }, 8, ["modelValue"]),
-                      _createVNode$e(_component_v_window, {
+                      _createVNode$i(_component_v_window, {
                         modelValue: tab.value,
                         "onUpdate:modelValue": _cache[43] || (_cache[43] = ($event) => tab.value = $event),
                         class: "pt-4"
                       }, {
-                        default: _withCtx$e(() => [
-                          _createVNode$e(_component_v_window_item, { value: "general" }, {
-                            default: _withCtx$e(() => [
-                              _createVNode$e(_component_v_container, { fluid: "" }, {
-                                default: _withCtx$e(() => [
-                                  _createVNode$e(_component_v_row, { dense: "" }, {
-                                    default: _withCtx$e(() => [
-                                      _createVNode$e(_component_v_col, {
+                        default: _withCtx$i(() => [
+                          _createVNode$i(_component_v_window_item, { value: "general" }, {
+                            default: _withCtx$i(() => [
+                              _createVNode$i(_component_v_container, { fluid: "" }, {
+                                default: _withCtx$i(() => [
+                                  _createVNode$i(_component_v_row, { dense: "" }, {
+                                    default: _withCtx$i(() => [
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value.name,
                                             "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => proxy.value.name = $event),
                                             disabled: "",
@@ -9463,12 +10199,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_select, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_select, {
                                             modelValue: proxy.value.type,
                                             "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => proxy.value.type = $event),
                                             label: "类型 (type)",
@@ -9480,12 +10216,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value.server,
                                             "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => proxy.value.server = $event),
                                             label: "服务器 (server)",
@@ -9496,12 +10232,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value.port,
                                             "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => proxy.value.port = $event),
                                             modelModifiers: { number: true },
@@ -9514,12 +10250,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_select, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_select, {
                                             modelValue: proxy.value["ip-version"],
                                             "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => proxy.value["ip-version"] = $event),
                                             label: "IP版本 (ip-version)",
@@ -9531,12 +10267,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value["interface-name"],
                                             "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => proxy.value["interface-name"] = $event),
                                             label: "网络接口 (interface-name)",
@@ -9547,12 +10283,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value["routing-mark"],
                                             "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => proxy.value["routing-mark"] = $event),
                                             modelModifiers: { number: true },
@@ -9565,12 +10301,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "12",
                                         md: "6"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_text_field, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_text_field, {
                                             modelValue: proxy.value["dialer-proxy"],
                                             "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => proxy.value["dialer-proxy"] = $event),
                                             label: "拨号代理 (dialer-proxy)",
@@ -9581,12 +10317,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "4",
                                         sm: "4"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_switch, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_switch, {
                                             modelValue: proxy.value.udp,
                                             "onUpdate:modelValue": _cache[9] || (_cache[9] = ($event) => proxy.value.udp = $event),
                                             label: "UDP",
@@ -9597,12 +10333,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "4",
                                         sm: "4"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_switch, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_switch, {
                                             modelValue: proxy.value.tfo,
                                             "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => proxy.value.tfo = $event),
                                             label: "TFO",
@@ -9613,12 +10349,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                         ]),
                                         _: 1
                                       }),
-                                      _createVNode$e(_component_v_col, {
+                                      _createVNode$i(_component_v_col, {
                                         cols: "4",
                                         sm: "4"
                                       }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_switch, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_switch, {
                                             modelValue: proxy.value.mptcp,
                                             "onUpdate:modelValue": _cache[11] || (_cache[11] = ($event) => proxy.value.mptcp = $event),
                                             label: "MPTCP",
@@ -9638,15 +10374,15 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                             ]),
                             _: 1
                           }),
-                          _createVNode$e(_component_v_window_item, { value: "tls" }, {
-                            default: _withCtx$e(() => [
-                              _createVNode$e(_component_v_container, { fluid: "" }, {
-                                default: _withCtx$e(() => [
-                                  _createVNode$e(_component_v_row, { dense: "" }, {
-                                    default: _withCtx$e(() => [
-                                      _createVNode$e(_component_v_col, { cols: "12" }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_switch, {
+                          _createVNode$i(_component_v_window_item, { value: "tls" }, {
+                            default: _withCtx$i(() => [
+                              _createVNode$i(_component_v_container, { fluid: "" }, {
+                                default: _withCtx$i(() => [
+                                  _createVNode$i(_component_v_row, { dense: "" }, {
+                                    default: _withCtx$i(() => [
+                                      _createVNode$i(_component_v_col, { cols: "12" }, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_switch, {
                                             modelValue: proxy.value.tls,
                                             "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => proxy.value.tls = $event),
                                             label: "启用 TLS",
@@ -9659,17 +10395,17 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      proxy.value.tls ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_1$a, [
-                                        _createVNode$e(_component_v_row, { dense: "" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_col, {
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      proxy.value.tls ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_1$e, [
+                                        _createVNode$i(_component_v_row, { dense: "" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_col, {
                                               cols: "12",
                                               md: "6"
                                             }, {
-                                              default: _withCtx$e(() => [
-                                                ["vmess", "vless"].includes(proxy.value.type) ? (_openBlock$e(), _createBlock$e(_component_v_text_field, {
+                                              default: _withCtx$i(() => [
+                                                ["vmess", "vless"].includes(proxy.value.type) ? (_openBlock$i(), _createBlock$i(_component_v_text_field, {
                                                   key: 0,
                                                   modelValue: proxy.value.servername,
                                                   "onUpdate:modelValue": _cache[13] || (_cache[13] = ($event) => proxy.value.servername = $event),
@@ -9678,7 +10414,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   clearable: "",
                                                   "persistent-hint": "",
                                                   variant: "outlined"
-                                                }, null, 8, ["modelValue"])) : (_openBlock$e(), _createBlock$e(_component_v_text_field, {
+                                                }, null, 8, ["modelValue"])) : (_openBlock$i(), _createBlock$i(_component_v_text_field, {
                                                   key: 1,
                                                   modelValue: proxy.value.sni,
                                                   "onUpdate:modelValue": _cache[14] || (_cache[14] = ($event) => proxy.value.sni = $event),
@@ -9691,12 +10427,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                               ]),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_col, {
+                                            _createVNode$i(_component_v_col, {
                                               cols: "12",
                                               md: "6"
                                             }, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_text_field, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value.fingerprint,
                                                   "onUpdate:modelValue": _cache[15] || (_cache[15] = ($event) => proxy.value.fingerprint = $event),
                                                   label: "指纹 (fingerprint)",
@@ -9708,9 +10444,9 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                               ]),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_col, { cols: "12" }, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_combobox, {
+                                            _createVNode$i(_component_v_col, { cols: "12" }, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_combobox, {
                                                   modelValue: proxy.value.alpn,
                                                   "onUpdate:modelValue": _cache[16] || (_cache[16] = ($event) => proxy.value.alpn = $event),
                                                   label: "ALPN",
@@ -9725,13 +10461,13 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                               ]),
                                               _: 1
                                             }),
-                                            ["vmess", "vless", "trojan"].includes(proxy.value.type) ? (_openBlock$e(), _createBlock$e(_component_v_col, {
+                                            ["vmess", "vless", "trojan"].includes(proxy.value.type) ? (_openBlock$i(), _createBlock$i(_component_v_col, {
                                               key: 0,
                                               cols: "12",
                                               md: "6"
                                             }, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_select, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_select, {
                                                   modelValue: proxy.value["client-fingerprint"],
                                                   "onUpdate:modelValue": _cache[17] || (_cache[17] = ($event) => proxy.value["client-fingerprint"] = $event),
                                                   label: "客户端指纹 (client-fingerprint)",
@@ -9754,13 +10490,13 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                               ]),
                                               _: 1
                                             })) : _createCommentVNode$b("", true),
-                                            _createVNode$e(_component_v_col, {
+                                            _createVNode$i(_component_v_col, {
                                               cols: "12",
                                               md: "6",
                                               class: "d-flex align-center"
                                             }, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_switch, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_switch, {
                                                   modelValue: proxy.value["skip-cert-verify"],
                                                   "onUpdate:modelValue": _cache[18] || (_cache[18] = ($event) => proxy.value["skip-cert-verify"] = $event),
                                                   label: "跳过证书验证",
@@ -9784,15 +10520,15 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                             ]),
                             _: 1
                           }),
-                          _createVNode$e(_component_v_window_item, { value: "transport" }, {
-                            default: _withCtx$e(() => [
-                              _createVNode$e(_component_v_container, { fluid: "" }, {
-                                default: _withCtx$e(() => [
-                                  _createVNode$e(_component_v_row, null, {
-                                    default: _withCtx$e(() => [
-                                      _createVNode$e(_component_v_col, { cols: "12" }, {
-                                        default: _withCtx$e(() => [
-                                          _createVNode$e(_component_v_select, {
+                          _createVNode$i(_component_v_window_item, { value: "transport" }, {
+                            default: _withCtx$i(() => [
+                              _createVNode$i(_component_v_container, { fluid: "" }, {
+                                default: _withCtx$i(() => [
+                                  _createVNode$i(_component_v_row, null, {
+                                    default: _withCtx$i(() => [
+                                      _createVNode$i(_component_v_col, { cols: "12" }, {
+                                        default: _withCtx$i(() => [
+                                          _createVNode$i(_component_v_select, {
                                             modelValue: proxy.value.network,
                                             "onUpdate:modelValue": _cache[19] || (_cache[19] = ($event) => proxy.value.network = $event),
                                             label: "网络 (network)",
@@ -9808,27 +10544,27 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      proxy.value.network === "ws" && proxy.value["ws-opts"] ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_2$8, [
-                                        _createVNode$e(_component_v_card, { variant: "tonal" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
-                                              default: _withCtx$e(() => _cache[49] || (_cache[49] = [
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      proxy.value.network === "ws" && proxy.value["ws-opts"] ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_2$9, [
+                                        _createVNode$i(_component_v_card, { variant: "tonal" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
+                                              default: _withCtx$i(() => _cache[49] || (_cache[49] = [
                                                 _createTextVNode$e("WebSocket 选项")
                                               ])),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_card_text, null, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_row, null, {
-                                                  default: _withCtx$e(() => [
-                                                    _createVNode$e(_component_v_col, {
+                                            _createVNode$i(_component_v_card_text, null, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_row, null, {
+                                                  default: _withCtx$i(() => [
+                                                    _createVNode$i(_component_v_col, {
                                                       cols: "12",
                                                       md: "6"
                                                     }, {
-                                                      default: _withCtx$e(() => [
-                                                        _createVNode$e(_component_v_switch, {
+                                                      default: _withCtx$i(() => [
+                                                        _createVNode$i(_component_v_switch, {
                                                           modelValue: proxy.value["ws-opts"]["v2ray-http-upgrade"],
                                                           "onUpdate:modelValue": _cache[20] || (_cache[20] = ($event) => proxy.value["ws-opts"]["v2ray-http-upgrade"] = $event),
                                                           label: "v2ray-http-upgrade",
@@ -9839,12 +10575,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                       ]),
                                                       _: 1
                                                     }),
-                                                    _createVNode$e(_component_v_col, {
+                                                    _createVNode$i(_component_v_col, {
                                                       cols: "12",
                                                       md: "6"
                                                     }, {
-                                                      default: _withCtx$e(() => [
-                                                        _createVNode$e(_component_v_switch, {
+                                                      default: _withCtx$i(() => [
+                                                        _createVNode$i(_component_v_switch, {
                                                           modelValue: proxy.value["ws-opts"]["v2ray-http-upgrade-fast-open"],
                                                           "onUpdate:modelValue": _cache[21] || (_cache[21] = ($event) => proxy.value["ws-opts"]["v2ray-http-upgrade-fast-open"] = $event),
                                                           label: "v2ray-http-upgrade-fast-open",
@@ -9858,7 +10594,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   ]),
                                                   _: 1
                                                 }),
-                                                _createVNode$e(_component_v_text_field, {
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["ws-opts"].path,
                                                   "onUpdate:modelValue": _cache[22] || (_cache[22] = ($event) => proxy.value["ws-opts"].path = $event),
                                                   label: "路径 (path)",
@@ -9866,7 +10602,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   variant: "outlined",
                                                   class: "mb-2"
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_text_field, {
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["ws-opts"]["max-early-data"],
                                                   "onUpdate:modelValue": _cache[23] || (_cache[23] = ($event) => proxy.value["ws-opts"]["max-early-data"] = $event),
                                                   modelModifiers: { number: true },
@@ -9877,7 +10613,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   class: "mb-2",
                                                   clearable: ""
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_text_field, {
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["ws-opts"]["early-data-header-name"],
                                                   "onUpdate:modelValue": _cache[24] || (_cache[24] = ($event) => proxy.value["ws-opts"]["early-data-header-name"] = $event),
                                                   label: "early-data-header-name",
@@ -9885,7 +10621,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   class: "mb-2",
                                                   clearable: ""
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_textarea, {
+                                                _createVNode$i(_component_v_textarea, {
                                                   modelValue: wsHeaderString.value,
                                                   "onUpdate:modelValue": _cache[25] || (_cache[25] = ($event) => wsHeaderString.value = $event),
                                                   label: "请求头 (headers)",
@@ -9904,20 +10640,20 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      proxy.value.network === "http" && proxy.value["http-opts"] ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_3$8, [
-                                        _createVNode$e(_component_v_card, { variant: "tonal" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
-                                              default: _withCtx$e(() => _cache[50] || (_cache[50] = [
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      proxy.value.network === "http" && proxy.value["http-opts"] ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_3$9, [
+                                        _createVNode$i(_component_v_card, { variant: "tonal" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
+                                              default: _withCtx$i(() => _cache[50] || (_cache[50] = [
                                                 _createTextVNode$e("HTTP 选项")
                                               ])),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_card_text, null, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_text_field, {
+                                            _createVNode$i(_component_v_card_text, null, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["http-opts"].method,
                                                   "onUpdate:modelValue": _cache[26] || (_cache[26] = ($event) => proxy.value["http-opts"].method = $event),
                                                   label: "方法 (method)",
@@ -9925,7 +10661,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   variant: "outlined",
                                                   class: "mb-2"
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_combobox, {
+                                                _createVNode$i(_component_v_combobox, {
                                                   modelValue: proxy.value["http-opts"].path,
                                                   "onUpdate:modelValue": _cache[27] || (_cache[27] = ($event) => proxy.value["http-opts"].path = $event),
                                                   label: "路径 (path)",
@@ -9937,7 +10673,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   variant: "outlined",
                                                   class: "mb-2"
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_textarea, {
+                                                _createVNode$i(_component_v_textarea, {
                                                   modelValue: httpHeaderString.value,
                                                   "onUpdate:modelValue": _cache[28] || (_cache[28] = ($event) => httpHeaderString.value = $event),
                                                   label: "请求头 (headers)",
@@ -9956,20 +10692,20 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      proxy.value.network === "h2" && proxy.value["h2-opts"] ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_4$8, [
-                                        _createVNode$e(_component_v_card, { variant: "tonal" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
-                                              default: _withCtx$e(() => _cache[51] || (_cache[51] = [
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      proxy.value.network === "h2" && proxy.value["h2-opts"] ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_4$9, [
+                                        _createVNode$i(_component_v_card, { variant: "tonal" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
+                                              default: _withCtx$i(() => _cache[51] || (_cache[51] = [
                                                 _createTextVNode$e("H2 选项")
                                               ])),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_card_text, null, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_text_field, {
+                                            _createVNode$i(_component_v_card_text, null, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["h2-opts"].path,
                                                   "onUpdate:modelValue": _cache[29] || (_cache[29] = ($event) => proxy.value["h2-opts"].path = $event),
                                                   label: "路径 (path)",
@@ -9977,7 +10713,7 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   variant: "outlined",
                                                   class: "mb-2"
                                                 }, null, 8, ["modelValue"]),
-                                                _createVNode$e(_component_v_combobox, {
+                                                _createVNode$i(_component_v_combobox, {
                                                   modelValue: proxy.value["h2-opts"].host,
                                                   "onUpdate:modelValue": _cache[30] || (_cache[30] = ($event) => proxy.value["h2-opts"].host = $event),
                                                   label: "主机 (host)",
@@ -9998,20 +10734,20 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      proxy.value.network === "grpc" && proxy.value["grpc-opts"] ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_5$5, [
-                                        _createVNode$e(_component_v_card, { variant: "tonal" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
-                                              default: _withCtx$e(() => _cache[52] || (_cache[52] = [
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      proxy.value.network === "grpc" && proxy.value["grpc-opts"] ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_5$2, [
+                                        _createVNode$i(_component_v_card, { variant: "tonal" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
+                                              default: _withCtx$i(() => _cache[52] || (_cache[52] = [
                                                 _createTextVNode$e("gRPC 选项")
                                               ])),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_card_text, null, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_text_field, {
+                                            _createVNode$i(_component_v_card_text, null, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_text_field, {
                                                   modelValue: proxy.value["grpc-opts"]["grpc-service-name"],
                                                   "onUpdate:modelValue": _cache[31] || (_cache[31] = ($event) => proxy.value["grpc-opts"]["grpc-service-name"] = $event),
                                                   label: "服务名称 (grpc-service-name)",
@@ -10028,24 +10764,24 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                     ]),
                                     _: 1
                                   }),
-                                  _createVNode$e(_component_v_expand_transition, null, {
-                                    default: _withCtx$e(() => [
-                                      (!proxy.value.network || proxy.value.network === "tcp") && proxy.value.smux ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_6$2, [
-                                        _createVNode$e(_component_v_card, { variant: "tonal" }, {
-                                          default: _withCtx$e(() => [
-                                            _createVNode$e(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
-                                              default: _withCtx$e(() => _cache[53] || (_cache[53] = [
+                                  _createVNode$i(_component_v_expand_transition, null, {
+                                    default: _withCtx$i(() => [
+                                      (!proxy.value.network || proxy.value.network === "tcp") && proxy.value.smux ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_6$2, [
+                                        _createVNode$i(_component_v_card, { variant: "tonal" }, {
+                                          default: _withCtx$i(() => [
+                                            _createVNode$i(_component_v_card_title, { class: "text-subtitle-1 py-2" }, {
+                                              default: _withCtx$i(() => _cache[53] || (_cache[53] = [
                                                 _createTextVNode$e("Smux 选项")
                                               ])),
                                               _: 1
                                             }),
-                                            _createVNode$e(_component_v_card_text, null, {
-                                              default: _withCtx$e(() => [
-                                                _createVNode$e(_component_v_row, { dense: "" }, {
-                                                  default: _withCtx$e(() => [
-                                                    _createVNode$e(_component_v_col, { cols: "12" }, {
-                                                      default: _withCtx$e(() => [
-                                                        _createVNode$e(_component_v_switch, {
+                                            _createVNode$i(_component_v_card_text, null, {
+                                              default: _withCtx$i(() => [
+                                                _createVNode$i(_component_v_row, { dense: "" }, {
+                                                  default: _withCtx$i(() => [
+                                                    _createVNode$i(_component_v_col, { cols: "12" }, {
+                                                      default: _withCtx$i(() => [
+                                                        _createVNode$i(_component_v_switch, {
                                                           modelValue: proxy.value.smux.enabled,
                                                           "onUpdate:modelValue": _cache[32] || (_cache[32] = ($event) => proxy.value.smux.enabled = $event),
                                                           label: "启用 Smux",
@@ -10058,17 +10794,17 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                   ]),
                                                   _: 1
                                                 }),
-                                                _createVNode$e(_component_v_expand_transition, null, {
-                                                  default: _withCtx$e(() => [
-                                                    proxy.value.smux.enabled && proxy.value.smux["brutal-opts"] ? (_openBlock$e(), _createElementBlock$7("div", _hoisted_7$2, [
-                                                      _createVNode$e(_component_v_row, { dense: "" }, {
-                                                        default: _withCtx$e(() => [
-                                                          _createVNode$e(_component_v_col, {
+                                                _createVNode$i(_component_v_expand_transition, null, {
+                                                  default: _withCtx$i(() => [
+                                                    proxy.value.smux.enabled && proxy.value.smux["brutal-opts"] ? (_openBlock$i(), _createElementBlock$b("div", _hoisted_7$2, [
+                                                      _createVNode$i(_component_v_row, { dense: "" }, {
+                                                        default: _withCtx$i(() => [
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "12",
                                                             md: "6"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_select, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_select, {
                                                                 modelValue: proxy.value.smux.protocol,
                                                                 "onUpdate:modelValue": _cache[33] || (_cache[33] = ($event) => proxy.value.smux.protocol = $event),
                                                                 label: "协议 (protocol)",
@@ -10079,12 +10815,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "12",
                                                             md: "6"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_text_field, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_text_field, {
                                                                 modelValue: proxy.value.smux["max-connections"],
                                                                 "onUpdate:modelValue": _cache[34] || (_cache[34] = ($event) => proxy.value.smux["max-connections"] = $event),
                                                                 modelModifiers: { number: true },
@@ -10097,12 +10833,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "12",
                                                             md: "6"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_text_field, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_text_field, {
                                                                 modelValue: proxy.value.smux["min-streams"],
                                                                 "onUpdate:modelValue": _cache[35] || (_cache[35] = ($event) => proxy.value.smux["min-streams"] = $event),
                                                                 modelModifiers: { number: true },
@@ -10115,12 +10851,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "12",
                                                             md: "6"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_text_field, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_text_field, {
                                                                 modelValue: proxy.value.smux["max-streams"],
                                                                 "onUpdate:modelValue": _cache[36] || (_cache[36] = ($event) => proxy.value.smux["max-streams"] = $event),
                                                                 modelModifiers: { number: true },
@@ -10133,12 +10869,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "4",
                                                             sm: "4"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_switch, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_switch, {
                                                                 modelValue: proxy.value.smux.padding,
                                                                 "onUpdate:modelValue": _cache[37] || (_cache[37] = ($event) => proxy.value.smux.padding = $event),
                                                                 label: "Padding",
@@ -10149,12 +10885,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "4",
                                                             sm: "4"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_switch, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_switch, {
                                                                 modelValue: proxy.value.smux.statistic,
                                                                 "onUpdate:modelValue": _cache[38] || (_cache[38] = ($event) => proxy.value.smux.statistic = $event),
                                                                 label: "Statistic",
@@ -10165,12 +10901,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, {
+                                                          _createVNode$i(_component_v_col, {
                                                             cols: "4",
                                                             sm: "4"
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_switch, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_switch, {
                                                                 modelValue: proxy.value.smux["only-tcp"],
                                                                 "onUpdate:modelValue": _cache[39] || (_cache[39] = ($event) => proxy.value.smux["only-tcp"] = $event),
                                                                 label: "Only TCP",
@@ -10181,9 +10917,9 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                             ]),
                                                             _: 1
                                                           }),
-                                                          _createVNode$e(_component_v_col, { cols: "12" }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_switch, {
+                                                          _createVNode$i(_component_v_col, { cols: "12" }, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_switch, {
                                                                 modelValue: proxy.value.smux["brutal-opts"].enabled,
                                                                 "onUpdate:modelValue": _cache[40] || (_cache[40] = ($event) => proxy.value.smux["brutal-opts"].enabled = $event),
                                                                 label: "启用 Brutal 优化",
@@ -10196,19 +10932,19 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                         ]),
                                                         _: 1
                                                       }),
-                                                      _createVNode$e(_component_v_expand_transition, null, {
-                                                        default: _withCtx$e(() => [
-                                                          proxy.value.smux["brutal-opts"].enabled ? (_openBlock$e(), _createBlock$e(_component_v_row, {
+                                                      _createVNode$i(_component_v_expand_transition, null, {
+                                                        default: _withCtx$i(() => [
+                                                          proxy.value.smux["brutal-opts"].enabled ? (_openBlock$i(), _createBlock$i(_component_v_row, {
                                                             key: 0,
                                                             dense: ""
                                                           }, {
-                                                            default: _withCtx$e(() => [
-                                                              _createVNode$e(_component_v_col, {
+                                                            default: _withCtx$i(() => [
+                                                              _createVNode$i(_component_v_col, {
                                                                 cols: "12",
                                                                 md: "6"
                                                               }, {
-                                                                default: _withCtx$e(() => [
-                                                                  _createVNode$e(_component_v_text_field, {
+                                                                default: _withCtx$i(() => [
+                                                                  _createVNode$i(_component_v_text_field, {
                                                                     modelValue: proxy.value.smux["brutal-opts"].up,
                                                                     "onUpdate:modelValue": _cache[41] || (_cache[41] = ($event) => proxy.value.smux["brutal-opts"].up = $event),
                                                                     modelModifiers: { number: true },
@@ -10220,12 +10956,12 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                                                                 ]),
                                                                 _: 1
                                                               }),
-                                                              _createVNode$e(_component_v_col, {
+                                                              _createVNode$i(_component_v_col, {
                                                                 cols: "12",
                                                                 md: "6"
                                                               }, {
-                                                                default: _withCtx$e(() => [
-                                                                  _createVNode$e(_component_v_text_field, {
+                                                                default: _withCtx$i(() => [
+                                                                  _createVNode$i(_component_v_text_field, {
                                                                     modelValue: proxy.value.smux["brutal-opts"].down,
                                                                     "onUpdate:modelValue": _cache[42] || (_cache[42] = ($event) => proxy.value.smux["brutal-opts"].down = $event),
                                                                     modelModifiers: { number: true },
@@ -10269,13 +11005,13 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                     ]),
                     _: 1
                   }, 512),
-                  _createVNode$e(_component_v_alert, {
+                  _createVNode$i(_component_v_alert, {
                     type: "info",
                     variant: "tonal"
                   }, {
-                    default: _withCtx$e(() => _cache[54] || (_cache[54] = [
+                    default: _withCtx$i(() => _cache[54] || (_cache[54] = [
                       _createTextVNode$e(" 参考"),
-                      _createElementVNode$b("a", {
+                      _createElementVNode$e("a", {
                         href: "https://wiki.metacubex.one/config/proxies/",
                         target: "_blank",
                         style: { "text-decoration": "underline" }
@@ -10287,24 +11023,24 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
                 ]),
                 _: 1
               }),
-              _createVNode$e(_component_v_card_actions, null, {
-                default: _withCtx$e(() => [
-                  _createVNode$e(_component_v_spacer),
-                  _createVNode$e(_component_v_btn, {
+              _createVNode$i(_component_v_card_actions, null, {
+                default: _withCtx$i(() => [
+                  _createVNode$i(_component_v_spacer),
+                  _createVNode$i(_component_v_btn, {
                     onClick: _cache[44] || (_cache[44] = ($event) => emit("close"))
                   }, {
-                    default: _withCtx$e(() => _cache[55] || (_cache[55] = [
+                    default: _withCtx$i(() => _cache[55] || (_cache[55] = [
                       _createTextVNode$e("取消")
                     ])),
                     _: 1
                   }),
-                  _createVNode$e(_component_v_btn, {
+                  _createVNode$i(_component_v_btn, {
                     color: "primary",
                     loading: loading.value,
                     disabled: loading.value,
                     onClick: handleSave
                   }, {
-                    default: _withCtx$e(() => _cache[56] || (_cache[56] = [
+                    default: _withCtx$i(() => _cache[56] || (_cache[56] = [
                       _createTextVNode$e("保存")
                     ])),
                     _: 1
@@ -10322,29 +11058,26 @@ const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
   }
 });
 
-const {defineComponent:_defineComponent$d} = await importShared('vue');
+const {defineComponent:_defineComponent$h} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$d,createVNode:_createVNode$d,withCtx:_withCtx$d,createElementVNode:_createElementVNode$a,renderList:_renderList$6,Fragment:_Fragment$6,openBlock:_openBlock$d,createElementBlock:_createElementBlock$6,createBlock:_createBlock$d,unref:_unref$b,toDisplayString:_toDisplayString$c,createTextVNode:_createTextVNode$d,mergeProps:_mergeProps$a,createCommentVNode:_createCommentVNode$a} = await importShared('vue');
+const {resolveComponent:_resolveComponent$h,createVNode:_createVNode$h,withCtx:_withCtx$h,unref:_unref$d,openBlock:_openBlock$h,createBlock:_createBlock$h,createCommentVNode:_createCommentVNode$a,createTextVNode:_createTextVNode$d,createElementVNode:_createElementVNode$d,createElementBlock:_createElementBlock$a} = await importShared('vue');
 
-const _hoisted_1$9 = { class: "mb-2 position-relative" };
-const _hoisted_2$7 = { class: "pa-4" };
-const _hoisted_3$7 = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$7 = { class: "d-sm-none" };
-const _hoisted_5$4 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
+const _hoisted_1$d = { class: "mb-2 position-relative" };
 const {ref: ref$9,computed: computed$3} = await importShared('vue');
-const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
+
+const {useDisplay: useDisplay$2} = await importShared('vuetify');
+const _sfc_main$h = /* @__PURE__ */ _defineComponent$h({
   __name: "ProxiesTab",
   props: {
     proxies: {},
     api: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error", "show-yaml", "copy-to-clipboard", "edit-visibility"],
+  emits: ["refresh", "show-error", "show-yaml", "copy-to-clipboard", "edit-visibility"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay$2();
+    const toast = useToast();
     const editorOptions = {
       enableBasicAutocompletion: true,
       enableSnippets: true,
@@ -10406,27 +11139,15 @@ const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
         const result = await props.api.put("/plugin/ClashRuleProvider/proxies", requestData);
         if (!result.success) {
           emit("show-error", "节点导入失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "节点导入失败",
-            color: "error"
-          });
+          toast.error("节点导入失败");
           return;
         }
         importExtraProxiesDialog.value = false;
         emit("refresh", ["proxies", "clash-outbounds"]);
-        emit("show-snackbar", {
-          show: true,
-          message: "节点导入成功",
-          color: "success"
-        });
+        toast.success("节点导入成功");
       } catch (err) {
         if (err instanceof Error) emit("show-error", "节点导入失败: " + (err.message || "未知错误"));
-        emit("show-snackbar", {
-          show: true,
-          message: "节点导入失败",
-          color: "error"
-        });
+        toast.error("节点导入失败");
       } finally {
         importProxiesLoading.value = false;
       }
@@ -10501,268 +11222,109 @@ const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
       emit("edit-visibility", proxy.meta, `/plugin/ClashRuleProvider/proxies/${n}/meta`, "proxies");
     }
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$d("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$d("v-overlay");
-      const _component_v_text_field = _resolveComponent$d("v-text-field");
-      const _component_v_col = _resolveComponent$d("v-col");
-      const _component_v_btn = _resolveComponent$d("v-btn");
-      const _component_v_btn_group = _resolveComponent$d("v-btn-group");
-      const _component_v_row = _resolveComponent$d("v-row");
-      const _component_v_pagination = _resolveComponent$d("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$d("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$d("v-list-item");
-      const _component_v_list = _resolveComponent$d("v-list");
-      const _component_v_menu = _resolveComponent$d("v-menu");
-      const _component_v_divider = _resolveComponent$d("v-divider");
-      const _component_v_card_title = _resolveComponent$d("v-card-title");
-      const _component_v_select = _resolveComponent$d("v-select");
-      const _component_v_textarea = _resolveComponent$d("v-textarea");
-      const _component_v_alert = _resolveComponent$d("v-alert");
-      const _component_v_card_text = _resolveComponent$d("v-card-text");
-      const _component_v_spacer = _resolveComponent$d("v-spacer");
-      const _component_v_card_actions = _resolveComponent$d("v-card-actions");
-      const _component_v_card = _resolveComponent$d("v-card");
-      const _component_v_dialog = _resolveComponent$d("v-dialog");
-      return _openBlock$d(), _createElementBlock$6("div", _hoisted_1$9, [
-        _createVNode$d(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$h("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$h("v-overlay");
+      const _component_v_divider = _resolveComponent$h("v-divider");
+      const _component_v_card_title = _resolveComponent$h("v-card-title");
+      const _component_v_select = _resolveComponent$h("v-select");
+      const _component_v_textarea = _resolveComponent$h("v-textarea");
+      const _component_v_alert = _resolveComponent$h("v-alert");
+      const _component_v_card_text = _resolveComponent$h("v-card-text");
+      const _component_v_spacer = _resolveComponent$h("v-spacer");
+      const _component_v_btn = _resolveComponent$h("v-btn");
+      const _component_v_card_actions = _resolveComponent$h("v-card-actions");
+      const _component_v_card = _resolveComponent$h("v-card");
+      const _component_v_dialog = _resolveComponent$h("v-dialog");
+      return _openBlock$h(), _createElementBlock$a("div", _hoisted_1$d, [
+        _createVNode$h(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$d(() => [
-            _createVNode$d(_component_v_progress_circular, {
+          default: _withCtx$h(() => [
+            _createVNode$h(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        _createElementVNode$a("div", _hoisted_2$7, [
-          _createVNode$d(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$d(() => [
-              _createVNode$d(_component_v_col, {
-                cols: "10",
-                sm: "6",
-                class: "d-flex justify-start"
-              }, {
-                default: _withCtx$d(() => [
-                  _createVNode$d(_component_v_text_field, {
-                    modelValue: searchProxies.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchProxies.value = $event),
-                    label: "搜索出站代理",
-                    clearable: "",
-                    density: "compact",
-                    variant: "solo-filled",
-                    "hide-details": "",
-                    class: "search-field",
-                    "prepend-inner-icon": "mdi-magnify",
-                    flat: "",
-                    rounded: "pill",
-                    "single-line": "",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$d(_component_v_col, {
-                cols: "2",
-                sm: "6",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$d(() => [
-                  _createVNode$d(_component_v_btn_group, {
-                    variant: "outlined",
-                    rounded: ""
-                  }, {
-                    default: _withCtx$d(() => [
-                      _createVNode$d(_component_v_btn, {
-                        icon: "mdi-import",
-                        disabled: loading.value,
-                        onClick: openImportProxiesDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$a("div", _hoisted_3$7, [
-          _createVNode$d(_sfc_main$g, {
-            "items-per-page": itemsPerPageProxies.value,
-            page: pageProxies.value,
-            proxies: _ctx.proxies,
-            onCopyToClipboard: _cache[2] || (_cache[2] = (t) => emit("copy-to-clipboard", t)),
-            onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
-            onEditProxy: openProxiesDialog,
-            onDeleteProxy: deleteProxy,
-            onDeletePatch: deletePatch,
-            onChangeStatus: handleStatusChange,
-            onEditVisibility: editVisibility
-          }, null, 8, ["items-per-page", "page", "proxies"])
-        ]),
-        _createElementVNode$a("div", _hoisted_4$7, [
-          _createVNode$d(_component_v_row, null, {
-            default: _withCtx$d(() => [
-              (_openBlock$d(true), _createElementBlock$6(_Fragment$6, null, _renderList$6(paginatedExtraProxies.value, (item) => {
-                return _openBlock$d(), _createBlock$d(_component_v_col, {
-                  key: item.data.name,
-                  cols: "12"
-                }, {
-                  default: _withCtx$d(() => [
-                    _createVNode$d(ProxyCard, {
-                      "proxy-data": item,
-                      onCopyToClipboard: _cache[4] || (_cache[4] = (t) => emit("copy-to-clipboard", t)),
-                      onShowYaml: _cache[5] || (_cache[5] = (o) => emit("show-yaml", o)),
-                      onEditProxy: openProxiesDialog,
-                      onDeleteProxy: deleteProxy,
-                      onDeletePatch: deletePatch,
-                      onChangeStatus: handleStatusChange,
-                      onEditVisibility: editVisibility
-                    }, null, 8, ["proxy-data"])
-                  ]),
-                  _: 2
-                }, 1024);
-              }), 128))
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$a("div", _hoisted_5$4, [
-          _createVNode$d(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$d(() => [
-              _createVNode$d(_component_v_col, {
-                cols: "2",
-                md: "1"
-              }),
-              _createVNode$d(_component_v_col, {
-                cols: "8",
-                md: "10",
-                class: "d-flex justify-center"
-              }, {
-                default: _withCtx$d(() => [
-                  _createVNode$d(_component_v_pagination, {
-                    modelValue: pageProxies.value,
-                    "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => pageProxies.value = $event),
-                    length: pageCountProxies.value,
-                    "total-visible": "5",
-                    class: "d-none d-sm-flex my-0",
-                    rounded: "circle",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"]),
-                  _createVNode$d(_component_v_pagination, {
-                    modelValue: pageProxies.value,
-                    "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => pageProxies.value = $event),
-                    length: pageCountProxies.value,
-                    "total-visible": "0",
-                    class: "d-sm-none my-0",
-                    rounded: "circle",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$d(_component_v_col, {
-                cols: "2",
-                md: "1",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$d(() => [
-                  _createVNode$d(_component_v_menu, null, {
-                    activator: _withCtx$d(({ props: props2 }) => [
-                      _createVNode$d(_component_v_btn, _mergeProps$a(props2, {
-                        icon: "",
-                        rounded: "circle",
-                        variant: "tonal",
-                        disabled: loading.value
-                      }), {
-                        default: _withCtx$d(() => [
-                          _createTextVNode$d(_toDisplayString$c(_unref$b(pageTitle)(itemsPerPageProxies.value)), 1)
-                        ]),
-                        _: 2
-                      }, 1040, ["disabled"])
-                    ]),
-                    default: _withCtx$d(() => [
-                      _createVNode$d(_component_v_list, null, {
-                        default: _withCtx$d(() => [
-                          (_openBlock$d(true), _createElementBlock$6(_Fragment$6, null, _renderList$6(_unref$b(itemsPerPageOptions), (item, index) => {
-                            return _openBlock$d(), _createBlock$d(_component_v_list_item, {
-                              key: index,
-                              value: item.value,
-                              onClick: ($event) => itemsPerPageProxies.value = item.value
-                            }, {
-                              default: _withCtx$d(() => [
-                                _createVNode$d(_component_v_list_item_title, null, {
-                                  default: _withCtx$d(() => [
-                                    _createTextVNode$d(_toDisplayString$c(item.title), 1)
-                                  ]),
-                                  _: 2
-                                }, 1024)
-                              ]),
-                              _: 2
-                            }, 1032, ["value", "onClick"]);
-                          }), 128))
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createVNode$d(_component_v_divider),
-        _createVNode$d(_component_v_dialog, {
+        _unref$d(smAndDown) ? (_openBlock$h(), _createBlock$h(ProxiesMobile, {
+          key: 0,
+          "paginated-proxies": paginatedExtraProxies.value,
+          search: searchProxies.value,
+          page: pageProxies.value,
+          "page-count": pageCountProxies.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchProxies.value = v),
+          "onUpdate:page": _cache[2] || (_cache[2] = (v) => pageProxies.value = v),
+          onOpenImportDialog: openImportProxiesDialog,
+          onEditProxy: openProxiesDialog,
+          onDeleteProxy: deleteProxy,
+          onDeletePatch: deletePatch,
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility,
+          onCopyToClipboard: _cache[3] || (_cache[3] = (t) => emit("copy-to-clipboard", t)),
+          onShowYaml: _cache[4] || (_cache[4] = (o) => emit("show-yaml", o))
+        }, null, 8, ["paginated-proxies", "search", "page", "page-count", "loading"])) : (_openBlock$h(), _createBlock$h(_sfc_main$l, {
+          key: 1,
+          proxies: _ctx.proxies,
+          search: searchProxies.value,
+          page: pageProxies.value,
+          "items-per-page": itemsPerPageProxies.value,
+          "page-count": pageCountProxies.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[5] || (_cache[5] = (v) => searchProxies.value = v),
+          "onUpdate:page": _cache[6] || (_cache[6] = (v) => pageProxies.value = v),
+          "onUpdate:itemsPerPage": _cache[7] || (_cache[7] = (v) => itemsPerPageProxies.value = v),
+          onOpenImportDialog: openImportProxiesDialog,
+          onEditProxy: openProxiesDialog,
+          onDeleteProxy: deleteProxy,
+          onDeletePatch: deletePatch,
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility,
+          onCopyToClipboard: _cache[8] || (_cache[8] = (t) => emit("copy-to-clipboard", t)),
+          onShowYaml: _cache[9] || (_cache[9] = (o) => emit("show-yaml", o))
+        }, null, 8, ["proxies", "search", "page", "items-per-page", "page-count", "loading"])),
+        _createVNode$h(_component_v_divider),
+        _createVNode$h(_component_v_dialog, {
           modelValue: importExtraProxiesDialog.value,
-          "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => importExtraProxiesDialog.value = $event),
+          "onUpdate:modelValue": _cache[14] || (_cache[14] = ($event) => importExtraProxiesDialog.value = $event),
           "max-width": "40rem"
         }, {
-          default: _withCtx$d(() => [
-            _createVNode$d(_component_v_card, null, {
-              default: _withCtx$d(() => [
-                _createVNode$d(_component_v_card_title, null, {
-                  default: _withCtx$d(() => _cache[17] || (_cache[17] = [
+          default: _withCtx$h(() => [
+            _createVNode$h(_component_v_card, null, {
+              default: _withCtx$h(() => [
+                _createVNode$h(_component_v_card_title, null, {
+                  default: _withCtx$h(() => _cache[18] || (_cache[18] = [
                     _createTextVNode$d("导入节点")
                   ])),
                   _: 1
                 }),
-                _createVNode$d(_component_v_card_text, { style: { "max-height": "900px", "overflow-y": "auto" } }, {
-                  default: _withCtx$d(() => [
-                    _createVNode$d(_component_v_select, {
+                _createVNode$h(_component_v_card_text, { style: { "max-height": "900px", "overflow-y": "auto" } }, {
+                  default: _withCtx$h(() => [
+                    _createVNode$h(_component_v_select, {
                       modelValue: importProxies.value.type,
-                      "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => importProxies.value.type = $event),
+                      "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => importProxies.value.type = $event),
                       items: importProxiesTypes,
                       label: "内容格式",
                       required: "",
                       class: "mb-4"
                     }, null, 8, ["modelValue"]),
-                    importProxies.value.type === "YAML" ? (_openBlock$d(), _createBlock$d(_unref$b(VAceEditor), {
+                    importProxies.value.type === "YAML" ? (_openBlock$h(), _createBlock$h(_unref$d(VAceEditor), {
                       key: 0,
                       value: importProxies.value.payload,
-                      "onUpdate:value": _cache[9] || (_cache[9] = ($event) => importProxies.value.payload = $event),
+                      "onUpdate:value": _cache[11] || (_cache[11] = ($event) => importProxies.value.payload = $event),
                       lang: "yaml",
                       theme: "monokai",
                       options: editorOptions,
                       placeholder: proxiesPlaceholder.value,
                       style: { "height": "30rem", "width": "100%", "margin-bottom": "16px" }
-                    }, null, 8, ["value", "placeholder"])) : (_openBlock$d(), _createBlock$d(_component_v_textarea, {
+                    }, null, 8, ["value", "placeholder"])) : (_openBlock$h(), _createBlock$h(_component_v_textarea, {
                       key: 1,
                       modelValue: importProxies.value.payload,
-                      "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => importProxies.value.payload = $event),
+                      "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => importProxies.value.payload = $event),
                       label: "内容",
                       required: "",
                       placeholder: importExtraProxiesPlaceholderText.value,
@@ -10770,60 +11332,60 @@ const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
                       rows: "4",
                       "auto-grow": ""
                     }, null, 8, ["modelValue", "placeholder"])),
-                    importProxies.value.type === "YAML" ? (_openBlock$d(), _createBlock$d(_component_v_alert, {
+                    importProxies.value.type === "YAML" ? (_openBlock$h(), _createBlock$h(_component_v_alert, {
                       key: 2,
                       type: "info",
                       dense: "",
                       variant: "tonal"
                     }, {
-                      default: _withCtx$d(() => _cache[18] || (_cache[18] = [
+                      default: _withCtx$h(() => _cache[19] || (_cache[19] = [
                         _createTextVNode$d(" 请输入 Clash 规则中的 "),
-                        _createElementVNode$a("strong", null, "proxies", -1),
+                        _createElementVNode$d("strong", null, "proxies", -1),
                         _createTextVNode$d(" 字段，例如："),
-                        _createElementVNode$a("br", null, null, -1),
-                        _createElementVNode$a("pre", { style: { "white-space": "pre-wrap", "font-family": "monospace", "margin": "0" } }, [
+                        _createElementVNode$d("br", null, null, -1),
+                        _createElementVNode$d("pre", { style: { "white-space": "pre-wrap", "font-family": "monospace", "margin": "0" } }, [
                           _createTextVNode$d(""),
-                          _createElementVNode$a("code", null, 'proxies:\n  - name: "ss node"\n    type: "ss"')
+                          _createElementVNode$d("code", null, 'proxies:\n  - name: "ss node"\n    type: "ss"')
                         ], -1)
                       ])),
                       _: 1
                     })) : _createCommentVNode$a("", true),
-                    importProxies.value.type === "LINK" ? (_openBlock$d(), _createBlock$d(_component_v_alert, {
+                    importProxies.value.type === "LINK" ? (_openBlock$h(), _createBlock$h(_component_v_alert, {
                       key: 3,
                       type: "info",
                       dense: "",
                       variant: "tonal"
                     }, {
-                      default: _withCtx$d(() => _cache[19] || (_cache[19] = [
+                      default: _withCtx$h(() => _cache[20] || (_cache[20] = [
                         _createTextVNode$d(" 请输入 V2RayN 格式的分享链接，例如："),
-                        _createElementVNode$a("br", null, null, -1),
-                        _createElementVNode$a("code", null, "vmess://xxxx", -1),
-                        _createElementVNode$a("br", null, null, -1),
-                        _createElementVNode$a("code", null, "ss://xxxx", -1)
+                        _createElementVNode$d("br", null, null, -1),
+                        _createElementVNode$d("code", null, "vmess://xxxx", -1),
+                        _createElementVNode$d("br", null, null, -1),
+                        _createElementVNode$d("code", null, "ss://xxxx", -1)
                       ])),
                       _: 1
                     })) : _createCommentVNode$a("", true)
                   ]),
                   _: 1
                 }),
-                _createVNode$d(_component_v_card_actions, null, {
-                  default: _withCtx$d(() => [
-                    _createVNode$d(_component_v_spacer),
-                    _createVNode$d(_component_v_btn, {
+                _createVNode$h(_component_v_card_actions, null, {
+                  default: _withCtx$h(() => [
+                    _createVNode$h(_component_v_spacer),
+                    _createVNode$h(_component_v_btn, {
                       color: "secondary",
-                      onClick: _cache[11] || (_cache[11] = ($event) => importExtraProxiesDialog.value = false)
+                      onClick: _cache[13] || (_cache[13] = ($event) => importExtraProxiesDialog.value = false)
                     }, {
-                      default: _withCtx$d(() => _cache[20] || (_cache[20] = [
+                      default: _withCtx$h(() => _cache[21] || (_cache[21] = [
                         _createTextVNode$d("取消")
                       ])),
                       _: 1
                     }),
-                    _createVNode$d(_component_v_btn, {
+                    _createVNode$h(_component_v_btn, {
                       color: "primary",
                       loading: importProxiesLoading.value,
                       onClick: importExtraProxies
                     }, {
-                      default: _withCtx$d(() => _cache[21] || (_cache[21] = [
+                      default: _withCtx$h(() => _cache[22] || (_cache[22] = [
                         _createTextVNode$d(" 导入 ")
                       ])),
                       _: 1
@@ -10837,31 +11399,30 @@ const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        proxiesDialogVisible.value ? (_openBlock$d(), _createBlock$d(_sfc_main$e, {
-          key: 0,
+        proxiesDialogVisible.value ? (_openBlock$h(), _createBlock$h(_sfc_main$i, {
+          key: 2,
           modelValue: proxiesDialogVisible.value,
-          "onUpdate:modelValue": _cache[13] || (_cache[13] = ($event) => proxiesDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[15] || (_cache[15] = ($event) => proxiesDialogVisible.value = $event),
           "proxy-data": editingProxy.value,
           api: _ctx.api,
-          onRefresh: _cache[14] || (_cache[14] = ($event) => emit("refresh", ["proxies"])),
+          onRefresh: _cache[16] || (_cache[16] = ($event) => emit("refresh", ["proxies"])),
           onClose: closeProxyDialog,
-          onShowSnackbar: _cache[15] || (_cache[15] = (val) => emit("show-snackbar", val)),
-          onShowError: _cache[16] || (_cache[16] = (msg) => emit("show-error", msg))
+          onShowError: _cache[17] || (_cache[17] = (msg) => emit("show-error", msg))
         }, null, 8, ["modelValue", "proxy-data", "api"])) : _createCommentVNode$a("", true)
       ]);
     };
   }
 });
 
-const {defineComponent:_defineComponent$c} = await importShared('vue');
+const {defineComponent:_defineComponent$g} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$c,resolveComponent:_resolveComponent$c,withCtx:_withCtx$c,createVNode:_createVNode$c,unref:_unref$a,toDisplayString:_toDisplayString$b,createElementVNode:_createElementVNode$9,openBlock:_openBlock$c,createBlock:_createBlock$c,createCommentVNode:_createCommentVNode$9} = await importShared('vue');
+const {createTextVNode:_createTextVNode$c,resolveComponent:_resolveComponent$g,withCtx:_withCtx$g,createVNode:_createVNode$g,unref:_unref$c,toDisplayString:_toDisplayString$b,createElementVNode:_createElementVNode$c,openBlock:_openBlock$g,createBlock:_createBlock$g,createCommentVNode:_createCommentVNode$9} = await importShared('vue');
 
-const _hoisted_1$8 = { class: "card-header pa-4" };
-const _hoisted_2$6 = { class: "d-flex align-center overflow-hidden" };
-const _hoisted_3$6 = { class: "d-flex flex-column overflow-hidden" };
-const _hoisted_4$6 = { class: "text-subtitle-1 font-weight-bold text-truncate" };
-const _hoisted_5$3 = { class: "text-caption text-medium-emphasis text-truncate" };
+const _hoisted_1$c = { class: "card-header pa-4" };
+const _hoisted_2$8 = { class: "d-flex align-center overflow-hidden" };
+const _hoisted_3$8 = { class: "d-flex flex-column overflow-hidden" };
+const _hoisted_4$8 = { class: "text-subtitle-1 font-weight-bold text-truncate" };
+const _hoisted_5$1 = { class: "text-caption text-medium-emphasis text-truncate" };
 const _hoisted_6$1 = {
   class: "d-flex flex-wrap gap-2 mb-4",
   style: { "gap": "8px" }
@@ -10876,17 +11437,18 @@ const _hoisted_13 = { class: "card-actions px-4 py-2 d-flex align-center bg-surf
 const _hoisted_14 = { class: "d-flex align-center" };
 const {ref: ref$8} = await importShared('vue');
 
-const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
+const _sfc_main$g = /* @__PURE__ */ _defineComponent$g({
   __name: "SubscriptionCard",
   props: {
     info: {},
     url: {},
     api: {}
   },
-  emits: ["show-error", "show-snackbar", "refresh", "copy-to-clipboard", "start-loading", "end-loading"],
+  emits: ["show-error", "refresh", "copy-to-clipboard", "start-loading", "end-loading"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const loading = ref$8(false);
     async function updateSubscription() {
       loading.value = true;
@@ -10896,17 +11458,9 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
           url: props.url
         });
         if (result.success) {
-          emit("show-snackbar", {
-            show: true,
-            message: "订阅更新成功",
-            color: "success"
-          });
+          toast.success("订阅更新成功");
         } else {
-          emit("show-snackbar", {
-            show: true,
-            message: "订阅更新失败",
-            color: "error"
-          });
+          toast.error("订阅更新失败");
         }
         emit("refresh", [
           "status",
@@ -10931,11 +11485,7 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
           url: props.url,
           enabled: val
         });
-        emit("show-snackbar", {
-          show: true,
-          message: "设置成功",
-          color: "success"
-        });
+        toast.success("设置成功");
         emit("refresh", ["status"]);
       } catch (err) {
         if (err instanceof Error) emit("show-error", "设置自动更新失败: " + (err.message || "未知错误"));
@@ -10945,34 +11495,34 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$c("v-icon");
-      const _component_v_avatar = _resolveComponent$c("v-avatar");
-      const _component_v_spacer = _resolveComponent$c("v-spacer");
-      const _component_v_divider = _resolveComponent$c("v-divider");
-      const _component_v_chip = _resolveComponent$c("v-chip");
-      const _component_v_progress_linear = _resolveComponent$c("v-progress-linear");
-      const _component_v_card_text = _resolveComponent$c("v-card-text");
-      const _component_v_tooltip = _resolveComponent$c("v-tooltip");
-      const _component_v_btn = _resolveComponent$c("v-btn");
-      const _component_v_switch = _resolveComponent$c("v-switch");
-      const _component_v_card = _resolveComponent$c("v-card");
-      return _openBlock$c(), _createBlock$c(_component_v_card, {
+      const _component_v_icon = _resolveComponent$g("v-icon");
+      const _component_v_avatar = _resolveComponent$g("v-avatar");
+      const _component_v_spacer = _resolveComponent$g("v-spacer");
+      const _component_v_divider = _resolveComponent$g("v-divider");
+      const _component_v_chip = _resolveComponent$g("v-chip");
+      const _component_v_progress_linear = _resolveComponent$g("v-progress-linear");
+      const _component_v_card_text = _resolveComponent$g("v-card-text");
+      const _component_v_tooltip = _resolveComponent$g("v-tooltip");
+      const _component_v_btn = _resolveComponent$g("v-btn");
+      const _component_v_switch = _resolveComponent$g("v-switch");
+      const _component_v_card = _resolveComponent$g("v-card");
+      return _openBlock$g(), _createBlock$g(_component_v_card, {
         class: "subscription-card mb-4",
         elevation: "0",
         border: ""
       }, {
-        default: _withCtx$c(() => [
-          _createElementVNode$9("div", _hoisted_1$8, [
-            _createElementVNode$9("div", _hoisted_2$6, [
-              _createVNode$c(_component_v_avatar, {
+        default: _withCtx$g(() => [
+          _createElementVNode$c("div", _hoisted_1$c, [
+            _createElementVNode$c("div", _hoisted_2$8, [
+              _createVNode$g(_component_v_avatar, {
                 color: "primary",
                 variant: "tonal",
                 rounded: "lg",
                 class: "mr-3"
               }, {
-                default: _withCtx$c(() => [
-                  _createVNode$c(_component_v_icon, null, {
-                    default: _withCtx$c(() => _cache[0] || (_cache[0] = [
+                default: _withCtx$g(() => [
+                  _createVNode$g(_component_v_icon, null, {
+                    default: _withCtx$g(() => _cache[0] || (_cache[0] = [
                       _createTextVNode$c("mdi-rss")
                     ])),
                     _: 1
@@ -10980,30 +11530,30 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
                 ]),
                 _: 1
               }),
-              _createElementVNode$9("div", _hoisted_3$6, [
-                _createElementVNode$9("div", _hoisted_4$6, _toDisplayString$b(_unref$a(extractDomain)(_ctx.url)), 1),
-                _createElementVNode$9("div", _hoisted_5$3, _toDisplayString$b(_ctx.url), 1)
+              _createElementVNode$c("div", _hoisted_3$8, [
+                _createElementVNode$c("div", _hoisted_4$8, _toDisplayString$b(_unref$c(extractDomain)(_ctx.url)), 1),
+                _createElementVNode$c("div", _hoisted_5$1, _toDisplayString$b(_ctx.url), 1)
               ])
             ]),
-            _createVNode$c(_component_v_spacer)
+            _createVNode$g(_component_v_spacer)
           ]),
-          _createVNode$c(_component_v_divider),
-          _createVNode$c(_component_v_card_text, { class: "pa-4" }, {
-            default: _withCtx$c(() => [
-              _createElementVNode$9("div", _hoisted_6$1, [
-                _ctx.info.proxy_num != null ? (_openBlock$c(), _createBlock$c(_component_v_chip, {
+          _createVNode$g(_component_v_divider),
+          _createVNode$g(_component_v_card_text, { class: "pa-4" }, {
+            default: _withCtx$g(() => [
+              _createElementVNode$c("div", _hoisted_6$1, [
+                _ctx.info.proxy_num != null ? (_openBlock$g(), _createBlock$g(_component_v_chip, {
                   key: 0,
                   size: "small",
                   color: "primary",
                   variant: "flat",
                   class: "font-weight-medium"
                 }, {
-                  default: _withCtx$c(() => [
-                    _createVNode$c(_component_v_icon, {
+                  default: _withCtx$g(() => [
+                    _createVNode$g(_component_v_icon, {
                       start: "",
                       size: "small"
                     }, {
-                      default: _withCtx$c(() => _cache[1] || (_cache[1] = [
+                      default: _withCtx$g(() => _cache[1] || (_cache[1] = [
                         _createTextVNode$c("mdi-server-network")
                       ])),
                       _: 1
@@ -11012,75 +11562,75 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
                   ]),
                   _: 1
                 })) : _createCommentVNode$9("", true),
-                _ctx.info.last_update ? (_openBlock$c(), _createBlock$c(_component_v_chip, {
+                _ctx.info.last_update ? (_openBlock$g(), _createBlock$g(_component_v_chip, {
                   key: 1,
                   size: "small",
                   color: "secondary",
                   variant: "tonal"
                 }, {
-                  default: _withCtx$c(() => [
-                    _createVNode$c(_component_v_icon, {
+                  default: _withCtx$g(() => [
+                    _createVNode$g(_component_v_icon, {
                       start: "",
                       size: "small"
                     }, {
-                      default: _withCtx$c(() => _cache[2] || (_cache[2] = [
+                      default: _withCtx$g(() => _cache[2] || (_cache[2] = [
                         _createTextVNode$c("mdi-clock-outline")
                       ])),
                       _: 1
                     }),
-                    _createTextVNode$c(" " + _toDisplayString$b(_unref$a(formatTimestamp)(_ctx.info.last_update)), 1)
+                    _createTextVNode$c(" " + _toDisplayString$b(_unref$c(formatTimestamp)(_ctx.info.last_update)), 1)
                   ]),
                   _: 1
                 })) : _createCommentVNode$9("", true),
-                _ctx.info.expire ? (_openBlock$c(), _createBlock$c(_component_v_chip, {
+                _ctx.info.expire ? (_openBlock$g(), _createBlock$g(_component_v_chip, {
                   key: 2,
                   size: "small",
-                  color: _unref$a(getExpireColor)(_ctx.info.expire),
+                  color: _unref$c(getExpireColor)(_ctx.info.expire),
                   variant: "tonal"
                 }, {
-                  default: _withCtx$c(() => [
-                    _createVNode$c(_component_v_icon, {
+                  default: _withCtx$g(() => [
+                    _createVNode$g(_component_v_icon, {
                       start: "",
                       size: "small"
                     }, {
-                      default: _withCtx$c(() => _cache[3] || (_cache[3] = [
+                      default: _withCtx$g(() => _cache[3] || (_cache[3] = [
                         _createTextVNode$c("mdi-calendar-clock")
                       ])),
                       _: 1
                     }),
-                    _createTextVNode$c(" 到期：" + _toDisplayString$b(_unref$a(formatTimestamp)(_ctx.info.expire)), 1)
+                    _createTextVNode$c(" 到期：" + _toDisplayString$b(_unref$c(formatTimestamp)(_ctx.info.expire)), 1)
                   ]),
                   _: 1
                 }, 8, ["color"])) : _createCommentVNode$9("", true)
               ]),
-              _createElementVNode$9("div", _hoisted_7$1, [
-                _createElementVNode$9("div", _hoisted_8$1, [
-                  _cache[4] || (_cache[4] = _createElementVNode$9("div", { class: "text-caption text-medium-emphasis" }, "已用", -1)),
-                  _createElementVNode$9("div", _hoisted_9, _toDisplayString$b(_unref$a(formatBytes)(_ctx.info.download + _ctx.info.upload)), 1)
+              _createElementVNode$c("div", _hoisted_7$1, [
+                _createElementVNode$c("div", _hoisted_8$1, [
+                  _cache[4] || (_cache[4] = _createElementVNode$c("div", { class: "text-caption text-medium-emphasis" }, "已用", -1)),
+                  _createElementVNode$c("div", _hoisted_9, _toDisplayString$b(_unref$c(formatBytes)(_ctx.info.download + _ctx.info.upload)), 1)
                 ]),
-                _createElementVNode$9("div", _hoisted_10, [
-                  _cache[5] || (_cache[5] = _createElementVNode$9("div", { class: "text-caption text-medium-emphasis" }, "剩余", -1)),
-                  _createElementVNode$9("div", _hoisted_11, _toDisplayString$b(_unref$a(formatBytes)(_ctx.info.total - _ctx.info.download - _ctx.info.upload)), 1)
+                _createElementVNode$c("div", _hoisted_10, [
+                  _cache[5] || (_cache[5] = _createElementVNode$c("div", { class: "text-caption text-medium-emphasis" }, "剩余", -1)),
+                  _createElementVNode$c("div", _hoisted_11, _toDisplayString$b(_unref$c(formatBytes)(_ctx.info.total - _ctx.info.download - _ctx.info.upload)), 1)
                 ])
               ]),
-              _createVNode$c(_component_v_progress_linear, {
-                "model-value": _unref$a(getUsedPercentageFloor)(_ctx.info),
-                color: _unref$a(getUsageColor)(_unref$a(getUsedPercentageFloor)(_ctx.info)),
+              _createVNode$g(_component_v_progress_linear, {
+                "model-value": _unref$c(getUsedPercentageFloor)(_ctx.info),
+                color: _unref$c(getUsageColor)(_unref$c(getUsedPercentageFloor)(_ctx.info)),
                 height: "8",
                 rounded: "",
                 class: "mb-2"
               }, null, 8, ["model-value", "color"]),
-              _createElementVNode$9("div", _hoisted_12, [
-                _createElementVNode$9("span", null, "↓ " + _toDisplayString$b(_unref$a(formatBytes)(_ctx.info.download)), 1),
-                _createElementVNode$9("span", null, "↑ " + _toDisplayString$b(_unref$a(formatBytes)(_ctx.info.upload)), 1),
-                _createElementVNode$9("span", null, "Total: " + _toDisplayString$b(_unref$a(formatBytes)(_ctx.info.total)), 1)
+              _createElementVNode$c("div", _hoisted_12, [
+                _createElementVNode$c("span", null, "↓ " + _toDisplayString$b(_unref$c(formatBytes)(_ctx.info.download)), 1),
+                _createElementVNode$c("span", null, "↑ " + _toDisplayString$b(_unref$c(formatBytes)(_ctx.info.upload)), 1),
+                _createElementVNode$c("span", null, "Total: " + _toDisplayString$b(_unref$c(formatBytes)(_ctx.info.total)), 1)
               ])
             ]),
             _: 1
           }),
-          _createVNode$c(_component_v_divider),
-          _createElementVNode$9("div", _hoisted_13, [
-            _createVNode$c(_component_v_btn, {
+          _createVNode$g(_component_v_divider),
+          _createElementVNode$c("div", _hoisted_13, [
+            _createVNode$g(_component_v_btn, {
               icon: "",
               size: "small",
               variant: "text",
@@ -11088,18 +11638,18 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
               loading: loading.value,
               onClick: updateSubscription
             }, {
-              default: _withCtx$c(() => [
-                _createVNode$c(_component_v_icon, null, {
-                  default: _withCtx$c(() => _cache[6] || (_cache[6] = [
+              default: _withCtx$g(() => [
+                _createVNode$g(_component_v_icon, null, {
+                  default: _withCtx$g(() => _cache[6] || (_cache[6] = [
                     _createTextVNode$c("mdi-refresh")
                   ])),
                   _: 1
                 }),
-                _createVNode$c(_component_v_tooltip, {
+                _createVNode$g(_component_v_tooltip, {
                   activator: "parent",
                   location: "top"
                 }, {
-                  default: _withCtx$c(() => _cache[7] || (_cache[7] = [
+                  default: _withCtx$g(() => _cache[7] || (_cache[7] = [
                     _createTextVNode$c("刷新")
                   ])),
                   _: 1
@@ -11107,10 +11657,10 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
               ]),
               _: 1
             }, 8, ["loading"]),
-            _createVNode$c(_component_v_spacer),
-            _createElementVNode$9("div", _hoisted_14, [
-              _cache[8] || (_cache[8] = _createElementVNode$9("span", { class: "text-caption mr-2 text-medium-emphasis" }, "自动更新", -1)),
-              _createVNode$c(_component_v_switch, {
+            _createVNode$g(_component_v_spacer),
+            _createElementVNode$c("div", _hoisted_14, [
+              _cache[8] || (_cache[8] = _createElementVNode$c("span", { class: "text-caption mr-2 text-medium-emphasis" }, "自动更新", -1)),
+              _createVNode$g(_component_v_switch, {
                 "model-value": _ctx.info.enabled,
                 "hide-details": "",
                 density: "compact",
@@ -11127,84 +11677,84 @@ const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
   }
 });
 
-const SubscriptionCard = /* @__PURE__ */ _export_sfc(_sfc_main$c, [["__scopeId", "data-v-d6917c49"]]);
+const SubscriptionCard = /* @__PURE__ */ _export_sfc(_sfc_main$g, [["__scopeId", "data-v-fbd4d190"]]);
 
-const {defineComponent:_defineComponent$b} = await importShared('vue');
+const {defineComponent:_defineComponent$f} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$b,createVNode:_createVNode$b,withCtx:_withCtx$b,createTextVNode:_createTextVNode$b,createElementVNode:_createElementVNode$8,openBlock:_openBlock$b,createBlock:_createBlock$b,createCommentVNode:_createCommentVNode$8,renderList:_renderList$5,Fragment:_Fragment$5,createElementBlock:_createElementBlock$5} = await importShared('vue');
+const {resolveComponent:_resolveComponent$f,createVNode:_createVNode$f,withCtx:_withCtx$f,createTextVNode:_createTextVNode$b,createElementVNode:_createElementVNode$b,openBlock:_openBlock$f,createBlock:_createBlock$f,createCommentVNode:_createCommentVNode$8,renderList:_renderList$7,Fragment:_Fragment$8,createElementBlock:_createElementBlock$9} = await importShared('vue');
 
-const _hoisted_1$7 = { class: "mb-2 position-relative" };
+const _hoisted_1$b = { class: "mb-2 position-relative" };
 const {ref: ref$7} = await importShared('vue');
 
-const _sfc_main$b = /* @__PURE__ */ _defineComponent$b({
+const _sfc_main$f = /* @__PURE__ */ _defineComponent$f({
   __name: "SubscriptionTab",
   props: {
     subscriptionsInfo: {},
     api: {}
   },
-  emits: ["show-error", "show-snackbar", "refresh", "copy-to-clipboard", "switch"],
+  emits: ["show-error", "refresh", "copy-to-clipboard", "switch"],
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     const loading = ref$7(false);
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$b("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$b("v-overlay");
-      const _component_v_icon = _resolveComponent$b("v-icon");
-      const _component_v_btn = _resolveComponent$b("v-btn");
-      const _component_v_card_text = _resolveComponent$b("v-card-text");
-      const _component_v_card = _resolveComponent$b("v-card");
-      const _component_v_row = _resolveComponent$b("v-row");
-      const _component_v_col = _resolveComponent$b("v-col");
-      return _openBlock$b(), _createElementBlock$5("div", _hoisted_1$7, [
-        _createVNode$b(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$f("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$f("v-overlay");
+      const _component_v_icon = _resolveComponent$f("v-icon");
+      const _component_v_btn = _resolveComponent$f("v-btn");
+      const _component_v_card_text = _resolveComponent$f("v-card-text");
+      const _component_v_card = _resolveComponent$f("v-card");
+      const _component_v_row = _resolveComponent$f("v-row");
+      const _component_v_col = _resolveComponent$f("v-col");
+      return _openBlock$f(), _createElementBlock$9("div", _hoisted_1$b, [
+        _createVNode$f(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$b(() => [
-            _createVNode$b(_component_v_progress_circular, {
+          default: _withCtx$f(() => [
+            _createVNode$f(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        Object.keys(_ctx.subscriptionsInfo).length === 0 ? (_openBlock$b(), _createBlock$b(_component_v_row, {
+        Object.keys(_ctx.subscriptionsInfo).length === 0 ? (_openBlock$f(), _createBlock$f(_component_v_row, {
           key: 0,
           class: "pa-6 justify-center"
         }, {
-          default: _withCtx$b(() => [
-            _createVNode$b(_component_v_card, {
+          default: _withCtx$f(() => [
+            _createVNode$f(_component_v_card, {
               class: "mx-auto text-center py-8 px-4",
               "max-width": "400",
               elevation: "10",
               rounded: "xl",
               style: { "background": "linear-gradient(135deg, #d6c355 0%, #fda085 100%)" }
             }, {
-              default: _withCtx$b(() => [
-                _createVNode$b(_component_v_card_text, { class: "d-flex flex-column align-center" }, {
-                  default: _withCtx$b(() => [
-                    _createVNode$b(_component_v_icon, {
+              default: _withCtx$f(() => [
+                _createVNode$f(_component_v_card_text, { class: "d-flex flex-column align-center" }, {
+                  default: _withCtx$f(() => [
+                    _createVNode$f(_component_v_icon, {
                       size: "64",
                       color: "white",
                       class: "mb-4 bounce"
                     }, {
-                      default: _withCtx$b(() => _cache[8] || (_cache[8] = [
+                      default: _withCtx$f(() => _cache[7] || (_cache[7] = [
                         _createTextVNode$b(" mdi-emoticon-happy-outline ")
                       ])),
                       _: 1
                     }),
-                    _cache[10] || (_cache[10] = _createElementVNode$8("h2", { class: "text-h6 font-weight-bold white--text mb-2" }, "还没有订阅呢 🎉", -1)),
-                    _cache[11] || (_cache[11] = _createElementVNode$8("p", { class: "white--text mb-4" }, "试试添加一个订阅吧！", -1)),
-                    _createVNode$b(_component_v_btn, {
+                    _cache[9] || (_cache[9] = _createElementVNode$b("h2", { class: "text-h6 font-weight-bold white--text mb-2" }, "还没有订阅呢 🎉", -1)),
+                    _cache[10] || (_cache[10] = _createElementVNode$b("p", { class: "white--text mb-4" }, "试试添加一个订阅吧！", -1)),
+                    _createVNode$f(_component_v_btn, {
                       color: "info",
                       dark: "",
                       rounded: "",
                       elevation: "6",
                       onClick: _cache[1] || (_cache[1] = ($event) => emit("switch"))
                     }, {
-                      default: _withCtx$b(() => _cache[9] || (_cache[9] = [
+                      default: _withCtx$f(() => _cache[8] || (_cache[8] = [
                         _createTextVNode$b(" 去配置 🚀 ")
                       ])),
                       _: 1
@@ -11218,25 +11768,24 @@ const _sfc_main$b = /* @__PURE__ */ _defineComponent$b({
           ]),
           _: 1
         })) : _createCommentVNode$8("", true),
-        _createVNode$b(_component_v_row, { class: "pa-4" }, {
-          default: _withCtx$b(() => [
-            (_openBlock$b(true), _createElementBlock$5(_Fragment$5, null, _renderList$5(_ctx.subscriptionsInfo, (info, url) => {
-              return _openBlock$b(), _createBlock$b(_component_v_col, {
+        _createVNode$f(_component_v_row, { class: "pa-4" }, {
+          default: _withCtx$f(() => [
+            (_openBlock$f(true), _createElementBlock$9(_Fragment$8, null, _renderList$7(_ctx.subscriptionsInfo, (info, url) => {
+              return _openBlock$f(), _createBlock$f(_component_v_col, {
                 key: url,
                 cols: "12",
                 md: "6"
               }, {
-                default: _withCtx$b(() => [
-                  _createVNode$b(SubscriptionCard, {
+                default: _withCtx$f(() => [
+                  _createVNode$f(SubscriptionCard, {
                     info,
                     url: String(url),
                     api: _ctx.api,
                     onRefresh: _cache[2] || (_cache[2] = (r) => emit("refresh", r)),
-                    onShowSnackbar: _cache[3] || (_cache[3] = (val) => emit("show-snackbar", val)),
-                    onShowError: _cache[4] || (_cache[4] = (msg) => emit("show-error", msg)),
-                    onCopyToClipboard: _cache[5] || (_cache[5] = (t) => emit("copy-to-clipboard", t)),
-                    onStartLoading: _cache[6] || (_cache[6] = ($event) => loading.value = true),
-                    onEndLoading: _cache[7] || (_cache[7] = ($event) => loading.value = false)
+                    onShowError: _cache[3] || (_cache[3] = (msg) => emit("show-error", msg)),
+                    onCopyToClipboard: _cache[4] || (_cache[4] = (t) => emit("copy-to-clipboard", t)),
+                    onStartLoading: _cache[5] || (_cache[5] = ($event) => loading.value = true),
+                    onEndLoading: _cache[6] || (_cache[6] = ($event) => loading.value = false)
                   }, null, 8, ["info", "url", "api"])
                 ]),
                 _: 2
@@ -11250,12 +11799,12 @@ const _sfc_main$b = /* @__PURE__ */ _defineComponent$b({
   }
 });
 
-const SubscriptionTab = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-6a1d5a83"]]);
+const SubscriptionTab = /* @__PURE__ */ _export_sfc(_sfc_main$f, [["__scopeId", "data-v-3be3550f"]]);
 
-const {defineComponent:_defineComponent$a} = await importShared('vue');
+const {defineComponent:_defineComponent$e} = await importShared('vue');
 
-const {createTextVNode:_createTextVNode$a,resolveComponent:_resolveComponent$a,withCtx:_withCtx$a,createVNode:_createVNode$a,mergeProps:_mergeProps$9,unref:_unref$9,toDisplayString:_toDisplayString$a,openBlock:_openBlock$a,createBlock:_createBlock$a,createCommentVNode:_createCommentVNode$7} = await importShared('vue');
-const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
+const {createTextVNode:_createTextVNode$a,resolveComponent:_resolveComponent$e,withCtx:_withCtx$e,createVNode:_createVNode$e,mergeProps:_mergeProps$9,unref:_unref$b,toDisplayString:_toDisplayString$a,openBlock:_openBlock$e,createBlock:_createBlock$e,createCommentVNode:_createCommentVNode$7} = await importShared('vue');
+const _sfc_main$e = /* @__PURE__ */ _defineComponent$e({
   __name: "RuleProviderActionMenu",
   props: {
     ruleProvider: {
@@ -11267,23 +11816,23 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$a("v-icon");
-      const _component_v_btn = _resolveComponent$a("v-btn");
-      const _component_v_list_item_title = _resolveComponent$a("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$a("v-list-item");
-      const _component_v_list = _resolveComponent$a("v-list");
-      const _component_v_menu = _resolveComponent$a("v-menu");
-      return _openBlock$a(), _createBlock$a(_component_v_menu, { "min-width": "120" }, {
-        activator: _withCtx$a(({ props }) => [
-          _createVNode$a(_component_v_btn, _mergeProps$9({
+      const _component_v_icon = _resolveComponent$e("v-icon");
+      const _component_v_btn = _resolveComponent$e("v-btn");
+      const _component_v_list_item_title = _resolveComponent$e("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$e("v-list-item");
+      const _component_v_list = _resolveComponent$e("v-list");
+      const _component_v_menu = _resolveComponent$e("v-menu");
+      return _openBlock$e(), _createBlock$e(_component_v_menu, { "min-width": "120" }, {
+        activator: _withCtx$e(({ props }) => [
+          _createVNode$e(_component_v_btn, _mergeProps$9({
             color: "secondary",
             icon: "",
             size: "small",
             variant: "text"
           }, props), {
-            default: _withCtx$a(() => [
-              _createVNode$a(_component_v_icon, null, {
-                default: _withCtx$a(() => _cache[5] || (_cache[5] = [
+            default: _withCtx$e(() => [
+              _createVNode$e(_component_v_icon, null, {
+                default: _withCtx$e(() => _cache[5] || (_cache[5] = [
                   _createTextVNode$a("mdi-dots-vertical")
                 ])),
                 _: 1
@@ -11292,27 +11841,27 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
             _: 2
           }, 1040)
         ]),
-        default: _withCtx$a(() => [
-          _createVNode$a(_component_v_list, { density: "compact" }, {
-            default: _withCtx$a(() => [
-              _unref$9(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$a(), _createBlock$a(_component_v_list_item, {
+        default: _withCtx$e(() => [
+          _createVNode$e(_component_v_list, { density: "compact" }, {
+            default: _withCtx$e(() => [
+              _unref$b(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$e(), _createBlock$e(_component_v_list_item, {
                 key: 0,
                 onClick: _cache[0] || (_cache[0] = ($event) => emit("changeStatus", !__props.ruleProvider.meta.disabled))
               }, {
-                prepend: _withCtx$a(() => [
-                  _createVNode$a(_component_v_icon, {
+                prepend: _withCtx$e(() => [
+                  _createVNode$e(_component_v_icon, {
                     size: "small",
                     color: __props.ruleProvider.meta.disabled ? "success" : "grey"
                   }, {
-                    default: _withCtx$a(() => [
+                    default: _withCtx$e(() => [
                       _createTextVNode$a(_toDisplayString$a(__props.ruleProvider.meta.disabled ? "mdi-play-circle-outline" : "mdi-stop-circle-outline"), 1)
                     ]),
                     _: 1
                   }, 8, ["color"])
                 ]),
-                default: _withCtx$a(() => [
-                  _createVNode$a(_component_v_list_item_title, null, {
-                    default: _withCtx$a(() => [
+                default: _withCtx$e(() => [
+                  _createVNode$e(_component_v_list_item_title, null, {
+                    default: _withCtx$e(() => [
                       _createTextVNode$a(_toDisplayString$a(__props.ruleProvider.meta.disabled ? "启用" : "禁用"), 1)
                     ]),
                     _: 1
@@ -11320,24 +11869,24 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
                 ]),
                 _: 1
               })) : _createCommentVNode$7("", true),
-              _unref$9(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$a(), _createBlock$a(_component_v_list_item, {
+              _unref$b(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$e(), _createBlock$e(_component_v_list_item, {
                 key: 1,
                 onClick: _cache[1] || (_cache[1] = ($event) => emit("edit"))
               }, {
-                prepend: _withCtx$a(() => [
-                  _createVNode$a(_component_v_icon, {
+                prepend: _withCtx$e(() => [
+                  _createVNode$e(_component_v_icon, {
                     size: "small",
                     color: "primary"
                   }, {
-                    default: _withCtx$a(() => _cache[6] || (_cache[6] = [
+                    default: _withCtx$e(() => _cache[6] || (_cache[6] = [
                       _createTextVNode$a("mdi-file-edit-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$a(() => [
-                  _createVNode$a(_component_v_list_item_title, null, {
-                    default: _withCtx$a(() => _cache[7] || (_cache[7] = [
+                default: _withCtx$e(() => [
+                  _createVNode$e(_component_v_list_item_title, null, {
+                    default: _withCtx$e(() => _cache[7] || (_cache[7] = [
                       _createTextVNode$a("编辑")
                     ])),
                     _: 1
@@ -11345,23 +11894,23 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
                 ]),
                 _: 1
               })) : _createCommentVNode$7("", true),
-              _createVNode$a(_component_v_list_item, {
+              _createVNode$e(_component_v_list_item, {
                 onClick: _cache[2] || (_cache[2] = ($event) => emit("showYaml"))
               }, {
-                prepend: _withCtx$a(() => [
-                  _createVNode$a(_component_v_icon, {
+                prepend: _withCtx$e(() => [
+                  _createVNode$e(_component_v_icon, {
                     size: "small",
                     color: "info"
                   }, {
-                    default: _withCtx$a(() => _cache[8] || (_cache[8] = [
+                    default: _withCtx$e(() => _cache[8] || (_cache[8] = [
                       _createTextVNode$a("mdi-code-json")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$a(() => [
-                  _createVNode$a(_component_v_list_item_title, null, {
-                    default: _withCtx$a(() => _cache[9] || (_cache[9] = [
+                default: _withCtx$e(() => [
+                  _createVNode$e(_component_v_list_item_title, null, {
+                    default: _withCtx$e(() => _cache[9] || (_cache[9] = [
                       _createTextVNode$a("查看")
                     ])),
                     _: 1
@@ -11369,24 +11918,24 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
                 ]),
                 _: 1
               }),
-              _unref$9(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$a(), _createBlock$a(_component_v_list_item, {
+              _unref$b(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$e(), _createBlock$e(_component_v_list_item, {
                 key: 2,
                 onClick: _cache[3] || (_cache[3] = ($event) => emit("editVisibility"))
               }, {
-                prepend: _withCtx$a(() => [
-                  _createVNode$a(_component_v_icon, {
+                prepend: _withCtx$e(() => [
+                  _createVNode$e(_component_v_icon, {
                     size: "small",
                     color: "warning"
                   }, {
-                    default: _withCtx$a(() => _cache[10] || (_cache[10] = [
+                    default: _withCtx$e(() => _cache[10] || (_cache[10] = [
                       _createTextVNode$a("mdi-eye-off-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$a(() => [
-                  _createVNode$a(_component_v_list_item_title, null, {
-                    default: _withCtx$a(() => _cache[11] || (_cache[11] = [
+                default: _withCtx$e(() => [
+                  _createVNode$e(_component_v_list_item_title, null, {
+                    default: _withCtx$e(() => _cache[11] || (_cache[11] = [
                       _createTextVNode$a("隐藏")
                     ])),
                     _: 1
@@ -11394,24 +11943,24 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
                 ]),
                 _: 1
               })) : _createCommentVNode$7("", true),
-              _unref$9(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$a(), _createBlock$a(_component_v_list_item, {
+              _unref$b(isManual)(__props.ruleProvider.meta.source) ? (_openBlock$e(), _createBlock$e(_component_v_list_item, {
                 key: 3,
                 onClick: _cache[4] || (_cache[4] = ($event) => emit("delete"))
               }, {
-                prepend: _withCtx$a(() => [
-                  _createVNode$a(_component_v_icon, {
+                prepend: _withCtx$e(() => [
+                  _createVNode$e(_component_v_icon, {
                     size: "small",
                     color: "error"
                   }, {
-                    default: _withCtx$a(() => _cache[12] || (_cache[12] = [
+                    default: _withCtx$e(() => _cache[12] || (_cache[12] = [
                       _createTextVNode$a("mdi-trash-can-outline")
                     ])),
                     _: 1
                   })
                 ]),
-                default: _withCtx$a(() => [
-                  _createVNode$a(_component_v_list_item_title, null, {
-                    default: _withCtx$a(() => _cache[13] || (_cache[13] = [
+                default: _withCtx$e(() => [
+                  _createVNode$e(_component_v_list_item_title, null, {
+                    default: _withCtx$e(() => _cache[13] || (_cache[13] = [
                       _createTextVNode$a("删除")
                     ])),
                     _: 1
@@ -11429,13 +11978,13 @@ const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
   }
 });
 
-const {defineComponent:_defineComponent$9} = await importShared('vue');
+const {defineComponent:_defineComponent$d} = await importShared('vue');
 
-const {unref:_unref$8,toDisplayString:_toDisplayString$9,createTextVNode:_createTextVNode$9,resolveComponent:_resolveComponent$9,withCtx:_withCtx$9,createVNode:_createVNode$9,openBlock:_openBlock$9,createBlock:_createBlock$9,createCommentVNode:_createCommentVNode$6,mergeProps:_mergeProps$8,createElementVNode:_createElementVNode$7} = await importShared('vue');
+const {unref:_unref$a,toDisplayString:_toDisplayString$9,createTextVNode:_createTextVNode$9,resolveComponent:_resolveComponent$d,withCtx:_withCtx$d,createVNode:_createVNode$d,openBlock:_openBlock$d,createBlock:_createBlock$d,createCommentVNode:_createCommentVNode$6,mergeProps:_mergeProps$8,createElementVNode:_createElementVNode$a} = await importShared('vue');
 
-const _hoisted_1$6 = { class: "d-flex align-center" };
+const _hoisted_1$a = { class: "d-flex align-center" };
 const {ref: ref$6} = await importShared('vue');
-const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
+const _sfc_main$d = /* @__PURE__ */ _defineComponent$d({
   __name: "RuleProvidersTable",
   props: {
     ruleProviders: {
@@ -11465,109 +12014,109 @@ const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
       { title: "", key: "actions", sortable: false, width: "1rem" }
     ]);
     return (_ctx, _cache) => {
-      const _component_v_chip = _resolveComponent$9("v-chip");
-      const _component_v_icon = _resolveComponent$9("v-icon");
-      const _component_v_tooltip = _resolveComponent$9("v-tooltip");
-      const _component_v_data_table = _resolveComponent$9("v-data-table");
-      return _openBlock$9(), _createBlock$9(_component_v_data_table, {
+      const _component_v_chip = _resolveComponent$d("v-chip");
+      const _component_v_icon = _resolveComponent$d("v-icon");
+      const _component_v_tooltip = _resolveComponent$d("v-tooltip");
+      const _component_v_data_table = _resolveComponent$d("v-data-table");
+      return _openBlock$d(), _createBlock$d(_component_v_data_table, {
         headers: headersRuleProviders.value,
         items: __props.ruleProviders,
         search: __props.search,
         page: __props.page,
         "items-per-page": __props.itemsPerPage,
-        "items-per-page-options": _unref$8(itemsPerPageOptions),
+        "items-per-page-options": _unref$a(itemsPerPageOptions),
         "item-key": "name",
         class: "px-4",
         density: "compact",
         "hide-default-footer": "",
         "fixed-header": ""
       }, {
-        "item.name": _withCtx$9(({ item }) => [
-          _createVNode$9(_component_v_chip, {
+        "item.name": _withCtx$d(({ item }) => [
+          _createVNode$d(_component_v_chip, {
             size: "small",
             pill: "",
             color: "secondary"
           }, {
-            default: _withCtx$9(() => [
+            default: _withCtx$d(() => [
               _createTextVNode$9(_toDisplayString$9(item.name), 1)
             ]),
             _: 2
           }, 1024)
         ]),
-        "item.type": _withCtx$9(({ item }) => [
-          _createVNode$9(_component_v_chip, {
+        "item.type": _withCtx$d(({ item }) => [
+          _createVNode$d(_component_v_chip, {
             size: "small",
             label: "",
             variant: "tonal",
             color: "primary"
           }, {
-            default: _withCtx$9(() => [
+            default: _withCtx$d(() => [
               _createTextVNode$9(_toDisplayString$9(item.data.type), 1)
             ]),
             _: 2
           }, 1024)
         ]),
-        "item.behavior": _withCtx$9(({ item }) => [
-          item.data?.behavior ? (_openBlock$9(), _createBlock$9(_component_v_chip, {
+        "item.behavior": _withCtx$d(({ item }) => [
+          item.data?.behavior ? (_openBlock$d(), _createBlock$d(_component_v_chip, {
             key: 0,
-            color: _unref$8(getBehaviorColor)(item.data.behavior),
+            color: _unref$a(getBehaviorColor)(item.data.behavior),
             size: "small",
             label: "",
             variant: "tonal"
           }, {
-            default: _withCtx$9(() => [
+            default: _withCtx$d(() => [
               _createTextVNode$9(_toDisplayString$9(item.data.behavior), 1)
             ]),
             _: 2
           }, 1032, ["color"])) : _createCommentVNode$6("", true)
         ]),
-        "item.format": _withCtx$9(({ item }) => [
-          _createVNode$9(_component_v_chip, {
-            color: _unref$8(getFormatColor)(item.data.format),
+        "item.format": _withCtx$d(({ item }) => [
+          _createVNode$d(_component_v_chip, {
+            color: _unref$a(getFormatColor)(item.data.format),
             size: "small",
             label: "",
             variant: "tonal"
           }, {
-            default: _withCtx$9(() => [
+            default: _withCtx$d(() => [
               _createTextVNode$9(_toDisplayString$9(item.data.format), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.source": _withCtx$9(({ item }) => [
-          _createVNode$9(_component_v_chip, {
-            color: _unref$8(getSourceColor)(item.meta.source),
+        "item.source": _withCtx$d(({ item }) => [
+          _createVNode$d(_component_v_chip, {
+            color: _unref$a(getSourceColor)(item.meta.source),
             size: "small",
             variant: "outlined"
           }, {
-            default: _withCtx$9(() => [
+            default: _withCtx$d(() => [
               _createTextVNode$9(_toDisplayString$9(item.meta.source), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.status": _withCtx$9(({ item }) => [
-          _createElementVNode$7("div", _hoisted_1$6, [
-            _createVNode$9(_component_v_icon, {
+        "item.status": _withCtx$d(({ item }) => [
+          _createElementVNode$a("div", _hoisted_1$a, [
+            _createVNode$d(_component_v_icon, {
               color: item.meta.disabled ? "grey" : "success",
               class: "mr-1"
             }, {
-              default: _withCtx$9(() => [
+              default: _withCtx$d(() => [
                 _createTextVNode$9(_toDisplayString$9(item.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
               ]),
               _: 2
             }, 1032, ["color"]),
-            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$9(), _createBlock$9(_component_v_tooltip, {
+            item.meta.invisible_to && item.meta.invisible_to.length > 0 ? (_openBlock$d(), _createBlock$d(_component_v_tooltip, {
               key: 0,
               text: "已配置可见性限制",
               location: "top"
             }, {
-              activator: _withCtx$9(({ props }) => [
-                _createVNode$9(_component_v_icon, _mergeProps$8(props, {
+              activator: _withCtx$d(({ props }) => [
+                _createVNode$d(_component_v_icon, _mergeProps$8(props, {
                   size: "small",
                   color: "warning"
                 }), {
-                  default: _withCtx$9(() => _cache[0] || (_cache[0] = [
+                  default: _withCtx$d(() => _cache[0] || (_cache[0] = [
                     _createTextVNode$9(" mdi-eye-off-outline ")
                   ])),
                   _: 2
@@ -11577,8 +12126,8 @@ const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
             })) : _createCommentVNode$6("", true)
           ])
         ]),
-        "item.actions": _withCtx$9(({ item }) => [
-          _createVNode$9(_sfc_main$a, {
+        "item.actions": _withCtx$d(({ item }) => [
+          _createVNode$d(_sfc_main$e, {
             "rule-provider": item,
             onChangeStatus: (disabled) => emit("changeStatus", item.name, disabled),
             onEdit: ($event) => emit("editRuleProvider", item.name),
@@ -11586,12 +12135,12 @@ const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
             onDelete: ($event) => emit("deleteRuleProvider", item.name),
             onEditVisibility: ($event) => emit("editVisibility", item.name)
           }, null, 8, ["rule-provider", "onChangeStatus", "onEdit", "onShowYaml", "onDelete", "onEditVisibility"]),
-          !_unref$8(isManual)(item.meta.source) ? (_openBlock$9(), _createBlock$9(_component_v_tooltip, {
+          !_unref$a(isManual)(item.meta.source) ? (_openBlock$d(), _createBlock$d(_component_v_tooltip, {
             key: 0,
             activator: "parent",
             location: "top"
           }, {
-            default: _withCtx$9(() => _cache[1] || (_cache[1] = [
+            default: _withCtx$d(() => _cache[1] || (_cache[1] = [
               _createTextVNode$9(" 非手动添加 ")
             ])),
             _: 1
@@ -11603,15 +12152,204 @@ const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
   }
 });
 
-const {defineComponent:_defineComponent$8} = await importShared('vue');
+const {defineComponent:_defineComponent$c} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$8,createElementVNode:_createElementVNode$6,createTextVNode:_createTextVNode$8,resolveComponent:_resolveComponent$8,mergeProps:_mergeProps$7,withCtx:_withCtx$8,createVNode:_createVNode$8,openBlock:_openBlock$8,createBlock:_createBlock$8,createCommentVNode:_createCommentVNode$5,unref:_unref$7} = await importShared('vue');
+const {resolveComponent:_resolveComponent$c,createVNode:_createVNode$c,withCtx:_withCtx$c,createElementVNode:_createElementVNode$9,unref:_unref$9,toDisplayString:_toDisplayString$8,createTextVNode:_createTextVNode$8,mergeProps:_mergeProps$7,renderList:_renderList$6,Fragment:_Fragment$7,openBlock:_openBlock$c,createElementBlock:_createElementBlock$8,createBlock:_createBlock$c} = await importShared('vue');
 
-const _hoisted_1$5 = { class: "d-flex justify-space-between align-center px-4 pt-3" };
-const _hoisted_2$5 = ["title"];
-const _hoisted_3$5 = { class: "d-flex align-center" };
-const _hoisted_4$5 = { class: "text-body-2 font-weight-medium" };
-const _sfc_main$8 = /* @__PURE__ */ _defineComponent$8({
+const _hoisted_1$9 = { class: "rule-providers-desktop-view" };
+const _hoisted_2$7 = { class: "pa-4" };
+const _hoisted_3$7 = { class: "clash-data-table table-page-container" };
+const _hoisted_4$7 = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$c = /* @__PURE__ */ _defineComponent$c({
+  __name: "RuleProvidersDesktop",
+  props: {
+    ruleProviders: {},
+    search: {},
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "update:itemsPerPage", "open-add-dialog", "edit-rule-provider", "delete-rule-provider", "change-status", "edit-visibility", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$c("v-text-field");
+      const _component_v_col = _resolveComponent$c("v-col");
+      const _component_v_btn = _resolveComponent$c("v-btn");
+      const _component_v_btn_group = _resolveComponent$c("v-btn-group");
+      const _component_v_row = _resolveComponent$c("v-row");
+      const _component_v_pagination = _resolveComponent$c("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$c("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$c("v-list-item");
+      const _component_v_list = _resolveComponent$c("v-list");
+      const _component_v_menu = _resolveComponent$c("v-menu");
+      return _openBlock$c(), _createElementBlock$8("div", _hoisted_1$9, [
+        _createElementVNode$9("div", _hoisted_2$7, [
+          _createVNode$c(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$c(() => [
+              _createVNode$c(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$c(() => [
+                  _createVNode$c(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则集合",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$c(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$c(() => [
+                  _createVNode$c(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$c(() => [
+                      _createVNode$c(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$9("div", _hoisted_3$7, [
+          _createVNode$c(_sfc_main$d, {
+            "items-per-page": _ctx.itemsPerPage,
+            page: _ctx.page,
+            "rule-providers": _ctx.ruleProviders,
+            search: _ctx.search,
+            onEditRuleProvider: _cache[2] || (_cache[2] = (n) => emit("edit-rule-provider", n)),
+            onDeleteRuleProvider: _cache[3] || (_cache[3] = (n) => emit("delete-rule-provider", n)),
+            onShowYaml: _cache[4] || (_cache[4] = (o) => emit("show-yaml", o)),
+            onChangeStatus: _cache[5] || (_cache[5] = (n, d) => emit("change-status", n, d)),
+            onEditVisibility: _cache[6] || (_cache[6] = (n) => emit("edit-visibility", n))
+          }, null, 8, ["items-per-page", "page", "rule-providers", "search"])
+        ]),
+        _createElementVNode$9("div", _hoisted_4$7, [
+          _createVNode$c(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$c(() => [
+              _createVNode$c(_component_v_col, {
+                cols: "2",
+                md: "1"
+              }),
+              _createVNode$c(_component_v_col, {
+                cols: "8",
+                md: "10",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$c(() => [
+                  _createVNode$c(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[7] || (_cache[7] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$c(_component_v_col, {
+                cols: "2",
+                md: "1",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$c(() => [
+                  _createVNode$c(_component_v_menu, null, {
+                    activator: _withCtx$c(({ props: menuProps }) => [
+                      _createVNode$c(_component_v_btn, _mergeProps$7(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$c(() => [
+                          _createTextVNode$8(_toDisplayString$8(_unref$9(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$c(() => [
+                      _createVNode$c(_component_v_list, null, {
+                        default: _withCtx$c(() => [
+                          (_openBlock$c(true), _createElementBlock$8(_Fragment$7, null, _renderList$6(_unref$9(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$c(), _createBlock$c(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$c(() => [
+                                _createVNode$c(_component_v_list_item_title, null, {
+                                  default: _withCtx$c(() => [
+                                    _createTextVNode$8(_toDisplayString$8(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
+    };
+  }
+});
+
+const {defineComponent:_defineComponent$b} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$7,createElementVNode:_createElementVNode$8,createTextVNode:_createTextVNode$7,resolveComponent:_resolveComponent$b,mergeProps:_mergeProps$6,withCtx:_withCtx$b,createVNode:_createVNode$b,openBlock:_openBlock$b,createBlock:_createBlock$b,createCommentVNode:_createCommentVNode$5,unref:_unref$8} = await importShared('vue');
+
+const _hoisted_1$8 = { class: "d-flex justify-space-between align-center px-4 pt-3" };
+const _hoisted_2$6 = ["title"];
+const _hoisted_3$6 = { class: "d-flex align-center" };
+const _hoisted_4$6 = { class: "text-body-2 font-weight-medium" };
+const _sfc_main$b = /* @__PURE__ */ _defineComponent$b({
   __name: "RuleProviderCard",
   props: {
     ruleProviderData: {
@@ -11623,79 +12361,79 @@ const _sfc_main$8 = /* @__PURE__ */ _defineComponent$8({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_icon = _resolveComponent$8("v-icon");
-      const _component_v_tooltip = _resolveComponent$8("v-tooltip");
-      const _component_v_chip = _resolveComponent$8("v-chip");
-      const _component_v_col = _resolveComponent$8("v-col");
-      const _component_v_row = _resolveComponent$8("v-row");
-      const _component_v_card_text = _resolveComponent$8("v-card-text");
-      const _component_v_divider = _resolveComponent$8("v-divider");
-      const _component_v_spacer = _resolveComponent$8("v-spacer");
-      const _component_v_card_actions = _resolveComponent$8("v-card-actions");
-      const _component_v_card = _resolveComponent$8("v-card");
-      return _openBlock$8(), _createBlock$8(_component_v_card, {
+      const _component_v_icon = _resolveComponent$b("v-icon");
+      const _component_v_tooltip = _resolveComponent$b("v-tooltip");
+      const _component_v_chip = _resolveComponent$b("v-chip");
+      const _component_v_col = _resolveComponent$b("v-col");
+      const _component_v_row = _resolveComponent$b("v-row");
+      const _component_v_card_text = _resolveComponent$b("v-card-text");
+      const _component_v_divider = _resolveComponent$b("v-divider");
+      const _component_v_spacer = _resolveComponent$b("v-spacer");
+      const _component_v_card_actions = _resolveComponent$b("v-card-actions");
+      const _component_v_card = _resolveComponent$b("v-card");
+      return _openBlock$b(), _createBlock$b(_component_v_card, {
         rounded: "lg",
         elevation: "2",
         class: "rule-provider-card h-100 transition-swing",
         variant: "tonal"
       }, {
-        default: _withCtx$8(() => [
-          _createElementVNode$6("div", _hoisted_1$5, [
-            _createElementVNode$6("span", {
+        default: _withCtx$b(() => [
+          _createElementVNode$8("div", _hoisted_1$8, [
+            _createElementVNode$8("span", {
               class: "font-weight-bold text-truncate",
               title: __props.ruleProviderData.name
-            }, _toDisplayString$8(__props.ruleProviderData.name), 9, _hoisted_2$5),
-            _createElementVNode$6("div", _hoisted_3$5, [
-              __props.ruleProviderData.meta.invisible_to && __props.ruleProviderData.meta.invisible_to.length > 0 ? (_openBlock$8(), _createBlock$8(_component_v_tooltip, {
+            }, _toDisplayString$7(__props.ruleProviderData.name), 9, _hoisted_2$6),
+            _createElementVNode$8("div", _hoisted_3$6, [
+              __props.ruleProviderData.meta.invisible_to && __props.ruleProviderData.meta.invisible_to.length > 0 ? (_openBlock$b(), _createBlock$b(_component_v_tooltip, {
                 key: 0,
                 text: "已配置可见性限制",
                 location: "top"
               }, {
-                activator: _withCtx$8(({ props }) => [
-                  _createVNode$8(_component_v_icon, _mergeProps$7(props, {
+                activator: _withCtx$b(({ props }) => [
+                  _createVNode$b(_component_v_icon, _mergeProps$6(props, {
                     size: "small",
                     color: "warning",
                     class: "mr-2"
                   }), {
-                    default: _withCtx$8(() => _cache[5] || (_cache[5] = [
-                      _createTextVNode$8(" mdi-eye-off-outline ")
+                    default: _withCtx$b(() => _cache[5] || (_cache[5] = [
+                      _createTextVNode$7(" mdi-eye-off-outline ")
                     ])),
                     _: 2
                   }, 1040)
                 ]),
                 _: 1
               })) : _createCommentVNode$5("", true),
-              _createVNode$8(_component_v_chip, {
+              _createVNode$b(_component_v_chip, {
                 size: "small",
-                color: _unref$7(getSourceColor)(__props.ruleProviderData.meta.source),
+                color: _unref$8(getSourceColor)(__props.ruleProviderData.meta.source),
                 variant: "outlined"
               }, {
-                default: _withCtx$8(() => [
-                  _createTextVNode$8(_toDisplayString$8(__props.ruleProviderData.meta.source), 1)
+                default: _withCtx$b(() => [
+                  _createTextVNode$7(_toDisplayString$7(__props.ruleProviderData.meta.source), 1)
                 ]),
                 _: 1
               }, 8, ["color"])
             ])
           ]),
-          _createVNode$8(_component_v_card_text, { class: "pt-2 pb-4" }, {
-            default: _withCtx$8(() => [
-              _createVNode$8(_component_v_row, {
+          _createVNode$b(_component_v_card_text, { class: "pt-2 pb-4" }, {
+            default: _withCtx$b(() => [
+              _createVNode$b(_component_v_row, {
                 "no-gutters": "",
                 class: "mb-2 align-center"
               }, {
-                default: _withCtx$8(() => [
-                  _createVNode$8(_component_v_col, {
+                default: _withCtx$b(() => [
+                  _createVNode$b(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$8(() => _cache[6] || (_cache[6] = [
-                      _createTextVNode$8("类型")
+                    default: _withCtx$b(() => _cache[6] || (_cache[6] = [
+                      _createTextVNode$7("类型")
                     ])),
                     _: 1
                   }),
-                  _createVNode$8(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$8(() => [
-                      _createElementVNode$6("span", _hoisted_4$5, _toDisplayString$8(__props.ruleProviderData.data.type), 1)
+                  _createVNode$b(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$b(() => [
+                      _createElementVNode$8("span", _hoisted_4$6, _toDisplayString$7(__props.ruleProviderData.data.type), 1)
                     ]),
                     _: 1
                   })
@@ -11705,19 +12443,19 @@ const _sfc_main$8 = /* @__PURE__ */ _defineComponent$8({
             ]),
             _: 1
           }),
-          _createVNode$8(_component_v_divider),
-          _createVNode$8(_component_v_card_actions, null, {
-            default: _withCtx$8(() => [
-              _createVNode$8(_component_v_icon, {
+          _createVNode$b(_component_v_divider),
+          _createVNode$b(_component_v_card_actions, null, {
+            default: _withCtx$b(() => [
+              _createVNode$b(_component_v_icon, {
                 color: __props.ruleProviderData.meta.disabled ? "grey" : "success"
               }, {
-                default: _withCtx$8(() => [
-                  _createTextVNode$8(_toDisplayString$8(__props.ruleProviderData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
+                default: _withCtx$b(() => [
+                  _createTextVNode$7(_toDisplayString$7(__props.ruleProviderData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
                 ]),
                 _: 1
               }, 8, ["color"]),
-              _createVNode$8(_component_v_spacer),
-              _createVNode$8(_sfc_main$a, {
+              _createVNode$b(_component_v_spacer),
+              _createVNode$b(_sfc_main$e, {
                 "rule-provider": __props.ruleProviderData,
                 onChangeStatus: _cache[0] || (_cache[0] = (disabled) => emit("changeStatus", __props.ruleProviderData.name, disabled)),
                 onEdit: _cache[1] || (_cache[1] = ($event) => emit("editRuleProvider", __props.ruleProviderData.name)),
@@ -11735,14 +12473,142 @@ const _sfc_main$8 = /* @__PURE__ */ _defineComponent$8({
   }
 });
 
-const RuleProviderCard = /* @__PURE__ */ _export_sfc(_sfc_main$8, [["__scopeId", "data-v-20958398"]]);
+const RuleProviderCard = /* @__PURE__ */ _export_sfc(_sfc_main$b, [["__scopeId", "data-v-834a3eee"]]);
 
-const {defineComponent:_defineComponent$7} = await importShared('vue');
+const {defineComponent:_defineComponent$a} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$7,createTextVNode:_createTextVNode$7,resolveComponent:_resolveComponent$7,withCtx:_withCtx$7,createVNode:_createVNode$7,unref:_unref$6,openBlock:_openBlock$7,createBlock:_createBlock$7,createCommentVNode:_createCommentVNode$4,mergeProps:_mergeProps$6,withModifiers:_withModifiers$1} = await importShared('vue');
+const {resolveComponent:_resolveComponent$a,createVNode:_createVNode$a,withCtx:_withCtx$a,createElementVNode:_createElementVNode$7,renderList:_renderList$5,Fragment:_Fragment$6,openBlock:_openBlock$a,createElementBlock:_createElementBlock$7,createBlock:_createBlock$a} = await importShared('vue');
+
+const _hoisted_1$7 = { class: "rule-providers-mobile-view" };
+const _hoisted_2$5 = { class: "pa-2 pb-4" };
+const _hoisted_3$5 = { class: "mobile-card-container" };
+const _hoisted_4$5 = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$a = /* @__PURE__ */ _defineComponent$a({
+  __name: "RuleProvidersMobile",
+  props: {
+    paginatedRuleProviders: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-add-dialog", "edit-rule-provider", "delete-rule-provider", "change-status", "edit-visibility", "show-yaml"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$a("v-text-field");
+      const _component_v_col = _resolveComponent$a("v-col");
+      const _component_v_btn = _resolveComponent$a("v-btn");
+      const _component_v_btn_group = _resolveComponent$a("v-btn-group");
+      const _component_v_row = _resolveComponent$a("v-row");
+      const _component_v_pagination = _resolveComponent$a("v-pagination");
+      return _openBlock$a(), _createElementBlock$7("div", _hoisted_1$7, [
+        _createElementVNode$7("div", _hoisted_2$5, [
+          _createVNode$a(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$a(() => [
+              _createVNode$a(_component_v_col, {
+                cols: "10",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$a(() => [
+                  _createVNode$a(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索规则集合",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$a(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$a(() => [
+                  _createVNode$a(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$a(() => [
+                      _createVNode$a(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$7("div", _hoisted_3$5, [
+          _createVNode$a(_component_v_row, null, {
+            default: _withCtx$a(() => [
+              (_openBlock$a(true), _createElementBlock$7(_Fragment$6, null, _renderList$5(_ctx.paginatedRuleProviders, (item) => {
+                return _openBlock$a(), _createBlock$a(_component_v_col, {
+                  key: item.name,
+                  cols: "12"
+                }, {
+                  default: _withCtx$a(() => [
+                    _createVNode$a(RuleProviderCard, {
+                      "rule-provider-data": item,
+                      onEditRuleProvider: _cache[2] || (_cache[2] = (n) => emit("edit-rule-provider", n)),
+                      onDeleteRuleProvider: _cache[3] || (_cache[3] = (n) => emit("delete-rule-provider", n)),
+                      onShowYaml: _cache[4] || (_cache[4] = (o) => emit("show-yaml", o)),
+                      onChangeStatus: _cache[5] || (_cache[5] = (n, d) => emit("change-status", n, d)),
+                      onEditVisibility: _cache[6] || (_cache[6] = (n) => emit("edit-visibility", n))
+                    }, null, 8, ["rule-provider-data"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$7("div", _hoisted_4$5, [
+          _createVNode$a(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[7] || (_cache[7] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const RuleProvidersMobile = /* @__PURE__ */ _export_sfc(_sfc_main$a, [["__scopeId", "data-v-4a77f6a2"]]);
+
+const {defineComponent:_defineComponent$9} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$6,createTextVNode:_createTextVNode$6,resolveComponent:_resolveComponent$9,withCtx:_withCtx$9,createVNode:_createVNode$9,unref:_unref$7,openBlock:_openBlock$9,createBlock:_createBlock$9,createCommentVNode:_createCommentVNode$4,mergeProps:_mergeProps$5,withModifiers:_withModifiers$1} = await importShared('vue');
 
 const {ref: ref$5,toRaw: toRaw$3} = await importShared('vue');
-const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
+const _sfc_main$9 = /* @__PURE__ */ _defineComponent$9({
   __name: "RuleProviderDialog",
   props: {
     initialValue: {
@@ -11758,10 +12624,11 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
       required: true
     }
   },
-  emits: ["close", "refresh", "show-snackbar", "show-error"],
+  emits: ["close", "refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const toast = useToast();
     const ruleProviderTypes = ["http", "file", "inline"];
     const ruleProviderBehaviorTypes = ["domain", "ipcidr", "classical"];
     const ruleProviderFormatTypes = ["yaml", "text", "mrs"];
@@ -11791,69 +12658,57 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
         );
         if (!result.success) {
           emit("show-error", "保存规则集合失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "保存规则集合失败",
-            color: "error"
-          });
+          toast.error("保存规则集合失败");
           return;
         }
-        emit("show-snackbar", {
-          show: true,
-          message: props.isAdding ? "规则集合添加成功" : "规则集合更新成功",
-          color: "success"
-        });
+        toast.success(props.isAdding ? "规则集合添加成功" : "规则集合更新成功");
         emit("refresh");
         emit("close");
       } catch (err) {
         if (err instanceof Error) {
           emit("show-error", "保存规则集合失败: " + (err.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "保存规则集合失败",
-            color: "error"
-          });
+          toast.error("保存规则集合失败");
         }
       } finally {
         saveRuleProviderLoading.value = false;
       }
     }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$7("v-card-title");
-      const _component_v_text_field = _resolveComponent$7("v-text-field");
-      const _component_v_select = _resolveComponent$7("v-select");
-      const _component_v_chip = _resolveComponent$7("v-chip");
-      const _component_v_combobox = _resolveComponent$7("v-combobox");
-      const _component_v_card_text = _resolveComponent$7("v-card-text");
-      const _component_v_spacer = _resolveComponent$7("v-spacer");
-      const _component_v_btn = _resolveComponent$7("v-btn");
-      const _component_v_card_actions = _resolveComponent$7("v-card-actions");
-      const _component_v_card = _resolveComponent$7("v-card");
-      const _component_v_form = _resolveComponent$7("v-form");
-      const _component_v_dialog = _resolveComponent$7("v-dialog");
-      return _openBlock$7(), _createBlock$7(_component_v_dialog, {
+      const _component_v_card_title = _resolveComponent$9("v-card-title");
+      const _component_v_text_field = _resolveComponent$9("v-text-field");
+      const _component_v_select = _resolveComponent$9("v-select");
+      const _component_v_chip = _resolveComponent$9("v-chip");
+      const _component_v_combobox = _resolveComponent$9("v-combobox");
+      const _component_v_card_text = _resolveComponent$9("v-card-text");
+      const _component_v_spacer = _resolveComponent$9("v-spacer");
+      const _component_v_btn = _resolveComponent$9("v-btn");
+      const _component_v_card_actions = _resolveComponent$9("v-card-actions");
+      const _component_v_card = _resolveComponent$9("v-card");
+      const _component_v_form = _resolveComponent$9("v-form");
+      const _component_v_dialog = _resolveComponent$9("v-dialog");
+      return _openBlock$9(), _createBlock$9(_component_v_dialog, {
         "max-width": "40rem",
         "model-value": true,
         persistent: ""
       }, {
-        default: _withCtx$7(() => [
-          _createVNode$7(_component_v_form, {
+        default: _withCtx$9(() => [
+          _createVNode$9(_component_v_form, {
             ref_key: "ruleProvidersForm",
             ref: ruleProvidersForm,
             onSubmit: _withModifiers$1(saveRuleProvider, ["prevent"])
           }, {
-            default: _withCtx$7(() => [
-              _createVNode$7(_component_v_card, null, {
-                default: _withCtx$7(() => [
-                  _createVNode$7(_component_v_card_title, null, {
-                    default: _withCtx$7(() => [
-                      _createTextVNode$7(_toDisplayString$7(__props.isAdding ? "添加规则集合" : "编辑规则集合"), 1)
+            default: _withCtx$9(() => [
+              _createVNode$9(_component_v_card, null, {
+                default: _withCtx$9(() => [
+                  _createVNode$9(_component_v_card_title, null, {
+                    default: _withCtx$9(() => [
+                      _createTextVNode$6(_toDisplayString$6(__props.isAdding ? "添加规则集合" : "编辑规则集合"), 1)
                     ]),
                     _: 1
                   }),
-                  _createVNode$7(_component_v_card_text, null, {
-                    default: _withCtx$7(() => [
-                      _createVNode$7(_component_v_text_field, {
+                  _createVNode$9(_component_v_card_text, null, {
+                    default: _withCtx$9(() => [
+                      _createVNode$9(_component_v_text_field, {
                         modelValue: newRuleProvider.value.name,
                         "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => newRuleProvider.value.name = $event),
                         label: "name",
@@ -11861,7 +12716,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         rules: [(v) => !!v || "名称不能为空"],
                         class: "mb-4"
                       }, null, 8, ["modelValue", "rules"]),
-                      _createVNode$7(_component_v_select, {
+                      _createVNode$9(_component_v_select, {
                         modelValue: newRuleProvider.value.data.type,
                         "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => newRuleProvider.value.data.type = $event),
                         items: ruleProviderTypes,
@@ -11870,17 +12725,17 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         rules: [(v) => !!v || "类型不能为空"],
                         class: "mb-4"
                       }, null, 8, ["modelValue", "rules"]),
-                      newRuleProvider.value.data.type === "http" ? (_openBlock$7(), _createBlock$7(_component_v_text_field, {
+                      newRuleProvider.value.data.type === "http" ? (_openBlock$9(), _createBlock$9(_component_v_text_field, {
                         key: 0,
                         modelValue: newRuleProvider.value.data.url,
                         "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => newRuleProvider.value.data.url = $event),
                         label: "url",
                         required: "",
-                        rules: [(v) => !!v || "URL 不能为空", (v) => _unref$6(isValidUrl)(v) || "请输入有效的 URL"],
+                        rules: [(v) => !!v || "URL 不能为空", (v) => _unref$7(isValidUrl)(v) || "请输入有效的 URL"],
                         class: "mb-4",
                         hint: "当类型为 http 时必须配置"
                       }, null, 8, ["modelValue", "rules"])) : _createCommentVNode$4("", true),
-                      newRuleProvider.value.data.type === "file" ? (_openBlock$7(), _createBlock$7(_component_v_text_field, {
+                      newRuleProvider.value.data.type === "file" ? (_openBlock$9(), _createBlock$9(_component_v_text_field, {
                         key: 1,
                         modelValue: newRuleProvider.value.data.path,
                         "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => newRuleProvider.value.data.path = $event),
@@ -11890,7 +12745,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         class: "mb-4",
                         hint: "文件路径，不填写时会使用 url 的 MD5 作为文件名"
                       }, null, 8, ["modelValue", "rules"])) : _createCommentVNode$4("", true),
-                      _createVNode$7(_component_v_text_field, {
+                      _createVNode$9(_component_v_text_field, {
                         modelValue: newRuleProvider.value.data.interval,
                         "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => newRuleProvider.value.data.interval = $event),
                         modelModifiers: { number: true },
@@ -11903,7 +12758,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         clearable: "",
                         rules: [(v) => v === null || v === void 0 || v >= 0 || "更新间隔不能为负数"]
                       }, null, 8, ["modelValue", "rules"]),
-                      _createVNode$7(_component_v_select, {
+                      _createVNode$9(_component_v_select, {
                         modelValue: newRuleProvider.value.data.behavior,
                         "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => newRuleProvider.value.data.behavior = $event),
                         items: ruleProviderBehaviorTypes,
@@ -11911,7 +12766,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         class: "mb-4",
                         hint: "对应不同格式的 rule-provider 文件"
                       }, null, 8, ["modelValue"]),
-                      _createVNode$7(_component_v_select, {
+                      _createVNode$9(_component_v_select, {
                         modelValue: newRuleProvider.value.data.format,
                         "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => newRuleProvider.value.data.format = $event),
                         items: ruleProviderFormatTypes,
@@ -11919,7 +12774,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         class: "mb-4",
                         hint: "mrs目前 behavior 仅支持 domain/ipcidr"
                       }, null, 8, ["modelValue"]),
-                      _createVNode$7(_component_v_text_field, {
+                      _createVNode$9(_component_v_text_field, {
                         modelValue: newRuleProvider.value.data["size-limit"],
                         "onUpdate:modelValue": _cache[7] || (_cache[7] = ($event) => newRuleProvider.value.data["size-limit"] = $event),
                         modelModifiers: { number: true },
@@ -11931,7 +12786,7 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         hint: "可下载文件的最大大小，0 表示无限制",
                         rules: [(v) => v === null || v === void 0 || v >= 0 || "大小限制不能为负数"]
                       }, null, 8, ["modelValue", "rules"]),
-                      newRuleProvider.value.data.type === "inline" ? (_openBlock$7(), _createBlock$7(_component_v_combobox, {
+                      newRuleProvider.value.data.type === "inline" ? (_openBlock$9(), _createBlock$9(_component_v_combobox, {
                         key: 2,
                         modelValue: newRuleProvider.value.data.payload,
                         "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => newRuleProvider.value.data.payload = $event),
@@ -11946,13 +12801,13 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                         hint: "当类型为 inline 时才有效，按回车确认输入",
                         row: ""
                       }, {
-                        chip: _withCtx$7(({ props: props2, item }) => [
-                          _createVNode$7(_component_v_chip, _mergeProps$6(props2, {
+                        chip: _withCtx$9(({ props: props2, item }) => [
+                          _createVNode$9(_component_v_chip, _mergeProps$5(props2, {
                             closable: "",
                             size: "small"
                           }), {
-                            default: _withCtx$7(() => [
-                              _createTextVNode$7(_toDisplayString$7(item.value), 1)
+                            default: _withCtx$9(() => [
+                              _createTextVNode$6(_toDisplayString$6(item.value), 1)
                             ]),
                             _: 2
                           }, 1040)
@@ -11962,25 +12817,25 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
                     ]),
                     _: 1
                   }),
-                  _createVNode$7(_component_v_card_actions, null, {
-                    default: _withCtx$7(() => [
-                      _createVNode$7(_component_v_spacer),
-                      _createVNode$7(_component_v_btn, {
+                  _createVNode$9(_component_v_card_actions, null, {
+                    default: _withCtx$9(() => [
+                      _createVNode$9(_component_v_spacer),
+                      _createVNode$9(_component_v_btn, {
                         color: "secondary",
                         onClick: _cache[9] || (_cache[9] = ($event) => emit("close"))
                       }, {
-                        default: _withCtx$7(() => _cache[10] || (_cache[10] = [
-                          _createTextVNode$7("取消")
+                        default: _withCtx$9(() => _cache[10] || (_cache[10] = [
+                          _createTextVNode$6("取消")
                         ])),
                         _: 1
                       }),
-                      _createVNode$7(_component_v_btn, {
+                      _createVNode$9(_component_v_btn, {
                         color: "primary",
                         type: "submit",
                         loading: saveRuleProviderLoading.value
                       }, {
-                        default: _withCtx$7(() => _cache[11] || (_cache[11] = [
-                          _createTextVNode$7("保存 ")
+                        default: _withCtx$9(() => _cache[11] || (_cache[11] = [
+                          _createTextVNode$6("保存 ")
                         ])),
                         _: 1
                       }, 8, ["loading"])
@@ -12000,31 +12855,27 @@ const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
   }
 });
 
-const {defineComponent:_defineComponent$6} = await importShared('vue');
+const {defineComponent:_defineComponent$8} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$6,createVNode:_createVNode$6,withCtx:_withCtx$6,createElementVNode:_createElementVNode$5,renderList:_renderList$4,Fragment:_Fragment$4,openBlock:_openBlock$6,createElementBlock:_createElementBlock$4,createBlock:_createBlock$6,unref:_unref$5,toDisplayString:_toDisplayString$6,createTextVNode:_createTextVNode$6,mergeProps:_mergeProps$5,createCommentVNode:_createCommentVNode$3} = await importShared('vue');
+const {resolveComponent:_resolveComponent$8,createVNode:_createVNode$8,withCtx:_withCtx$8,unref:_unref$6,openBlock:_openBlock$8,createBlock:_createBlock$8,createCommentVNode:_createCommentVNode$3,createElementBlock:_createElementBlock$6} = await importShared('vue');
 
-const _hoisted_1$4 = { class: "mb-2 position-relative" };
-const _hoisted_2$4 = { class: "pa-4" };
-const _hoisted_3$4 = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$4 = { class: "d-sm-none" };
-const _hoisted_5$2 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
+const _hoisted_1$6 = { class: "mb-2 position-relative" };
 const {ref: ref$4,computed: computed$2,toRaw: toRaw$2} = await importShared('vue');
-const _sfc_main$6 = /* @__PURE__ */ _defineComponent$6({
+
+const {useDisplay: useDisplay$1} = await importShared('vuetify');
+const _sfc_main$8 = /* @__PURE__ */ _defineComponent$8({
   __name: "RuleProvidersTab",
   props: {
     ruleProviders: {},
     api: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error", "show-yaml", "edit-visibility"],
+  emits: ["refresh", "show-error", "show-yaml", "edit-visibility"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay$1();
     const searchRuleProviders = ref$4("");
-    const pageRulProviders = ref$4(1);
+    const pageRuleProviders = ref$4(1);
     const itemsPerPageRuleProviders = ref$4(10);
     const ruleProviderDialogVisible = ref$4(false);
     const editingRuleProvider = ref$4(null);
@@ -12038,7 +12889,7 @@ const _sfc_main$6 = /* @__PURE__ */ _defineComponent$6({
       );
     });
     const paginatedExtraRuleProviders = computed$2(() => {
-      const start = (pageRulProviders.value - 1) * itemsPerPageRuleProviders.value;
+      const start = (pageRuleProviders.value - 1) * itemsPerPageRuleProviders.value;
       const end = start + itemsPerPageRuleProviders.value;
       return filteredExtraRuleProviders.value.slice(start, end);
     });
@@ -12112,241 +12963,80 @@ const _sfc_main$6 = /* @__PURE__ */ _defineComponent$6({
       ruleProviderDialogVisible.value = false;
     }
     return (_ctx, _cache) => {
-      const _component_v_progress_circular = _resolveComponent$6("v-progress-circular");
-      const _component_v_overlay = _resolveComponent$6("v-overlay");
-      const _component_v_text_field = _resolveComponent$6("v-text-field");
-      const _component_v_col = _resolveComponent$6("v-col");
-      const _component_v_btn = _resolveComponent$6("v-btn");
-      const _component_v_btn_group = _resolveComponent$6("v-btn-group");
-      const _component_v_row = _resolveComponent$6("v-row");
-      const _component_v_pagination = _resolveComponent$6("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$6("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$6("v-list-item");
-      const _component_v_list = _resolveComponent$6("v-list");
-      const _component_v_menu = _resolveComponent$6("v-menu");
-      const _component_v_divider = _resolveComponent$6("v-divider");
-      return _openBlock$6(), _createElementBlock$4("div", _hoisted_1$4, [
-        _createVNode$6(_component_v_overlay, {
+      const _component_v_progress_circular = _resolveComponent$8("v-progress-circular");
+      const _component_v_overlay = _resolveComponent$8("v-overlay");
+      const _component_v_divider = _resolveComponent$8("v-divider");
+      return _openBlock$8(), _createElementBlock$6("div", _hoisted_1$6, [
+        _createVNode$8(_component_v_overlay, {
           modelValue: loading.value,
           "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => loading.value = $event),
           contained: "",
           class: "align-center justify-center"
         }, {
-          default: _withCtx$6(() => [
-            _createVNode$6(_component_v_progress_circular, {
+          default: _withCtx$8(() => [
+            _createVNode$8(_component_v_progress_circular, {
               indeterminate: "",
               color: "primary"
             })
           ]),
           _: 1
         }, 8, ["modelValue"]),
-        _createElementVNode$5("div", _hoisted_2$4, [
-          _createVNode$6(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$6(() => [
-              _createVNode$6(_component_v_col, {
-                cols: "10",
-                sm: "6",
-                class: "d-flex justify-start"
-              }, {
-                default: _withCtx$6(() => [
-                  _createVNode$6(_component_v_text_field, {
-                    modelValue: searchRuleProviders.value,
-                    "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchRuleProviders.value = $event),
-                    label: "搜索规则集合",
-                    clearable: "",
-                    density: "compact",
-                    variant: "solo-filled",
-                    "hide-details": "",
-                    class: "search-field",
-                    "prepend-inner-icon": "mdi-magnify",
-                    flat: "",
-                    rounded: "pill",
-                    "single-line": "",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$6(_component_v_col, {
-                cols: "2",
-                sm: "6",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$6(() => [
-                  _createVNode$6(_component_v_btn_group, {
-                    variant: "outlined",
-                    rounded: ""
-                  }, {
-                    default: _withCtx$6(() => [
-                      _createVNode$6(_component_v_btn, {
-                        icon: "mdi-plus",
-                        disabled: loading.value,
-                        onClick: openAddRuleProviderDialog
-                      }, null, 8, ["disabled"])
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$5("div", _hoisted_3$4, [
-          _createVNode$6(_sfc_main$9, {
-            "items-per-page": itemsPerPageRuleProviders.value,
-            page: pageRulProviders.value,
-            "rule-providers": filteredExtraRuleProviders.value,
-            onEditRuleProvider: editRuleProvider,
-            onDeleteRuleProvider: deleteRuleProvider,
-            onShowYaml: _cache[2] || (_cache[2] = (o) => emit("show-yaml", o)),
-            onChangeStatus: handleStatusChange,
-            onEditVisibility: editVisibility
-          }, null, 8, ["items-per-page", "page", "rule-providers"])
-        ]),
-        _createElementVNode$5("div", _hoisted_4$4, [
-          _createVNode$6(_component_v_row, null, {
-            default: _withCtx$6(() => [
-              (_openBlock$6(true), _createElementBlock$4(_Fragment$4, null, _renderList$4(paginatedExtraRuleProviders.value, (item) => {
-                return _openBlock$6(), _createBlock$6(_component_v_col, {
-                  key: item.name,
-                  cols: "12"
-                }, {
-                  default: _withCtx$6(() => [
-                    _createVNode$6(RuleProviderCard, {
-                      "rule-provider-data": item,
-                      onEditRuleProvider: editRuleProvider,
-                      onDeleteRuleProvider: deleteRuleProvider,
-                      onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
-                      onChangeStatus: handleStatusChange,
-                      onEditVisibility: editVisibility
-                    }, null, 8, ["rule-provider-data"])
-                  ]),
-                  _: 2
-                }, 1024);
-              }), 128))
-            ]),
-            _: 1
-          })
-        ]),
-        _createElementVNode$5("div", _hoisted_5$2, [
-          _createVNode$6(_component_v_row, {
-            align: "center",
-            "no-gutters": ""
-          }, {
-            default: _withCtx$6(() => [
-              _createVNode$6(_component_v_col, {
-                cols: "2",
-                md: "1"
-              }),
-              _createVNode$6(_component_v_col, {
-                cols: "8",
-                md: "10",
-                class: "d-flex justify-center"
-              }, {
-                default: _withCtx$6(() => [
-                  _createVNode$6(_component_v_pagination, {
-                    modelValue: pageRulProviders.value,
-                    "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => pageRulProviders.value = $event),
-                    length: pageCountExtraRuleProviders.value,
-                    "total-visible": "5",
-                    rounded: "circle",
-                    class: "d-none d-sm-flex my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"]),
-                  _createVNode$6(_component_v_pagination, {
-                    modelValue: pageRulProviders.value,
-                    "onUpdate:modelValue": _cache[5] || (_cache[5] = ($event) => pageRulProviders.value = $event),
-                    length: pageCountExtraRuleProviders.value,
-                    "total-visible": "0",
-                    rounded: "circle",
-                    class: "d-sm-none my-0",
-                    disabled: loading.value
-                  }, null, 8, ["modelValue", "length", "disabled"])
-                ]),
-                _: 1
-              }),
-              _createVNode$6(_component_v_col, {
-                cols: "2",
-                md: "1",
-                class: "d-flex justify-end"
-              }, {
-                default: _withCtx$6(() => [
-                  _createVNode$6(_component_v_menu, null, {
-                    activator: _withCtx$6(({ props: props2 }) => [
-                      _createVNode$6(_component_v_btn, _mergeProps$5(props2, {
-                        icon: "",
-                        rounded: "circle",
-                        variant: "tonal",
-                        disabled: loading.value
-                      }), {
-                        default: _withCtx$6(() => [
-                          _createTextVNode$6(_toDisplayString$6(_unref$5(pageTitle)(itemsPerPageRuleProviders.value)), 1)
-                        ]),
-                        _: 2
-                      }, 1040, ["disabled"])
-                    ]),
-                    default: _withCtx$6(() => [
-                      _createVNode$6(_component_v_list, null, {
-                        default: _withCtx$6(() => [
-                          (_openBlock$6(true), _createElementBlock$4(_Fragment$4, null, _renderList$4(_unref$5(itemsPerPageOptions), (item, index) => {
-                            return _openBlock$6(), _createBlock$6(_component_v_list_item, {
-                              key: index,
-                              value: item.value,
-                              onClick: ($event) => itemsPerPageRuleProviders.value = item.value
-                            }, {
-                              default: _withCtx$6(() => [
-                                _createVNode$6(_component_v_list_item_title, null, {
-                                  default: _withCtx$6(() => [
-                                    _createTextVNode$6(_toDisplayString$6(item.title), 1)
-                                  ]),
-                                  _: 2
-                                }, 1024)
-                              ]),
-                              _: 2
-                            }, 1032, ["value", "onClick"]);
-                          }), 128))
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  })
-                ]),
-                _: 1
-              })
-            ]),
-            _: 1
-          })
-        ]),
-        _createVNode$6(_component_v_divider),
-        ruleProviderDialogVisible.value ? (_openBlock$6(), _createBlock$6(_sfc_main$7, {
+        _unref$6(smAndDown) ? (_openBlock$8(), _createBlock$8(RuleProvidersMobile, {
           key: 0,
+          "paginated-rule-providers": paginatedExtraRuleProviders.value,
+          search: searchRuleProviders.value,
+          page: pageRuleProviders.value,
+          "page-count": pageCountExtraRuleProviders.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchRuleProviders.value = v),
+          "onUpdate:page": _cache[2] || (_cache[2] = (v) => pageRuleProviders.value = v),
+          onOpenAddDialog: openAddRuleProviderDialog,
+          onEditRuleProvider: editRuleProvider,
+          onDeleteRuleProvider: deleteRuleProvider,
+          onShowYaml: _cache[3] || (_cache[3] = (o) => emit("show-yaml", o)),
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility
+        }, null, 8, ["paginated-rule-providers", "search", "page", "page-count", "loading"])) : (_openBlock$8(), _createBlock$8(_sfc_main$c, {
+          key: 1,
+          "rule-providers": filteredExtraRuleProviders.value,
+          search: searchRuleProviders.value,
+          page: pageRuleProviders.value,
+          "items-per-page": itemsPerPageRuleProviders.value,
+          "page-count": pageCountExtraRuleProviders.value,
+          loading: loading.value,
+          "onUpdate:search": _cache[4] || (_cache[4] = (v) => searchRuleProviders.value = v),
+          "onUpdate:page": _cache[5] || (_cache[5] = (v) => pageRuleProviders.value = v),
+          "onUpdate:itemsPerPage": _cache[6] || (_cache[6] = (v) => itemsPerPageRuleProviders.value = v),
+          onOpenAddDialog: openAddRuleProviderDialog,
+          onEditRuleProvider: editRuleProvider,
+          onDeleteRuleProvider: deleteRuleProvider,
+          onShowYaml: _cache[7] || (_cache[7] = (o) => emit("show-yaml", o)),
+          onChangeStatus: handleStatusChange,
+          onEditVisibility: editVisibility
+        }, null, 8, ["rule-providers", "search", "page", "items-per-page", "page-count", "loading"])),
+        _createVNode$8(_component_v_divider),
+        ruleProviderDialogVisible.value ? (_openBlock$8(), _createBlock$8(_sfc_main$9, {
+          key: 2,
           modelValue: ruleProviderDialogVisible.value,
-          "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => ruleProviderDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[8] || (_cache[8] = ($event) => ruleProviderDialogVisible.value = $event),
           "initial-value": editingRuleProvider.value,
           "is-adding": editingRuleProviderName.value === null,
           api: _ctx.api,
           onClose: closeRuleProviderDialog,
-          onRefresh: _cache[7] || (_cache[7] = ($event) => emit("refresh", ["rule-providers"])),
-          onShowSnackbar: _cache[8] || (_cache[8] = (val) => emit("show-snackbar", val)),
-          onShowError: _cache[9] || (_cache[9] = (msg) => emit("show-error", msg))
+          onRefresh: _cache[9] || (_cache[9] = ($event) => emit("refresh", ["rule-providers"])),
+          onShowError: _cache[10] || (_cache[10] = (msg) => emit("show-error", msg))
         }, null, 8, ["modelValue", "initial-value", "is-adding", "api"])) : _createCommentVNode$3("", true)
       ]);
     };
   }
 });
 
-const {defineComponent:_defineComponent$5} = await importShared('vue');
+const {defineComponent:_defineComponent$7} = await importShared('vue');
 
-const {unref:_unref$4,toDisplayString:_toDisplayString$5,createTextVNode:_createTextVNode$5,resolveComponent:_resolveComponent$5,withCtx:_withCtx$5,createVNode:_createVNode$5,renderList:_renderList$3,Fragment:_Fragment$3,openBlock:_openBlock$5,createElementBlock:_createElementBlock$3,createBlock:_createBlock$5,mergeProps:_mergeProps$4} = await importShared('vue');
+const {unref:_unref$5,toDisplayString:_toDisplayString$5,createTextVNode:_createTextVNode$5,resolveComponent:_resolveComponent$7,withCtx:_withCtx$7,createVNode:_createVNode$7,renderList:_renderList$4,Fragment:_Fragment$5,openBlock:_openBlock$7,createElementBlock:_createElementBlock$5,createBlock:_createBlock$7,mergeProps:_mergeProps$4} = await importShared('vue');
 
 const {ref: ref$3} = await importShared('vue');
-const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
+const _sfc_main$7 = /* @__PURE__ */ _defineComponent$7({
   __name: "HostsTable",
   props: {
     hosts: {
@@ -12375,78 +13065,78 @@ const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
       { title: "", key: "actions", sortable: false, width: "1rem" }
     ]);
     return (_ctx, _cache) => {
-      const _component_v_chip = _resolveComponent$5("v-chip");
-      const _component_v_icon = _resolveComponent$5("v-icon");
-      const _component_v_btn = _resolveComponent$5("v-btn");
-      const _component_v_list_item_title = _resolveComponent$5("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$5("v-list-item");
-      const _component_v_list = _resolveComponent$5("v-list");
-      const _component_v_menu = _resolveComponent$5("v-menu");
-      const _component_v_data_table = _resolveComponent$5("v-data-table");
-      return _openBlock$5(), _createBlock$5(_component_v_data_table, {
+      const _component_v_chip = _resolveComponent$7("v-chip");
+      const _component_v_icon = _resolveComponent$7("v-icon");
+      const _component_v_btn = _resolveComponent$7("v-btn");
+      const _component_v_list_item_title = _resolveComponent$7("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$7("v-list-item");
+      const _component_v_list = _resolveComponent$7("v-list");
+      const _component_v_menu = _resolveComponent$7("v-menu");
+      const _component_v_data_table = _resolveComponent$7("v-data-table");
+      return _openBlock$7(), _createBlock$7(_component_v_data_table, {
         headers: headersHosts.value,
         items: __props.hosts,
         search: __props.search,
         page: __props.page,
         "items-per-page": __props.itemsPerPage,
-        "items-per-page-options": _unref$4(itemsPerPageOptions),
+        "items-per-page-options": _unref$5(itemsPerPageOptions),
         class: "px-4",
         density: "compact",
         "hide-default-footer": "",
         "fixed-header": "",
         "item-key": "domain"
       }, {
-        "item.domain": _withCtx$5(({ item }) => [
-          _createVNode$5(_component_v_chip, {
+        "item.domain": _withCtx$7(({ item }) => [
+          _createVNode$7(_component_v_chip, {
             size: "small",
             pill: "",
             color: "secondary"
           }, {
-            default: _withCtx$5(() => [
+            default: _withCtx$7(() => [
               _createTextVNode$5(_toDisplayString$5(item.domain), 1)
             ]),
             _: 2
           }, 1024)
         ]),
-        "item.value": _withCtx$5(({ item }) => [
-          (_openBlock$5(true), _createElementBlock$3(_Fragment$3, null, _renderList$3(item.value, (ip) => {
-            return _openBlock$5(), _createBlock$5(_component_v_chip, {
+        "item.value": _withCtx$7(({ item }) => [
+          (_openBlock$7(true), _createElementBlock$5(_Fragment$5, null, _renderList$4(item.value, (ip) => {
+            return _openBlock$7(), _createBlock$7(_component_v_chip, {
               key: ip,
               size: "small",
               class: "ma-1",
               variant: "tonal"
             }, {
-              default: _withCtx$5(() => [
+              default: _withCtx$7(() => [
                 _createTextVNode$5(_toDisplayString$5(ip), 1)
               ]),
               _: 2
             }, 1024);
           }), 128))
         ]),
-        "item.using_cloudflare": _withCtx$5(({ item }) => [
-          _createVNode$5(_component_v_chip, {
-            color: _unref$4(getBoolColor)(item.using_cloudflare),
+        "item.using_cloudflare": _withCtx$7(({ item }) => [
+          _createVNode$7(_component_v_chip, {
+            color: _unref$5(getBoolColor)(item.using_cloudflare),
             size: "small",
             variant: "tonal"
           }, {
-            default: _withCtx$5(() => [
+            default: _withCtx$7(() => [
               _createTextVNode$5(_toDisplayString$5(item.using_cloudflare ? "是" : "否"), 1)
             ]),
             _: 2
           }, 1032, ["color"])
         ]),
-        "item.actions": _withCtx$5(({ item }) => [
-          _createVNode$5(_component_v_menu, { "min-width": "120" }, {
-            activator: _withCtx$5(({ props }) => [
-              _createVNode$5(_component_v_btn, _mergeProps$4({
+        "item.actions": _withCtx$7(({ item }) => [
+          _createVNode$7(_component_v_menu, { "min-width": "120" }, {
+            activator: _withCtx$7(({ props }) => [
+              _createVNode$7(_component_v_btn, _mergeProps$4({
                 color: "secondary",
                 icon: "",
                 size: "small",
                 variant: "text"
               }, props), {
-                default: _withCtx$5(() => [
-                  _createVNode$5(_component_v_icon, null, {
-                    default: _withCtx$5(() => _cache[0] || (_cache[0] = [
+                default: _withCtx$7(() => [
+                  _createVNode$7(_component_v_icon, null, {
+                    default: _withCtx$7(() => _cache[0] || (_cache[0] = [
                       _createTextVNode$5("mdi-dots-vertical")
                     ])),
                     _: 1
@@ -12455,26 +13145,26 @@ const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
                 _: 2
               }, 1040)
             ]),
-            default: _withCtx$5(() => [
-              _createVNode$5(_component_v_list, { density: "compact" }, {
-                default: _withCtx$5(() => [
-                  _createVNode$5(_component_v_list_item, {
+            default: _withCtx$7(() => [
+              _createVNode$7(_component_v_list, { density: "compact" }, {
+                default: _withCtx$7(() => [
+                  _createVNode$7(_component_v_list_item, {
                     onClick: ($event) => _ctx.$emit("edit", item.domain)
                   }, {
-                    prepend: _withCtx$5(() => [
-                      _createVNode$5(_component_v_icon, {
+                    prepend: _withCtx$7(() => [
+                      _createVNode$7(_component_v_icon, {
                         size: "small",
                         color: "primary"
                       }, {
-                        default: _withCtx$5(() => _cache[1] || (_cache[1] = [
+                        default: _withCtx$7(() => _cache[1] || (_cache[1] = [
                           _createTextVNode$5("mdi-file-edit-outline")
                         ])),
                         _: 1
                       })
                     ]),
-                    default: _withCtx$5(() => [
-                      _createVNode$5(_component_v_list_item_title, null, {
-                        default: _withCtx$5(() => _cache[2] || (_cache[2] = [
+                    default: _withCtx$7(() => [
+                      _createVNode$7(_component_v_list_item_title, null, {
+                        default: _withCtx$7(() => _cache[2] || (_cache[2] = [
                           _createTextVNode$5("编辑")
                         ])),
                         _: 1
@@ -12482,23 +13172,23 @@ const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
                     ]),
                     _: 2
                   }, 1032, ["onClick"]),
-                  _createVNode$5(_component_v_list_item, {
+                  _createVNode$7(_component_v_list_item, {
                     onClick: ($event) => _ctx.$emit("delete", item.domain)
                   }, {
-                    prepend: _withCtx$5(() => [
-                      _createVNode$5(_component_v_icon, {
+                    prepend: _withCtx$7(() => [
+                      _createVNode$7(_component_v_icon, {
                         size: "small",
                         color: "error"
                       }, {
-                        default: _withCtx$5(() => _cache[3] || (_cache[3] = [
+                        default: _withCtx$7(() => _cache[3] || (_cache[3] = [
                           _createTextVNode$5("mdi-trash-can-outline")
                         ])),
                         _: 1
                       })
                     ]),
-                    default: _withCtx$5(() => [
-                      _createVNode$5(_component_v_list_item_title, null, {
-                        default: _withCtx$5(() => _cache[4] || (_cache[4] = [
+                    default: _withCtx$7(() => [
+                      _createVNode$7(_component_v_list_item_title, null, {
+                        default: _withCtx$7(() => _cache[4] || (_cache[4] = [
                           _createTextVNode$5("删除")
                         ])),
                         _: 1
@@ -12519,213 +13209,86 @@ const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
   }
 });
 
-const {defineComponent:_defineComponent$4} = await importShared('vue');
+const {defineComponent:_defineComponent$6} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$4,createTextVNode:_createTextVNode$4,resolveComponent:_resolveComponent$4,withCtx:_withCtx$4,createVNode:_createVNode$4,unref:_unref$3,mergeProps:_mergeProps$3,openBlock:_openBlock$4,createBlock:_createBlock$4,createCommentVNode:_createCommentVNode$2,createElementVNode:_createElementVNode$4,withModifiers:_withModifiers} = await importShared('vue');
+const {resolveComponent:_resolveComponent$6,createVNode:_createVNode$6,withCtx:_withCtx$6,createElementVNode:_createElementVNode$6,unref:_unref$4,toDisplayString:_toDisplayString$4,createTextVNode:_createTextVNode$4,mergeProps:_mergeProps$3,renderList:_renderList$3,Fragment:_Fragment$4,openBlock:_openBlock$6,createElementBlock:_createElementBlock$4,createBlock:_createBlock$6} = await importShared('vue');
 
-const {ref: ref$2,toRaw: toRaw$1} = await importShared('vue');
-const _sfc_main$4 = /* @__PURE__ */ _defineComponent$4({
-  __name: "HostDialog",
+const _hoisted_1$5 = { class: "hosts-desktop-view" };
+const _hoisted_2$4 = { class: "pa-4" };
+const _hoisted_3$4 = { class: "clash-data-table table-page-container" };
+const _hoisted_4$4 = {
+  class: "pa-4",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$6 = /* @__PURE__ */ _defineComponent$6({
+  __name: "HostsDesktop",
   props: {
-    initialValue: {
-      type: Object,
-      default: () => ({ ...defaultHost })
-    },
-    isAdding: {
-      type: Boolean,
-      default: true
-    },
-    bestCloudflareIPs: {
-      type: Array,
-      default: () => []
-    },
-    api: {
-      type: Object,
-      required: true
-    }
+    hosts: {},
+    search: {},
+    page: {},
+    itemsPerPage: {},
+    pageCount: {},
+    loading: { type: Boolean }
   },
-  emits: ["close", "refresh", "show-snackbar", "show-error"],
+  emits: ["update:search", "update:page", "update:itemsPerPage", "open-add-dialog", "edit", "delete"],
   setup(__props, { emit: __emit }) {
-    const props = __props;
     const emit = __emit;
-    const hostForm = ref$2(null);
-    const saveHostLoading = ref$2(false);
-    const newHost = ref$2(
-      props.isAdding ? { ...defaultHost } : structuredClone(toRaw$1(props.initialValue))
-    );
-    async function saveHost() {
-      const { valid } = await hostForm.value.validate();
-      if (!valid) return;
-      try {
-        saveHostLoading.value = true;
-        newHost.value.domain = newHost.value.domain.trim();
-        const targetDomain = props.isAdding ? newHost.value.domain : props.initialValue.domain;
-        const result = await props.api.post("/plugin/ClashRuleProvider/hosts", {
-          domain: targetDomain,
-          host: newHost.value
-        });
-        if (!result.success) {
-          emit("show-error", "保存 Host 失败: " + (result.message || "未知错误"));
-          emit("show-snackbar", {
-            show: true,
-            message: "保存 Host 失败",
-            color: "error"
-          });
-          return;
-        }
-        emit("close");
-        emit("refresh");
-        emit("show-snackbar", {
-          show: true,
-          message: props.isAdding ? "Host 添加成功" : "Host 更新成功",
-          color: "success"
-        });
-      } catch (err) {
-        emit("show-error", "保存 Host 失败: " + (err.message || "未知错误"));
-        emit("show-snackbar", {
-          show: true,
-          message: "保存 Host 失败",
-          color: "error"
-        });
-      } finally {
-        saveHostLoading.value = false;
-      }
-    }
     return (_ctx, _cache) => {
-      const _component_v_card_title = _resolveComponent$4("v-card-title");
-      const _component_v_text_field = _resolveComponent$4("v-text-field");
-      const _component_v_chip = _resolveComponent$4("v-chip");
-      const _component_v_combobox = _resolveComponent$4("v-combobox");
-      const _component_v_switch = _resolveComponent$4("v-switch");
-      const _component_v_col = _resolveComponent$4("v-col");
-      const _component_v_row = _resolveComponent$4("v-row");
-      const _component_v_card_text = _resolveComponent$4("v-card-text");
-      const _component_v_alert = _resolveComponent$4("v-alert");
-      const _component_v_spacer = _resolveComponent$4("v-spacer");
-      const _component_v_btn = _resolveComponent$4("v-btn");
-      const _component_v_card_actions = _resolveComponent$4("v-card-actions");
-      const _component_v_card = _resolveComponent$4("v-card");
-      const _component_v_form = _resolveComponent$4("v-form");
-      const _component_v_dialog = _resolveComponent$4("v-dialog");
-      return _openBlock$4(), _createBlock$4(_component_v_dialog, { "max-width": "40rem" }, {
-        default: _withCtx$4(() => [
-          _createVNode$4(_component_v_form, {
-            ref_key: "hostForm",
-            ref: hostForm,
-            onSubmit: _withModifiers(saveHost, ["prevent"])
+      const _component_v_text_field = _resolveComponent$6("v-text-field");
+      const _component_v_col = _resolveComponent$6("v-col");
+      const _component_v_btn = _resolveComponent$6("v-btn");
+      const _component_v_btn_group = _resolveComponent$6("v-btn-group");
+      const _component_v_row = _resolveComponent$6("v-row");
+      const _component_v_pagination = _resolveComponent$6("v-pagination");
+      const _component_v_list_item_title = _resolveComponent$6("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$6("v-list-item");
+      const _component_v_list = _resolveComponent$6("v-list");
+      const _component_v_menu = _resolveComponent$6("v-menu");
+      return _openBlock$6(), _createElementBlock$4("div", _hoisted_1$5, [
+        _createElementVNode$6("div", _hoisted_2$4, [
+          _createVNode$6(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
           }, {
-            default: _withCtx$4(() => [
-              _createVNode$4(_component_v_card, null, {
-                default: _withCtx$4(() => [
-                  _createVNode$4(_component_v_card_title, null, {
-                    default: _withCtx$4(() => [
-                      _createTextVNode$4(_toDisplayString$4(__props.isAdding ? "添加 Host" : "编辑 Host"), 1)
-                    ]),
-                    _: 1
-                  }),
-                  _createVNode$4(_component_v_card_text, null, {
-                    default: _withCtx$4(() => [
-                      _createVNode$4(_component_v_text_field, {
-                        modelValue: newHost.value.domain,
-                        "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => newHost.value.domain = $event),
-                        label: "域名",
-                        required: "",
-                        rules: [(v) => !!v || "域名不能为空"],
-                        class: "mb-4"
-                      }, null, 8, ["modelValue", "rules"]),
-                      !newHost.value.using_cloudflare ? (_openBlock$4(), _createBlock$4(_component_v_combobox, {
-                        key: 0,
-                        modelValue: newHost.value.value,
-                        "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => newHost.value.value = $event),
-                        multiple: "",
-                        chips: "",
-                        "closable-chips": "",
-                        clearable: "",
-                        label: "IP",
-                        required: "",
-                        rules: [_unref$3(validateIPs)],
-                        class: "mb-4",
-                        hint: "一个或多个 IP 地址"
-                      }, {
-                        chip: _withCtx$4(({ props: props2, item }) => [
-                          _createVNode$4(_component_v_chip, _mergeProps$3(props2, {
-                            closable: "",
-                            size: "small"
-                          }), {
-                            default: _withCtx$4(() => [
-                              _createTextVNode$4(_toDisplayString$4(item.value), 1)
-                            ]),
-                            _: 2
-                          }, 1040)
-                        ]),
-                        _: 1
-                      }, 8, ["modelValue", "rules"])) : _createCommentVNode$2("", true),
-                      _createVNode$4(_component_v_row, null, {
-                        default: _withCtx$4(() => [
-                          _createVNode$4(_component_v_col, {
-                            cols: "12",
-                            md: "6"
-                          }, {
-                            default: _withCtx$4(() => [
-                              _createVNode$4(_component_v_switch, {
-                                modelValue: newHost.value.using_cloudflare,
-                                "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => newHost.value.using_cloudflare = $event),
-                                label: "使用 Cloudflare CDN",
-                                inset: "",
-                                hint: "设置为 CF 优选 IPs",
-                                "persistent-hint": ""
-                              }, null, 8, ["modelValue"])
-                            ]),
-                            _: 1
-                          })
-                        ]),
-                        _: 1
-                      })
-                    ]),
-                    _: 1
-                  }),
-                  __props.bestCloudflareIPs.length === 0 && newHost.value.using_cloudflare ? (_openBlock$4(), _createBlock$4(_component_v_alert, {
-                    key: 0,
-                    type: "warning",
-                    text: "请在「高级选项」配置 Cloudflare CDN 优选 IPs",
+            default: _withCtx$6(() => [
+              _createVNode$6(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$6(() => [
+                  _createVNode$6(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索Hosts",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$6(_component_v_col, {
+                cols: "6",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$6(() => [
+                  _createVNode$6(_component_v_btn_group, {
                     variant: "outlined",
-                    class: "mb-2"
-                  })) : _createCommentVNode$2("", true),
-                  _createVNode$4(_component_v_alert, {
-                    type: "info",
-                    variant: "tonal"
+                    rounded: ""
                   }, {
-                    default: _withCtx$4(() => _cache[4] || (_cache[4] = [
-                      _createTextVNode$4(" 支持"),
-                      _createElementVNode$4("a", {
-                        href: "https://wiki.metacubex.one/handbook/syntax/#_8",
-                        target: "_blank"
-                      }, "域名通配符", -1)
-                    ])),
-                    _: 1
-                  }),
-                  _createVNode$4(_component_v_card_actions, null, {
-                    default: _withCtx$4(() => [
-                      _createVNode$4(_component_v_spacer),
-                      _createVNode$4(_component_v_btn, {
-                        color: "secondary",
-                        onClick: _cache[3] || (_cache[3] = ($event) => emit("close"))
-                      }, {
-                        default: _withCtx$4(() => _cache[5] || (_cache[5] = [
-                          _createTextVNode$4("取消")
-                        ])),
-                        _: 1
-                      }),
-                      _createVNode$4(_component_v_btn, {
-                        color: "primary",
-                        type: "submit",
-                        loading: saveHostLoading.value
-                      }, {
-                        default: _withCtx$4(() => _cache[6] || (_cache[6] = [
-                          _createTextVNode$4("保存 ")
-                        ])),
-                        _: 1
-                      }, 8, ["loading"])
+                    default: _withCtx$6(() => [
+                      _createVNode$6(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
                     ]),
                     _: 1
                   })
@@ -12734,23 +13297,113 @@ const _sfc_main$4 = /* @__PURE__ */ _defineComponent$4({
               })
             ]),
             _: 1
-          }, 512)
+          })
         ]),
-        _: 1
-      });
+        _createElementVNode$6("div", _hoisted_3$4, [
+          _createVNode$6(_sfc_main$7, {
+            hosts: _ctx.hosts,
+            search: _ctx.search,
+            page: _ctx.page,
+            "items-per-page": _ctx.itemsPerPage,
+            onEdit: _cache[2] || (_cache[2] = (d) => emit("edit", d)),
+            onDelete: _cache[3] || (_cache[3] = (n) => emit("delete", n))
+          }, null, 8, ["hosts", "search", "page", "items-per-page"])
+        ]),
+        _createElementVNode$6("div", _hoisted_4$4, [
+          _createVNode$6(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$6(() => [
+              _createVNode$6(_component_v_col, {
+                cols: "2",
+                md: "1"
+              }),
+              _createVNode$6(_component_v_col, {
+                cols: "8",
+                md: "10",
+                class: "d-flex justify-center"
+              }, {
+                default: _withCtx$6(() => [
+                  _createVNode$6(_component_v_pagination, {
+                    "model-value": _ctx.page,
+                    length: _ctx.pageCount,
+                    "total-visible": "5",
+                    rounded: "circle",
+                    class: "my-0",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[4] || (_cache[4] = (v) => emit("update:page", v))
+                  }, null, 8, ["model-value", "length", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$6(_component_v_col, {
+                cols: "2",
+                md: "1",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$6(() => [
+                  _createVNode$6(_component_v_menu, null, {
+                    activator: _withCtx$6(({ props: menuProps }) => [
+                      _createVNode$6(_component_v_btn, _mergeProps$3(menuProps, {
+                        icon: "",
+                        rounded: "circle",
+                        variant: "tonal",
+                        disabled: _ctx.loading
+                      }), {
+                        default: _withCtx$6(() => [
+                          _createTextVNode$4(_toDisplayString$4(_unref$4(pageTitle)(_ctx.itemsPerPage)), 1)
+                        ]),
+                        _: 2
+                      }, 1040, ["disabled"])
+                    ]),
+                    default: _withCtx$6(() => [
+                      _createVNode$6(_component_v_list, null, {
+                        default: _withCtx$6(() => [
+                          (_openBlock$6(true), _createElementBlock$4(_Fragment$4, null, _renderList$3(_unref$4(itemsPerPageOptions), (item, index) => {
+                            return _openBlock$6(), _createBlock$6(_component_v_list_item, {
+                              key: index,
+                              value: item.value,
+                              onClick: ($event) => emit("update:itemsPerPage", item.value)
+                            }, {
+                              default: _withCtx$6(() => [
+                                _createVNode$6(_component_v_list_item_title, null, {
+                                  default: _withCtx$6(() => [
+                                    _createTextVNode$4(_toDisplayString$4(item.title), 1)
+                                  ]),
+                                  _: 2
+                                }, 1024)
+                              ]),
+                              _: 2
+                            }, 1032, ["value", "onClick"]);
+                          }), 128))
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ])
+      ]);
     };
   }
 });
 
-const {defineComponent:_defineComponent$3} = await importShared('vue');
+const {defineComponent:_defineComponent$5} = await importShared('vue');
 
-const {toDisplayString:_toDisplayString$3,createElementVNode:_createElementVNode$3,createTextVNode:_createTextVNode$3,resolveComponent:_resolveComponent$3,withCtx:_withCtx$3,createVNode:_createVNode$3,unref:_unref$2,renderList:_renderList$2,Fragment:_Fragment$2,openBlock:_openBlock$3,createElementBlock:_createElementBlock$2,createBlock:_createBlock$3,mergeProps:_mergeProps$2} = await importShared('vue');
+const {toDisplayString:_toDisplayString$3,createElementVNode:_createElementVNode$5,createTextVNode:_createTextVNode$3,resolveComponent:_resolveComponent$5,withCtx:_withCtx$5,createVNode:_createVNode$5,unref:_unref$3,renderList:_renderList$2,Fragment:_Fragment$3,openBlock:_openBlock$5,createElementBlock:_createElementBlock$3,createBlock:_createBlock$5,mergeProps:_mergeProps$2} = await importShared('vue');
 
-const _hoisted_1$3 = { class: "d-flex justify-space-between align-center px-4 pt-3" };
+const _hoisted_1$4 = { class: "d-flex justify-space-between align-center px-4 pt-3" };
 const _hoisted_2$3 = { class: "d-flex align-center text-truncate" };
 const _hoisted_3$3 = ["title"];
 const _hoisted_4$3 = { class: "d-flex flex-wrap gap-1" };
-const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
+const _sfc_main$5 = /* @__PURE__ */ _defineComponent$5({
   __name: "HostCard",
   props: {
     hostData: {
@@ -12766,61 +13419,61 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     return (_ctx, _cache) => {
-      const _component_v_col = _resolveComponent$3("v-col");
-      const _component_v_chip = _resolveComponent$3("v-chip");
-      const _component_v_row = _resolveComponent$3("v-row");
-      const _component_v_card_text = _resolveComponent$3("v-card-text");
-      const _component_v_divider = _resolveComponent$3("v-divider");
-      const _component_v_icon = _resolveComponent$3("v-icon");
-      const _component_v_spacer = _resolveComponent$3("v-spacer");
-      const _component_v_btn = _resolveComponent$3("v-btn");
-      const _component_v_list_item_title = _resolveComponent$3("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$3("v-list-item");
-      const _component_v_list = _resolveComponent$3("v-list");
-      const _component_v_menu = _resolveComponent$3("v-menu");
-      const _component_v_card_actions = _resolveComponent$3("v-card-actions");
-      const _component_v_card = _resolveComponent$3("v-card");
-      return _openBlock$3(), _createBlock$3(_component_v_card, {
+      const _component_v_col = _resolveComponent$5("v-col");
+      const _component_v_chip = _resolveComponent$5("v-chip");
+      const _component_v_row = _resolveComponent$5("v-row");
+      const _component_v_card_text = _resolveComponent$5("v-card-text");
+      const _component_v_divider = _resolveComponent$5("v-divider");
+      const _component_v_icon = _resolveComponent$5("v-icon");
+      const _component_v_spacer = _resolveComponent$5("v-spacer");
+      const _component_v_btn = _resolveComponent$5("v-btn");
+      const _component_v_list_item_title = _resolveComponent$5("v-list-item-title");
+      const _component_v_list_item = _resolveComponent$5("v-list-item");
+      const _component_v_list = _resolveComponent$5("v-list");
+      const _component_v_menu = _resolveComponent$5("v-menu");
+      const _component_v_card_actions = _resolveComponent$5("v-card-actions");
+      const _component_v_card = _resolveComponent$5("v-card");
+      return _openBlock$5(), _createBlock$5(_component_v_card, {
         rounded: "lg",
         elevation: "2",
         class: "host-card h-100 transition-swing",
         variant: "tonal"
       }, {
-        default: _withCtx$3(() => [
-          _createElementVNode$3("div", _hoisted_1$3, [
-            _createElementVNode$3("div", _hoisted_2$3, [
-              _createElementVNode$3("span", {
+        default: _withCtx$5(() => [
+          _createElementVNode$5("div", _hoisted_1$4, [
+            _createElementVNode$5("div", _hoisted_2$3, [
+              _createElementVNode$5("span", {
                 class: "font-weight-bold text-truncate",
                 title: __props.hostData.domain
               }, _toDisplayString$3(__props.hostData.domain), 9, _hoisted_3$3)
             ])
           ]),
-          _createVNode$3(_component_v_card_text, { class: "pt-2 pb-4" }, {
-            default: _withCtx$3(() => [
-              _createVNode$3(_component_v_row, {
+          _createVNode$5(_component_v_card_text, { class: "pt-2 pb-4" }, {
+            default: _withCtx$5(() => [
+              _createVNode$5(_component_v_row, {
                 "no-gutters": "",
                 class: "mb-2 align-center"
               }, {
-                default: _withCtx$3(() => [
-                  _createVNode$3(_component_v_col, {
+                default: _withCtx$5(() => [
+                  _createVNode$5(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$3(() => _cache[2] || (_cache[2] = [
+                    default: _withCtx$5(() => _cache[2] || (_cache[2] = [
                       _createTextVNode$3("类型")
                     ])),
                     _: 1
                   }),
-                  _createVNode$3(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$3(() => [
-                      _createVNode$3(_component_v_chip, {
-                        color: _unref$2(getBoolColor)(__props.hostData.using_cloudflare),
+                  _createVNode$5(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$5(() => [
+                      _createVNode$5(_component_v_chip, {
+                        color: _unref$3(getBoolColor)(__props.hostData.using_cloudflare),
                         size: "x-small",
                         label: "",
                         variant: "tonal",
                         class: "font-weight-medium"
                       }, {
-                        default: _withCtx$3(() => [
+                        default: _withCtx$5(() => [
                           _createTextVNode$3(_toDisplayString$3(__props.hostData.using_cloudflare ? "Cloudflare" : "hosts"), 1)
                         ]),
                         _: 1
@@ -12831,31 +13484,31 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
                 ]),
                 _: 1
               }),
-              _createVNode$3(_component_v_row, {
+              _createVNode$5(_component_v_row, {
                 "no-gutters": "",
                 class: "align-center"
               }, {
-                default: _withCtx$3(() => [
-                  _createVNode$3(_component_v_col, {
+                default: _withCtx$5(() => [
+                  _createVNode$5(_component_v_col, {
                     cols: "3",
                     class: "text-caption text-medium-emphasis"
                   }, {
-                    default: _withCtx$3(() => _cache[3] || (_cache[3] = [
+                    default: _withCtx$5(() => _cache[3] || (_cache[3] = [
                       _createTextVNode$3("IP")
                     ])),
                     _: 1
                   }),
-                  _createVNode$3(_component_v_col, { cols: "9" }, {
-                    default: _withCtx$3(() => [
-                      _createElementVNode$3("div", _hoisted_4$3, [
-                        (_openBlock$3(true), _createElementBlock$2(_Fragment$2, null, _renderList$2(__props.hostData.using_cloudflare ? __props.bestCloudflareIPs : __props.hostData.value, (ip) => {
-                          return _openBlock$3(), _createBlock$3(_component_v_chip, {
+                  _createVNode$5(_component_v_col, { cols: "9" }, {
+                    default: _withCtx$5(() => [
+                      _createElementVNode$5("div", _hoisted_4$3, [
+                        (_openBlock$5(true), _createElementBlock$3(_Fragment$3, null, _renderList$2(__props.hostData.using_cloudflare ? __props.bestCloudflareIPs : __props.hostData.value, (ip) => {
+                          return _openBlock$5(), _createBlock$5(_component_v_chip, {
                             key: ip,
                             size: "x-small",
                             class: "mr-1 mb-1",
                             variant: "outlined"
                           }, {
-                            default: _withCtx$3(() => [
+                            default: _withCtx$5(() => [
                               _createTextVNode$3(_toDisplayString$3(ip), 1)
                             ]),
                             _: 2
@@ -12871,29 +13524,29 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
             ]),
             _: 1
           }),
-          _createVNode$3(_component_v_divider),
-          _createVNode$3(_component_v_card_actions, null, {
-            default: _withCtx$3(() => [
-              _createVNode$3(_component_v_icon, {
+          _createVNode$5(_component_v_divider),
+          _createVNode$5(_component_v_card_actions, null, {
+            default: _withCtx$5(() => [
+              _createVNode$5(_component_v_icon, {
                 color: __props.hostData.meta.disabled ? "grey" : "success"
               }, {
-                default: _withCtx$3(() => [
+                default: _withCtx$5(() => [
                   _createTextVNode$3(_toDisplayString$3(__props.hostData.meta.disabled ? "mdi-close-circle-outline" : "mdi-check-circle-outline"), 1)
                 ]),
                 _: 1
               }, 8, ["color"]),
-              _createVNode$3(_component_v_spacer),
-              _createVNode$3(_component_v_menu, { "min-width": "140" }, {
-                activator: _withCtx$3(({ props }) => [
-                  _createVNode$3(_component_v_btn, _mergeProps$2({
+              _createVNode$5(_component_v_spacer),
+              _createVNode$5(_component_v_menu, { "min-width": "140" }, {
+                activator: _withCtx$5(({ props }) => [
+                  _createVNode$5(_component_v_btn, _mergeProps$2({
                     color: "secondary",
                     icon: "",
                     size: "small",
                     variant: "text"
                   }, props), {
-                    default: _withCtx$3(() => [
-                      _createVNode$3(_component_v_icon, null, {
-                        default: _withCtx$3(() => _cache[4] || (_cache[4] = [
+                    default: _withCtx$5(() => [
+                      _createVNode$5(_component_v_icon, null, {
+                        default: _withCtx$5(() => _cache[4] || (_cache[4] = [
                           _createTextVNode$3("mdi-dots-vertical")
                         ])),
                         _: 1
@@ -12902,26 +13555,26 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
                     _: 2
                   }, 1040)
                 ]),
-                default: _withCtx$3(() => [
-                  _createVNode$3(_component_v_list, { density: "compact" }, {
-                    default: _withCtx$3(() => [
-                      _createVNode$3(_component_v_list_item, {
+                default: _withCtx$5(() => [
+                  _createVNode$5(_component_v_list, { density: "compact" }, {
+                    default: _withCtx$5(() => [
+                      _createVNode$5(_component_v_list_item, {
                         onClick: _cache[0] || (_cache[0] = ($event) => emit("editHost", __props.hostData.domain))
                       }, {
-                        prepend: _withCtx$3(() => [
-                          _createVNode$3(_component_v_icon, {
+                        prepend: _withCtx$5(() => [
+                          _createVNode$5(_component_v_icon, {
                             size: "small",
                             color: "primary"
                           }, {
-                            default: _withCtx$3(() => _cache[5] || (_cache[5] = [
+                            default: _withCtx$5(() => _cache[5] || (_cache[5] = [
                               _createTextVNode$3("mdi-file-edit-outline")
                             ])),
                             _: 1
                           })
                         ]),
-                        default: _withCtx$3(() => [
-                          _createVNode$3(_component_v_list_item_title, null, {
-                            default: _withCtx$3(() => _cache[6] || (_cache[6] = [
+                        default: _withCtx$5(() => [
+                          _createVNode$5(_component_v_list_item_title, null, {
+                            default: _withCtx$5(() => _cache[6] || (_cache[6] = [
                               _createTextVNode$3("编辑")
                             ])),
                             _: 1
@@ -12929,23 +13582,23 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
                         ]),
                         _: 1
                       }),
-                      _createVNode$3(_component_v_list_item, {
+                      _createVNode$5(_component_v_list_item, {
                         onClick: _cache[1] || (_cache[1] = ($event) => emit("deleteHost", __props.hostData.domain))
                       }, {
-                        prepend: _withCtx$3(() => [
-                          _createVNode$3(_component_v_icon, {
+                        prepend: _withCtx$5(() => [
+                          _createVNode$5(_component_v_icon, {
                             size: "small",
                             color: "error"
                           }, {
-                            default: _withCtx$3(() => _cache[7] || (_cache[7] = [
+                            default: _withCtx$5(() => _cache[7] || (_cache[7] = [
                               _createTextVNode$3("mdi-trash-can-outline")
                             ])),
                             _: 1
                           })
                         ]),
-                        default: _withCtx$3(() => [
-                          _createVNode$3(_component_v_list_item_title, null, {
-                            default: _withCtx$3(() => _cache[8] || (_cache[8] = [
+                        default: _withCtx$5(() => [
+                          _createVNode$5(_component_v_list_item_title, null, {
+                            default: _withCtx$5(() => _cache[8] || (_cache[8] = [
                               _createTextVNode$3("删除")
                             ])),
                             _: 1
@@ -12969,21 +13622,355 @@ const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
   }
 });
 
-const HostCard = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-a5d6e0e6"]]);
+const HostCard = /* @__PURE__ */ _export_sfc(_sfc_main$5, [["__scopeId", "data-v-a5d6e0e6"]]);
+
+const {defineComponent:_defineComponent$4} = await importShared('vue');
+
+const {resolveComponent:_resolveComponent$4,createVNode:_createVNode$4,withCtx:_withCtx$4,createElementVNode:_createElementVNode$4,renderList:_renderList$1,Fragment:_Fragment$2,openBlock:_openBlock$4,createElementBlock:_createElementBlock$2,createBlock:_createBlock$4} = await importShared('vue');
+
+const _hoisted_1$3 = { class: "hosts-mobile-view" };
+const _hoisted_2$2 = { class: "pa-2 pb-4" };
+const _hoisted_3$2 = { class: "mobile-card-container" };
+const _hoisted_4$2 = {
+  class: "pa-4 d-flex justify-center",
+  style: { "min-height": "4rem" }
+};
+const _sfc_main$4 = /* @__PURE__ */ _defineComponent$4({
+  __name: "HostsMobile",
+  props: {
+    paginatedHosts: {},
+    bestCloudflareIPs: {},
+    search: {},
+    page: {},
+    pageCount: {},
+    loading: { type: Boolean }
+  },
+  emits: ["update:search", "update:page", "open-add-dialog", "edit", "delete"],
+  setup(__props, { emit: __emit }) {
+    const emit = __emit;
+    return (_ctx, _cache) => {
+      const _component_v_text_field = _resolveComponent$4("v-text-field");
+      const _component_v_col = _resolveComponent$4("v-col");
+      const _component_v_btn = _resolveComponent$4("v-btn");
+      const _component_v_btn_group = _resolveComponent$4("v-btn-group");
+      const _component_v_row = _resolveComponent$4("v-row");
+      const _component_v_pagination = _resolveComponent$4("v-pagination");
+      return _openBlock$4(), _createElementBlock$2("div", _hoisted_1$3, [
+        _createElementVNode$4("div", _hoisted_2$2, [
+          _createVNode$4(_component_v_row, {
+            align: "center",
+            "no-gutters": ""
+          }, {
+            default: _withCtx$4(() => [
+              _createVNode$4(_component_v_col, {
+                cols: "10",
+                class: "d-flex justify-start"
+              }, {
+                default: _withCtx$4(() => [
+                  _createVNode$4(_component_v_text_field, {
+                    "model-value": _ctx.search,
+                    label: "搜索Hosts",
+                    clearable: "",
+                    density: "compact",
+                    variant: "solo-filled",
+                    "hide-details": "",
+                    class: "search-field",
+                    "prepend-inner-icon": "mdi-magnify",
+                    flat: "",
+                    rounded: "pill",
+                    "single-line": "",
+                    disabled: _ctx.loading,
+                    "onUpdate:modelValue": _cache[0] || (_cache[0] = (v) => emit("update:search", v || ""))
+                  }, null, 8, ["model-value", "disabled"])
+                ]),
+                _: 1
+              }),
+              _createVNode$4(_component_v_col, {
+                cols: "2",
+                class: "d-flex justify-end"
+              }, {
+                default: _withCtx$4(() => [
+                  _createVNode$4(_component_v_btn_group, {
+                    variant: "outlined",
+                    rounded: ""
+                  }, {
+                    default: _withCtx$4(() => [
+                      _createVNode$4(_component_v_btn, {
+                        icon: "mdi-plus",
+                        disabled: _ctx.loading,
+                        onClick: _cache[1] || (_cache[1] = ($event) => emit("open-add-dialog"))
+                      }, null, 8, ["disabled"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$4("div", _hoisted_3$2, [
+          _createVNode$4(_component_v_row, null, {
+            default: _withCtx$4(() => [
+              (_openBlock$4(true), _createElementBlock$2(_Fragment$2, null, _renderList$1(_ctx.paginatedHosts, (item) => {
+                return _openBlock$4(), _createBlock$4(_component_v_col, {
+                  key: item.domain,
+                  cols: "12"
+                }, {
+                  default: _withCtx$4(() => [
+                    _createVNode$4(HostCard, {
+                      "host-data": item,
+                      "best-cloudflare-i-ps": _ctx.bestCloudflareIPs,
+                      onEditHost: _cache[2] || (_cache[2] = (d) => emit("edit", d)),
+                      onDeleteHost: _cache[3] || (_cache[3] = (n) => emit("delete", n))
+                    }, null, 8, ["host-data", "best-cloudflare-i-ps"])
+                  ]),
+                  _: 2
+                }, 1024);
+              }), 128))
+            ]),
+            _: 1
+          })
+        ]),
+        _createElementVNode$4("div", _hoisted_4$2, [
+          _createVNode$4(_component_v_pagination, {
+            "model-value": _ctx.page,
+            length: _ctx.pageCount,
+            "total-visible": "0",
+            rounded: "circle",
+            class: "my-0",
+            disabled: _ctx.loading,
+            "onUpdate:modelValue": _cache[4] || (_cache[4] = (v) => emit("update:page", v))
+          }, null, 8, ["model-value", "length", "disabled"])
+        ])
+      ]);
+    };
+  }
+});
+
+const HostsMobile = /* @__PURE__ */ _export_sfc(_sfc_main$4, [["__scopeId", "data-v-98409250"]]);
+
+const {defineComponent:_defineComponent$3} = await importShared('vue');
+
+const {toDisplayString:_toDisplayString$2,createTextVNode:_createTextVNode$2,resolveComponent:_resolveComponent$3,withCtx:_withCtx$3,createVNode:_createVNode$3,unref:_unref$2,mergeProps:_mergeProps$1,openBlock:_openBlock$3,createBlock:_createBlock$3,createCommentVNode:_createCommentVNode$2,createElementVNode:_createElementVNode$3,withModifiers:_withModifiers} = await importShared('vue');
+
+const {ref: ref$2,toRaw: toRaw$1} = await importShared('vue');
+const _sfc_main$3 = /* @__PURE__ */ _defineComponent$3({
+  __name: "HostDialog",
+  props: {
+    initialValue: {
+      type: Object,
+      default: () => ({ ...defaultHost })
+    },
+    isAdding: {
+      type: Boolean,
+      default: true
+    },
+    bestCloudflareIPs: {
+      type: Array,
+      default: () => []
+    },
+    api: {
+      type: Object,
+      required: true
+    }
+  },
+  emits: ["close", "refresh", "show-error"],
+  setup(__props, { emit: __emit }) {
+    const props = __props;
+    const emit = __emit;
+    const toast = useToast();
+    const hostForm = ref$2(null);
+    const saveHostLoading = ref$2(false);
+    const newHost = ref$2(
+      props.isAdding ? { ...defaultHost } : structuredClone(toRaw$1(props.initialValue))
+    );
+    async function saveHost() {
+      const { valid } = await hostForm.value.validate();
+      if (!valid) return;
+      try {
+        saveHostLoading.value = true;
+        newHost.value.domain = newHost.value.domain.trim();
+        const targetDomain = props.isAdding ? newHost.value.domain : props.initialValue.domain;
+        const result = await props.api.post("/plugin/ClashRuleProvider/hosts", {
+          domain: targetDomain,
+          host: newHost.value
+        });
+        if (!result.success) {
+          emit("show-error", "保存 Host 失败: " + (result.message || "未知错误"));
+          toast.error("保存 Host 失败");
+          return;
+        }
+        toast.success(props.isAdding ? "Host 添加成功" : "Host 更新成功");
+        emit("close");
+        emit("refresh");
+      } catch (err) {
+        emit("show-error", "保存 Host 失败: " + (err.message || "未知错误"));
+        toast.error("保存 Host 失败");
+      } finally {
+        saveHostLoading.value = false;
+      }
+    }
+    return (_ctx, _cache) => {
+      const _component_v_card_title = _resolveComponent$3("v-card-title");
+      const _component_v_text_field = _resolveComponent$3("v-text-field");
+      const _component_v_chip = _resolveComponent$3("v-chip");
+      const _component_v_combobox = _resolveComponent$3("v-combobox");
+      const _component_v_switch = _resolveComponent$3("v-switch");
+      const _component_v_col = _resolveComponent$3("v-col");
+      const _component_v_row = _resolveComponent$3("v-row");
+      const _component_v_card_text = _resolveComponent$3("v-card-text");
+      const _component_v_alert = _resolveComponent$3("v-alert");
+      const _component_v_spacer = _resolveComponent$3("v-spacer");
+      const _component_v_btn = _resolveComponent$3("v-btn");
+      const _component_v_card_actions = _resolveComponent$3("v-card-actions");
+      const _component_v_card = _resolveComponent$3("v-card");
+      const _component_v_form = _resolveComponent$3("v-form");
+      const _component_v_dialog = _resolveComponent$3("v-dialog");
+      return _openBlock$3(), _createBlock$3(_component_v_dialog, { "max-width": "40rem" }, {
+        default: _withCtx$3(() => [
+          _createVNode$3(_component_v_form, {
+            ref_key: "hostForm",
+            ref: hostForm,
+            onSubmit: _withModifiers(saveHost, ["prevent"])
+          }, {
+            default: _withCtx$3(() => [
+              _createVNode$3(_component_v_card, null, {
+                default: _withCtx$3(() => [
+                  _createVNode$3(_component_v_card_title, null, {
+                    default: _withCtx$3(() => [
+                      _createTextVNode$2(_toDisplayString$2(__props.isAdding ? "添加 Host" : "编辑 Host"), 1)
+                    ]),
+                    _: 1
+                  }),
+                  _createVNode$3(_component_v_card_text, null, {
+                    default: _withCtx$3(() => [
+                      _createVNode$3(_component_v_text_field, {
+                        modelValue: newHost.value.domain,
+                        "onUpdate:modelValue": _cache[0] || (_cache[0] = ($event) => newHost.value.domain = $event),
+                        label: "域名",
+                        required: "",
+                        rules: [(v) => !!v || "域名不能为空"],
+                        class: "mb-4"
+                      }, null, 8, ["modelValue", "rules"]),
+                      !newHost.value.using_cloudflare ? (_openBlock$3(), _createBlock$3(_component_v_combobox, {
+                        key: 0,
+                        modelValue: newHost.value.value,
+                        "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => newHost.value.value = $event),
+                        multiple: "",
+                        chips: "",
+                        "closable-chips": "",
+                        clearable: "",
+                        label: "IP",
+                        required: "",
+                        rules: [_unref$2(validateIPs)],
+                        class: "mb-4",
+                        hint: "一个或多个 IP 地址"
+                      }, {
+                        chip: _withCtx$3(({ props: props2, item }) => [
+                          _createVNode$3(_component_v_chip, _mergeProps$1(props2, {
+                            closable: "",
+                            size: "small"
+                          }), {
+                            default: _withCtx$3(() => [
+                              _createTextVNode$2(_toDisplayString$2(item.value), 1)
+                            ]),
+                            _: 2
+                          }, 1040)
+                        ]),
+                        _: 1
+                      }, 8, ["modelValue", "rules"])) : _createCommentVNode$2("", true),
+                      _createVNode$3(_component_v_row, null, {
+                        default: _withCtx$3(() => [
+                          _createVNode$3(_component_v_col, {
+                            cols: "12",
+                            md: "6"
+                          }, {
+                            default: _withCtx$3(() => [
+                              _createVNode$3(_component_v_switch, {
+                                modelValue: newHost.value.using_cloudflare,
+                                "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => newHost.value.using_cloudflare = $event),
+                                label: "使用 Cloudflare CDN",
+                                inset: "",
+                                hint: "设置为 CF 优选 IPs",
+                                "persistent-hint": ""
+                              }, null, 8, ["modelValue"])
+                            ]),
+                            _: 1
+                          })
+                        ]),
+                        _: 1
+                      })
+                    ]),
+                    _: 1
+                  }),
+                  __props.bestCloudflareIPs.length === 0 && newHost.value.using_cloudflare ? (_openBlock$3(), _createBlock$3(_component_v_alert, {
+                    key: 0,
+                    type: "warning",
+                    text: "请在「高级选项」配置 Cloudflare CDN 优选 IPs",
+                    variant: "outlined",
+                    class: "mb-2"
+                  })) : _createCommentVNode$2("", true),
+                  _createVNode$3(_component_v_alert, {
+                    type: "info",
+                    variant: "tonal"
+                  }, {
+                    default: _withCtx$3(() => _cache[4] || (_cache[4] = [
+                      _createTextVNode$2(" 支持"),
+                      _createElementVNode$3("a", {
+                        href: "https://wiki.metacubex.one/handbook/syntax/#_8",
+                        target: "_blank"
+                      }, "域名通配符", -1)
+                    ])),
+                    _: 1
+                  }),
+                  _createVNode$3(_component_v_card_actions, null, {
+                    default: _withCtx$3(() => [
+                      _createVNode$3(_component_v_spacer),
+                      _createVNode$3(_component_v_btn, {
+                        color: "secondary",
+                        onClick: _cache[3] || (_cache[3] = ($event) => emit("close"))
+                      }, {
+                        default: _withCtx$3(() => _cache[5] || (_cache[5] = [
+                          _createTextVNode$2("取消")
+                        ])),
+                        _: 1
+                      }),
+                      _createVNode$3(_component_v_btn, {
+                        color: "primary",
+                        type: "submit",
+                        loading: saveHostLoading.value
+                      }, {
+                        default: _withCtx$3(() => _cache[6] || (_cache[6] = [
+                          _createTextVNode$2("保存 ")
+                        ])),
+                        _: 1
+                      }, 8, ["loading"])
+                    ]),
+                    _: 1
+                  })
+                ]),
+                _: 1
+              })
+            ]),
+            _: 1
+          }, 512)
+        ]),
+        _: 1
+      });
+    };
+  }
+});
 
 const {defineComponent:_defineComponent$2} = await importShared('vue');
 
-const {resolveComponent:_resolveComponent$2,createVNode:_createVNode$2,withCtx:_withCtx$2,createElementVNode:_createElementVNode$2,renderList:_renderList$1,Fragment:_Fragment$1,openBlock:_openBlock$2,createElementBlock:_createElementBlock$1,createBlock:_createBlock$2,unref:_unref$1,toDisplayString:_toDisplayString$2,createTextVNode:_createTextVNode$2,mergeProps:_mergeProps$1,createCommentVNode:_createCommentVNode$1} = await importShared('vue');
+const {resolveComponent:_resolveComponent$2,createVNode:_createVNode$2,withCtx:_withCtx$2,unref:_unref$1,openBlock:_openBlock$2,createBlock:_createBlock$2,createCommentVNode:_createCommentVNode$1,createElementVNode:_createElementVNode$2,Fragment:_Fragment$1,createElementBlock:_createElementBlock$1} = await importShared('vue');
 
 const _hoisted_1$2 = { class: "mb-2 position-relative" };
-const _hoisted_2$2 = { class: "pa-4" };
-const _hoisted_3$2 = { class: "d-none d-sm-flex clash-data-table" };
-const _hoisted_4$2 = { class: "d-sm-none" };
-const _hoisted_5$1 = {
-  class: "pa-4",
-  style: { "min-height": "4rem" }
-};
 const {ref: ref$1,computed: computed$1,toRaw} = await importShared('vue');
+
+const {useDisplay} = await importShared('vuetify');
 const _sfc_main$2 = /* @__PURE__ */ _defineComponent$2({
   __name: "HostsTab",
   props: {
@@ -12991,10 +13978,11 @@ const _sfc_main$2 = /* @__PURE__ */ _defineComponent$2({
     bestCloudflareIPs: {},
     api: {}
   },
-  emits: ["refresh", "show-snackbar", "show-error"],
+  emits: ["refresh", "show-error"],
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
+    const { smAndDown } = useDisplay();
     const searchHosts = ref$1("");
     const pageHosts = ref$1(1);
     const itemsPerPageHosts = ref$1(10);
@@ -13047,16 +14035,6 @@ const _sfc_main$2 = /* @__PURE__ */ _defineComponent$2({
     return (_ctx, _cache) => {
       const _component_v_progress_circular = _resolveComponent$2("v-progress-circular");
       const _component_v_overlay = _resolveComponent$2("v-overlay");
-      const _component_v_text_field = _resolveComponent$2("v-text-field");
-      const _component_v_col = _resolveComponent$2("v-col");
-      const _component_v_btn = _resolveComponent$2("v-btn");
-      const _component_v_btn_group = _resolveComponent$2("v-btn-group");
-      const _component_v_row = _resolveComponent$2("v-row");
-      const _component_v_pagination = _resolveComponent$2("v-pagination");
-      const _component_v_list_item_title = _resolveComponent$2("v-list-item-title");
-      const _component_v_list_item = _resolveComponent$2("v-list-item");
-      const _component_v_list = _resolveComponent$2("v-list");
-      const _component_v_menu = _resolveComponent$2("v-menu");
       const _component_v_divider = _resolveComponent$2("v-divider");
       return _openBlock$2(), _createElementBlock$1(_Fragment$1, null, [
         _createElementVNode$2("div", _hoisted_1$2, [
@@ -13074,199 +14052,47 @@ const _sfc_main$2 = /* @__PURE__ */ _defineComponent$2({
             ]),
             _: 1
           }, 8, ["modelValue"]),
-          _createElementVNode$2("div", _hoisted_2$2, [
-            _createVNode$2(_component_v_row, {
-              align: "center",
-              "no-gutters": ""
-            }, {
-              default: _withCtx$2(() => [
-                _createVNode$2(_component_v_col, {
-                  cols: "10",
-                  sm: "6",
-                  class: "d-flex justify-start"
-                }, {
-                  default: _withCtx$2(() => [
-                    _createVNode$2(_component_v_text_field, {
-                      modelValue: searchHosts.value,
-                      "onUpdate:modelValue": _cache[1] || (_cache[1] = ($event) => searchHosts.value = $event),
-                      label: "搜索Hosts",
-                      clearable: "",
-                      density: "compact",
-                      variant: "solo-filled",
-                      "hide-details": "",
-                      class: "search-field",
-                      "prepend-inner-icon": "mdi-magnify",
-                      flat: "",
-                      rounded: "pill",
-                      "single-line": "",
-                      disabled: loading.value
-                    }, null, 8, ["modelValue", "disabled"])
-                  ]),
-                  _: 1
-                }),
-                _createVNode$2(_component_v_col, {
-                  cols: "2",
-                  sm: "6",
-                  class: "d-flex justify-end"
-                }, {
-                  default: _withCtx$2(() => [
-                    _createVNode$2(_component_v_btn_group, {
-                      variant: "outlined",
-                      rounded: ""
-                    }, {
-                      default: _withCtx$2(() => [
-                        _createVNode$2(_component_v_btn, {
-                          icon: "mdi-plus",
-                          disabled: loading.value,
-                          onClick: openAddHostDialog
-                        }, null, 8, ["disabled"])
-                      ]),
-                      _: 1
-                    })
-                  ]),
-                  _: 1
-                })
-              ]),
-              _: 1
-            })
-          ]),
-          _createElementVNode$2("div", _hoisted_3$2, [
-            _createVNode$2(_sfc_main$5, {
-              hosts: _ctx.hosts,
-              search: searchHosts.value,
-              page: pageHosts.value,
-              "items-per-page": itemsPerPageHosts.value,
-              onEdit: editHost,
-              onDelete: deleteHost
-            }, null, 8, ["hosts", "search", "page", "items-per-page"])
-          ]),
-          _createElementVNode$2("div", _hoisted_4$2, [
-            _createVNode$2(_component_v_row, null, {
-              default: _withCtx$2(() => [
-                (_openBlock$2(true), _createElementBlock$1(_Fragment$1, null, _renderList$1(paginatedHosts.value, (item) => {
-                  return _openBlock$2(), _createBlock$2(_component_v_col, {
-                    key: item.domain,
-                    cols: "12"
-                  }, {
-                    default: _withCtx$2(() => [
-                      _createVNode$2(HostCard, {
-                        "host-data": item,
-                        "best-cloudflare-i-ps": _ctx.bestCloudflareIPs,
-                        onEditHost: editHost,
-                        onDeleteHost: deleteHost
-                      }, null, 8, ["host-data", "best-cloudflare-i-ps"])
-                    ]),
-                    _: 2
-                  }, 1024);
-                }), 128))
-              ]),
-              _: 1
-            })
-          ]),
-          _createElementVNode$2("div", _hoisted_5$1, [
-            _createVNode$2(_component_v_row, {
-              align: "center",
-              "no-gutters": ""
-            }, {
-              default: _withCtx$2(() => [
-                _createVNode$2(_component_v_col, {
-                  cols: "2",
-                  md: "1"
-                }),
-                _createVNode$2(_component_v_col, {
-                  cols: "8",
-                  md: "10",
-                  class: "d-flex justify-center"
-                }, {
-                  default: _withCtx$2(() => [
-                    _createVNode$2(_component_v_pagination, {
-                      modelValue: pageHosts.value,
-                      "onUpdate:modelValue": _cache[2] || (_cache[2] = ($event) => pageHosts.value = $event),
-                      length: pageCountHosts.value,
-                      "total-visible": "5",
-                      rounded: "circle",
-                      class: "d-none d-sm-flex my-0",
-                      disabled: loading.value
-                    }, null, 8, ["modelValue", "length", "disabled"]),
-                    _createVNode$2(_component_v_pagination, {
-                      modelValue: pageHosts.value,
-                      "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => pageHosts.value = $event),
-                      length: pageCountHosts.value,
-                      "total-visible": "0",
-                      rounded: "circle",
-                      class: "d-sm-none my-0",
-                      disabled: loading.value
-                    }, null, 8, ["modelValue", "length", "disabled"])
-                  ]),
-                  _: 1
-                }),
-                _createVNode$2(_component_v_col, {
-                  cols: "2",
-                  md: "1",
-                  class: "d-flex justify-end"
-                }, {
-                  default: _withCtx$2(() => [
-                    _createVNode$2(_component_v_menu, null, {
-                      activator: _withCtx$2(({ props: props2 }) => [
-                        _createVNode$2(_component_v_btn, _mergeProps$1(props2, {
-                          icon: "",
-                          rounded: "circle",
-                          variant: "tonal",
-                          disabled: loading.value
-                        }), {
-                          default: _withCtx$2(() => [
-                            _createTextVNode$2(_toDisplayString$2(_unref$1(pageTitle)(itemsPerPageHosts.value)), 1)
-                          ]),
-                          _: 2
-                        }, 1040, ["disabled"])
-                      ]),
-                      default: _withCtx$2(() => [
-                        _createVNode$2(_component_v_list, null, {
-                          default: _withCtx$2(() => [
-                            (_openBlock$2(true), _createElementBlock$1(_Fragment$1, null, _renderList$1(_unref$1(itemsPerPageOptions), (item, index) => {
-                              return _openBlock$2(), _createBlock$2(_component_v_list_item, {
-                                key: index,
-                                value: item.value,
-                                onClick: ($event) => itemsPerPageHosts.value = item.value
-                              }, {
-                                default: _withCtx$2(() => [
-                                  _createVNode$2(_component_v_list_item_title, null, {
-                                    default: _withCtx$2(() => [
-                                      _createTextVNode$2(_toDisplayString$2(item.title), 1)
-                                    ]),
-                                    _: 2
-                                  }, 1024)
-                                ]),
-                                _: 2
-                              }, 1032, ["value", "onClick"]);
-                            }), 128))
-                          ]),
-                          _: 1
-                        })
-                      ]),
-                      _: 1
-                    })
-                  ]),
-                  _: 1
-                })
-              ]),
-              _: 1
-            })
-          ]),
+          _unref$1(smAndDown) ? (_openBlock$2(), _createBlock$2(HostsMobile, {
+            key: 0,
+            "paginated-hosts": paginatedHosts.value,
+            "best-cloudflare-i-ps": _ctx.bestCloudflareIPs,
+            search: searchHosts.value,
+            page: pageHosts.value,
+            "page-count": pageCountHosts.value,
+            loading: loading.value,
+            "onUpdate:search": _cache[1] || (_cache[1] = (v) => searchHosts.value = v),
+            "onUpdate:page": _cache[2] || (_cache[2] = (v) => pageHosts.value = v),
+            onOpenAddDialog: openAddHostDialog,
+            onEdit: editHost,
+            onDelete: deleteHost
+          }, null, 8, ["paginated-hosts", "best-cloudflare-i-ps", "search", "page", "page-count", "loading"])) : (_openBlock$2(), _createBlock$2(_sfc_main$6, {
+            key: 1,
+            hosts: filteredHosts.value,
+            search: searchHosts.value,
+            page: pageHosts.value,
+            "items-per-page": itemsPerPageHosts.value,
+            "page-count": pageCountHosts.value,
+            loading: loading.value,
+            "onUpdate:search": _cache[3] || (_cache[3] = (v) => searchHosts.value = v),
+            "onUpdate:page": _cache[4] || (_cache[4] = (v) => pageHosts.value = v),
+            "onUpdate:itemsPerPage": _cache[5] || (_cache[5] = (v) => itemsPerPageHosts.value = v),
+            onOpenAddDialog: openAddHostDialog,
+            onEdit: editHost,
+            onDelete: deleteHost
+          }, null, 8, ["hosts", "search", "page", "items-per-page", "page-count", "loading"])),
           _createVNode$2(_component_v_divider)
         ]),
-        hostDialogVisible.value ? (_openBlock$2(), _createBlock$2(_sfc_main$4, {
+        hostDialogVisible.value ? (_openBlock$2(), _createBlock$2(_sfc_main$3, {
           key: 0,
           modelValue: hostDialogVisible.value,
-          "onUpdate:modelValue": _cache[4] || (_cache[4] = ($event) => hostDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => hostDialogVisible.value = $event),
           "initial-value": currentHost.value,
           "is-adding": isAdding.value,
           "best-cloudflare-i-ps": _ctx.bestCloudflareIPs,
           api: _ctx.api,
-          onRefresh: _cache[5] || (_cache[5] = ($event) => emit("refresh")),
-          onShowSnackbar: _cache[6] || (_cache[6] = (v) => emit("show-snackbar", v)),
-          onShowError: _cache[7] || (_cache[7] = (v) => emit("show-error", v)),
-          onClose: _cache[8] || (_cache[8] = ($event) => hostDialogVisible.value = false)
+          onRefresh: _cache[7] || (_cache[7] = ($event) => emit("refresh")),
+          onShowError: _cache[8] || (_cache[8] = (v) => emit("show-error", v)),
+          onClose: _cache[9] || (_cache[9] = ($event) => hostDialogVisible.value = false)
         }, null, 8, ["modelValue", "initial-value", "is-adding", "best-cloudflare-i-ps", "api"])) : _createCommentVNode$1("", true)
       ], 64);
     };
@@ -13556,11 +14382,7 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
     const props = __props;
     const emit = __emit;
     const activeTab = ref(0);
-    const snackbar = ref({
-      show: false,
-      message: "",
-      color: "success"
-    });
+    const toast = useToast();
     const customOutbounds = ref([]);
     const subUrl = ref("");
     const proxyGroups = ref([]);
@@ -13601,17 +14423,9 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
     const bestCloudflareIPs = ref([]);
     function copyToClipboard(text) {
       navigator.clipboard.writeText(text).then(() => {
-        snackbar.value = {
-          show: true,
-          message: "已复制到剪贴板",
-          color: "success"
-        };
+        toast.success("已复制到剪贴板");
       }).catch(() => {
-        snackbar.value = {
-          show: true,
-          message: "复制失败",
-          color: "error"
-        };
+        toast.error("复制失败");
       });
     }
     function copyPluginLink() {
@@ -13806,7 +14620,6 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
       const _component_v_menu = _resolveComponent("v-menu");
       const _component_v_spacer = _resolveComponent("v-spacer");
       const _component_v_card_actions = _resolveComponent("v-card-actions");
-      const _component_v_snackbar = _resolveComponent("v-snackbar");
       const _component_v_card = _resolveComponent("v-card");
       return _openBlock(), _createElementBlock("div", _hoisted_1, [
         _createVNode(_component_v_card, null, {
@@ -13834,7 +14647,7 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                 }, {
                   default: _withCtx(() => [
                     _createVNode(_component_v_icon, { left: "" }, {
-                      default: _withCtx(() => _cache[18] || (_cache[18] = [
+                      default: _withCtx(() => _cache[9] || (_cache[9] = [
                         _createTextVNode("mdi-close")
                       ])),
                       _: 1
@@ -13859,7 +14672,7 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       ]),
                       _: 1
                     }),
-                    _cache[17] || (_cache[17] = _createTextVNode(" Clash Rule Provider ")),
+                    _cache[8] || (_cache[8] = _createTextVNode(" Clash Rule Provider ")),
                     _createVNode(_component_v_chip, {
                       size: "small",
                       color: status.value === "running" ? "success" : "warning",
@@ -13892,84 +14705,84 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[19] || (_cache[19] = [
+                            default: _withCtx(() => _cache[10] || (_cache[10] = [
                               _createTextVNode("mdi-format-list-bulleted")
                             ])),
                             _: 1
                           }),
-                          _cache[20] || (_cache[20] = _createTextVNode(" 规则集规则 "))
+                          _cache[11] || (_cache[11] = _createTextVNode(" 规则集规则 "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[21] || (_cache[21] = [
+                            default: _withCtx(() => _cache[12] || (_cache[12] = [
                               _createTextVNode("mdi-pin")
                             ])),
                             _: 1
                           }),
-                          _cache[22] || (_cache[22] = _createTextVNode(" 置顶规则 "))
+                          _cache[13] || (_cache[13] = _createTextVNode(" 置顶规则 "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[23] || (_cache[23] = [
+                            default: _withCtx(() => _cache[14] || (_cache[14] = [
                               _createTextVNode("mdi-source-branch")
                             ])),
                             _: 1
                           }),
-                          _cache[24] || (_cache[24] = _createTextVNode(" 代理组 "))
+                          _cache[15] || (_cache[15] = _createTextVNode(" 代理组 "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[25] || (_cache[25] = [
+                            default: _withCtx(() => _cache[16] || (_cache[16] = [
                               _createTextVNode("mdi-rocket-launch")
                             ])),
                             _: 1
                           }),
-                          _cache[26] || (_cache[26] = _createTextVNode(" 出站代理 "))
+                          _cache[17] || (_cache[17] = _createTextVNode(" 出站代理 "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[27] || (_cache[27] = [
+                            default: _withCtx(() => _cache[18] || (_cache[18] = [
                               _createTextVNode("mdi-folder-multiple")
                             ])),
                             _: 1
                           }),
-                          _cache[28] || (_cache[28] = _createTextVNode(" 规则集合 "))
+                          _cache[19] || (_cache[19] = _createTextVNode(" 规则集合 "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[29] || (_cache[29] = [
+                            default: _withCtx(() => _cache[20] || (_cache[20] = [
                               _createTextVNode("mdi-lan")
                             ])),
                             _: 1
                           }),
-                          _cache[30] || (_cache[30] = _createTextVNode(" Hosts "))
+                          _cache[21] || (_cache[21] = _createTextVNode(" Hosts "))
                         ]),
                         _: 1
                       }),
                       _createVNode(_component_v_tab, null, {
                         default: _withCtx(() => [
                           _createVNode(_component_v_icon, { start: "" }, {
-                            default: _withCtx(() => _cache[31] || (_cache[31] = [
+                            default: _withCtx(() => _cache[22] || (_cache[22] = [
                               _createTextVNode("mdi-cloud-sync")
                             ])),
                             _: 1
                           }),
-                          _cache[32] || (_cache[32] = _createTextVNode(" 订阅状态 "))
+                          _cache[23] || (_cache[23] = _createTextVNode(" 订阅状态 "))
                         ]),
                         _: 1
                       })
@@ -13978,12 +14791,12 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                   }, 8, ["modelValue"]),
                   _createVNode(_component_v_window, {
                     modelValue: activeTab.value,
-                    "onUpdate:modelValue": _cache[10] || (_cache[10] = ($event) => activeTab.value = $event)
+                    "onUpdate:modelValue": _cache[3] || (_cache[3] = ($event) => activeTab.value = $event)
                   }, {
                     default: _withCtx(() => [
                       _createVNode(_component_v_window_item, null, {
                         default: _withCtx(() => [
-                          _createVNode(_sfc_main$q, {
+                          _createVNode(_sfc_main$A, {
                             rules: sortedRulesetRules.value,
                             "ruleset-prefix": rulesetPrefix.value,
                             api: __props.api,
@@ -13991,7 +14804,6 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                             "geo-rules": geoRules.value,
                             "custom-outbounds": customOutbounds.value,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[2] || (_cache[2] = (val) => snackbar.value = val),
                             onShowError: showError
                           }, null, 8, ["rules", "ruleset-prefix", "api", "rule-provider-names", "geo-rules", "custom-outbounds"])
                         ]),
@@ -13999,14 +14811,13 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       }),
                       _createVNode(_component_v_window_item, null, {
                         default: _withCtx(() => [
-                          _createVNode(_sfc_main$n, {
+                          _createVNode(_sfc_main$v, {
                             rules: sortedRules.value,
                             api: __props.api,
                             "rule-provider-names": ruleProviderNames.value,
                             "geo-rules": geoRules.value,
                             "custom-outbounds": customOutbounds.value,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[3] || (_cache[3] = (val) => snackbar.value = val),
                             onShowError: showError,
                             onEditVisibility: handleEditVisibility
                           }, null, 8, ["rules", "api", "rule-provider-names", "geo-rules", "custom-outbounds"])
@@ -14015,13 +14826,12 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       }),
                       _createVNode(_component_v_window_item, null, {
                         default: _withCtx(() => [
-                          _createVNode(_sfc_main$i, {
+                          _createVNode(_sfc_main$o, {
                             "proxy-groups": proxyGroups.value,
                             "proxy-providers": proxyProviders.value,
                             "custom-outbounds": customOutbounds.value,
                             api: __props.api,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[4] || (_cache[4] = (val) => snackbar.value = val),
                             onShowError: showError,
                             onShowYaml: showYaml,
                             onCopyToClipboard: copyToClipboard,
@@ -14032,11 +14842,10 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       }),
                       _createVNode(_component_v_window_item, null, {
                         default: _withCtx(() => [
-                          _createVNode(_sfc_main$d, {
+                          _createVNode(_sfc_main$h, {
                             proxies: proxies.value,
                             api: __props.api,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[5] || (_cache[5] = (val) => snackbar.value = val),
                             onShowError: showError,
                             onShowYaml: showYaml,
                             onCopyToClipboard: copyToClipboard,
@@ -14047,11 +14856,10 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                       }),
                       _createVNode(_component_v_window_item, null, {
                         default: _withCtx(() => [
-                          _createVNode(_sfc_main$6, {
+                          _createVNode(_sfc_main$8, {
                             "rule-providers": ruleProviders.value,
                             api: __props.api,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[6] || (_cache[6] = (val) => snackbar.value = val),
                             onShowError: showError,
                             onShowYaml: showYaml,
                             onEditVisibility: handleEditVisibility
@@ -14065,8 +14873,7 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                             hosts: hosts.value,
                             "best-cloudflare-i-ps": bestCloudflareIPs.value,
                             api: __props.api,
-                            onRefresh: _cache[7] || (_cache[7] = ($event) => refreshAllRegions(["hosts"])),
-                            onShowSnackbar: _cache[8] || (_cache[8] = (val) => snackbar.value = val),
+                            onRefresh: _cache[2] || (_cache[2] = ($event) => refreshAllRegions(["hosts"])),
                             onShowError: showError
                           }, null, 8, ["hosts", "best-cloudflare-i-ps", "api"])
                         ]),
@@ -14078,7 +14885,6 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                             "subscriptions-info": subscriptionsInfo.value,
                             api: __props.api,
                             onRefresh: refreshAllRegions,
-                            onShowSnackbar: _cache[9] || (_cache[9] = (val) => snackbar.value = val),
                             onShowError: showError,
                             onCopyToClipboard: copyToClipboard,
                             onSwitch: notifySwitch
@@ -14119,12 +14925,12 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                 }, {
                   default: _withCtx(() => [
                     _createVNode(_component_v_icon, { left: "" }, {
-                      default: _withCtx(() => _cache[33] || (_cache[33] = [
+                      default: _withCtx(() => _cache[24] || (_cache[24] = [
                         _createTextVNode("mdi-refresh")
                       ])),
                       _: 1
                     }),
-                    _cache[34] || (_cache[34] = _createTextVNode(" 刷新数据 "))
+                    _cache[25] || (_cache[25] = _createTextVNode(" 刷新数据 "))
                   ]),
                   _: 1
                 }, 8, ["loading"]),
@@ -14133,12 +14939,12 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                     _createVNode(_component_v_btn, _mergeProps({ color: "info" }, props2), {
                       default: _withCtx(() => [
                         _createVNode(_component_v_icon, { left: "" }, {
-                          default: _withCtx(() => _cache[35] || (_cache[35] = [
+                          default: _withCtx(() => _cache[26] || (_cache[26] = [
                             _createTextVNode("mdi-link-variant")
                           ])),
                           _: 1
                         }),
-                        _cache[36] || (_cache[36] = _createTextVNode(" 生成链接 "))
+                        _cache[27] || (_cache[27] = _createTextVNode(" 生成链接 "))
                       ]),
                       _: 2
                     }, 1040)
@@ -14155,7 +14961,7 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                           ]),
                           default: _withCtx(() => [
                             _createVNode(_component_v_list_item_title, null, {
-                              default: _withCtx(() => _cache[37] || (_cache[37] = [
+                              default: _withCtx(() => _cache[28] || (_cache[28] = [
                                 _createTextVNode("默认")
                               ])),
                               _: 1
@@ -14196,27 +15002,27 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                 }, {
                   default: _withCtx(() => [
                     _createVNode(_component_v_icon, { left: "" }, {
-                      default: _withCtx(() => _cache[38] || (_cache[38] = [
+                      default: _withCtx(() => _cache[29] || (_cache[29] = [
                         _createTextVNode("mdi-link-variant")
                       ])),
                       _: 1
                     }),
-                    _cache[39] || (_cache[39] = _createTextVNode(" 生成链接 "))
+                    _cache[30] || (_cache[30] = _createTextVNode(" 生成链接 "))
                   ]),
                   _: 1
                 }, 8, ["href"])),
                 _createVNode(_component_v_btn, {
                   color: "success",
-                  onClick: _cache[11] || (_cache[11] = ($event) => expand.value = !expand.value)
+                  onClick: _cache[4] || (_cache[4] = ($event) => expand.value = !expand.value)
                 }, {
                   default: _withCtx(() => [
                     _createVNode(_component_v_icon, { left: "" }, {
-                      default: _withCtx(() => _cache[40] || (_cache[40] = [
+                      default: _withCtx(() => _cache[31] || (_cache[31] = [
                         _createTextVNode("mdi-chart-bar")
                       ])),
                       _: 1
                     }),
-                    _cache[41] || (_cache[41] = _createTextVNode(" 统计信息 "))
+                    _cache[32] || (_cache[32] = _createTextVNode(" 统计信息 "))
                   ]),
                   _: 1
                 }),
@@ -14227,58 +15033,45 @@ const _sfc_main = /* @__PURE__ */ _defineComponent({
                 }, {
                   default: _withCtx(() => [
                     _createVNode(_component_v_icon, { left: "" }, {
-                      default: _withCtx(() => _cache[42] || (_cache[42] = [
+                      default: _withCtx(() => _cache[33] || (_cache[33] = [
                         _createTextVNode("mdi-cog")
                       ])),
                       _: 1
                     }),
-                    _cache[43] || (_cache[43] = _createTextVNode(" 配置 "))
+                    _cache[34] || (_cache[34] = _createTextVNode(" 配置 "))
                   ]),
                   _: 1
                 })
               ]),
               _: 1
-            }),
-            _createVNode(_component_v_snackbar, {
-              modelValue: snackbar.value.show,
-              "onUpdate:modelValue": _cache[12] || (_cache[12] = ($event) => snackbar.value.show = $event),
-              color: snackbar.value.color,
-              location: "bottom",
-              class: "mb-2"
-            }, {
-              default: _withCtx(() => [
-                _createTextVNode(_toDisplayString(snackbar.value.message), 1)
-              ]),
-              _: 1
-            }, 8, ["modelValue", "color"])
+            })
           ]),
           _: 1
         }),
-        showYamlDialog.value ? (_openBlock(), _createBlock(_sfc_main$w, {
+        showYamlDialog.value ? (_openBlock(), _createBlock(_sfc_main$I, {
           key: 0,
           content: displayedYaml.value,
           onCopyToClipboard: copyToClipboard,
-          onClose: _cache[13] || (_cache[13] = ($event) => showYamlDialog.value = false)
+          onClose: _cache[5] || (_cache[5] = ($event) => showYamlDialog.value = false)
         }, null, 8, ["content"])) : _createCommentVNode("", true),
-        visibilityDialogVisible.value ? (_openBlock(), _createBlock(_sfc_main$v, {
+        visibilityDialogVisible.value ? (_openBlock(), _createBlock(_sfc_main$H, {
           key: 1,
           modelValue: visibilityDialogVisible.value,
-          "onUpdate:modelValue": _cache[14] || (_cache[14] = ($event) => visibilityDialogVisible.value = $event),
+          "onUpdate:modelValue": _cache[6] || (_cache[6] = ($event) => visibilityDialogVisible.value = $event),
           meta: currentVisibilityMeta.value,
           endpoint: currentVisibilityEndpoint.value,
           region: currentVisibilityRegion.value,
           api: __props.api,
           "preset-identifiers": presetIdentifiers.value,
           onRefresh: refreshAllRegions,
-          onShowSnackbar: _cache[15] || (_cache[15] = (val) => snackbar.value = val),
           onShowError: showError,
-          onClose: _cache[16] || (_cache[16] = ($event) => visibilityDialogVisible.value = false)
+          onClose: _cache[7] || (_cache[7] = ($event) => visibilityDialogVisible.value = false)
         }, null, 8, ["modelValue", "meta", "endpoint", "region", "api", "preset-identifiers"])) : _createCommentVNode("", true)
       ]);
     };
   }
 });
 
-const PageComponent = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ab912b83"]]);
+const PageComponent = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-0c8885fa"]]);
 
 export { PageComponent as default };

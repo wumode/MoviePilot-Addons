@@ -1,0 +1,135 @@
+
+.switch-card[data-v-f91316c4] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+  border-radius: 8px;
+  box-shadow: none !important;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+.switch-card[data-v-f91316c4]:hover {
+  border-color: rgba(var(--v-border-color), 0.25);
+  background: rgba(var(--v-theme-on-surface), 0.04);
+  transform: none;
+}
+.switch-card--active[data-v-f91316c4] {
+  border-color: rgba(var(--v-theme-primary), 0.35) !important;
+  background: rgba(var(--v-theme-primary), 0.08) !important;
+  box-shadow: none !important;
+}
+.switch-card--info.switch-card--active[data-v-f91316c4] {
+  border-color: rgba(var(--v-theme-info), 0.35) !important;
+  background: rgba(var(--v-theme-info), 0.08) !important;
+  box-shadow: none !important;
+}
+.switch-card--warning.switch-card--active[data-v-f91316c4] {
+  border-color: rgba(var(--v-theme-warning), 0.35) !important;
+  background: rgba(var(--v-theme-warning), 0.08) !important;
+  box-shadow: none !important;
+}
+.switch-card--success.switch-card--active[data-v-f91316c4] {
+  border-color: rgba(var(--v-theme-success), 0.35) !important;
+  background: rgba(var(--v-theme-success), 0.08) !important;
+  box-shadow: none !important;
+}
+.card-icon-avatar[data-v-f91316c4] {
+  width: 34px;
+  height: 34px;
+  background: rgba(var(--v-theme-on-surface), 0.05);
+  transition: background-color 0.2s ease;
+}
+.switch-card--active .card-icon-avatar[data-v-f91316c4] {
+  background: rgba(var(--v-theme-on-surface), 0.08);
+}
+.transition-all[data-v-f91316c4] {
+  transition: all 0.2s ease;
+}
+
+.rotate-on-hover[data-v-204cdd08]:hover {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+.feature-toggle-item[data-v-4904dc24] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+  border-radius: 8px;
+}
+.feature-toggle-item[data-v-4904dc24]:hover {
+  border-color: rgba(var(--v-border-color), 0.25);
+  background: rgba(var(--v-theme-on-surface), 0.04);
+}
+.option-toggle-box[data-v-4904dc24] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+  border-radius: 8px;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+.option-toggle-box[data-v-4904dc24]:hover {
+  border-color: rgba(var(--v-border-color), 0.25);
+  background: rgba(var(--v-theme-on-surface), 0.04);
+}
+.border-dashed[data-v-4904dc24] {
+  border: 1px dashed rgba(var(--v-border-color), 0.2);
+}
+.transition-all[data-v-4904dc24] {
+  transition: all 0.2s ease;
+}
+
+.api-endpoint-card[data-v-ee984b40] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+  border-radius: 8px;
+}
+.api-endpoint-card[data-v-ee984b40]:hover {
+  border-color: rgba(var(--v-border-color), 0.25);
+}
+.api-endpoint-card--active[data-v-ee984b40] {
+  border-color: rgba(var(--v-theme-primary), 0.35) !important;
+  background: rgba(var(--v-theme-primary), 0.06) !important;
+}
+.transition-all[data-v-ee984b40] {
+  transition: all 0.2s ease;
+}
+
+.feature-toggle-item[data-v-fe0e1ac0] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+  border: 1px solid rgba(var(--v-border-color), 0.1);
+  border-radius: 8px;
+}
+.feature-toggle-item[data-v-fe0e1ac0]:hover {
+  border-color: rgba(var(--v-border-color), 0.25);
+  background: rgba(var(--v-theme-on-surface), 0.04);
+}
+.transition-all[data-v-fe0e1ac0] {
+  transition: all 0.2s ease;
+}
+
+.ace-editor-wrapper[data-v-05a8c78c] {
+  box-shadow: none;
+}
+
+.plugin-config-wrapper[data-v-e0689a8b] {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* 扁平化 Header */
+.config-hero-header[data-v-e0689a8b] {
+  background: rgba(var(--v-theme-on-surface), 0.02);
+}
+.hero-icon-avatar[data-v-e0689a8b] {
+  width: 40px;
+  height: 40px;
+  background: rgba(var(--v-theme-primary), 0.12);
+  border: 1px solid rgba(var(--v-theme-primary), 0.2);
+  box-shadow: none;
+}
+
+/* Tabs 扁平风格 */
+.custom-modern-tabs[data-v-e0689a8b] {
+  border-bottom: 1px solid rgba(var(--v-border-color), 0.1);
+}
