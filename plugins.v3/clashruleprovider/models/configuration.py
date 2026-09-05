@@ -1,8 +1,8 @@
-from typing import Any, Literal
+from typing import Annotated, Any, Literal
 
 from pydantic import BaseModel, Field, model_validator, field_validator, field_serializer, PrivateAttr
 
-from app.log import logger
+from app.sdk.logging import logger
 
 from .proxy import Proxy
 from .proxygroups import ProxyGroup
@@ -46,13 +46,19 @@ class ClashConfig(BaseModel):
     lan_disallowed_ips: list[str] = Field(default_factory=list, alias="lan-disallowed-ips")
     authentication: list[str] = Field(default_factory=list)
     skip_auth_prefixes: list[str] = Field(default_factory=list, alias="skip-auth-prefixes")
-    mode: Literal["rule", "global", "direct"] = Field(default="rule")
-    log_level: Literal["silent", "error", "warning", "info", "debug"] = Field(default="info", alias="log-level")
+    mode: Literal["rule", "global", "direct"] = "rule"
+    log_level: Annotated[
+        Literal["silent", "error", "warning", "info", "debug"],
+        Field(alias="log-level")
+    ] = "info"
     ipv6: bool = Field(default=True)
     keep_alive_interval: int = Field(default=0, alias="keep-alive-interval")
     keep_alive_idle: int = Field(default=0, alias="keep-alive-idle")
     disable_keep_alive: bool = Field(default=False, alias="disable-keep-alive")
-    find_process_mode: Literal["strict", "always", "off"] = Field(default="strict", alias="find-process-mode")
+    find_process_mode: Annotated[
+        Literal["strict", "always", "off"],
+        Field(alias="find-process-mode")
+    ] = "strict"
     external_controller: str | None = Field(default=None, alias="external-controller")
     external_controller_cors: ExternalControllerCors = Field(default_factory=ExternalControllerCors,
                                                              alias="external-controller-cors")
@@ -71,7 +77,10 @@ class ClashConfig(BaseModel):
     tls: dict[str, Any] | None = Field(default=None, alias="tls")
 
     geodata_mode: bool | None = Field(default=None, alias="geodata-mode")
-    geodata_loader: Literal["memconservative", "standard"] = Field(default="memconservative", alias="geodata-loader")
+    geodata_loader: Annotated[
+        Literal["memconservative", "standard"],
+        Field(alias="geodata-loader")
+    ] = "memconservative"
     geo_auto_update: bool = Field(default=False, alias="geo-auto-update")
     geo_update_interval: int = Field(default=24, alias="geo-update-interval")
     global_ua: str = Field(default="clash.meta", alias="global-ua")
@@ -109,7 +118,7 @@ class ClashConfig(BaseModel):
 
             for key in keys:
                 if key in values and values[key] is None:
-                    values[key] = factory()
+                    values[key] = factory()  # type: ignore[call-arg]
         return values
 
     @field_serializer("proxies")
@@ -154,9 +163,9 @@ class ClashConfig(BaseModel):
 
         return serialized_groups
 
-    @field_validator("mode", mode="before")
+    @field_validator("mode", "log_level", mode="before")
     @classmethod
-    def validate_mode(cls, v):
+    def validate_lowercase(cls, v):
         if isinstance(v, str):
             return v.lower()
         return v

@@ -19,12 +19,9 @@ from .api import ClashRuleProviderApi, apis
 from .base import Constant
 from .pluginconfig import PluginConfig
 from .helper.utilsprovider import UtilsProvider
-from .models import ProxyGroup, ProxyGroups, RuleProviders, Hosts
-from .models.api import SubscriptionsInfo
 from .models.configuration import ClashConfig
-from .models.datapatch import DataPatch
-from .models.types import DataKey, DataSource
-from .state import PluginState, GeoRules
+from .models.types import DataKey
+from .state import PluginState
 from .services import ClashRuleProviderService
 
 

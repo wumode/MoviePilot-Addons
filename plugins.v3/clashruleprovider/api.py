@@ -223,6 +223,8 @@ class ClashRuleProviderApi:
     @apis.register(path="/ruleset", methods=["GET"], allow_anonymous=True, summary="获取规则集规则")
     def get_ruleset(self, name: str, apikey: str) -> PlainTextResponse:
         _apikey = self.config.apikey or settings.API_TOKEN
+        if _apikey is None:
+            raise HTTPException(status_code=403, detail="Invalid API Key")
         if not secrets.compare_digest(_apikey, apikey):
             raise HTTPException(status_code=403, detail="Invalid API Key")
         res = self.services.get_ruleset(name)
@@ -257,15 +259,17 @@ class ClashRuleProviderApi:
     @apis.register(path="/config", methods=["GET"], allow_anonymous=bool(True), summary="获取 Clash 配置")
     def get_clash_config(self, apikey: str, request: Request, identifier: str | None = None):
         _apikey = self.config.apikey or settings.API_TOKEN
+        if _apikey is None:
+            raise HTTPException(status_code=403, detail="Invalid API Key")
+        if not secrets.compare_digest(apikey, _apikey):
+            raise HTTPException(status_code=403, detail="Invalid API Key")
         param = ConfigRequest(
             url=str(request.url),
-            client_host=request.client.host,
+            client_host=request.client.host if request.client else "unknown",
             identifier=identifier,
             user_agent=request.headers.get("user-agent")
         )
-        if not secrets.compare_digest(apikey, _apikey):
-            raise HTTPException(status_code=403, detail="Invalid API Key")
-        logger.info(f"{request.client.host} 正在获取配置")
+        logger.info(f"{param.client_host} 正在获取配置")
         config = self.services.build_clash_config(param=param)
         if not config:
             raise HTTPException(status_code=500, detail="配置不可用")

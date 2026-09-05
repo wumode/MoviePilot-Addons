@@ -275,7 +275,7 @@ class Converter:
 
             if not all([server, port, protocol, cipher, obfs, password]):
                 return None
-
+            assert isinstance(password, str)
             password_enc = base64.urlsafe_b64encode(password.encode("utf-8")).decode("utf-8").rstrip('=')
             ssr_main_part = f"{server}:{port}:{protocol}:{cipher}:{obfs}:{password_enc}"
 

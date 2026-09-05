@@ -25,13 +25,14 @@ from .models import ProxyGroup, Proxy, RuleProvider, RuleProviderData, ProxyData
     ProxyGroupData, RuleItem, RuleData, Metadata, RuleProviders
 from .models.api import ClashApi, SubscriptionSetting, DataUsage, SubscriptionInfo, ConfigRequest
 from .models.configuration import ClashConfig
+from .models.datamodel import GeoRules
 from .models.datapatch import PatchItem, DataPatch
 from .models.rule import RuleType
 from .models.types import DataSource, DataKey, RuleSet, ClashKey, SupportsPatch
 from .state import PluginState
 
 
-T = TypeVar("T")
+T = TypeVar("T", bound=SupportsPatch)
 
 class ClashRuleProviderService:
 
@@ -60,7 +61,7 @@ class ClashRuleProviderService:
         patches[src.name] = PatchItem(patch=patch.to_string(), lifecycle=Constant.PATCH_LIFESPAN)
         self.state.proxy_patch = patches
 
-    def _apply_patch(self, item: SupportsPatch[T], name: str, patch: DataPatch) -> T:
+    def _apply_patch(self, item: T, name: str, patch: DataPatch) -> T:
         try:
             if name in patch:
                 return item.patch(patch[name].patch)
@@ -122,8 +123,9 @@ class ClashRuleProviderService:
                 continue
             rule = r.rule
             if rule.rule_type == RoutingRuleType.RULE_SET:
-                if rule.payload in acl4ssr_data:
-                    acl4ssr_providers_map[rule.payload] = acl4ssr_data.get(rule.payload).data
+                data = acl4ssr_data.get(rule.payload)
+                if data:
+                    acl4ssr_providers_map[rule.payload] = data.data
             top_rules.append(rule)
         config.rule_providers = config.rule_providers | acl4ssr_providers_map
         config.rules = top_rules + config.rules
@@ -712,6 +714,8 @@ class ClashRuleProviderService:
                 return False, f"无效的规则: {rule_data!r}"
             manager = self.state.get_rule_manager(rule_type)
             original_rule = manager.get_rule_at_priority(src_priority)
+            if original_rule is None:
+                return False, f"规则 (priority={priority}) 不存在"
             meta = Metadata(source=original_rule.meta.source, time_modified=time.time())
             rule_item = RuleItem(rule=clash_rule, meta=meta)
             if rule_type == RuleSet.RULESET:
@@ -817,7 +821,7 @@ class ClashRuleProviderService:
         if not sub_conf:
             return False, f"Configuration for {url} not found."
         config, info = await self.async_get_subscription(url, sub_conf.user_agent)
-        if not config:
+        if not config or not info:
             return False, f"订阅链接 {url} 更新失败"
 
         sub_configs = self.state.sub_configs
@@ -900,9 +904,10 @@ class ClashRuleProviderService:
             if not sub_info_map.get(url).enabled:
                 continue
             conf, sub_info = await self.async_get_subscription(url, sub_conf.user_agent)
-            if not conf:
+            if not conf or sub_conf is None:
                 res[url] = False
                 continue
+            # pyrefly: ignore [unsupported-operation]
             sub_info_map[url] = sub_info
             res[url] = True
             sub_configs_map[url] = conf
@@ -950,7 +955,7 @@ class ClashRuleProviderService:
 
         geo_rules = self.state.geo_rules
         for path in resp.json():
-            if path["type"] == "dir" and path["name"] in geo_rules.model_fields:
+            if path["type"] == "dir" and path["name"] in GeoRules.model_fields:
                 tree_sha = path["sha"]
                 url = f"{Constant.METACUBEX_RULE_DAT_API}/git/trees/{tree_sha}"
                 res = await AsyncRequestUtils().get_res(url, headers=settings.GITHUB_HEADERS, params={'ref': branch})

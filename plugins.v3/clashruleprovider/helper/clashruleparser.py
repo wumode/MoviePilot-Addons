@@ -144,6 +144,8 @@ class ClashRuleParser:
         # Extract logic type
         logic_type_str, rest = line.split(',', 1)
         logic_type = RoutingRuleType(logic_type_str.upper().strip())
+        if logic_type not in (RoutingRuleType.AND, RoutingRuleType.OR, RoutingRuleType.NOT):
+            raise ValueError(f"{logic_type.value} is not a logic rule")
         last_comma_index = rest.rfind(',')
         if last_comma_index == -1:
             raise ValueError(f"Invalid logic rule format: {line}")
@@ -263,6 +265,8 @@ class ClashRuleParser:
                 parts = content.split(',', 1)
                 logic_type_str = parts[0].strip().upper()
                 logic_type = RoutingRuleType(logic_type_str)
+                if logic_type not in (RoutingRuleType.AND, RoutingRuleType.OR, RoutingRuleType.NOT):
+                    raise ValueError(f"{logic_type.value} is not a logic rule")
 
                 nested_conditions_str = parts[1]
                 nested_conditions = ClashRuleParser._parse_logic_conditions(f'({nested_conditions_str})')

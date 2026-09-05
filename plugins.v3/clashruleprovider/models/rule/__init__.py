@@ -1,5 +1,5 @@
 from enum import Enum, StrEnum
-from typing import Any, List, Optional, Union, Dict, Literal
+from typing import Any, Generic, List, Optional, TypeVar, Union, Dict, Literal
 
 from pydantic import BaseModel, field_validator, ValidationInfo
 
@@ -69,24 +69,27 @@ class Action(StrEnum):
     COMPATIBLE = "COMPATIBLE"
 
 
-class RuleBase(BaseModel):
-    rule_type: RoutingRuleType
+RuleTypeT = TypeVar("RuleTypeT", bound=RoutingRuleType)
+
+
+class RuleBase(BaseModel, Generic[RuleTypeT]):
+    rule_type: RuleTypeT
     action: Union[Action, str]  # Can be Action enum or custom proxy group name
     raw_rule: str
 
     def to_dict(self) -> Dict[str, Any]:
-        pass
+        raise NotImplementedError
 
     def __str__(self) -> str:
-        pass
+        raise NotImplementedError
 
-    def __eq__(self, other: 'RuleBase') -> bool:
+    def __eq__(self, other: object) -> bool:
         if not isinstance(other, RuleBase):
             return NotImplemented
         return self.__str__() == other.__str__()
 
 
-class ClashRule(RuleBase):
+class ClashRule(RuleBase[RoutingRuleType]):
     """Represents a parsed Clash routing rule"""
     rule_type: RoutingRuleType
     payload: str
@@ -121,7 +124,7 @@ class ClashRule(RuleBase):
         return v
 
 
-class LogicRule(RuleBase):
+class LogicRule(RuleBase[Literal[RoutingRuleType.AND, RoutingRuleType.OR, RoutingRuleType.NOT]]):
     """Represents a logic rule (AND, OR, NOT)"""
     rule_type: Literal[RoutingRuleType.AND, RoutingRuleType.OR, RoutingRuleType.NOT]
     conditions: List[Union[ClashRule, 'LogicRule']]
@@ -153,7 +156,7 @@ class LogicRule(RuleBase):
         return f"{self.condition_string()},{self.action}"
 
 
-class SubRule(RuleBase):
+class SubRule(RuleBase[Literal[RoutingRuleType.SUB_RULE]]):
     rule_type: Literal[RoutingRuleType.SUB_RULE] = RoutingRuleType.SUB_RULE
     condition: Union[ClashRule, LogicRule]
     action: str
@@ -173,7 +176,7 @@ class SubRule(RuleBase):
         return f"{self.condition_string()},{self.action}"
 
 
-class MatchRule(RuleBase):
+class MatchRule(RuleBase[Literal[RoutingRuleType.MATCH]]):
     """Represents a match rule"""
     rule_type: Literal[RoutingRuleType.MATCH] = RoutingRuleType.MATCH
 

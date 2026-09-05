@@ -6,7 +6,7 @@ from pydantic import TypeAdapter
 from app.sdk.cache import Cache
 from app.db.oper.plugindata import PluginDataOper
 
-from .pluginconfig import PluginConfig
+from .pluginconfig import PluginConfig, SubscriptionConfig
 from .helper.clashrulemanager import ClashRuleManager
 from .helper.utilsprovider import UtilsProvider
 from .models import RuleProviderData, ProxyProviderData, ProxyGroupData, Hosts, ProxyGroups, RuleProviders, \
@@ -22,15 +22,15 @@ class PluginState:
     """
     A DAL to manage the runtime state of ClashRuleProvider.
     """
-    def __init__(self, plugin_id: str, config: PluginConfig = None):
+    def __init__(self, plugin_id: str, config: PluginConfig | None = None):
         self.plugin_id = plugin_id
-        self.config = config or PluginConfig()
+        self.config: PluginConfig = config or PluginConfig()
         self.plugin_data = PluginDataOper()
         self.cache = Cache(maxsize=256, ttl=self.config.cache_ttl)
         self.cache_region = f"app.plugins.{self.plugin_id.lower()}"
 
         # Build schemas from PersistState model
-        self._schemas: dict[str, tuple[TypeAdapter, Callable[[], Any]]] = {}
+        self._schemas: dict[str, tuple[TypeAdapter[Any], Callable[..., Any] | None]] = {}
         for _, field in PersistState.model_fields.items():
             alias = field.alias
             if alias:
@@ -197,15 +197,15 @@ class PluginState:
             return ClashConfig()
         ret = ClashConfig()
         sub_options = self.config.get_sub_conf(url)
-        for field_name in sub_options.model_fields.keys():
-            if getattr(sub_options, field_name) is True and field_name in ret.model_fields:
+        for field_name in SubscriptionConfig.model_fields:
+            if getattr(sub_options, field_name) is True and field_name in ClashConfig.model_fields:
                 setattr(ret, field_name, getattr(conf, field_name))
         return ret
 
     def set_rule_providers(self, rule_providers: dict[str, dict[str, Any]]):
         self.rule_provider.clear()
         for name, rp in rule_providers.items():
-            self.rule_providers[name] = RuleProvider(**rp)
+            self.rule_provider[name] = RuleProvider(**rp)
 
     def rule_providers_from_subs(self) -> Generator[RuleProviderData, None, None]:
         for url, conf in self.sub_configs.items():

@@ -29,7 +29,7 @@ class ResourceList(RootModel[list[R]], Generic[R]):
             raise ValueError("names must be unique")
         return self
 
-    def __iter__(self) -> Iterator[R]:
+    def __iter__(self) -> Iterator[R]: # type: ignore[override]
         return iter(self.root)
 
     def __len__(self) -> int:

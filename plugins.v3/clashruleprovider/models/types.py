@@ -1,5 +1,5 @@
 from enum import StrEnum
-from typing import TypeVar, Protocol
+from typing import Protocol, Self
 
 
 class DataSource(StrEnum):
@@ -50,8 +50,6 @@ class ClashKey(StrEnum):
     RULES = "rules"
 
 
-T = TypeVar("T")
-
-class SupportsPatch(Protocol[T]):
-    def patch(self, patch: str) -> T:
+class SupportsPatch(Protocol):
+    def patch(self, patch: str) -> Self:
         ...
